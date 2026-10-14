@@ -1,0 +1,56 @@
+{
+  "status": "PRELIMINARY_HAND_CALCULATION_NOT_LOAD_CERTIFICATION",
+  "axes": {
+    "X": {
+      "moving_mass_estimate_kg": 13.052,
+      "speed_mm_s": 150,
+      "motor_rpm": 300.0,
+      "linear_force_N": 9.92,
+      "motor_torque_raw_Nm": 0.0539,
+      "motor_required_curve_torque_with_factor_Nm": 0.1077,
+      "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
+      "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
+    },
+    "Y": {
+      "moving_mass_estimate_kg": 20.11,
+      "speed_mm_s": 100,
+      "motor_rpm": 200.0,
+      "linear_force_N": 12.02,
+      "motor_torque_raw_Nm": 0.0646,
+      "motor_required_curve_torque_with_factor_Nm": 0.1292,
+      "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
+      "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
+    },
+    "Z": {
+      "moving_mass_estimate_kg": 9.738,
+      "speed_mm_s": 25,
+      "motor_rpm": 300.0,
+      "linear_force_N": 102.99,
+      "motor_torque_raw_Nm": 0.1277,
+      "motor_required_curve_torque_with_factor_Nm": 0.2553,
+      "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
+      "assumed_motor_side_rotating_inertia_kg_m2": 3.5e-05
+    }
+  },
+  "z_screw_permissible_speed_estimate_rpm": 3231,
+  "z_screw_support_assumption": "fixed-supported; root diameter 13.5 mm; unsupported span 790 mm",
+  "bridge_simple_support_deflection_mm": {
+    "vertical_point_load": 0.0328,
+    "lateral_point_load": 0.0097
+  },
+  "excluded_effects": [
+    "接头/支架柔度",
+    "型材实际截面",
+    "导轨安装误差",
+    "带伸长和齿隙",
+    "Z 滑枕和腕部偏心扭转",
+    "实际摩擦和预紧力",
+    "实际负载和热态电机性能"
+  ],
+  "brake": {
+    "minimum_holding_torque_candidate_Nm": 0.152,
+    "status": "candidate only; verify brake location, shaft coupling and loss-of-power performance"
+  },
+  "payload_kg": 1.0,
+  "mass_basis": "BOM estimates, not measured assembly mass"
+}

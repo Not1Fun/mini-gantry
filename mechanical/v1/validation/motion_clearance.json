@@ -1,0 +1,54 @@
+{
+  "status": "PASS_SAMPLED_CROSS_GROUP_CLEARANCE",
+  "poses": [
+    [
+      200,
+      150,
+      120
+    ],
+    [
+      200,
+      150,
+      620
+    ],
+    [
+      200,
+      650,
+      120
+    ],
+    [
+      200,
+      650,
+      620
+    ],
+    [
+      700,
+      150,
+      120
+    ],
+    [
+      700,
+      150,
+      620
+    ],
+    [
+      700,
+      650,
+      120
+    ],
+    [
+      700,
+      650,
+      620
+    ],
+    [
+      450,
+      400,
+      370
+    ]
+  ],
+  "exact_pairs_checked": 9,
+  "expected_sliding_or_belt_fits_excluded": 135,
+  "collisions": [],
+  "scope": "9 poses; only different motion groups; exclude simplified rail/block and belt/clamp fits; same-group attachments, bearings, fasteners, continuous swept motion and wiring are NOT certified"
+}

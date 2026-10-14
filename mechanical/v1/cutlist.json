@@ -1,0 +1,25 @@
+{
+  "status": "PRELIMINARY_CUT_LENGTHS_VERIFY_JOINTS_BEFORE_CUTTING",
+  "items": [
+    {
+      "profile_and_length": "4040 / L820",
+      "quantity": 8
+    },
+    {
+      "profile_and_length": "4040 / L900",
+      "quantity": 2
+    },
+    {
+      "profile_and_length": "4080 / L900",
+      "quantity": 2
+    },
+    {
+      "profile_and_length": "4080 / L820",
+      "quantity": 1
+    },
+    {
+      "profile_and_length": "4080 / L800",
+      "quantity": 1
+    }
+  ]
+}
