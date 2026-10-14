@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.step binary
+*.stl binary
+*.dxf binary
+*.png binary
+*.svg text eol=lf whitespace=-blank-at-eol
