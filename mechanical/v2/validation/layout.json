@@ -1,0 +1,177 @@
+{
+  "status": "PASS_LAYOUT_CHECKS",
+  "invalid_solids": [],
+  "component_count": 120,
+  "unique_names": true,
+  "travel_mm": [
+    500,
+    500,
+    500
+  ],
+  "eight_corner_support_checks": [
+    {
+      "tcp_mm": [
+        200,
+        150,
+        120
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 124.3,
+        "Y_rear_rail": 524.3,
+        "X_left_rail": 29.3,
+        "X_right_rail": 529.3,
+        "Z_lower_rail": 539.3,
+        "Z_upper_rail": 19.3,
+        "Z_nut_to_lower_support": 610,
+        "Z_nut_to_upper_support": 100
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        200,
+        150,
+        620
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 124.3,
+        "Y_rear_rail": 524.3,
+        "X_left_rail": 29.3,
+        "X_right_rail": 529.3,
+        "Z_lower_rail": 39.3,
+        "Z_upper_rail": 519.3,
+        "Z_nut_to_lower_support": 110,
+        "Z_nut_to_upper_support": 600
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        200,
+        650,
+        120
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 624.3,
+        "Y_rear_rail": 24.3,
+        "X_left_rail": 29.3,
+        "X_right_rail": 529.3,
+        "Z_lower_rail": 539.3,
+        "Z_upper_rail": 19.3,
+        "Z_nut_to_lower_support": 610,
+        "Z_nut_to_upper_support": 100
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        200,
+        650,
+        620
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 624.3,
+        "Y_rear_rail": 24.3,
+        "X_left_rail": 29.3,
+        "X_right_rail": 529.3,
+        "Z_lower_rail": 39.3,
+        "Z_upper_rail": 519.3,
+        "Z_nut_to_lower_support": 110,
+        "Z_nut_to_upper_support": 600
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        700,
+        150,
+        120
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 124.3,
+        "Y_rear_rail": 524.3,
+        "X_left_rail": 529.3,
+        "X_right_rail": 29.3,
+        "Z_lower_rail": 539.3,
+        "Z_upper_rail": 19.3,
+        "Z_nut_to_lower_support": 610,
+        "Z_nut_to_upper_support": 100
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        700,
+        150,
+        620
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 124.3,
+        "Y_rear_rail": 524.3,
+        "X_left_rail": 529.3,
+        "X_right_rail": 29.3,
+        "Z_lower_rail": 39.3,
+        "Z_upper_rail": 519.3,
+        "Z_nut_to_lower_support": 110,
+        "Z_nut_to_upper_support": 600
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        700,
+        650,
+        120
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 624.3,
+        "Y_rear_rail": 24.3,
+        "X_left_rail": 529.3,
+        "X_right_rail": 29.3,
+        "Z_lower_rail": 539.3,
+        "Z_upper_rail": 19.3,
+        "Z_nut_to_lower_support": 610,
+        "Z_nut_to_upper_support": 100
+      },
+      "all_positive": true
+    },
+    {
+      "tcp_mm": [
+        700,
+        650,
+        620
+      ],
+      "support_margins_mm": {
+        "Y_front_rail": 624.3,
+        "Y_rear_rail": 24.3,
+        "X_left_rail": 529.3,
+        "X_right_rail": 29.3,
+        "Z_lower_rail": 39.3,
+        "Z_upper_rail": 519.3,
+        "Z_nut_to_lower_support": 110,
+        "Z_nut_to_upper_support": 600
+      },
+      "all_positive": true
+    }
+  ],
+  "maximum_z_mm": 1761,
+  "frame_plan_mm": [
+    900,
+    900
+  ],
+  "controller_rear_extent_mm": 968,
+  "front_camera_extent_y_mm": -72.3013,
+  "installed_maximum_envelope_mm": [
+    900.0,
+    1040.301,
+    1761.0
+  ],
+  "checks_not_performed": [
+    "完整装配干涉排除：导轨/滑块、支架包络存在有意重合",
+    "采购接口配合",
+    "所有线缆/拖链运动",
+    "紧固件可达性",
+    "FEA和物理承载试验"
+  ],
+  "geometry_scope": "采购件是简化实体包络；同步带未逐齿建模；型材截面为等效薄壁示意；紧固件未逐颗建模；概念孔位只用于结构评审"
+}

@@ -1,0 +1,2046 @@
+{
+  "stage": "结构 BOM；非采购放行清单",
+  "mass_note": "估算值；型材和采购件使用简化质量；未逐颗计紧固件",
+  "items": [
+    {
+      "name": "base_cross_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        0.0,
+        0.0,
+        860.0,
+        40.0,
+        40.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "top_cross_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        0.0,
+        860.0,
+        860.0,
+        40.0,
+        900.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "base_cross_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        860.0,
+        0.0,
+        860.0,
+        900.0,
+        40.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "top_cross_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        860.0,
+        860.0,
+        860.0,
+        900.0,
+        900.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "base_side_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.35,
+      "spec": "4040 / L900",
+      "role": "envelope",
+      "bbox_mm": [
+        0.0,
+        0.0,
+        0.0,
+        40.0,
+        900.0,
+        40.0
+      ],
+      "volume_mm3": 399600.0
+    },
+    {
+      "name": "top_side_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 2.25,
+      "spec": "4080 / L900",
+      "role": "envelope",
+      "bbox_mm": [
+        0.0,
+        0.0,
+        860.0,
+        40.0,
+        900.0,
+        940.0
+      ],
+      "volume_mm3": 615600.0
+    },
+    {
+      "name": "column_0_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        0.0,
+        0.0,
+        40.0,
+        40.0,
+        40.0,
+        860.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "column_0_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        0.0,
+        860.0,
+        40.0,
+        40.0,
+        900.0,
+        860.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "base_side_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.35,
+      "spec": "4040 / L900",
+      "role": "envelope",
+      "bbox_mm": [
+        860.0,
+        0.0,
+        0.0,
+        900.0,
+        900.0,
+        40.0
+      ],
+      "volume_mm3": 399600.0
+    },
+    {
+      "name": "top_side_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 2.25,
+      "spec": "4080 / L900",
+      "role": "envelope",
+      "bbox_mm": [
+        860.0,
+        0.0,
+        860.0,
+        900.0,
+        900.0,
+        940.0
+      ],
+      "volume_mm3": 615600.0
+    },
+    {
+      "name": "column_1_0",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        860.0,
+        0.0,
+        40.0,
+        900.0,
+        40.0,
+        860.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "column_1_1",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        860.0,
+        860.0,
+        40.0,
+        900.0,
+        900.0,
+        860.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "side_brace_a_0",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        16.0,
+        57.2085,
+        77.1351,
+        24.0,
+        842.7915,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "side_brace_b_0",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        16.0,
+        57.2085,
+        77.1351,
+        24.0,
+        842.7915,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "side_brace_a_1",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        876.0,
+        57.2085,
+        77.1351,
+        884.0,
+        842.7915,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "side_brace_b_1",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        876.0,
+        57.2085,
+        77.1351,
+        884.0,
+        842.7915,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "rear_brace_a",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        57.2085,
+        878.0,
+        77.1351,
+        842.7915,
+        886.0,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "rear_brace_b",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.45,
+      "spec": "M8 拉杆交叉撑 / 待定长",
+      "role": "envelope",
+      "bbox_mm": [
+        57.2085,
+        884.0,
+        77.1351,
+        842.7915,
+        892.0,
+        842.8649
+      ],
+      "volume_mm3": 54740.934
+    },
+    {
+      "name": "y_rail_0",
+      "kind": "rail",
+      "motion": "fixed",
+      "mass_kg": 1.15,
+      "spec": "HGR15 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        12.5,
+        40.0,
+        940.0,
+        27.5,
+        860.0,
+        955.0
+      ],
+      "volume_mm3": 184500.0
+    },
+    {
+      "name": "y_block_0_0",
+      "kind": "block",
+      "motion": "Y",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        3.0,
+        414.3,
+        949.0,
+        37.0,
+        475.7,
+        968.0
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "y_block_0_1",
+      "kind": "block",
+      "motion": "Y",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        3.0,
+        524.3,
+        949.0,
+        37.0,
+        585.7,
+        968.0
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "y_end_plate_0",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.4925,
+      "spec": "6061 / 80 x 190 x 12",
+      "role": "custom_blank",
+      "bbox_mm": [
+        0.0,
+        405.0,
+        968.0,
+        80.0,
+        595.0,
+        980.0
+      ],
+      "volume_mm3": 182400.0
+    },
+    {
+      "name": "bridge_riser_0",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.0864,
+      "spec": "6061 / 40 x 40 x 20",
+      "role": "custom_blank",
+      "bbox_mm": [
+        40.0,
+        480.0,
+        980.0,
+        80.0,
+        520.0,
+        1000.0
+      ],
+      "volume_mm3": 32000.0
+    },
+    {
+      "name": "y_rail_1",
+      "kind": "rail",
+      "motion": "fixed",
+      "mass_kg": 1.15,
+      "spec": "HGR15 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        872.5,
+        40.0,
+        940.0,
+        887.5,
+        860.0,
+        955.0
+      ],
+      "volume_mm3": 184500.0
+    },
+    {
+      "name": "y_block_1_0",
+      "kind": "block",
+      "motion": "Y",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        863.0,
+        414.3,
+        949.0,
+        897.0,
+        475.7,
+        968.0
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "y_block_1_1",
+      "kind": "block",
+      "motion": "Y",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        863.0,
+        524.3,
+        949.0,
+        897.0,
+        585.7,
+        968.0
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "y_end_plate_1",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.4925,
+      "spec": "6061 / 80 x 190 x 12",
+      "role": "custom_blank",
+      "bbox_mm": [
+        820.0,
+        405.0,
+        968.0,
+        900.0,
+        595.0,
+        980.0
+      ],
+      "volume_mm3": 182400.0
+    },
+    {
+      "name": "bridge_riser_1",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.0864,
+      "spec": "6061 / 40 x 40 x 20",
+      "role": "custom_blank",
+      "bbox_mm": [
+        820.0,
+        480.0,
+        980.0,
+        860.0,
+        520.0,
+        1000.0
+      ],
+      "volume_mm3": 32000.0
+    },
+    {
+      "name": "bridge_4080",
+      "kind": "frame",
+      "motion": "Y",
+      "mass_kg": 2.05,
+      "spec": "4080 / L820",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        480.0,
+        1000.0,
+        860.0,
+        520.0,
+        1080.0
+      ],
+      "volume_mm3": 560880.0
+    },
+    {
+      "name": "y_pulley_0_0",
+      "kind": "drive",
+      "motion": "fixed",
+      "mass_kg": 0.04,
+      "spec": "3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络",
+      "role": "envelope",
+      "bbox_mm": [
+        87.5,
+        45.6761,
+        969.6761,
+        102.5,
+        74.3239,
+        998.3239
+      ],
+      "volume_mm3": 8914.681
+    },
+    {
+      "name": "y_bearing_mount_0_0",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.08,
+      "spec": "轴承/张紧座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        71.0,
+        43.0,
+        964.0,
+        83.0,
+        77.0,
+        1004.0
+      ],
+      "volume_mm3": 16320.0
+    },
+    {
+      "name": "y_pulley_0_1",
+      "kind": "drive",
+      "motion": "fixed",
+      "mass_kg": 0.04,
+      "spec": "3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络",
+      "role": "envelope",
+      "bbox_mm": [
+        87.5,
+        865.6761,
+        969.6761,
+        102.5,
+        894.3239,
+        998.3239
+      ],
+      "volume_mm3": 6652.734
+    },
+    {
+      "name": "y_bearing_mount_0_1",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.08,
+      "spec": "轴承/张紧座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        71.0,
+        863.0,
+        964.0,
+        83.0,
+        897.0,
+        1004.0
+      ],
+      "volume_mm3": 16320.0
+    },
+    {
+      "name": "y_belt_0_0",
+      "kind": "belt",
+      "motion": "fixed",
+      "mass_kg": 0.025,
+      "spec": "3 mm 节距 / 15 mm 宽；环长约1730，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        87.5,
+        60.0,
+        968.6761,
+        102.5,
+        880.0,
+        970.6761
+      ],
+      "volume_mm3": 24600.0
+    },
+    {
+      "name": "y_belt_0_1",
+      "kind": "belt",
+      "motion": "fixed",
+      "mass_kg": 0.025,
+      "spec": "3 mm 节距 / 15 mm 宽；环长约1730，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        87.5,
+        60.0,
+        997.3239,
+        102.5,
+        880.0,
+        999.3239
+      ],
+      "volume_mm3": 24600.0
+    },
+    {
+      "name": "y_belt_clamp_0",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.025,
+      "spec": "同步带夹块 / 接至桥架",
+      "role": "envelope",
+      "bbox_mm": [
+        83.0,
+        480.0,
+        995.0,
+        107.0,
+        520.0,
+        1005.0
+      ],
+      "volume_mm3": 9600.0
+    },
+    {
+      "name": "y_pulley_1_0",
+      "kind": "drive",
+      "motion": "fixed",
+      "mass_kg": 0.04,
+      "spec": "3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络",
+      "role": "envelope",
+      "bbox_mm": [
+        797.5,
+        45.6761,
+        969.6761,
+        812.5,
+        74.3239,
+        998.3239
+      ],
+      "volume_mm3": 8914.681
+    },
+    {
+      "name": "y_bearing_mount_1_0",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.08,
+      "spec": "轴承/张紧座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        781.0,
+        43.0,
+        964.0,
+        793.0,
+        77.0,
+        1004.0
+      ],
+      "volume_mm3": 16320.0
+    },
+    {
+      "name": "y_pulley_1_1",
+      "kind": "drive",
+      "motion": "fixed",
+      "mass_kg": 0.04,
+      "spec": "3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络",
+      "role": "envelope",
+      "bbox_mm": [
+        797.5,
+        865.6761,
+        969.6761,
+        812.5,
+        894.3239,
+        998.3239
+      ],
+      "volume_mm3": 6652.734
+    },
+    {
+      "name": "y_bearing_mount_1_1",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.08,
+      "spec": "轴承/张紧座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        781.0,
+        863.0,
+        964.0,
+        793.0,
+        897.0,
+        1004.0
+      ],
+      "volume_mm3": 16320.0
+    },
+    {
+      "name": "y_belt_1_0",
+      "kind": "belt",
+      "motion": "fixed",
+      "mass_kg": 0.025,
+      "spec": "3 mm 节距 / 15 mm 宽；环长约1730，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        797.5,
+        60.0,
+        968.6761,
+        812.5,
+        880.0,
+        970.6761
+      ],
+      "volume_mm3": 24600.0
+    },
+    {
+      "name": "y_belt_1_1",
+      "kind": "belt",
+      "motion": "fixed",
+      "mass_kg": 0.025,
+      "spec": "3 mm 节距 / 15 mm 宽；环长约1730，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        797.5,
+        60.0,
+        997.3239,
+        812.5,
+        880.0,
+        999.3239
+      ],
+      "volume_mm3": 24600.0
+    },
+    {
+      "name": "y_belt_clamp_1",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.025,
+      "spec": "同步带夹块 / 接至桥架",
+      "role": "envelope",
+      "bbox_mm": [
+        793.0,
+        480.0,
+        995.0,
+        817.0,
+        520.0,
+        1005.0
+      ],
+      "volume_mm3": 9600.0
+    },
+    {
+      "name": "y_sync_shaft",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 1.18,
+      "spec": "贯通轴 D16 / L750，端部另加工",
+      "role": "envelope",
+      "bbox_mm": [
+        75.0,
+        872.0,
+        976.0,
+        825.0,
+        888.0,
+        992.0
+      ],
+      "volume_mm3": 150796.447
+    },
+    {
+      "name": "y_reducer",
+      "kind": "motor",
+      "motion": "fixed",
+      "mass_kg": 0.32,
+      "spec": "同步带 3:1 减速组件包络",
+      "role": "envelope",
+      "bbox_mm": [
+        120.0,
+        845.0,
+        954.0,
+        152.0,
+        915.0,
+        1069.0
+      ],
+      "volume_mm3": 257600.0
+    },
+    {
+      "name": "motor_Y_ZDT42V2",
+      "kind": "motor",
+      "motion": "fixed",
+      "mass_kg": 0.528,
+      "spec": "42ZDT60A 预留：42x42x60 + 11驱动板；具体机身待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        129.5,
+        859.0,
+        1020.5,
+        223.0,
+        904.2,
+        1065.0
+      ],
+      "volume_mm3": 125238.541
+    },
+    {
+      "name": "x_rail_0",
+      "kind": "rail",
+      "motion": "Y",
+      "mass_kg": 0.98,
+      "spec": "HGR15 / L700",
+      "role": "envelope",
+      "bbox_mm": [
+        100.0,
+        465.0,
+        1015.0,
+        800.0,
+        480.0,
+        1030.0
+      ],
+      "volume_mm3": 157500.0
+    },
+    {
+      "name": "x_block_0_0",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        379.3,
+        452.0,
+        1005.5,
+        440.7,
+        471.0,
+        1039.5
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "x_block_0_1",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        459.3,
+        452.0,
+        1005.5,
+        520.7,
+        471.0,
+        1039.5
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "x_rail_1",
+      "kind": "rail",
+      "motion": "Y",
+      "mass_kg": 0.98,
+      "spec": "HGR15 / L700",
+      "role": "envelope",
+      "bbox_mm": [
+        100.0,
+        465.0,
+        1055.0,
+        800.0,
+        480.0,
+        1070.0
+      ],
+      "volume_mm3": 157500.0
+    },
+    {
+      "name": "x_block_1_0",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        379.3,
+        452.0,
+        1045.5,
+        440.7,
+        471.0,
+        1079.5
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "x_block_1_1",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "15 级滑块 / 采购接口待确认",
+      "role": "envelope",
+      "bbox_mm": [
+        459.3,
+        452.0,
+        1045.5,
+        520.7,
+        471.0,
+        1079.5
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "x_z_carrier",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 1.1586,
+      "spec": "6061 / 160 x 240 x 12 / 中央44x60螺母避让窗",
+      "role": "custom_blank",
+      "bbox_mm": [
+        370.0,
+        440.0,
+        860.0,
+        530.0,
+        452.0,
+        1100.0
+      ],
+      "volume_mm3": 429120.0
+    },
+    {
+      "name": "x_pulley_0",
+      "kind": "drive",
+      "motion": "Y",
+      "mass_kg": 0.03,
+      "spec": "3 mm / 20T / 15 mm",
+      "role": "envelope",
+      "bbox_mm": [
+        80.4507,
+        520.0,
+        1090.4507,
+        99.5493,
+        535.0,
+        1109.5493
+      ],
+      "volume_mm3": 3543.201
+    },
+    {
+      "name": "x_pulley_mount_0",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.1,
+      "spec": "皮带轮支座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        72.0,
+        480.0,
+        1080.0,
+        108.0,
+        520.0,
+        1115.0
+      ],
+      "volume_mm3": 50400.0
+    },
+    {
+      "name": "x_pulley_axle_0",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.03,
+      "spec": "带两端轴承的输出轴",
+      "role": "envelope",
+      "bbox_mm": [
+        86.0,
+        495.0,
+        1096.0,
+        94.0,
+        535.0,
+        1104.0
+      ],
+      "volume_mm3": 2010.619
+    },
+    {
+      "name": "x_pulley_1",
+      "kind": "drive",
+      "motion": "Y",
+      "mass_kg": 0.03,
+      "spec": "3 mm / 20T / 15 mm",
+      "role": "envelope",
+      "bbox_mm": [
+        800.4507,
+        520.0,
+        1090.4507,
+        819.5493,
+        535.0,
+        1109.5493
+      ],
+      "volume_mm3": 3543.201
+    },
+    {
+      "name": "x_pulley_mount_1",
+      "kind": "plate",
+      "motion": "Y",
+      "mass_kg": 0.1,
+      "spec": "皮带轮支座包络",
+      "role": "envelope",
+      "bbox_mm": [
+        792.0,
+        480.0,
+        1080.0,
+        828.0,
+        520.0,
+        1115.0
+      ],
+      "volume_mm3": 50400.0
+    },
+    {
+      "name": "x_pulley_axle_1",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.03,
+      "spec": "带两端轴承的输出轴",
+      "role": "envelope",
+      "bbox_mm": [
+        806.0,
+        495.0,
+        1096.0,
+        814.0,
+        535.0,
+        1104.0
+      ],
+      "volume_mm3": 2010.619
+    },
+    {
+      "name": "x_belt_0",
+      "kind": "belt",
+      "motion": "Y",
+      "mass_kg": 0.025,
+      "spec": "3 mm / 15 mm；环长约 1500，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        90.0,
+        520.0,
+        1089.4507,
+        810.0,
+        535.0,
+        1091.4507
+      ],
+      "volume_mm3": 21600.0
+    },
+    {
+      "name": "x_belt_1",
+      "kind": "belt",
+      "motion": "Y",
+      "mass_kg": 0.025,
+      "spec": "3 mm / 15 mm；环长约 1500，采购复核",
+      "role": "envelope",
+      "bbox_mm": [
+        90.0,
+        520.0,
+        1108.5493,
+        810.0,
+        535.0,
+        1110.5493
+      ],
+      "volume_mm3": 21600.0
+    },
+    {
+      "name": "x_belt_clamp",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.126,
+      "spec": "后上置同步带夹块与跨梁连接桥 / 接 X 滑座",
+      "role": "envelope",
+      "bbox_mm": [
+        430.0,
+        440.0,
+        1085.0,
+        470.0,
+        537.0,
+        1097.0
+      ],
+      "volume_mm3": 46560.0
+    },
+    {
+      "name": "x_reducer",
+      "kind": "motor",
+      "motion": "Y",
+      "mass_kg": 0.3,
+      "spec": "2:1 同步带减速组件包络",
+      "role": "envelope",
+      "bbox_mm": [
+        65.0,
+        510.0,
+        1080.0,
+        115.0,
+        535.0,
+        1175.0
+      ],
+      "volume_mm3": 118750.0
+    },
+    {
+      "name": "motor_X_ZDT42V2",
+      "kind": "motor",
+      "motion": "Y",
+      "mass_kg": 0.528,
+      "spec": "42ZDT60A 尺寸预留；5mm D轴，接口按用户尺寸图",
+      "role": "envelope",
+      "bbox_mm": [
+        69.0,
+        512.5,
+        1125.8,
+        113.5,
+        606.0,
+        1171.0
+      ],
+      "volume_mm3": 125238.541
+    },
+    {
+      "name": "z_ram_4080",
+      "kind": "frame",
+      "motion": "XYZ",
+      "mass_kg": 2.0,
+      "spec": "4080 / L800",
+      "role": "envelope",
+      "bbox_mm": [
+        410.0,
+        370.0,
+        560.0,
+        490.0,
+        410.0,
+        1360.0
+      ],
+      "volume_mm3": 547200.0
+    },
+    {
+      "name": "z_rail_0",
+      "kind": "rail",
+      "motion": "XYZ",
+      "mass_kg": 1.04,
+      "spec": "HGR15 / L740，安装在随动滑枕",
+      "role": "envelope",
+      "bbox_mm": [
+        412.5,
+        410.0,
+        600.0,
+        427.5,
+        425.0,
+        1340.0
+      ],
+      "volume_mm3": 166500.0
+    },
+    {
+      "name": "z_block_0_0",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "固定滑块 / 中心距120",
+      "role": "envelope",
+      "bbox_mm": [
+        403.0,
+        411.0,
+        889.3,
+        437.0,
+        430.0,
+        950.7
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "z_block_spacer_0_0",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.0564,
+      "spec": "6061 / 34 x 61.4 x 10",
+      "role": "custom_blank",
+      "bbox_mm": [
+        403.0,
+        430.0,
+        889.3,
+        437.0,
+        440.0,
+        950.7
+      ],
+      "volume_mm3": 20876.0
+    },
+    {
+      "name": "z_block_0_1",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "固定滑块 / 中心距120",
+      "role": "envelope",
+      "bbox_mm": [
+        403.0,
+        411.0,
+        1009.3,
+        437.0,
+        430.0,
+        1070.7
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "z_block_spacer_0_1",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.0564,
+      "spec": "6061 / 34 x 61.4 x 10",
+      "role": "custom_blank",
+      "bbox_mm": [
+        403.0,
+        430.0,
+        1009.3,
+        437.0,
+        440.0,
+        1070.7
+      ],
+      "volume_mm3": 20876.0
+    },
+    {
+      "name": "z_rail_1",
+      "kind": "rail",
+      "motion": "XYZ",
+      "mass_kg": 1.04,
+      "spec": "HGR15 / L740，安装在随动滑枕",
+      "role": "envelope",
+      "bbox_mm": [
+        472.5,
+        410.0,
+        600.0,
+        487.5,
+        425.0,
+        1340.0
+      ],
+      "volume_mm3": 166500.0
+    },
+    {
+      "name": "z_block_1_0",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "固定滑块 / 中心距120",
+      "role": "envelope",
+      "bbox_mm": [
+        463.0,
+        411.0,
+        889.3,
+        497.0,
+        430.0,
+        950.7
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "z_block_spacer_1_0",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.0564,
+      "spec": "6061 / 34 x 61.4 x 10",
+      "role": "custom_blank",
+      "bbox_mm": [
+        463.0,
+        430.0,
+        889.3,
+        497.0,
+        440.0,
+        950.7
+      ],
+      "volume_mm3": 20876.0
+    },
+    {
+      "name": "z_block_1_1",
+      "kind": "block",
+      "motion": "XY",
+      "mass_kg": 0.18,
+      "spec": "固定滑块 / 中心距120",
+      "role": "envelope",
+      "bbox_mm": [
+        463.0,
+        411.0,
+        1009.3,
+        497.0,
+        430.0,
+        1070.7
+      ],
+      "volume_mm3": 39664.4
+    },
+    {
+      "name": "z_block_spacer_1_1",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.0564,
+      "spec": "6061 / 34 x 61.4 x 10",
+      "role": "custom_blank",
+      "bbox_mm": [
+        463.0,
+        430.0,
+        1009.3,
+        497.0,
+        440.0,
+        1070.7
+      ],
+      "volume_mm3": 20876.0
+    },
+    {
+      "name": "z_screw_1605",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 1.35,
+      "spec": "1605 / 支承跨距790 / 顶端含制动轴伸，端部待加工",
+      "role": "envelope",
+      "bbox_mm": [
+        442.0,
+        418.0,
+        565.0,
+        458.0,
+        434.0,
+        1415.0
+      ],
+      "volume_mm3": 170902.64
+    },
+    {
+      "name": "z_fixed_ballnut",
+      "kind": "drive",
+      "motion": "XY",
+      "mass_kg": 0.22,
+      "spec": "1605 螺母及窄型固定座包络，具体螺母外径待核对",
+      "role": "envelope",
+      "bbox_mm": [
+        429.5,
+        412.0,
+        955.0,
+        470.5,
+        452.0,
+        1005.0
+      ],
+      "volume_mm3": 71946.904
+    },
+    {
+      "name": "z_nut_rear_flange",
+      "kind": "plate",
+      "motion": "XY",
+      "mass_kg": 0.1134,
+      "spec": "6061 / 140 x 50 x 6，螺母座连接 X 滑座的后法兰",
+      "role": "custom_blank",
+      "bbox_mm": [
+        380.0,
+        452.0,
+        955.0,
+        520.0,
+        458.0,
+        1005.0
+      ],
+      "volume_mm3": 42000.0
+    },
+    {
+      "name": "z_screw_support_0",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.2,
+      "spec": "固定/支承端组件包络，螺母随滑座固定",
+      "role": "envelope",
+      "bbox_mm": [
+        420.0,
+        410.0,
+        565.0,
+        480.0,
+        444.0,
+        595.0
+      ],
+      "volume_mm3": 55168.142
+    },
+    {
+      "name": "z_screw_support_1",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.2,
+      "spec": "固定/支承端组件包络，螺母随滑座固定",
+      "role": "envelope",
+      "bbox_mm": [
+        420.0,
+        410.0,
+        1355.0,
+        480.0,
+        444.0,
+        1385.0
+      ],
+      "volume_mm3": 55168.142
+    },
+    {
+      "name": "z_coupling",
+      "kind": "drive",
+      "motion": "XYZ",
+      "mass_kg": 0.06,
+      "spec": "联轴器 5/10 候选，实物轴径待核对",
+      "role": "envelope",
+      "bbox_mm": [
+        438.0,
+        414.0,
+        1415.0,
+        462.0,
+        438.0,
+        1440.0
+      ],
+      "volume_mm3": 10818.86
+    },
+    {
+      "name": "motor_Z_ZDT42V2",
+      "kind": "motor",
+      "motion": "XYZ",
+      "mass_kg": 0.528,
+      "spec": "42ZDT60A 尺寸预留；保持力矩不代表300rpm可用力矩",
+      "role": "envelope",
+      "bbox_mm": [
+        429.0,
+        405.0,
+        1417.5,
+        473.5,
+        450.2,
+        1511.0
+      ],
+      "volume_mm3": 125238.541
+    },
+    {
+      "name": "z_brake_reserve",
+      "kind": "safety",
+      "motion": "XYZ",
+      "mass_kg": 0.25,
+      "spec": "丝杆轴伸上的独立失电制动器；壳体固定滑枕，不能装在驱动板尾部",
+      "role": "envelope",
+      "bbox_mm": [
+        423.0,
+        399.0,
+        1385.0,
+        477.0,
+        453.0,
+        1415.0
+      ],
+      "volume_mm3": 81448.142
+    },
+    {
+      "name": "z_motor_mount",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.09,
+      "spec": "NEMA17 候选：31x31 / 4-D3.5 / 中心D24；实物复核",
+      "role": "custom_interface",
+      "bbox_mm": [
+        410.0,
+        390.0,
+        1433.0,
+        490.0,
+        450.0,
+        1440.0
+      ],
+      "volume_mm3": 30163.883
+    },
+    {
+      "name": "z_motor_standoff_0",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.071,
+      "spec": "6061 / 6 x 60 x 73",
+      "role": "custom_blank",
+      "bbox_mm": [
+        410.0,
+        390.0,
+        1360.0,
+        416.0,
+        450.0,
+        1433.0
+      ],
+      "volume_mm3": 26280.0
+    },
+    {
+      "name": "z_motor_standoff_1",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.071,
+      "spec": "6061 / 6 x 60 x 73",
+      "role": "custom_blank",
+      "bbox_mm": [
+        484.0,
+        390.0,
+        1360.0,
+        490.0,
+        450.0,
+        1433.0
+      ],
+      "volume_mm3": 26280.0
+    },
+    {
+      "name": "fixed_head_top",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.0778,
+      "spec": "6061 / 80 x 60 x 6；固定夹爪转接座",
+      "role": "custom_blank",
+      "bbox_mm": [
+        410.0,
+        370.0,
+        554.0,
+        490.0,
+        430.0,
+        560.0
+      ],
+      "volume_mm3": 28800.0
+    },
+    {
+      "name": "fixed_head_side_0",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.0337,
+      "spec": "6061 / 4 x 40 x 116；20 x 76 减重窗",
+      "role": "custom_blank",
+      "bbox_mm": [
+        420.0,
+        380.0,
+        438.0,
+        424.0,
+        420.0,
+        554.0
+      ],
+      "volume_mm3": 12480.0
+    },
+    {
+      "name": "fixed_head_side_1",
+      "kind": "plate",
+      "motion": "XYZ",
+      "mass_kg": 0.0337,
+      "spec": "6061 / 4 x 40 x 116；20 x 76 减重窗",
+      "role": "custom_blank",
+      "bbox_mm": [
+        476.0,
+        380.0,
+        438.0,
+        480.0,
+        420.0,
+        554.0
+      ],
+      "volume_mm3": 12480.0
+    },
+    {
+      "name": "gripper_adapter",
+      "kind": "drive",
+      "motion": "XYZ",
+      "mass_kg": 0.0807,
+      "spec": "D70 x 8；PCD50 / 4-D4.5；中心D8",
+      "role": "custom_interface",
+      "bbox_mm": [
+        415.0,
+        365.0,
+        430.0,
+        485.0,
+        435.0,
+        438.0
+      ],
+      "volume_mm3": 29876.546
+    },
+    {
+      "name": "gripper_payload_ENVELOPE",
+      "kind": "gripper",
+      "motion": "XYZ",
+      "mass_kg": 1.0,
+      "spec": "夹爪+物料 1 kg 假设；仅用于空间占位",
+      "role": "envelope",
+      "bbox_mm": [
+        420.0,
+        380.0,
+        370.0,
+        480.0,
+        420.0,
+        430.0
+      ],
+      "volume_mm3": 144000.0
+    },
+    {
+      "name": "controller_tray",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.9331,
+      "spec": "通用 240 x 180 托板；安装槽待详设",
+      "role": "custom_blank",
+      "bbox_mm": [
+        560.0,
+        900.0,
+        180.0,
+        800.0,
+        908.0,
+        360.0
+      ],
+      "volume_mm3": 345600.0
+    },
+    {
+      "name": "RM_A_or_RA6M5_RESERVE",
+      "kind": "control",
+      "motion": "fixed",
+      "mass_kg": 0.3,
+      "spec": "控制板及端子/线缆空间，非真实板卡模型",
+      "role": "envelope",
+      "bbox_mm": [
+        570.0,
+        908.0,
+        190.0,
+        790.0,
+        968.0,
+        350.0
+      ],
+      "volume_mm3": 2112000.0
+    },
+    {
+      "name": "rear_accessory_crossbar",
+      "kind": "frame",
+      "motion": "fixed",
+      "mass_kg": 1.23,
+      "spec": "4040 / L820；计算板及控制托板安装横梁",
+      "role": "envelope",
+      "bbox_mm": [
+        40.0,
+        860.0,
+        160.0,
+        860.0,
+        900.0,
+        200.0
+      ],
+      "volume_mm3": 364080.0
+    },
+    {
+      "name": "compute_combo_plate",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.2045,
+      "spec": "160 x 170 x 3；Nano 86x58 + Pi4B 58x49 共用孔板",
+      "role": "custom_board_interface",
+      "bbox_mm": [
+        140.0,
+        900.0,
+        160.0,
+        300.0,
+        903.0,
+        330.0
+      ],
+      "volume_mm3": 75726.425
+    },
+    {
+      "name": "compute_standoff_0",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.003,
+      "spec": "M2.5 / 10 mm 绝缘支柱；仅安装当前孔组4只",
+      "role": "envelope",
+      "bbox_mm": [
+        188.5,
+        903.0,
+        238.0,
+        193.5,
+        913.0,
+        243.0
+      ],
+      "volume_mm3": 147.262
+    },
+    {
+      "name": "compute_standoff_1",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.003,
+      "spec": "M2.5 / 10 mm 绝缘支柱；仅安装当前孔组4只",
+      "role": "envelope",
+      "bbox_mm": [
+        188.5,
+        903.0,
+        287.0,
+        193.5,
+        913.0,
+        292.0
+      ],
+      "volume_mm3": 147.262
+    },
+    {
+      "name": "compute_standoff_2",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.003,
+      "spec": "M2.5 / 10 mm 绝缘支柱；仅安装当前孔组4只",
+      "role": "envelope",
+      "bbox_mm": [
+        246.5,
+        903.0,
+        238.0,
+        251.5,
+        913.0,
+        243.0
+      ],
+      "volume_mm3": 147.262
+    },
+    {
+      "name": "compute_standoff_3",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.003,
+      "spec": "M2.5 / 10 mm 绝缘支柱；仅安装当前孔组4只",
+      "role": "envelope",
+      "bbox_mm": [
+        246.5,
+        903.0,
+        287.0,
+        251.5,
+        913.0,
+        292.0
+      ],
+      "volume_mm3": 147.262
+    },
+    {
+      "name": "compute_board_pi4b",
+      "kind": "control",
+      "motion": "fixed",
+      "mass_kg": 0.05,
+      "spec": "选定计算板简化外形；同时只安装一块",
+      "role": "envelope",
+      "bbox_mm": [
+        187.5,
+        913.0,
+        237.0,
+        272.5,
+        914.6,
+        293.0
+      ],
+      "volume_mm3": 7579.356
+    },
+    {
+      "name": "compute_component_clearance",
+      "kind": "control",
+      "motion": "fixed",
+      "mass_kg": 0.08,
+      "spec": "散热器/接口包络，实际壳体与散热方案待核对",
+      "role": "envelope",
+      "bbox_mm": [
+        187.5,
+        914.6,
+        237.0,
+        272.5,
+        944.6,
+        293.0
+      ],
+      "volume_mm3": 142800.0
+    },
+    {
+      "name": "camera_base",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.1204,
+      "spec": "顶部前横梁固定底座 / 140 x 80 x 4 / 2-D5.5",
+      "role": "custom_interface",
+      "bbox_mm": [
+        380.0,
+        -40.0,
+        900.0,
+        520.0,
+        40.0,
+        904.0
+      ],
+      "volume_mm3": 44609.934
+    },
+    {
+      "name": "camera_pivot_ear_0",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.0443,
+      "spec": "6 x 30 x 92；M5 俯角夹紧轴孔",
+      "role": "custom_blank",
+      "bbox_mm": [
+        380.0,
+        -40.0,
+        904.0,
+        386.0,
+        -10.0,
+        996.0
+      ],
+      "volume_mm3": 16417.45
+    },
+    {
+      "name": "camera_pivot_screw_0",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.006,
+      "spec": "M5俯角夹紧轴，侧板与载架间2mm垫片空间",
+      "role": "envelope",
+      "bbox_mm": [
+        380.0,
+        -25.5,
+        974.0359,
+        398.0,
+        -20.5,
+        979.0359
+      ],
+      "volume_mm3": 353.429
+    },
+    {
+      "name": "camera_pivot_ear_1",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.0443,
+      "spec": "6 x 30 x 92；M5 俯角夹紧轴孔",
+      "role": "custom_blank",
+      "bbox_mm": [
+        514.0,
+        -40.0,
+        904.0,
+        520.0,
+        -10.0,
+        996.0
+      ],
+      "volume_mm3": 16417.45
+    },
+    {
+      "name": "camera_pivot_screw_1",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.006,
+      "spec": "M5俯角夹紧轴，侧板与载架间2mm垫片空间",
+      "role": "envelope",
+      "bbox_mm": [
+        496.0,
+        -25.5,
+        974.0359,
+        514.0,
+        -20.5,
+        979.0359
+      ],
+      "volume_mm3": 353.429
+    },
+    {
+      "name": "camera_tilt_carrier",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.0824,
+      "spec": "120 x 100 x 5；30度初始俯角；90x70通窗",
+      "role": "custom_camera_interface",
+      "bbox_mm": [
+        388.0,
+        -70.8013,
+        955.0,
+        512.0,
+        18.3013,
+        1009.3301
+      ],
+      "volume_mm3": 30535.023
+    },
+    {
+      "name": "camera_removable_panel",
+      "kind": "plate",
+      "motion": "fixed",
+      "mass_kg": 0.0969,
+      "spec": "120 x 100 x 3；4-D3.4 / 100x80；中心80x60待相机型号开孔",
+      "role": "custom_camera_interface",
+      "bbox_mm": [
+        390.0,
+        -72.3013,
+        959.3301,
+        510.0,
+        15.8013,
+        1011.9282
+      ],
+      "volume_mm3": 35891.05
+    },
+    {
+      "name": "camera_panel_screw_-50_-40",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.002,
+      "spec": "M3 可拆面板螺钉头包络；螺母与螺杆未详建",
+      "role": "envelope",
+      "bbox_mm": [
+        397.25,
+        -67.5226,
+        965.5532,
+        402.75,
+        -61.2594,
+        970.9013
+      ],
+      "volume_mm3": 71.275
+    },
+    {
+      "name": "camera_panel_screw_-50_40",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.002,
+      "spec": "M3 可拆面板螺钉头包络；螺母与螺杆未详建",
+      "role": "envelope",
+      "bbox_mm": [
+        397.25,
+        1.7594,
+        1005.5532,
+        402.75,
+        8.0226,
+        1010.9013
+      ],
+      "volume_mm3": 71.275
+    },
+    {
+      "name": "camera_panel_screw_50_-40",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.002,
+      "spec": "M3 可拆面板螺钉头包络；螺母与螺杆未详建",
+      "role": "envelope",
+      "bbox_mm": [
+        497.25,
+        -67.5226,
+        965.5532,
+        502.75,
+        -61.2594,
+        970.9013
+      ],
+      "volume_mm3": 71.275
+    },
+    {
+      "name": "camera_panel_screw_50_40",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.002,
+      "spec": "M3 可拆面板螺钉头包络；螺母与螺杆未详建",
+      "role": "envelope",
+      "bbox_mm": [
+        497.25,
+        1.7594,
+        1005.5532,
+        502.75,
+        8.0226,
+        1010.9013
+      ],
+      "volume_mm3": 71.275
+    },
+    {
+      "name": "camera_body_ENVELOPE",
+      "kind": "motor",
+      "motion": "fixed",
+      "mass_kg": 0.1,
+      "spec": "相机外形占位；型号待定，不代表已确认安装孔",
+      "role": "envelope",
+      "bbox_mm": [
+        430.0,
+        -44.8205,
+        944.0192,
+        470.0,
+        7.3205,
+        994.3301
+      ],
+      "volume_mm3": 56000.0
+    },
+    {
+      "name": "camera_lens_ENVELOPE",
+      "kind": "motor",
+      "motion": "fixed",
+      "mass_kg": 0.025,
+      "spec": "镜头朝向工作区，FOV和遮挡待实机验证",
+      "role": "envelope",
+      "bbox_mm": [
+        443.0,
+        -16.0622,
+        937.5289,
+        457.0,
+        3.5622,
+        957.5192
+      ],
+      "volume_mm3": 2309.071
+    },
+    {
+      "name": "Y_limit_0",
+      "kind": "safety",
+      "motion": "fixed",
+      "mass_kg": 0.015,
+      "spec": "限位开关占位",
+      "role": "envelope",
+      "bbox_mm": [
+        45.0,
+        110.0,
+        950.0,
+        60.0,
+        120.0,
+        970.0
+      ],
+      "volume_mm3": 3000.0
+    },
+    {
+      "name": "Y_limit_1",
+      "kind": "safety",
+      "motion": "fixed",
+      "mass_kg": 0.015,
+      "spec": "限位开关占位",
+      "role": "envelope",
+      "bbox_mm": [
+        45.0,
+        875.0,
+        950.0,
+        60.0,
+        885.0,
+        970.0
+      ],
+      "volume_mm3": 3000.0
+    },
+    {
+      "name": "X_limit_0",
+      "kind": "safety",
+      "motion": "Y",
+      "mass_kg": 0.015,
+      "spec": "限位开关占位",
+      "role": "envelope",
+      "bbox_mm": [
+        100.0,
+        450.0,
+        1080.0,
+        115.0,
+        460.0,
+        1100.0
+      ],
+      "volume_mm3": 3000.0
+    },
+    {
+      "name": "X_limit_1",
+      "kind": "safety",
+      "motion": "Y",
+      "mass_kg": 0.015,
+      "spec": "限位开关占位",
+      "role": "envelope",
+      "bbox_mm": [
+        785.0,
+        450.0,
+        1080.0,
+        800.0,
+        460.0,
+        1100.0
+      ],
+      "volume_mm3": 3000.0
+    },
+    {
+      "name": "Z_limit_0",
+      "kind": "safety",
+      "motion": "XY",
+      "mass_kg": 0.015,
+      "spec": "上下限位占位，触发挡块待详设",
+      "role": "envelope",
+      "bbox_mm": [
+        515.0,
+        430.0,
+        880.0,
+        530.0,
+        440.0,
+        900.0
+      ],
+      "volume_mm3": 3000.0
+    },
+    {
+      "name": "Z_limit_1",
+      "kind": "safety",
+      "motion": "XY",
+      "mass_kg": 0.015,
+      "spec": "上下限位占位，触发挡块待详设",
+      "role": "envelope",
+      "bbox_mm": [
+        515.0,
+        430.0,
+        1100.0,
+        530.0,
+        440.0,
+        1120.0
+      ],
+      "volume_mm3": 3000.0
+    }
+  ]
+}

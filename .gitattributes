@@ -3,4 +3,7 @@
 *.stl binary
 *.dxf binary
 *.png binary
+*.SLDPRT binary
+*.SLDASM binary
+*.SLDDRW binary
 *.svg text eol=lf whitespace=-blank-at-eol

@@ -1,0 +1,61 @@
+{
+  "status": "PASS_NATIVE_PLACEMENT_AND_SELF_CONTAINED_PARTS",
+  "reopen": {
+    "errors": 0,
+    "warnings": 128
+  },
+  "parts": [
+    {
+      "part": "z_motor_mount.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.7053025658242404e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "gripper_adapter.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "compute_combo_plate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "module_XY.SLDPRT",
+      "bodies": 18,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "camera_removable_panel.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "module_Y.SLDPRT",
+      "bodies": 25,
+      "centroid_error_mm": 6.821210263296962e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "module_XYZ.SLDPRT",
+      "bodies": 15,
+      "centroid_error_mm": 9.094947017729282e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "module_fixed.SLDPRT",
+      "bodies": 58,
+      "centroid_error_mm": 1.0800249583553523e-11,
+      "external_dependencies": 0
+    }
+  ],
+  "assembly_component_count": 8,
+  "solid_body_count": 120,
+  "max_centroid_error_mm": 1.0800249583553523e-11,
+  "scope": "原生文件位置与依赖核验；不代替机械公差、运动配合和实体样机验证"
+}

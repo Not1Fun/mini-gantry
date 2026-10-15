@@ -1,0 +1,333 @@
+{
+  "project": "迷你龙门架",
+  "revision": "V2",
+  "status": "结构布局设计，未释放加工或采购",
+  "units": "mm, kg, N, N.m, s",
+  "entry_points": {
+    "assembly": "cad/mini_gantry_v2.step",
+    "github_3d_preview": "cad/mini_gantry_v2.stl",
+    "layout_drawing": "drawings/layout.svg",
+    "rendered_views": [
+      "drawings/assembly.png",
+      "drawings/fixed_head.png",
+      "drawings/compute_mount.png",
+      "drawings/camera_mount.png"
+    ],
+    "rebuild_from_repository_root": [
+      "python -m pip install .[solidworks]",
+      "python mechanical/v2/build.py",
+      "python mechanical/v2/layout.py",
+      "python mechanical/v2/check_motion.py",
+      "python mechanical/v2/check_interfaces.py",
+      "python mechanical/v2/build_solidworks.py",
+      "python mechanical/v2/interface_drawing.py",
+      "python mechanical/v2/check_solidworks.py"
+    ],
+    "custom_part_coordinates": "单件 STEP 已平移到自身包络最小点为原点；在总装中的位置参见 bom.json bbox_mm",
+    "stl_purpose": "仅供 GitHub 三维预览，不是整机 3D 打印文件",
+    "solidworks_assembly": "SolidWorks/mini_gantry_v2.SLDASM",
+    "solidworks_scope": "8组件总装，含120实体；4个关键板件为原生草图拉伸，其余按固定机架及XYZ运动组导入多实体模组；固定评审位姿，无运动配合",
+    "interface_drawing": "drawings/mounting_interfaces.svg"
+  },
+  "confirmed": {
+    "application": "轻载搬运与抓取",
+    "travel_xyz_mm": [
+      500,
+      500,
+      500
+    ],
+    "larger_machine_envelope_accepted": true,
+    "linear_drive": "张大头 42 V2，具体电机本体长度和力矩曲线待核对",
+    "available_rotary_motor": "DM-G6220暂不使用",
+    "controller_candidates": [
+      "RoboMaster A 型",
+      "用户所称 R6M5 最小系统板，暂按 RA6M5 理解"
+    ],
+    "rotary_motor_in_use": false,
+    "compute_board_policy": "Jetson Nano与树莓派4B都留孔，同一位置每次仅装一块"
+  },
+  "assumptions": {
+    "gripper_and_workpiece_kg": 1.0,
+    "payload_status": "暂定；用户尚不确定，不构成承载保证",
+    "tcp_min_mm": [
+      200,
+      150,
+      120
+    ],
+    "tcp_max_mm": [
+      700,
+      650,
+      620
+    ],
+    "home_pose_mm": [
+      200,
+      150,
+      620
+    ],
+    "illustration_pose_mm": [
+      450,
+      400,
+      370
+    ],
+    "xy_belt_pitch_mm": 3,
+    "xy_output_pulley_teeth": [
+      20,
+      30
+    ],
+    "xy_motor_reduction": [
+      2,
+      3
+    ],
+    "belt_width_mm": 15,
+    "z_screw_diameter_mm": 16,
+    "z_screw_lead_mm": 5,
+    "z_screw_root_diameter_mm": 13.5,
+    "speed_xyz_mm_s": [
+      150,
+      100,
+      25
+    ],
+    "accel_xyz_mm_s2": [
+      300,
+      200,
+      150
+    ],
+    "friction_xyz_N": [
+      6,
+      8,
+      6
+    ],
+    "efficiency_xy_z": [
+      0.9,
+      0.9
+    ],
+    "z_preload_torque_Nm": 0.03,
+    "torque_factor": 2.0,
+    "beam_elastic_modulus_N_mm2": 69000,
+    "beam_I_weak_mm4": 170000,
+    "beam_I_strong_mm4": 650000,
+    "beam_inertia_status": "型材惯性矩估值，选定品牌后替换；手算不含连接柔度"
+  },
+  "structure": {
+    "frame_plan_mm": [
+      900,
+      900
+    ],
+    "y_rail_base_z_mm": 940,
+    "bridge_beam_bottom_z_mm": 1000,
+    "y_rails": "2 x HGR15 820 mm，左右各 2 滑块；供应商安装尺寸待确认",
+    "x_rails": "2 x HGR15 700 mm，前表面上下排列，每轨 2 滑块",
+    "z_rails": "2 x HGR15 740 mm，轨道随滑枕升降，固定滑块中心高 920 / 1040 mm；两轨横向中心距60 mm",
+    "z_ram": "4080 型材 800 mm，80 mm 面安装双导轨；使用铣平安装条",
+    "z_drive": "1605 滚珠丝杆随滑枕移动，螺母固定于 X 滑座；上下支承，顶部电机和失电制动器随动",
+    "y_drive": "左右双同步带，单电机经 3:1 减速和 D16 贯通轴机械同步，输出轮30T",
+    "x_drive": "单同步带，2:1 减速；皮带布置在横梁后上方，跨梁夹块连接 X 滑座，避开 Z 丝杆",
+    "bracing": "背面和左右侧面 M8 拉杆交叉撑，预留可调张紧件；正面保持取放通道",
+    "rail_alignment": "型材上设置安装条；以一侧为基准找正另一侧，桥架方正后锁紧同步轴",
+    "z_drop_prevention": "独立失电制动器装在丝杆上端轴伸，壳体接滑枕；不占用电机尾部驱动板位置；不得以步进保持力或滚珠丝杆自锁代替",
+    "fixed_head": "固定夹爪转接座：80x60x6顶板、两片开窗4mm侧板、D70x8固定接口盘；保留原TCP定义",
+    "gripper_interface": "D70x8；PCD50 / 4-D4.5；中央D8；夹爪实物接口待确认"
+  },
+  "controls": {
+    "preferred": "RoboMaster A 型",
+    "RM_A_verified": {
+      "pcb_plan_mm": [
+        85,
+        58
+      ],
+      "maximum_input_voltage_V": 26,
+      "CAN_controllers": 2,
+      "note": "官网 CAN1/CAN2 的多个接口是同一控制器的连接口，不是独立总线数量"
+    },
+    "supply": "24 V 候选；容量和保险规格待电机本体电流及同时运动工况确定",
+    "bus_A": "CAN1 -> 3 台张大头 V2；实际 CAN 收发模块和引脚复用按实物确认",
+    "bus_B": "CAN2预留，当前无DM电机",
+    "termination": "每条物理总线两端各 120 ohm，先核对电机和主板自带终端，避免重复",
+    "control_board_reserve_mm": [
+      240,
+      180,
+      60
+    ],
+    "board_mount": "下部背面托板；只做通用槽孔，不臆造 RM A / 最小系统板安装孔",
+    "alternative": "若换 RA6M5，需确认具体芯片后缀、封装引脚与两路 CAN 收发器；MCU 支持不代表最小系统板已带收发器",
+    "limits": "XYZ 原点/行程开关；Z 轴上下独立限位；硬件急停联锁运动电源并按顺序抱闸",
+    "scope": "本版仅结构、接口与布置；未写入或运行任何控制固件"
+  },
+  "release_gates": [
+    "确认夹爪、物料质量和偏心距离；重算移动质量、力矩和挠度",
+    "实物核对 42 电机本体长度、额定电流、轴径和 200/300 rpm 可用力矩曲线",
+    "选定导轨、丝杆、支承座、同步带和型材供应商后更新精确接口",
+    "完成 Z 制动器型号、安装和失电保持试验；不能直接按候选保持力矩采购",
+    "完成整机干涉、拖链弯曲半径、夹爪真实外形及全行程走线检查",
+    "完成样机满载、重复定位、热态、急停和断电试验",
+    "确认42电机实际机身长度和5/8mm输出轴，适配联轴器和皮带轮孔径",
+    "核对具体Nano载板与实际树莓派4B板底元件，闲置孔不装支柱",
+    "确定相机型号后补充可拆面板中央安装孔，核验视野和标定",
+    "完成固定夹爪转接板的紧固孔与公差细化"
+  ],
+  "model_scope": "采购件是简化实体包络；同步带未逐齿建模；型材截面为等效薄壁示意；紧固件未逐颗建模；概念孔位只用于结构评审",
+  "sources": [
+    {
+      "id": "ZDT_V2",
+      "url": "https://blog.csdn.net/zhangdatou666/article/details/135709033",
+      "use": "厂家驱动手册；X42 V2、供电和控制接口"
+    },
+    {
+      "id": "RM_A",
+      "url": "https://www.robomaster.com/zh-CN/products/components/general/development-board",
+      "use": "主控候选和官方资料入口"
+    },
+    {
+      "id": "RA6M5",
+      "url": "https://renesas.github.io/fsp/group___c_a_n_f_d.html",
+      "use": "RA6M5 CAN 通道能力；不代表实际最小系统板接口"
+    },
+    {
+      "id": "HIWIN",
+      "url": "https://www.hiwin.com/wp-content/uploads/Ballscrew-Catalog.pdf",
+      "use": "丝杆临界转速公式和支承系数"
+    },
+    {
+      "id": "GATES",
+      "url": "https://gates.com/content/dam/gates/home/knowledge-center/mectrol/whitepapers/timing-belt-theory-white-paper.pdf",
+      "use": "皮带力、加速度与传动选型方法"
+    },
+    {
+      "id": "THOMSON",
+      "url": "https://www.thomsonlinear.com/en/support/tips/can-ball-screws-be-used-in-vertical-applications-without-back-driving",
+      "use": "垂直滚珠丝杆的反驱问题"
+    },
+    {
+      "id": "PI4B",
+      "url": "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-mechanical-drawing.pdf",
+      "use": "4B官方尺寸图，58x49孔距；已渲染核对"
+    },
+    {
+      "id": "NANO_MOUNT",
+      "url": "https://cdn.shopifycdn.net/s/files/1/0604/5905/7341/files/Holybro_X650_Assembly_Guide_V1.1.pdf?v=1718154187",
+      "use": "安装板厂家图纸第2页，Nano86x58与Pi58x49孔距；已渲染核对"
+    }
+  ],
+  "change_summary": [
+    "取消DM-G6220及旋转腕轴承组件，使用固定轻量接口",
+    "增加Nano与树莓派4B共用孔板，同时仅装一块",
+    "增加顶部前横梁可拆摄像头面板",
+    "按用户电机尺寸图修正电机法兰、止口、D轴和驱动板包络",
+    "提供SolidWorks原生装配和零件"
+  ],
+  "stepper_interface": {
+    "source": "用户2026-10-15提供的三张商品尺寸图；未上传原始购物截图",
+    "flange_mm": [
+      42,
+      42
+    ],
+    "mount_pitch_mm": [
+      31,
+      31
+    ],
+    "threads": "4-M3x0.5-6H，孔深4.0mm以上",
+    "boss_diameter_mm": 22,
+    "boss_height_mm": 2,
+    "shaft_diameter_mm": 5,
+    "shaft_options_mm": [
+      5,
+      8
+    ],
+    "shaft_projection_from_front_face_mm": 22.5,
+    "shaft_flat_length_mm": 18,
+    "D_flat_across_mm": 4.5,
+    "driver_pcb_mm": [
+      39,
+      39
+    ],
+    "driver_rear_length_mm": 11,
+    "driver_top_extent_mm": 43.7,
+    "body_length_options_mm": [
+      23,
+      28,
+      34,
+      40,
+      48,
+      60
+    ],
+    "body_length_for_clearance_mm": 60,
+    "body_model_for_mass": "42ZDT60A",
+    "body_mass_kg": 0.478,
+    "driver_mass_assumption_kg": 0.05,
+    "holding_torque_Nm": 0.7,
+    "rated_phase_current_A": 2,
+    "actual_variant_status": "机身长度与5/8mm轴径尚未确认；60mm为包络预留，不能据保持力矩证明高速带载能力",
+    "connector_keepout_mm": 20,
+    "mass_note": "60mm电机本体478g来自用户表格，驱动板50g为保守估值；实际型号待确认"
+  },
+  "compute_mount": {
+    "plate_mm": [
+      160,
+      170,
+      3
+    ],
+    "origin_world_mm": [
+      140,
+      903,
+      160
+    ],
+    "pattern_center_local_mm": [
+      80,
+      105
+    ],
+    "hole_diameter_mm": 2.9,
+    "pi4b_pitch_mm": [
+      58,
+      49
+    ],
+    "jetson_nano_pitch_mm": [
+      86,
+      58
+    ],
+    "board_policy": "同一空间只选一块，禁止两组支柱同时装齐",
+    "default_configuration": "pi4b",
+    "standoff": "4 x M2.5 / 10mm绝缘支柱",
+    "local_axes": "局部X对应全局X，局部Y对应全局Z；板厚沿全局-Y",
+    "jetson_scope": "常见官方Nano载板86x58孔距；第三方载板或Orin Nano不能默认兼容，购买后复核",
+    "cooling": "板后10mm绝缘间隔、48x34通窗；保留USB/网口/散热器出线空间",
+    "source_pi": "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-mechanical-drawing.pdf",
+    "source_nano": "https://cdn.shopifycdn.net/s/files/1/0604/5905/7341/files/Holybro_X650_Assembly_Guide_V1.1.pdf?v=1718154187"
+  },
+  "camera_mount": {
+    "location": "顶部前横梁外侧，固定式观察工作区",
+    "pivot_world_mm": [
+      450,
+      -23,
+      976.535898
+    ],
+    "initial_tilt_from_down_deg": 30,
+    "panel_mm": [
+      120,
+      100,
+      3
+    ],
+    "carrier_mm": [
+      120,
+      100,
+      5
+    ],
+    "panel_fasteners": "4 x M3，100x80孔距，通孔D3.4；拆面板不拆固定底座",
+    "camera_custom_area_mm": [
+      80,
+      60
+    ],
+    "camera_holes_status": "相机型号未知，中央区域留白；具体孔位/镜头孔须按所选相机补充",
+    "camera_envelope_assumption_mm": [
+      40,
+      40,
+      35
+    ],
+    "lens_envelope_assumption_mm": [
+      14,
+      15
+    ],
+    "calibration": "装好相机后验证视野、运动遮挡及标定；固定位置不保证全空间无盲区",
+    "cabling": "沿固定框架布线，不增加Z轴负载",
+    "tilt_carrier": "侧边带独立转轴凸耳，M5轴线穿过实心凸耳；与可拆面板保留间隙"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "checks": {
+    "pi4b_holes_clear": true,
+    "pi4b_single_board": true,
+    "pi4b_four_standoffs": true,
+    "pi4b_no_DM": true,
+    "pi4b_fixed_accessories": true,
+    "jetson_nano_holes_clear": true,
+    "jetson_nano_single_board": true,
+    "jetson_nano_four_standoffs": true,
+    "jetson_nano_no_DM": true,
+    "jetson_nano_fixed_accessories": true,
+    "camera_four_mount_holes": true,
+    "camera_frame_panel_clear": true,
+    "camera_sampled_removal_path": true
+  },
+  "camera_removal_collisions": [],
+  "pi4b_hole_centers_local_mm": [
+    [
+      51.0,
+      80.5
+    ],
+    [
+      51.0,
+      129.5
+    ],
+    [
+      109.0,
+      80.5
+    ],
+    [
+      109.0,
+      129.5
+    ]
+  ],
+  "nano_hole_centers_local_mm": [
+    [
+      37.0,
+      76.0
+    ],
+    [
+      37.0,
+      134.0
+    ],
+    [
+      123.0,
+      76.0
+    ],
+    [
+      123.0,
+      134.0
+    ]
+  ],
+  "z_mass_v1_kg": 9.738,
+  "z_mass_v2_kg": 8.126,
+  "z_mass_reduction_estimate_kg": 1.612,
+  "scope": "板卡孔位几何、互斥配置、移除4颗面板螺钉后的5个拆卸位置；不证明实际相机兼容、视野、线缆或板卡散热"
+}

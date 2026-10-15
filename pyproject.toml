@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mini-gantry-cad"
-version = "0.1.0"
-description = "500 mm XYZ gantry mechanical layout with DM-G6220 yaw wrist"
+version = "0.2.0"
+description = "500 mm XYZ gantry with fixed gripper, shared compute mount and removable camera panel"
 requires-python = ">=3.11"
 dependencies = ["cadquery==2.8.0", "numpy>=2,<3", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+solidworks = ["pywin32>=306; platform_system == 'Windows'"]
 
 [tool.setuptools]
 py-modules = []
