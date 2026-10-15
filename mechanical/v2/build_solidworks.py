@@ -9,6 +9,7 @@ import os
 import hashlib
 import gc
 import shutil
+import faulthandler
 import pythoncom
 import win32com.client
 from win32com.client import dynamic
@@ -16,10 +17,14 @@ import cadquery as cq
 from build import ROOT, CFG, COLORS, make_model, bounds
 from accessories import holes
 
-OUT=ROOT/'SolidWorks'
+OUT=ROOT/'SolidWorksV21'
 IMPORT=ROOT/'cad'/'sw_import'
+PREFIX='v21_'
+ASSEMBLY_NAME='mini_gantry_v2_1.SLDASM'
 TEMPLATES=Path(os.environ.get('PROGRAMDATA',r'C:\ProgramData'))/'SOLIDWORKS'/'SOLIDWORKS 2024'/'templates'
 SW_SESSION=None
+SW_PREFERENCES={}
+DEBUG=os.environ.get('CAD_DEBUG')=='1'
 
 
 def prop(obj,name):
@@ -97,11 +102,16 @@ def feature_spec(name,pose):
         return r,cs,[],3 if panel else 5,[1,0,0,0,c,s,0,-s,c],[390,-25-50*c-dz*s,980-50*s+dz*c]
     if name=='z_motor_mount':
         cs=[(40,36,12)]+[(40+a,36+b,1.75) for a in (-15.5,15.5) for b in (-15.5,15.5)]
+        cs += [(xx,yy,2.25) for xx in (5,75) for yy in (7,48)]
         return [(0,0,80,60)],cs,[],7,identity,[x-40,yc-110,z+1063]
     if name=='gripper_adapter':
         cs=[(35,35,35),(35,35,4)]+[(35+25*math.cos(a*math.pi/2),35+25*math.sin(a*math.pi/2),2.25) for a in range(4)]
         return [],cs,[],8,identity,[x-35,y-35,z+60]
     return None
+
+
+def standalone(p,pose):
+    return feature_spec(p['name'],pose) is not None or p['role']=='custom_motor_bracket'
 
 
 def main():
@@ -111,6 +121,12 @@ def main():
     except Exception:sw=dynamic.Dispatch('SldWorks.Application')
     SW_SESSION=sw
     sw.Visible=True;sw.UserControl=True;sw.CommandInProgress=True
+    for n in (8,9):SW_PREFERENCES[('string',n)]=sw.GetUserPreferenceStringValue(n)
+    for n in (111,291,690,691):SW_PREFERENCES[('toggle',n)]=sw.GetUserPreferenceToggle(n)
+    sw.SetUserPreferenceStringValue(8,str(TEMPLATES/'gb_part.prtdot'))
+    sw.SetUserPreferenceStringValue(9,str(TEMPLATES/'gb_assembly.asmdot'))
+    sw.SetUserPreferenceToggle(111,True)
+    for n in (291,690,691):sw.SetUserPreferenceToggle(n,False)
     OUT.mkdir(exist_ok=True);IMPORT.mkdir(parents=True,exist_ok=True)
     old_path=ROOT/'validation'/'solidworks.json'
     old=json.loads(old_path.read_text(encoding='utf-8')) if old_path.exists() else {}
@@ -118,21 +134,24 @@ def main():
     for own in (prop(sw,'GetDocuments') or []):
         path=prop(own,'GetPathName')
         if path and (Path(path).parent==OUT or Path(path).parent==IMPORT):sw.CloseDoc(prop(own,'GetTitle'))
+    anchor=sw.NewDocument(str(TEMPLATES/'gb_part.prtdot'),0,0,0)
+    if anchor is None:raise RuntimeError('Cannot create session anchor')
+    anchor_title=prop(anchor,'GetTitle')
     report={'status':'BUILDING','solidworks_revision':str(prop(sw,'RevisionNumber')),'parts':[],
             'assembly_constraints':'全部组件固定在评审位姿；未建立可驱动运动配合',
-            'model_scope':'4个关键接口板采用原生草图拉伸；其余按固定机架及XYZ运动组导入多实体模组；参数化再生成源为build.py'}
+            'model_scope':'4块接口板为原生草图拉伸；电机安装支架单独成件；其余按固定机架及XYZ组保存为导入实体'}
     report_path=ROOT/'validation'/'solidworks.json'
     def checkpoint():report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     pose=CFG['assumptions']['illustration_pose_mm'];original=make_model(pose)
-    parts=[p for p in original if feature_spec(p['name'],pose)]
+    parts=[p for p in original if standalone(p,pose)]
     for group in ('fixed','Y','XY','XYZ'):
-        members=[p for p in original if p['motion']==group and not feature_spec(p['name'],pose)]
+        members=[p for p in original if p['motion']==group and not standalone(p,pose)]
         parts.append({'name':'module_'+group,'shape':cq.Compound.makeCompound([p['shape'] for p in members]),
                       'kind':'frame' if group=='fixed' else 'plate','spec':group+' 运动模组 / 简化实体',
                       'members':[p['name'] for p in members]})
     report['source_component_count']=len(original)
     for i,p in enumerate(parts):
-        name=p['name'];path=OUT/(name+'.SLDPRT');spec=feature_spec(name,pose)
+        name=p['name'];path=OUT/(PREFIX+name+'.SLDPRT');spec=feature_spec(name,pose)
         vv,ff=p['shape'].tessellate(.2,.15)
         triangles=sorted(tuple(sorted(tuple(round(q,6) for q in vv[j].toTuple()) for j in face)) for face in ff)
         shape_hash=hashlib.sha256(json.dumps(triangles,separators=(',',':')).encode()).hexdigest()
@@ -146,13 +165,16 @@ def main():
         else:
             bb=bounds(p['shape']);xyz=bb[:3];rotation=[1,0,0,0,1,0,0,0,1]
             local=p['shape'].translate(tuple(-v for v in xyz))
-            src=IMPORT/(name+'.step');cq.exporters.export(local,str(src))
+            src=IMPORT/(PREFIX+name+'.step');cq.exporters.export(local,str(src))
+            if DEBUG:print('IMPORT_DATA',name,flush=True)
             data=sw.GetImportFileData(str(src))
             if data is not None:data.MapConfigurationData=False
+            if DEBUG:print('LOAD_FILE',name,flush=True)
             obj,e=sw._oleobj_.InvokeTypes(sw._oleobj_.GetIDsOfNames('LoadFile4'),0,1,(9,0),
                 ((8,1),(8,1),(9,1),(16387,2)),str(src),'r',data)
             if obj is None or e:raise RuntimeError(('LoadFile4',name,e))
             doc=dynamic.Dispatch(obj);method='imported_envelope'
+            if DEBUG:print('LOADED',name,prop(doc,'GetType'),flush=True)
             if prop(doc,'GetType')==2:
                 imported_title=prop(doc,'GetTitle')
                 previous=sw.GetUserPreferenceIntegerValue(201)
@@ -166,7 +188,7 @@ def main():
         rgb=[int(color[i:i+2],16)/255 for i in (0,2,4)]
         doc.MaterialPropertyValues=doubles(rgb+[.5,.75,.25,.15,0,0])
         pm=doc.Extension.CustomPropertyManager('')
-        pm.Add3('DesignStatus',30,'V2_REVIEW_ONLY_NOT_RELEASED',1)
+        pm.Add3('DesignStatus',30,'V2_1_MOTOR_MOUNTS_REVIEW_ONLY',1)
         pm.Add3('FeatureMethod',30,method,1)
         pm.Add3('PartRole',30,p['spec'],1)
         bodies=doc.GetBodies2(0,False) or []
@@ -174,6 +196,7 @@ def main():
         expected=p['shape'].Volume()
         if abs(volume-expected)>max(.5,expected*1e-6):raise RuntimeError(('volume',name,volume,expected))
         doc.ForceRebuild3(False)
+        if DEBUG:print('SAVE_PART',name,flush=True)
         rec=save(doc,path)
         rec.update(name=name,file=path.name,method=method,bodies=len(bodies),volume_mm3=volume,
                    expected_volume_mm3=expected,rotation=rotation,xyz_mm=xyz,geometry_sha256=shape_hash,
@@ -182,6 +205,7 @@ def main():
         sw.CloseDoc(prop(doc,'GetTitle'))
         doc=None;bodies=None;gc.collect()
         print('PART',i+1,'/',len(parts),name,flush=True)
+    sw.CloseDoc(anchor_title)
     doc=sw.NewDocument(str(TEMPLATES/'gb_assembly.asmdot'),0,0,0)
     if doc is None:raise RuntimeError('assembly template unavailable')
     mu=prop(sw,'GetMathUtility');mu._FlagAsMethod('CreateTransform')
@@ -202,7 +226,7 @@ def main():
         if (i+1)%20==0:print('ASSEMBLY',i+1,flush=True)
     view.EnableGraphicsUpdate=True;doc.ForceRebuild3(False)
     doc.ShowNamedView2('*Isometric',7);prop(doc,'ViewZoomtofit2')
-    final=OUT/'mini_gantry_v2.SLDASM';report['save']=save(doc,final)
+    final=OUT/ASSEMBLY_NAME;report['save']=save(doc,final)
     sw.CloseDoc(prop(doc,'GetTitle'))
     opened,state=open_native(sw,final,2)
     comps=opened.GetComponents(False) or []
@@ -215,7 +239,7 @@ def main():
                   native_feature_parts=sum(p['method']=='native_sketch_extrusion' for p in report['parts']),
                   body_count=sum(p['bodies'] for p in report['parts']))
     checkpoint()
-    scratch=ROOT.parents[2]/'sw-v2-intermediates';scratch.mkdir(exist_ok=True)
+    scratch=ROOT.parents[2]/'sw-v21-intermediates';scratch.mkdir(exist_ok=True)
     keep={p['file'] for p in report['parts']}
     for path in OUT.glob('*.SLDPRT'):
         if path.name not in keep:
@@ -224,7 +248,7 @@ def main():
             if destination.exists():destination=destination.with_name('previous_'+destination.name)
             shutil.move(str(path),str(destination))
     for path in IMPORT.glob('*.step'):
-        if path.stem not in {p['name'] for p in parts if p['name'].startswith('module_')}:
+        if path.stem.startswith(PREFIX) and path.stem not in {PREFIX+p['name'] for p in parts if p['name'].startswith('module_')}:
             destination=scratch/(path.stem+'_import.step')
             if not destination.exists():shutil.move(str(path),str(destination))
     sw.Visible=True;sw.UserControl=True
@@ -233,8 +257,15 @@ def main():
 
 
 if __name__=='__main__':
+    if DEBUG:faulthandler.dump_traceback_later(45,repeat=True)
     try:main()
     finally:
+        if DEBUG:faulthandler.cancel_dump_traceback_later()
         if SW_SESSION is not None:
+            for (kind,n),value in SW_PREFERENCES.items():
+                try:
+                    if kind=='string':SW_SESSION.SetUserPreferenceStringValue(n,value)
+                    else:SW_SESSION.SetUserPreferenceToggle(n,value)
+                except Exception:pass
             try:SW_SESSION.CommandInProgress=False
             except Exception:pass

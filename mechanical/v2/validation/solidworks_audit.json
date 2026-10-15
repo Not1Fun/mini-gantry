@@ -6,56 +6,86 @@
   },
   "parts": [
     {
-      "part": "z_motor_mount.SLDPRT",
+      "part": "v21_z_motor_mount.SLDPRT",
       "bodies": 1,
-      "centroid_error_mm": 1.7053025658242404e-13,
+      "centroid_error_mm": 4.547473508864641e-13,
       "external_dependencies": 0
     },
     {
-      "part": "gripper_adapter.SLDPRT",
+      "part": "v21_z_motor_lower_saddle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.8815171642927453e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_camera_removable_panel.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_module_XYZ.SLDPRT",
+      "bodies": 29,
+      "centroid_error_mm": 3.069544618483633e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_x_motor_bracket.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.0231815394945443e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_compute_combo_plate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_z_motor_standoff_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_module_fixed.SLDPRT",
+      "bodies": 64,
+      "centroid_error_mm": 6.59383658785373e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_y_motor_bracket.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.0800249583553523e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_module_Y.SLDPRT",
+      "bodies": 31,
+      "centroid_error_mm": 2.0463630789890885e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_z_motor_standoff_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v21_gripper_adapter.SLDPRT",
       "bodies": 1,
       "centroid_error_mm": 1.1368683772161603e-13,
       "external_dependencies": 0
     },
     {
-      "part": "compute_combo_plate.SLDPRT",
-      "bodies": 1,
-      "centroid_error_mm": 3.410605131648481e-13,
-      "external_dependencies": 0
-    },
-    {
-      "part": "module_XY.SLDPRT",
+      "part": "v21_module_XY.SLDPRT",
       "bodies": 18,
       "centroid_error_mm": 3.410605131648481e-13,
       "external_dependencies": 0
-    },
-    {
-      "part": "camera_removable_panel.SLDPRT",
-      "bodies": 1,
-      "centroid_error_mm": 3.410605131648481e-13,
-      "external_dependencies": 0
-    },
-    {
-      "part": "module_Y.SLDPRT",
-      "bodies": 25,
-      "centroid_error_mm": 6.821210263296962e-13,
-      "external_dependencies": 0
-    },
-    {
-      "part": "module_XYZ.SLDPRT",
-      "bodies": 15,
-      "centroid_error_mm": 9.094947017729282e-13,
-      "external_dependencies": 0
-    },
-    {
-      "part": "module_fixed.SLDPRT",
-      "bodies": 58,
-      "centroid_error_mm": 1.0800249583553523e-11,
-      "external_dependencies": 0
     }
   ],
-  "assembly_component_count": 8,
-  "solid_body_count": 120,
-  "max_centroid_error_mm": 1.0800249583553523e-11,
+  "assembly_component_count": 13,
+  "solid_body_count": 151,
+  "max_centroid_error_mm": 1.8815171642927453e-11,
   "scope": "原生文件位置与依赖核验；不代替机械公差、运动配合和实体样机验证"
 }

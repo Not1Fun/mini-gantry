@@ -40,7 +40,7 @@ def frame(ax,side=False):
 def main():
     out=ROOT/"drawings";out.mkdir(exist_ok=True)
     fig=plt.figure(figsize=(16,11.3),facecolor="white")
-    fig.text(.04,.95,"迷你龙门架 V2｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
+    fig.text(.04,.95,"迷你龙门架 V2.1｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
     fig.text(.04,.914,"三轴有效行程 500 × 500 × 500 mm · 固定夹爪接口 · 夹爪与物料暂按 1 kg",fontsize=12,color="#536e7f")
     a=fig.add_axes([.04,.20,.32,.68]); frame(a)
     a.set_title("正视包络图  /  X–Z",fontsize=12,color=C["ink"])
@@ -103,10 +103,10 @@ def main():
         ("同一托板，两组孔，每次只装一块",False),
         ("控制与接口",True),
         ("首选 RM A 板，预留替换托板",False),
-        ("CAN1：张大头 42 V2 × 3",False),
+        ("CAN1：张大头 42 V2.1 × 3",False),
         ("前上方120×100可拆摄像头面板",False),
         ("RA6M5 候选需核对型号及收发器",False),
-        ("4颗M3固定；相机孔位待型号确认",False)]
+        ("4颗M3固定；用户打印相机适配板",False)]
     yy=1
     for s,bold in lines:
         t.text(0,yy,s,fontsize=11 if bold else 9.4,weight="bold" if bold else "normal",color=C["ink"] if bold else "#526d7d",va="top")
@@ -114,7 +114,7 @@ def main():
     fig.text(.04,.14,"设计边界",fontsize=12,color="#a85830",weight="bold")
     fig.text(.04,.109,"这是结构布局评审模型，采购件为简化包络。没有完成全装配干涉排除、紧固件详设、供应商孔位、公差链或实物承载验收。",fontsize=10,color="#526d7d")
     fig.text(.04,.080,"下料前需确认负载和电机力矩曲线，并冻结导轨、丝杆支承、皮带轮、制动器及夹爪型号。参数与证据记录在同目录 design.json / validation。",fontsize=10,color="#526d7d")
-    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2｜2026-10-15",fontsize=10,color="#526d7d")
+    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2.1｜2026-10-15",fontsize=10,color="#526d7d")
     fig.savefig(out/"layout.svg",facecolor="white")
     fig.savefig(out/"layout.png",dpi=160,facecolor="white")
     plt.close(fig)

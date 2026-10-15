@@ -5,13 +5,13 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 87853,
+      "bytes": 99996,
       "name": "z_motor_mount",
-      "file": "z_motor_mount.SLDPRT",
+      "file": "v21_z_motor_mount.SLDPRT",
       "method": "native_sketch_extrusion",
       "bodies": 1,
-      "volume_mm3": 30163.88303513616,
-      "expected_volume_mm3": 30163.88303513616,
+      "volume_mm3": 29718.56227648981,
+      "expected_volume_mm3": 29718.56227648981,
       "rotation": [
         1,
         0,
@@ -28,7 +28,7 @@
         390,
         1433
       ],
-      "geometry_sha256": "1dceff10a77016769ef0eb72f930487b12860cc4a68eb3906130a93f2565bafe",
+      "geometry_sha256": "f19a1724ad26c9aec0ec6bb0d43935faf45a89222a9e74502922c1648ba66e07",
       "members": [
         "z_motor_mount"
       ]
@@ -36,12 +36,167 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 90809,
+      "bytes": 100350,
+      "name": "x_motor_bracket",
+      "file": "v21_x_motor_bracket.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 35955.66065062074,
+      "expected_volume_mm3": 35955.660650622376,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        50.0,
+        480.0,
+        1079.9981
+      ],
+      "geometry_sha256": "709b0cca58be48a52496a9eb463cbdb7e27562ad66fdcafec9b99b977a6aefd6",
+      "members": [
+        "x_motor_bracket"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83836,
+      "name": "y_motor_bracket",
+      "file": "v21_y_motor_bracket.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 102324.42166215449,
+      "expected_volume_mm3": 102324.42166215091,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        40.0,
+        840.0,
+        899.9981
+      ],
+      "geometry_sha256": "557d012049710bc09a9ff9dfeca88d648e9c4f950680cb90255728f16fd008fa",
+      "members": [
+        "y_motor_bracket"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82310,
+      "name": "z_motor_lower_saddle",
+      "file": "v21_z_motor_lower_saddle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46593.48091740016,
+      "expected_volume_mm3": 46593.48091736987,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        410.0,
+        363.9981,
+        1320.0
+      ],
+      "geometry_sha256": "9a1e0c5598b1df0fb5dcce357bcc913077e7aabb75df7a63d5a04bfff25a05c6",
+      "members": [
+        "z_motor_lower_saddle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66432,
+      "name": "z_motor_standoff_0",
+      "file": "v21_z_motor_standoff_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39697.34517542557,
+      "expected_volume_mm3": 39697.34517542564,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        410.0,
+        390.0,
+        1365.9986
+      ],
+      "geometry_sha256": "10f8e3fe5ab9768ded6f01ae309d9f0adfc57b06a719e22dc884cda4e1a27907",
+      "members": [
+        "z_motor_standoff_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66605,
+      "name": "z_motor_standoff_1",
+      "file": "v21_z_motor_standoff_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39697.34517542557,
+      "expected_volume_mm3": 39697.34517542564,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        480.0,
+        390.0,
+        1365.9986
+      ],
+      "geometry_sha256": "910f05578fa4755485d597102ff686891e7e30691407ba90ccc638576b96d4cf",
+      "members": [
+        "z_motor_standoff_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 91788,
       "name": "gripper_adapter",
-      "file": "gripper_adapter.SLDPRT",
+      "file": "v21_gripper_adapter.SLDPRT",
       "method": "native_sketch_extrusion",
       "bodies": 1,
-      "volume_mm3": 29876.546135638928,
+      "volume_mm3": 29876.54613563893,
       "expected_volume_mm3": 29876.546135638935,
       "rotation": [
         1,
@@ -67,12 +222,12 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 91745,
+      "bytes": 92475,
       "name": "compute_combo_plate",
-      "file": "compute_combo_plate.SLDPRT",
+      "file": "v21_compute_combo_plate.SLDPRT",
       "method": "native_sketch_extrusion",
       "bodies": 1,
-      "volume_mm3": 75726.42546804319,
+      "volume_mm3": 75726.42546804316,
       "expected_volume_mm3": 75726.42546804328,
       "rotation": [
         1,
@@ -98,9 +253,9 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 72008,
+      "bytes": 71885,
       "name": "camera_removable_panel",
-      "file": "camera_removable_panel.SLDPRT",
+      "file": "v21_camera_removable_panel.SLDPRT",
       "method": "native_sketch_extrusion",
       "bodies": 1,
       "volume_mm3": 35891.0495667735,
@@ -129,13 +284,13 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 493781,
+      "bytes": 462752,
       "name": "module_fixed",
-      "file": "module_fixed.SLDPRT",
+      "file": "v21_module_fixed.SLDPRT",
       "method": "imported_envelope",
-      "bodies": 58,
-      "volume_mm3": 9514864.709217478,
-      "expected_volume_mm3": 9514864.7092173,
+      "bodies": 64,
+      "volume_mm3": 9516073.56265461,
+      "expected_volume_mm3": 9516073.562654473,
       "rotation": [
         1,
         0,
@@ -152,7 +307,7 @@
         -70.8013,
         -0.0
       ],
-      "geometry_sha256": "66d3d7a439fe9fe03e057820ad9e3cfeeb77e9d486c0e41155968b84ed6e99b6",
+      "geometry_sha256": "7213ece6641f719f2943b46523a9bdf8d0e1f237cdd3d1ee1b914ef5635a3a99",
       "members": [
         "base_cross_0",
         "top_cross_0",
@@ -189,6 +344,12 @@
         "y_sync_shaft",
         "y_reducer",
         "motor_Y_ZDT42V2",
+        "y_motor_m3_0",
+        "y_motor_m3_1",
+        "y_motor_m3_2",
+        "y_motor_m3_3",
+        "y_mount_m5_0",
+        "y_mount_m5_1",
         "controller_tray",
         "RM_A_or_RA6M5_RESERVE",
         "rear_accessory_crossbar",
@@ -217,13 +378,13 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 242734,
+      "bytes": 248284,
       "name": "module_Y",
-      "file": "module_Y.SLDPRT",
+      "file": "v21_module_Y.SLDPRT",
       "method": "imported_envelope",
-      "bodies": 25,
-      "volume_mm3": 1887633.781820477,
-      "expected_volume_mm3": 1887633.7818204742,
+      "bodies": 31,
+      "volume_mm3": 1888842.6352576509,
+      "expected_volume_mm3": 1888842.6352576492,
       "rotation": [
         1,
         0,
@@ -240,7 +401,7 @@
         405.0,
         949.0
       ],
-      "geometry_sha256": "c05278c0e7937b01f8bef0289a2142fed8224d871b659e5081d8168fb594e091",
+      "geometry_sha256": "c352bab12b46e20cd5704f4c4b2bc163158e4971a9f934fb71b3cf80155c70fe",
       "members": [
         "y_block_0_0",
         "y_block_0_1",
@@ -265,6 +426,12 @@
         "x_belt_1",
         "x_reducer",
         "motor_X_ZDT42V2",
+        "x_motor_m3_0",
+        "x_motor_m3_1",
+        "x_motor_m3_2",
+        "x_motor_m3_3",
+        "x_mount_m5_0",
+        "x_mount_m5_1",
         "X_limit_0",
         "X_limit_1"
       ]
@@ -272,9 +439,9 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 173353,
+      "bytes": 160160,
       "name": "module_XY",
-      "file": "module_XY.SLDPRT",
+      "file": "v21_module_XY.SLDPRT",
       "method": "imported_envelope",
       "bodies": 18,
       "volume_mm3": 996446.1035085126,
@@ -320,13 +487,13 @@
     {
       "errors": 0,
       "warnings": 0,
-      "bytes": 199748,
+      "bytes": 265136,
       "name": "module_XYZ",
-      "file": "module_XYZ.SLDPRT",
+      "file": "v21_module_XYZ.SLDPRT",
       "method": "imported_envelope",
-      "bodies": 15,
-      "volume_mm3": 1629264.4671420488,
-      "expected_volume_mm3": 1629264.4671420502,
+      "bodies": 29,
+      "volume_mm3": 1580919.8357442904,
+      "expected_volume_mm3": 1580919.8357442839,
       "rotation": [
         1,
         0,
@@ -340,10 +507,10 @@
       ],
       "xyz_mm": [
         410.0,
-        370.0,
+        359.997,
         370.0
       ],
-      "geometry_sha256": "420c31962c2c112055b7ab01c065793f64a2c4318e4ee039680617598bf584a2",
+      "geometry_sha256": "ae39cab5adda60cc3e3d5aa036226840e0097f33932c43eb8a2c2937634ee105",
       "members": [
         "z_ram_4080",
         "z_rail_0",
@@ -354,8 +521,22 @@
         "z_coupling",
         "motor_Z_ZDT42V2",
         "z_brake_reserve",
-        "z_motor_standoff_0",
-        "z_motor_standoff_1",
+        "z_motor_m3_0",
+        "z_motor_m3_1",
+        "z_motor_m3_2",
+        "z_motor_m3_3",
+        "z_top_m4_0",
+        "z_base_m4_0",
+        "z_top_m4_1",
+        "z_base_m4_1",
+        "z_top_m4_2",
+        "z_base_m4_2",
+        "z_top_m4_3",
+        "z_base_m4_3",
+        "z_saddle_m5_0",
+        "z_saddle_m5_1",
+        "z_saddle_m5_2",
+        "z_saddle_m5_3",
         "fixed_head_top",
         "fixed_head_side_0",
         "fixed_head_side_1",
@@ -364,18 +545,18 @@
     }
   ],
   "assembly_constraints": "全部组件固定在评审位姿；未建立可驱动运动配合",
-  "model_scope": "4个关键接口板采用原生草图拉伸；其余按固定机架及XYZ运动组导入多实体模组；参数化再生成源为build.py",
-  "source_component_count": 120,
+  "model_scope": "4块接口板为原生草图拉伸；电机安装支架单独成件；其余按固定机架及XYZ组保存为导入实体",
+  "source_component_count": 151,
   "save": {
     "errors": 0,
     "warnings": 0,
-    "bytes": 366855
+    "bytes": 484676
   },
-  "component_count": 8,
+  "component_count": 13,
   "reopen": {
     "errors": 0,
     "warnings": 32
   },
   "native_feature_parts": 4,
-  "body_count": 120
+  "body_count": 151
 }

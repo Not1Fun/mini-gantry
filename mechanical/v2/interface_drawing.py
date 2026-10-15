@@ -24,7 +24,7 @@ def base(ax,title,xlim,ylim):
 def main():
     fig,axs=plt.subplots(1,3,figsize=(16,8),facecolor='white')
     fig.subplots_adjust(left=.04,right=.97,top=.80,bottom=.20,wspace=.28)
-    fig.text(.04,.94,'V2 安装接口｜尺寸单位 mm',fontsize=24,color=INK,weight='bold')
+    fig.text(.04,.94,'V2.1 安装接口｜尺寸单位 mm',fontsize=24,color=INK,weight='bold')
     fig.text(.04,.884,'Nano / Raspberry Pi 4B 二选一 · 摄像头独立可拆 · 电机接口按用户提供尺寸图',fontsize=12,color='#5a7281')
     a,b,c=axs
     base(a,'计算板共用托板  160×170×3',(-15,185),(-20,183))
@@ -46,7 +46,7 @@ def main():
     for x in (10,110):
         for y in (10,90):b.add_patch(Circle((x,y),1.7,fc='white',ec=INK,lw=1))
     b.add_patch(Rectangle((20,20),80,60,fill=False,ec='#b27a2d',ls='--'))
-    b.text(60,52,'中央80×60留白\n按相机型号开安装孔\n不代表通用相机孔位',ha='center',va='center',fontsize=10,color=INK)
+    b.text(60,52,'中央80×60自定义区\n用户打印相机适配板\n外部四孔接口统一',ha='center',va='center',fontsize=10,color=INK)
     dimension(b,(10,108),(110,108),'孔距100');dimension(b,(132,10),(132,90),'80')
     b.text(60,-16,'4-Ø3.4，4颗M3拆装；初始俯角30°',ha='center',fontsize=10,color=INK)
     base(c,'42电机安装接口',(-10,53),(-20,59))
@@ -59,7 +59,7 @@ def main():
     c.text(21,-7,'4-M3×0.5，孔深≥4\n止口Ø22，高2；默认Ø5轴',ha='center',va='center',fontsize=10,color=INK)
     c.text(21,-17,'机身按60 + 驱动板11预留',ha='center',fontsize=10,color=INK)
     fig.text(.04,.13,'安装说明：闲置板卡孔组不装支柱；不能把两块计算板叠装。Nano第三方载板和Orin Nano须另核孔位。',fontsize=11,color='#a25b2d')
-    fig.text(.04,.083,'相机型号、实际电机长度与5/8mm轴径仍待确认。面板拆装后应检查标定；本图不替代最终加工公差和供应商实物核验。',fontsize=10,color='#5a7281')
+    fig.text(.04,.083,'机身按用户确认的60mm预留；相机适配板由用户打印。面板拆装后应检查标定；本图不替代最终加工公差和供应商实物核验。',fontsize=10,color='#5a7281')
     fig.savefig(ROOT/'drawings/mounting_interfaces.svg')
     fig.savefig(ROOT/'drawings/mounting_interfaces.png',dpi=160)
     plt.close(fig)

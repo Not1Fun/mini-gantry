@@ -53,7 +53,7 @@
     ]
   ],
   "z_mass_v1_kg": 9.738,
-  "z_mass_v2_kg": 8.126,
-  "z_mass_reduction_estimate_kg": 1.612,
+  "z_mass_v2_kg": 8.347,
+  "z_mass_reduction_estimate_kg": 1.391,
   "scope": "板卡孔位几何、互斥配置、移除4颗面板螺钉后的5个拆卸位置；不证明实际相机兼容、视野、线缆或板卡散热"
 }

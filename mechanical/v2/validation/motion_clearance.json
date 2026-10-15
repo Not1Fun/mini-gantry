@@ -47,7 +47,7 @@
       370
     ]
   ],
-  "exact_pairs_checked": 9,
+  "exact_pairs_checked": 37,
   "expected_sliding_or_belt_fits_excluded": 135,
   "collisions": [],
   "scope": "9 poses; only different motion groups; exclude simplified rail/block and belt/clamp fits; same-group attachments, bearings, fasteners, continuous swept motion and wiring are NOT certified"

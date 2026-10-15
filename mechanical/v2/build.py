@@ -17,6 +17,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection, Line3DCollection
 from accessories import BOARD_PATTERNS, holes, compute_plate, board_pose, camera_panel, camera_carrier, camera_pose
+from motor_mounts import mounting_parts, z_top_plate
 
 ROOT = Path(__file__).resolve().parent
 CFG = json.loads((ROOT / "design.json").read_text(encoding="utf-8"))
@@ -28,7 +29,7 @@ plt.rcParams["axes.unicode_minus"] = False
 COLORS = {"frame": "#b9c3cc", "rail": "#647784", "block": "#334b61",
           "plate": "#247c98", "belt": "#252b31", "motor": "#303b46",
           "screw": "#b9c7d3", "drive": "#d6973e", "control": "#478a70",
-          "safety": "#cf6254", "gripper": "#7a838e"}
+          "safety": "#cf6254", "gripper": "#7a838e", "motor_mount":"#be7541"}
 
 
 def dump(path, obj):
@@ -169,12 +170,8 @@ def make_model(tcp=(450, 400, 370), compute_board="pi4b"):
     add("motor_Z_ZDT42V2",stepper_shape().translate((x,yc-74,z+1070)),"motor","XYZ",.528,"42ZDT60A 尺寸预留；保持力矩不代表300rpm可用力矩")
     brake=box((x-27,yc-101,z+1015),(54,54,30)).cut(cylinder((x,yc-74,z+1015),8,30))
     add("z_brake_reserve",brake,"safety","XYZ",.25,"丝杆轴伸上的独立失电制动器；壳体固定滑枕，不能装在驱动板尾部")
-    motor_mount=box((x-40,yc-110,z+1063),(80,60,7)).cut(cylinder((x,yc-74,z+1063),12,7))
-    for dx,dy in product((-15.5,15.5),repeat=2):
-        motor_mount=motor_mount.cut(cylinder((x+dx,yc-74+dy,z+1063),1.75,7))
-    add("z_motor_mount",motor_mount,"plate","XYZ",.09,"NEMA17 候选：31x31 / 4-D3.5 / 中心D24；实物复核",role="custom_interface")
-    for i, dx in enumerate((-40,34)):
-        add(f"z_motor_standoff_{i}",box((x+dx,yc-110,z+990),(6,60,73)),"plate","XYZ",spec="6061 / 6 x 60 x 73",role="custom_blank")
+    add("z_motor_mount",z_top_plate(x,yc,z),"motor_mount","XYZ",spec="6061/7mm：31x31 / 4-D3.5 / D24；新增4-D4.5连接侧支板",role="custom_interface")
+    parts.extend(mounting_parts(tcp))
 
     # 固定轻量夹爪接口，保留 TCP 高度与原有三轴行程。
     wy=yc-100
@@ -214,7 +211,7 @@ def make_model(tcp=(450, 400, 370), compute_board="pi4b"):
         add(f"camera_pivot_ear_{i}",ear,"plate",spec="6 x 30 x 92；M5 俯角夹紧轴孔",role="custom_blank")
         add(f"camera_pivot_screw_{i}",cylinder((xx,-23,980-4*math.cos(math.pi/6)),2.5,18,(1 if i==0 else -1,0,0)),"screw",mass=.006,spec="M5俯角夹紧轴，侧板与载架间2mm垫片空间")
     add("camera_tilt_carrier",camera_pose(camera_carrier()),"plate",spec="120 x 100 x 5；30度初始俯角；90x70通窗",role="custom_camera_interface")
-    add("camera_removable_panel",camera_pose(camera_panel()),"plate",spec="120 x 100 x 3；4-D3.4 / 100x80；中心80x60待相机型号开孔",role="custom_camera_interface")
+    add("camera_removable_panel",camera_pose(camera_panel()),"plate",spec="统一打印适配板接口：120x100外框，4-D3.4/100x80；中心80x60由用户打印适配多种相机",role="custom_camera_interface")
     for xx in (-50,50):
         for yy in (-40,40):
             add(f"camera_panel_screw_{xx}_{yy}",camera_pose(cylinder((xx,yy,8),2.75,3)),"screw",mass=.002,spec="M3 可拆面板螺钉头包络；螺母与螺杆未详建")
@@ -257,8 +254,8 @@ def render(parts, name, elev=19, azim=-64, zoom=None, prefixes=None, title=None,
         ax.add_collection3d(Line3DCollection(edges,colors="#e29e42",linewidths=1.5,linestyles="dashed"))
         ax.set(xlim=(-30,980),ylim=(-100,1020),zlim=(0,1800))
         ax.set_box_aspect((1010,1050,1770),zoom=1.0)
-        fig.text(.08,.94,"迷你龙门架  /  V2 结构布局",fontsize=22,color="#163348",weight="bold")
-        fig.text(.08,.90,"XYZ 各 500 mm · 固定轻量夹爪接口 · 计算板共用孔位 · 前上方可拆摄像头",fontsize=11,color="#5a6c78")
+        fig.text(.08,.94,"迷你龙门架  /  V2.1 电机安装支架",fontsize=22,color="#163348",weight="bold")
+        fig.text(.08,.90,"XYZ 各 500 mm · 独立电机支架 · 统一可拆摄像头接口",fontsize=11,color="#5a6c78")
         fig.text(.08,.06,"结构评审版 · 尚未释放加工",fontsize=12,color="#a85830",weight="bold")
         fig.text(.08,.035,"橙色虚线为夹爪 TCP 工作范围。采购件为简化包络；负载暂按夹爪与物料合计 1 kg。",fontsize=10,color="#5a6c78")
     else:
@@ -353,6 +350,7 @@ def export_parts(parts):
         flat=shape.translate((0,0,-shape.BoundingBox().zmin))
         cq.exporters.export(cq.Workplane("XY").newObject([flat]).faces("<Z").wires(),str(custom/(name+".dxf")))
         cq.exporters.export(flat,str(custom/(name+"_flat.step")))
+    cq.exporters.export(camera_panel().translate((0,0,-5)),str(custom/'camera_adapter_blank.stl'),tolerance=.05,angularTolerance=.15)
 
 
 def main():

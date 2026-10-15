@@ -1,6 +1,6 @@
 {
   "project": "迷你龙门架",
-  "revision": "V2",
+  "revision": "V2.1",
   "status": "结构布局设计，未释放加工或采购",
   "units": "mm, kg, N, N.m, s",
   "entry_points": {
@@ -21,13 +21,23 @@
       "python mechanical/v2/check_interfaces.py",
       "python mechanical/v2/build_solidworks.py",
       "python mechanical/v2/interface_drawing.py",
-      "python mechanical/v2/check_solidworks.py"
+      "python mechanical/v2/check_solidworks.py",
+      "python mechanical/v2/check_motor_mounts.py",
+      "python mechanical/v2/motor_mount_drawing.py"
     ],
     "custom_part_coordinates": "单件 STEP 已平移到自身包络最小点为原点；在总装中的位置参见 bom.json bbox_mm",
     "stl_purpose": "仅供 GitHub 三维预览，不是整机 3D 打印文件",
-    "solidworks_assembly": "SolidWorks/mini_gantry_v2.SLDASM",
-    "solidworks_scope": "8组件总装，含120实体；4个关键板件为原生草图拉伸，其余按固定机架及XYZ运动组导入多实体模组；固定评审位姿，无运动配合",
-    "interface_drawing": "drawings/mounting_interfaces.svg"
+    "solidworks_assembly": "SolidWorksV21/mini_gantry_v2_1.SLDASM",
+    "solidworks_scope": "4块接口板为原生草图拉伸；X/Y电机支架、Z下鞍座及两侧支板独立成件；其余按固定与XYZ组保存为实体模组",
+    "interface_drawing": "drawings/mounting_interfaces.svg",
+    "motor_detail_views": [
+      "drawings/motor_mounts.png",
+      "drawings/x_motor_mount.png",
+      "drawings/y_motor_mount.png",
+      "drawings/z_motor_mount.png"
+    ],
+    "solidworks_component_count": 13,
+    "solidworks_solid_body_count": 151
   },
   "confirmed": {
     "application": "轻载搬运与抓取",
@@ -37,7 +47,7 @@
       500
     ],
     "larger_machine_envelope_accepted": true,
-    "linear_drive": "张大头 42 V2，具体电机本体长度和力矩曲线待核对",
+    "linear_drive": "张大头42 V2；按60mm电机本体长度预留，实物型号和力矩曲线待核对",
     "available_rotary_motor": "DM-G6220暂不使用",
     "controller_candidates": [
       "RoboMaster A 型",
@@ -160,10 +170,11 @@
     "完成 Z 制动器型号、安装和失电保持试验；不能直接按候选保持力矩采购",
     "完成整机干涉、拖链弯曲半径、夹爪真实外形及全行程走线检查",
     "完成样机满载、重复定位、热态、急停和断电试验",
-    "确认42电机实际机身长度和5/8mm输出轴，适配联轴器和皮带轮孔径",
     "核对具体Nano载板与实际树莓派4B板底元件，闲置孔不装支柱",
-    "确定相机型号后补充可拆面板中央安装孔，核验视野和标定",
-    "完成固定夹爪转接板的紧固孔与公差细化"
+    "完成固定夹爪转接板的紧固孔与公差细化",
+    "X/Y减速器、Z联轴器和制动器仍是采购件占位，真实装配和工具通道需单独核对；本次不改传动布局",
+    "钢板焊接支架需细化焊缝和制造公差；所有M5 T螺母按实际型材槽规格选用",
+    "用户打印相机适配板需保留统一四孔接口并自行核对镜头、走线和拆装后的标定"
   ],
   "model_scope": "采购件是简化实体包络；同步带未逐齿建模；型材截面为等效薄壁示意；紧固件未逐颗建模；概念孔位只用于结构评审",
   "sources": [
@@ -209,11 +220,10 @@
     }
   ],
   "change_summary": [
-    "取消DM-G6220及旋转腕轴承组件，使用固定轻量接口",
-    "增加Nano与树莓派4B共用孔板，同时仅装一块",
-    "增加顶部前横梁可拆摄像头面板",
-    "按用户电机尺寸图修正电机法兰、止口、D轴和驱动板包络",
-    "提供SolidWorks原生装配和零件"
+    "新增独立X/Y电机焊接L支架与机架固定孔",
+    "补齐Z下鞍座、侧支板、顶板固定孔和示意紧固件",
+    "60mm本体长度预留已由用户确认",
+    "摄像头保留统一可拆接口，用户后续打印不同相机的适配板"
   ],
   "stepper_interface": {
     "source": "用户2026-10-15提供的三张商品尺寸图；未上传原始购物截图",
@@ -256,9 +266,10 @@
     "driver_mass_assumption_kg": 0.05,
     "holding_torque_Nm": 0.7,
     "rated_phase_current_A": 2,
-    "actual_variant_status": "机身长度与5/8mm轴径尚未确认；60mm为包络预留，不能据保持力矩证明高速带载能力",
+    "actual_variant_status": "用户确认按60mm长度预留；轴径仍按所给图纸默认5mm建模，8mm变体须换配合件",
     "connector_keepout_mm": 20,
-    "mass_note": "60mm电机本体478g来自用户表格，驱动板50g为保守估值；实际型号待确认"
+    "mass_note": "60mm电机本体478g来自用户表格，驱动板50g为保守估值；实际型号待确认",
+    "reserved_length_confirmed": true
   },
   "compute_mount": {
     "plate_mm": [
@@ -316,7 +327,7 @@
       80,
       60
     ],
-    "camera_holes_status": "相机型号未知，中央区域留白；具体孔位/镜头孔须按所选相机补充",
+    "camera_holes_status": "不绑定相机型号；用户后续打印适配板。统一外轮廓120x100、4-D3.4/100x80，中央80x60为自定义区",
     "camera_envelope_assumption_mm": [
       40,
       40,
@@ -328,6 +339,256 @@
     ],
     "calibration": "装好相机后验证视野、运动遮挡及标定；固定位置不保证全空间无盲区",
     "cabling": "沿固定框架布线，不增加Z轴负载",
-    "tilt_carrier": "侧边带独立转轴凸耳，M5轴线穿过实心凸耳；与可拆面板保留间隙"
-  }
+    "tilt_carrier": "侧边带独立转轴凸耳，M5轴线穿过实心凸耳；与可拆面板保留间隙",
+    "print_template": "cad/custom_parts/camera_adapter_blank.stl"
+  },
+  "motor_mounts": {
+    "X": "3mm钢板加筋L座，4-D3.5/31x31，D24止口避让；底部2-M5固定到横梁上槽",
+    "Y": "3mm钢板加筋L座，底部2-M5固定到后横梁上槽，D18通孔避让原D16贯通轴",
+    "Z": "下鞍座接滑枕前面型材槽；两片10mm侧支板；7mm顶板用4-M4固定；电机用4-M3",
+    "motor_screws": "X/Y M3x6穿3mm板，Z M3x10穿7mm板，均入电机3mm，不超过所给图纸4mm最小孔深；不含垫片",
+    "assembly_order": [
+      "先在台面上把电机锁到安装板，预留减速器装配操作空间",
+      "X/Y支架再固定到型材槽，随后装配传动采购件",
+      "Z下鞍座和侧支板先用沉头螺钉预装，再固定到滑枕，最后装带电机的顶板"
+    ]
+  },
+  "unchanged_transmission_reference": {
+    "base_commit": "075cedcec1864ce041918a0cdc0229f7d415e47c",
+    "xy_ratio": [
+      2,
+      3
+    ],
+    "items": [
+      {
+        "name": "y_pulley_0_0",
+        "bbox_mm": [
+          87.5,
+          45.6761,
+          969.6761,
+          102.5,
+          74.3239,
+          998.3239
+        ],
+        "volume_mm3": 8914.681
+      },
+      {
+        "name": "y_pulley_0_1",
+        "bbox_mm": [
+          87.5,
+          865.6761,
+          969.6761,
+          102.5,
+          894.3239,
+          998.3239
+        ],
+        "volume_mm3": 6652.734
+      },
+      {
+        "name": "y_pulley_1_0",
+        "bbox_mm": [
+          797.5,
+          45.6761,
+          969.6761,
+          812.5,
+          74.3239,
+          998.3239
+        ],
+        "volume_mm3": 8914.681
+      },
+      {
+        "name": "y_pulley_1_1",
+        "bbox_mm": [
+          797.5,
+          865.6761,
+          969.6761,
+          812.5,
+          894.3239,
+          998.3239
+        ],
+        "volume_mm3": 6652.734
+      },
+      {
+        "name": "y_sync_shaft",
+        "bbox_mm": [
+          75.0,
+          872.0,
+          976.0,
+          825.0,
+          888.0,
+          992.0
+        ],
+        "volume_mm3": 150796.447
+      },
+      {
+        "name": "y_reducer",
+        "bbox_mm": [
+          120.0,
+          845.0,
+          954.0,
+          152.0,
+          915.0,
+          1069.0
+        ],
+        "volume_mm3": 257600.0
+      },
+      {
+        "name": "motor_Y_ZDT42V2",
+        "bbox_mm": [
+          129.5,
+          859.0,
+          1020.5,
+          223.0,
+          904.2,
+          1065.0
+        ],
+        "volume_mm3": 125238.541
+      },
+      {
+        "name": "x_pulley_0",
+        "bbox_mm": [
+          80.4507,
+          520.0,
+          1090.4507,
+          99.5493,
+          535.0,
+          1109.5493
+        ],
+        "volume_mm3": 3543.201
+      },
+      {
+        "name": "x_pulley_mount_0",
+        "bbox_mm": [
+          72.0,
+          480.0,
+          1080.0,
+          108.0,
+          520.0,
+          1115.0
+        ],
+        "volume_mm3": 50400.0
+      },
+      {
+        "name": "x_pulley_axle_0",
+        "bbox_mm": [
+          86.0,
+          495.0,
+          1096.0,
+          94.0,
+          535.0,
+          1104.0
+        ],
+        "volume_mm3": 2010.619
+      },
+      {
+        "name": "x_pulley_1",
+        "bbox_mm": [
+          800.4507,
+          520.0,
+          1090.4507,
+          819.5493,
+          535.0,
+          1109.5493
+        ],
+        "volume_mm3": 3543.201
+      },
+      {
+        "name": "x_pulley_mount_1",
+        "bbox_mm": [
+          792.0,
+          480.0,
+          1080.0,
+          828.0,
+          520.0,
+          1115.0
+        ],
+        "volume_mm3": 50400.0
+      },
+      {
+        "name": "x_pulley_axle_1",
+        "bbox_mm": [
+          806.0,
+          495.0,
+          1096.0,
+          814.0,
+          535.0,
+          1104.0
+        ],
+        "volume_mm3": 2010.619
+      },
+      {
+        "name": "x_reducer",
+        "bbox_mm": [
+          65.0,
+          510.0,
+          1080.0,
+          115.0,
+          535.0,
+          1175.0
+        ],
+        "volume_mm3": 118750.0
+      },
+      {
+        "name": "motor_X_ZDT42V2",
+        "bbox_mm": [
+          69.0,
+          512.5,
+          1125.8,
+          113.5,
+          606.0,
+          1171.0
+        ],
+        "volume_mm3": 125238.541
+      },
+      {
+        "name": "z_screw_1605",
+        "bbox_mm": [
+          442.0,
+          418.0,
+          565.0,
+          458.0,
+          434.0,
+          1415.0
+        ],
+        "volume_mm3": 170902.64
+      },
+      {
+        "name": "z_coupling",
+        "bbox_mm": [
+          438.0,
+          414.0,
+          1415.0,
+          462.0,
+          438.0,
+          1440.0
+        ],
+        "volume_mm3": 10818.86
+      },
+      {
+        "name": "motor_Z_ZDT42V2",
+        "bbox_mm": [
+          429.0,
+          405.0,
+          1417.5,
+          473.5,
+          450.2,
+          1511.0
+        ],
+        "volume_mm3": 125238.541
+      },
+      {
+        "name": "z_brake_reserve",
+        "bbox_mm": [
+          423.0,
+          399.0,
+          1385.0,
+          477.0,
+          453.0,
+          1415.0
+        ],
+        "volume_mm3": 81448.142
+      }
+    ]
+  },
+  "existing_transmission_issue": "原Z联轴器简化占位与电机止口存在体积重叠；本次电机安装面与轴线保持原坐标。必须另行细化联轴器/制动器/轴伸连接后才能放行传动装配。"
 }

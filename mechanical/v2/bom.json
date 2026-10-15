@@ -1415,10 +1415,10 @@
     },
     {
       "name": "z_motor_mount",
-      "kind": "plate",
+      "kind": "motor_mount",
       "motion": "XYZ",
-      "mass_kg": 0.09,
-      "spec": "NEMA17 候选：31x31 / 4-D3.5 / 中心D24；实物复核",
+      "mass_kg": 0.0802,
+      "spec": "6061/7mm：31x31 / 4-D3.5 / D24；新增4-D4.5连接侧支板",
       "role": "custom_interface",
       "bbox_mm": [
         410.0,
@@ -1428,41 +1428,568 @@
         450.0,
         1440.0
       ],
-      "volume_mm3": 30163.883
+      "volume_mm3": 29718.562
+    },
+    {
+      "name": "x_motor_bracket",
+      "kind": "motor_mount",
+      "motion": "Y",
+      "mass_kg": 0.2823,
+      "spec": "3mm钢板焊接L座；4-D3.5/31x31；上下D24分别避让止口和原带轮；2-D5.5接横梁上槽",
+      "role": "custom_motor_bracket",
+      "bbox_mm": [
+        50.0,
+        480.0,
+        1080.0,
+        130.0,
+        535.0,
+        1185.0
+      ],
+      "volume_mm3": 35955.661
+    },
+    {
+      "name": "y_motor_bracket",
+      "kind": "motor_mount",
+      "motion": "fixed",
+      "mass_kg": 0.8032,
+      "spec": "3mm钢板焊接加筋L座；4-D3.5/31x31；D18避让原D16贯通轴；2-D5.5固定到后横梁",
+      "role": "custom_motor_bracket",
+      "bbox_mm": [
+        40.0,
+        840.0,
+        900.0,
+        152.0,
+        920.0,
+        1080.0
+      ],
+      "volume_mm3": 102324.422
+    },
+    {
+      "name": "z_motor_lower_saddle",
+      "kind": "motor_mount",
+      "motion": "XYZ",
+      "mass_kg": 0.1258,
+      "spec": "6061/6mm下鞍座；4-D5.5连接滑枕前槽；4-M4沉头孔连接侧支板",
+      "role": "custom_motor_bracket",
+      "bbox_mm": [
+        410.0,
+        364.0,
+        1320.0,
+        490.0,
+        450.0,
+        1366.0
+      ],
+      "volume_mm3": 46593.481
     },
     {
       "name": "z_motor_standoff_0",
-      "kind": "plate",
+      "kind": "motor_mount",
       "motion": "XYZ",
-      "mass_kg": 0.071,
-      "spec": "6061 / 6 x 60 x 73",
-      "role": "custom_blank",
+      "mass_kg": 0.1072,
+      "spec": "6061/10x60x67；上下各2-M4，示意螺纹深10",
+      "role": "custom_motor_bracket",
       "bbox_mm": [
         410.0,
         390.0,
-        1360.0,
-        416.0,
+        1366.0,
+        420.0,
         450.0,
         1433.0
       ],
-      "volume_mm3": 26280.0
+      "volume_mm3": 39697.345
     },
     {
       "name": "z_motor_standoff_1",
-      "kind": "plate",
+      "kind": "motor_mount",
       "motion": "XYZ",
-      "mass_kg": 0.071,
-      "spec": "6061 / 6 x 60 x 73",
-      "role": "custom_blank",
+      "mass_kg": 0.1072,
+      "spec": "6061/10x60x67；上下各2-M4，示意螺纹深10",
+      "role": "custom_motor_bracket",
       "bbox_mm": [
-        484.0,
+        480.0,
         390.0,
-        1360.0,
+        1366.0,
         490.0,
         450.0,
         1433.0
       ],
-      "volume_mm3": 26280.0
+      "volume_mm3": 39697.345
+    },
+    {
+      "name": "x_motor_m3_0",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        71.75,
+        529.0,
+        1131.75,
+        77.25,
+        538.0,
+        1137.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "y_motor_m3_0",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        146.0,
+        861.75,
+        1025.75,
+        155.0,
+        867.25,
+        1031.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "z_motor_m3_0",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.001,
+      "spec": "M3x10：先在台面把电机锁到顶板，再安装顶板",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        431.75,
+        407.75,
+        1430.0,
+        437.25,
+        413.25,
+        1443.0
+      ],
+      "volume_mm3": 128.53
+    },
+    {
+      "name": "x_motor_m3_1",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        71.75,
+        529.0,
+        1162.75,
+        77.25,
+        538.0,
+        1168.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "y_motor_m3_1",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        146.0,
+        861.75,
+        1056.75,
+        155.0,
+        867.25,
+        1062.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "z_motor_m3_1",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.001,
+      "spec": "M3x10：先在台面把电机锁到顶板，再安装顶板",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        431.75,
+        438.75,
+        1430.0,
+        437.25,
+        444.25,
+        1443.0
+      ],
+      "volume_mm3": 128.53
+    },
+    {
+      "name": "x_motor_m3_2",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        102.75,
+        529.0,
+        1131.75,
+        108.25,
+        538.0,
+        1137.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "y_motor_m3_2",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        146.0,
+        892.75,
+        1025.75,
+        155.0,
+        898.25,
+        1031.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "z_motor_m3_2",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.001,
+      "spec": "M3x10：先在台面把电机锁到顶板，再安装顶板",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        462.75,
+        407.75,
+        1430.0,
+        468.25,
+        413.25,
+        1443.0
+      ],
+      "volume_mm3": 128.53
+    },
+    {
+      "name": "x_motor_m3_3",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        102.75,
+        529.0,
+        1162.75,
+        108.25,
+        538.0,
+        1168.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "y_motor_m3_3",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0008,
+      "spec": "M3x6，不加垫片：穿过3mm板后入电机3mm",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        146.0,
+        892.75,
+        1056.75,
+        155.0,
+        898.25,
+        1062.25
+      ],
+      "volume_mm3": 105.628
+    },
+    {
+      "name": "z_motor_m3_3",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.001,
+      "spec": "M3x10：先在台面把电机锁到顶板，再安装顶板",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        462.75,
+        438.75,
+        1430.0,
+        468.25,
+        444.25,
+        1443.0
+      ],
+      "volume_mm3": 128.53
+    },
+    {
+      "name": "z_top_m4_0",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0023,
+      "spec": "M4x16，顶板7mm+入侧支板9mm，示意牙深10",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        411.25,
+        393.25,
+        1424.0,
+        418.75,
+        400.75,
+        1443.0
+      ],
+      "volume_mm3": 295.396
+    },
+    {
+      "name": "z_base_m4_0",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0013,
+      "spec": "M4x14沉头，头部不低于下鞍座底面；装到滑枕前先组装",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        411.25,
+        393.25,
+        1360.0,
+        418.75,
+        400.75,
+        1374.0
+      ],
+      "volume_mm3": 170.269
+    },
+    {
+      "name": "z_top_m4_1",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0023,
+      "spec": "M4x16，顶板7mm+入侧支板9mm，示意牙深10",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        411.25,
+        434.25,
+        1424.0,
+        418.75,
+        441.75,
+        1443.0
+      ],
+      "volume_mm3": 295.396
+    },
+    {
+      "name": "z_base_m4_1",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0013,
+      "spec": "M4x14沉头，头部不低于下鞍座底面；装到滑枕前先组装",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        411.25,
+        434.25,
+        1360.0,
+        418.75,
+        441.75,
+        1374.0
+      ],
+      "volume_mm3": 170.269
+    },
+    {
+      "name": "z_top_m4_2",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0023,
+      "spec": "M4x16，顶板7mm+入侧支板9mm，示意牙深10",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        481.25,
+        393.25,
+        1424.0,
+        488.75,
+        400.75,
+        1443.0
+      ],
+      "volume_mm3": 295.396
+    },
+    {
+      "name": "z_base_m4_2",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0013,
+      "spec": "M4x14沉头，头部不低于下鞍座底面；装到滑枕前先组装",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        481.25,
+        393.25,
+        1360.0,
+        488.75,
+        400.75,
+        1374.0
+      ],
+      "volume_mm3": 170.269
+    },
+    {
+      "name": "z_top_m4_3",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0023,
+      "spec": "M4x16，顶板7mm+入侧支板9mm，示意牙深10",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        481.25,
+        434.25,
+        1424.0,
+        488.75,
+        441.75,
+        1443.0
+      ],
+      "volume_mm3": 295.396
+    },
+    {
+      "name": "z_base_m4_3",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0013,
+      "spec": "M4x14沉头，头部不低于下鞍座底面；装到滑枕前先组装",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        481.25,
+        434.25,
+        1360.0,
+        488.75,
+        441.75,
+        1374.0
+      ],
+      "volume_mm3": 170.269
+    },
+    {
+      "name": "x_mount_m5_0",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0031,
+      "spec": "M5示意紧固件；连接4080上槽，螺栓长度和T螺母按实际槽型确定",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        60.75,
+        495.75,
+        1073.0,
+        69.25,
+        504.25,
+        1087.0
+      ],
+      "volume_mm3": 393.17
+    },
+    {
+      "name": "x_mount_m5_1",
+      "kind": "screw",
+      "motion": "Y",
+      "mass_kg": 0.0031,
+      "spec": "M5示意紧固件；连接4080上槽，螺栓长度和T螺母按实际槽型确定",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        110.75,
+        495.75,
+        1073.0,
+        119.25,
+        504.25,
+        1087.0
+      ],
+      "volume_mm3": 393.17
+    },
+    {
+      "name": "y_mount_m5_0",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0031,
+      "spec": "M5示意紧固件；连接后横梁上槽",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        60.75,
+        875.75,
+        893.0,
+        69.25,
+        884.25,
+        907.0
+      ],
+      "volume_mm3": 393.17
+    },
+    {
+      "name": "y_mount_m5_1",
+      "kind": "screw",
+      "motion": "fixed",
+      "mass_kg": 0.0031,
+      "spec": "M5示意紧固件；连接后横梁上槽",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        120.75,
+        875.75,
+        893.0,
+        129.25,
+        884.25,
+        907.0
+      ],
+      "volume_mm3": 393.17
+    },
+    {
+      "name": "z_saddle_m5_0",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0036,
+      "spec": "M5示意紧固件；下鞍座连接滑枕前面两条槽，实际槽距待供应商确认",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        425.75,
+        360.0,
+        1325.75,
+        434.25,
+        378.0,
+        1334.25
+      ],
+      "volume_mm3": 459.646
+    },
+    {
+      "name": "z_saddle_m5_1",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0036,
+      "spec": "M5示意紧固件；下鞍座连接滑枕前面两条槽，实际槽距待供应商确认",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        425.75,
+        360.0,
+        1345.75,
+        434.25,
+        378.0,
+        1354.25
+      ],
+      "volume_mm3": 459.646
+    },
+    {
+      "name": "z_saddle_m5_2",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0036,
+      "spec": "M5示意紧固件；下鞍座连接滑枕前面两条槽，实际槽距待供应商确认",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        465.75,
+        360.0,
+        1325.75,
+        474.25,
+        378.0,
+        1334.25
+      ],
+      "volume_mm3": 459.646
+    },
+    {
+      "name": "z_saddle_m5_3",
+      "kind": "screw",
+      "motion": "XYZ",
+      "mass_kg": 0.0036,
+      "spec": "M5示意紧固件；下鞍座连接滑枕前面两条槽，实际槽距待供应商确认",
+      "role": "fastener_envelope",
+      "bbox_mm": [
+        465.75,
+        360.0,
+        1345.75,
+        474.25,
+        378.0,
+        1354.25
+      ],
+      "volume_mm3": 459.646
     },
     {
       "name": "fixed_head_top",
@@ -1826,7 +2353,7 @@
       "kind": "plate",
       "motion": "fixed",
       "mass_kg": 0.0969,
-      "spec": "120 x 100 x 3；4-D3.4 / 100x80；中心80x60待相机型号开孔",
+      "spec": "统一打印适配板接口：120x100外框，4-D3.4/100x80；中心80x60由用户打印适配多种相机",
       "role": "custom_camera_interface",
       "bbox_mm": [
         390.0,
