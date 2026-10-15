@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection, Line3DCollection
 from accessories import BOARD_PATTERNS, holes, compute_plate, board_pose, camera_panel, camera_carrier, camera_pose
 from motor_mounts import mounting_parts, z_top_plate
+from z_drive import drive_parts, MOTOR_FACE
 
 ROOT = Path(__file__).resolve().parent
 CFG = json.loads((ROOT / "design.json").read_text(encoding="utf-8"))
@@ -159,17 +160,11 @@ def make_model(tcp=(450, 400, 370), compute_board="pi4b"):
         for j, zz in enumerate((920,1040)):
             add(f"z_block_{i}_{j}",box((x+dx-17,yc-89,zz-30.7),(34,19,61.4)),"block","XY",.18,"固定滑块 / 中心距120")
             add(f"z_block_spacer_{i}_{j}",box((x+dx-17,yc-70,zz-30.7),(34,10,61.4)),"plate","XY",spec="6061 / 34 x 61.4 x 10",role="custom_blank")
-    add("z_screw_1605",cylinder((x,yc-74,z+195),8,850),"screw","XYZ",1.35,"1605 / 支承跨距790 / 顶端含制动轴伸，端部待加工")
     nut_housing=box((x-20.5,yc-88,955),(41,40,50)).cut(cylinder((x,yc-74,955),8,50))
     add("z_fixed_ballnut",nut_housing,"drive","XY",.22,"1605 螺母及窄型固定座包络，具体螺母外径待核对")
     add("z_nut_rear_flange",box((x-70,yc-48,955),(140,6,50)),"plate","XY",spec="6061 / 140 x 50 x 6，螺母座连接 X 滑座的后法兰",role="custom_blank")
-    for i, zz in enumerate((z+195,z+985)):
-        block=box((x-30,yc-90,zz),(60,34,30)).cut(cylinder((x,yc-74,zz),8,30))
-        add(f"z_screw_support_{i}",block,"plate","XYZ",.20,"固定/支承端组件包络，螺母随滑座固定")
-    add("z_coupling",ring((x,yc-74,z+1045),12,2.5,25),"drive","XYZ",.06,"联轴器 5/10 候选，实物轴径待核对")
-    add("motor_Z_ZDT42V2",stepper_shape().translate((x,yc-74,z+1070)),"motor","XYZ",.528,"42ZDT60A 尺寸预留；保持力矩不代表300rpm可用力矩")
-    brake=box((x-27,yc-101,z+1015),(54,54,30)).cut(cylinder((x,yc-74,z+1015),8,30))
-    add("z_brake_reserve",brake,"safety","XYZ",.25,"丝杆轴伸上的独立失电制动器；壳体固定滑枕，不能装在驱动板尾部")
+    parts.extend(drive_parts(tcp))
+    add("motor_Z_ZDT42V2",stepper_shape().translate((x,yc-74,z+MOTOR_FACE)),"motor","XYZ",.528,"42ZDT60A尺寸预留；Z平台上移30mm，轴端与联轴器按12mm插入")
     add("z_motor_mount",z_top_plate(x,yc,z),"motor_mount","XYZ",spec="6061/7mm：31x31 / 4-D3.5 / D24；新增4-D4.5连接侧支板",role="custom_interface")
     parts.extend(mounting_parts(tcp))
 
@@ -254,8 +249,8 @@ def render(parts, name, elev=19, azim=-64, zoom=None, prefixes=None, title=None,
         ax.add_collection3d(Line3DCollection(edges,colors="#e29e42",linewidths=1.5,linestyles="dashed"))
         ax.set(xlim=(-30,980),ylim=(-100,1020),zlim=(0,1800))
         ax.set_box_aspect((1010,1050,1770),zoom=1.0)
-        fig.text(.08,.94,"迷你龙门架  /  V2.1 电机安装支架",fontsize=22,color="#163348",weight="bold")
-        fig.text(.08,.90,"XYZ 各 500 mm · 独立电机支架 · 统一可拆摄像头接口",fontsize=11,color="#5a6c78")
+        fig.text(.08,.94,"迷你龙门架  /  V2.2 Z轴传动接口",fontsize=22,color="#163348",weight="bold")
+        fig.text(.08,.90,"XYZ 各 500 mm · Z轴端部与联轴器细化 · 可拆摄像头接口",fontsize=11,color="#5a6c78")
         fig.text(.08,.06,"结构评审版 · 尚未释放加工",fontsize=12,color="#a85830",weight="bold")
         fig.text(.08,.035,"橙色虚线为夹爪 TCP 工作范围。采购件为简化包络；负载暂按夹爪与物料合计 1 kg。",fontsize=10,color="#5a6c78")
     else:
@@ -316,7 +311,7 @@ def validate(parts):
     all_boxes=[bounds(p['shape']) for p in parts]
     world_min=[min(b[k] for b in all_boxes) for k in range(3)]
     world_max=[max(b[k+3] for b in all_boxes) for k in range(3)]
-    max_height=hi[2]+1070+CFG["stepper_interface"]["body_length_for_clearance_mm"]+11
+    max_height=hi[2]+MOTOR_FACE+CFG["stepper_interface"]["body_length_for_clearance_mm"]+11
     data={"status":"PASS_LAYOUT_CHECKS" if not invalid and all(p["all_positive"] for p in poses) else "FAIL",
           "invalid_solids":invalid,"component_count":len(parts),"unique_names":len(set(p["name"] for p in parts))==len(parts),
           "travel_mm":[b-a for a,b in zip(lo,hi)],"eight_corner_support_checks":poses,
@@ -339,7 +334,7 @@ def export_parts(parts):
     dump(ROOT/"cutlist.json",{"status":"PRELIMINARY_CUT_LENGTHS_VERIFY_JOINTS_BEFORE_CUTTING", "items":[{"profile_and_length":k,"quantity":v} for k,v in cutlist.items()]})
     custom=OUT/"custom_parts"; custom.mkdir(exist_ok=True)
     for p in parts:
-        if p["role"].startswith("custom"):
+        if p["role"].startswith("custom") or p["role"]=="z_drive_interface":
             b=p["shape"].BoundingBox()
             local=p["shape"].translate((-b.xmin,-b.ymin,-b.zmin))
             cq.exporters.export(local,str(custom/(p["name"]+".step")))

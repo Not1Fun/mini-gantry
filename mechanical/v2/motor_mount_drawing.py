@@ -12,7 +12,7 @@ def main():
     parts=make_model((x,y,z));by_name={p['name']:p for p in parts}
     configs=[('x',('x_motor_','x_mount_','motor_X'),(0,55,0),((25,165),(yc-45,yc+170),(1060,1215)),30,-55),
              ('y',('y_motor_','y_mount_','motor_Y'),(55,0,0),((20,310),(815,950),(880,1110)),24,-135),
-             ('z',('z_motor_','z_top_','z_base_','z_saddle_','motor_Z'),(0,0,55),((x-65,x+65),(yc-165,yc-20),(z+925,z+1210)),20,-65)]
+             ('z',('z_motor_','z_top_','z_base_','z_saddle_','motor_Z'),(0,0,55),((x-65,x+65),(yc-165,yc-20),(z+925,z+1240)),20,-65)]
     captions={'x':'支架底部2-M5接横梁上槽；电机4-M3；原带轮从下方Ø24口避让',
               'y':'支架底部2-M5接后横梁；原贯通轴穿过Ø18避让孔',
               'z':'下鞍座→侧支板→顶板→电机；先锁电机与顶板，再装4-M4'}
@@ -32,7 +32,7 @@ def main():
         q['name']=axis+'_reference_frame';scene.append(q)
         prefixes=prefixes+(q['name'],)
         render(scene,f'{axis}_motor_mount.png',elev=elev,azim=azim,zoom=limits,prefixes=prefixes,
-               title=f'{axis.upper()}轴电机安装座 / V2.1',
+               title=f'{axis.upper()}轴电机安装座 / V2.2',
                subtitle='分解示意：电机退开55mm以露出孔位；'+captions[axis])
     fig,axes=plt.subplots(1,3,figsize=(16,9),facecolor='white')
     fig.subplots_adjust(left=.05,right=.95,top=.80,bottom=.23,wspace=.35)

@@ -1,10 +1,11 @@
-"""V2.1 电机安装件。保持既有电机安装面、轴线及传动占位位置。
+"""V2.2 电机安装件。保留X/Y接口；Z顶板加高30mm以容纳传动连接。
 
 X/Y：3mm钢板焊接L座；Z：铝制下鞍座、侧支板和顶板。
 紧固件只建包络，不建螺纹；采购传动件仍须单独详设。
 """
 from itertools import product
 import cadquery as cq
+from z_drive import TOP_PLATE_BOTTOM, MOTOR_FACE
 
 
 def box(p,d):return cq.Solid.makeBox(*d,cq.Vector(*p))
@@ -51,10 +52,10 @@ def z_holes(x,yc):
 
 
 def z_top_plate(x,yc,z):
-    s=box((x-40,yc-110,z+1063),(80,60,7)).cut(cyl((x,yc-74,z+1063),12,7))
+    s=box((x-40,yc-110,z+TOP_PLATE_BOTTOM),(80,60,7)).cut(cyl((x,yc-74,z+TOP_PLATE_BOTTOM),12,7))
     for dx,dy in product((-15.5,15.5),repeat=2):
-        s=s.cut(cyl((x+dx,yc-74+dy,z+1063),1.75,7))
-    for xx,yy in z_holes(x,yc):s=s.cut(cyl((xx,yy,z+1063),2.25,7))
+        s=s.cut(cyl((x+dx,yc-74+dy,z+TOP_PLATE_BOTTOM),1.75,7))
+    for xx,yy in z_holes(x,yc):s=s.cut(cyl((xx,yy,z+TOP_PLATE_BOTTOM),2.25,7))
     return s
 
 
@@ -72,11 +73,11 @@ def z_saddle(x,yc,z):
 
 def z_side(x,yc,z,right):
     xx=x+30 if right else x-40
-    s=box((xx,yc-110,z+996),(10,60,67))
+    s=box((xx,yc-110,z+996),(10,60,TOP_PLATE_BOTTOM-996))
     cx=x+35 if right else x-35
     for yy in (yc-103,yc-62):
         s=s.cut(cyl((cx,yy,z+996),2,10))
-        s=s.cut(cyl((cx,yy,z+1053),2,10))
+        s=s.cut(cyl((cx,yy,z+TOP_PLATE_BOTTOM-10),2,10))
     return s
 
 
@@ -96,13 +97,13 @@ def mounting_parts(tcp):
     add('x_motor_bracket',x_bracket(yc),'Y','3mm钢板焊接L座；4-D3.5/31x31；上下D24分别避让止口和原带轮；2-D5.5接横梁上槽',True)
     add('y_motor_bracket',y_bracket(),'fixed','3mm钢板焊接加筋L座；4-D3.5/31x31；D18避让原D16贯通轴；2-D5.5固定到后横梁',True)
     add('z_motor_lower_saddle',z_saddle(x,yc,z),'XYZ','6061/6mm下鞍座；4-D5.5连接滑枕前槽；4-M4沉头孔连接侧支板')
-    for i in (0,1):add(f'z_motor_standoff_{i}',z_side(x,yc,z,bool(i)),'XYZ','6061/10x60x67；上下各2-M4，示意螺纹深10')
+    for i in (0,1):add(f'z_motor_standoff_{i}',z_side(x,yc,z,bool(i)),'XYZ','6061/10x60x97；上下各2-M4，示意螺纹深10')
     for i,(a,b) in enumerate(product((-15.5,15.5),repeat=2)):
         add(f'x_motor_m3_{i}',cap_screw((90+a,yc+32,1150+b),(0,1,0),2.7,6,5.5,3),'Y','M3x6，不加垫片：穿过3mm板后入电机3mm',True,'fastener_envelope')
         add(f'y_motor_m3_{i}',cap_screw((149,880+a,1044+b),(1,0,0),2.7,6,5.5,3),'fixed','M3x6，不加垫片：穿过3mm板后入电机3mm',True,'fastener_envelope')
-        add(f'z_motor_m3_{i}',cap_screw((x+a,yc-74+b,z+1063),(0,0,1),2.7,10,5.5,3),'XYZ','M3x10：先在台面把电机锁到顶板，再安装顶板',True,'fastener_envelope')
+        add(f'z_motor_m3_{i}',cap_screw((x+a,yc-74+b,z+TOP_PLATE_BOTTOM),(0,0,1),2.7,10,5.5,3),'XYZ','M3x10：先在台面把电机锁到顶板，再安装顶板',True,'fastener_envelope')
     for i,(xx,yy) in enumerate(z_holes(x,yc)):
-        add(f'z_top_m4_{i}',cap_screw((xx,yy,z+1070),(0,0,-1),3.6,16,7.5,3),'XYZ','M4x16，顶板7mm+入侧支板9mm，示意牙深10',True,'fastener_envelope')
+        add(f'z_top_m4_{i}',cap_screw((xx,yy,z+MOTOR_FACE),(0,0,-1),3.6,16,7.5,3),'XYZ','M4x16，顶板7mm+入侧支板9mm，示意牙深10',True,'fastener_envelope')
         head=cq.Solid.makeCone(3.75,1.8,1.85,cq.Vector(xx,yy,z+990))
         shaft=cyl((xx,yy,z+991.8),1.8,12.2)
         add(f'z_base_m4_{i}',head.fuse(shaft),'XYZ','M4x14沉头，头部不低于下鞍座底面；装到滑枕前先组装',True,'fastener_envelope')

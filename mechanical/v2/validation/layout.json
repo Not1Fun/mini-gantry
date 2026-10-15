@@ -1,7 +1,7 @@
 {
   "status": "PASS_LAYOUT_CHECKS",
   "invalid_solids": [],
-  "component_count": 151,
+  "component_count": 154,
   "unique_names": true,
   "travel_mm": [
     500,
@@ -154,7 +154,7 @@
       "all_positive": true
     }
   ],
-  "maximum_z_mm": 1761,
+  "maximum_z_mm": 1791,
   "frame_plan_mm": [
     900,
     900
@@ -164,7 +164,7 @@
   "installed_maximum_envelope_mm": [
     900.0,
     1040.301,
-    1761.0
+    1791.0
   ],
   "checks_not_performed": [
     "完整装配干涉排除：导轨/滑块、支架包络存在有意重合",

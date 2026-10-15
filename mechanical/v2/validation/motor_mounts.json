@@ -16,10 +16,6 @@
     "unchanged_x_pulley_axle_1": true,
     "unchanged_x_reducer": true,
     "unchanged_motor_X_ZDT42V2": true,
-    "unchanged_z_screw_1605": true,
-    "unchanged_z_coupling": true,
-    "unchanged_motor_Z_ZDT42V2": true,
-    "unchanged_z_brake_reserve": true,
     "xy_reduction_unchanged": true,
     "X_mount_hole_0": true,
     "X_mount_hole_1": true,
@@ -62,9 +58,5 @@
     "Z": 3
   },
   "motor_minimum_thread_depth_from_user_image_mm": 4,
-  "existing_transmission_envelope_issue": {
-    "Z_motor_coupling_overlap_mm3": 720.996,
-    "scope": "该联轴器/电机止口的占位重叠属于原传动简化模型；本次未改轴线、位置或比值，不能据此声称传动采购件已试装通过"
-  },
   "scope": "支架接口检查；减速器和制动器/联轴器仍为占位，不包含焊缝强度、公差链或实物安装验收"
 }

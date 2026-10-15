@@ -1,0 +1,172 @@
+{
+  "status": "PASS_Z_DRIVE_INTERFACE_LAYOUT",
+  "checks": {
+    "local_rigid_parts_no_intersection": true,
+    "motor_hub_insertion_12mm": true,
+    "screw_hub_insertion_12mm": true,
+    "positive_separation_margins": true,
+    "open_side_tool_corridors_clear": true,
+    "valid_z_solids": true,
+    "500mm_each_axis_preserved": true
+  },
+  "clearance_mm": {
+    "motor_boss_to_coupling_axial": 8.5,
+    "top_plate_to_coupling_axial": 3.5,
+    "brake_to_coupling_axial": 2.5,
+    "locknut_to_brake_axial": 2,
+    "shaft_end_to_end_axial": 10.0,
+    "coupling_to_side_plate_radial": 17.5
+  },
+  "shaft_insertion_mm": {
+    "motor": 12.0,
+    "screw": 12.0
+  },
+  "checked_local_pairs": [
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_coupling_center_ENVELOPE",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_coupling_motor_hub",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_motor_m3_0",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_motor_m3_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_motor_m3_2",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_motor_m3_3",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "motor_Z_ZDT42V2",
+      "b": "z_motor_mount",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_brake_reserve",
+      "b": "z_screw_1605",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_coupling_center_ENVELOPE",
+      "b": "z_coupling_motor_hub",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_coupling_center_ENVELOPE",
+      "b": "z_coupling_screw_hub",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_coupling_center_ENVELOPE",
+      "b": "z_screw_1605",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_coupling_screw_hub",
+      "b": "z_screw_1605",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_motor_lower_saddle",
+      "b": "z_screw_1605",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_motor_lower_saddle",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_motor_standoff_0",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_motor_standoff_1",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_ram_4080",
+      "b": "z_screw_support_0",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_ram_4080",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_screw_1605",
+      "b": "z_screw_locknut",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_screw_1605",
+      "b": "z_screw_support_0",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_screw_1605",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "z_screw_locknut",
+      "b": "z_screw_support_1",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "tool_access": [
+    {
+      "hub": "lower_hub",
+      "tool_diameter_mm": 5,
+      "approach_length_mm": 60,
+      "approach": "+Y开放侧；联轴器转到夹紧螺钉可达方位",
+      "hits": []
+    },
+    {
+      "hub": "upper_hub",
+      "tool_diameter_mm": 5,
+      "approach_length_mm": 60,
+      "approach": "+Y开放侧；联轴器转到夹紧螺钉可达方位",
+      "hits": []
+    }
+  ],
+  "xy_followup": [
+    {
+      "axis": "X",
+      "state": "PENDING_REAL_REDUCTION_ASSEMBLY",
+      "envelope_vs_bracket_overlap_mm3": 13466.21,
+      "reason": "减速组件仍是整体空间占位，不能按此黑盒加工；需拆为带轮/皮带/轴承/轴及张紧机构后检查"
+    },
+    {
+      "axis": "Y",
+      "state": "PENDING_REAL_REDUCTION_ASSEMBLY",
+      "envelope_vs_bracket_overlap_mm3": 21913.971,
+      "reason": "减速组件仍是整体空间占位，不能按此黑盒加工；需拆为带轮/皮带/轴承/轴及张紧机构后检查"
+    }
+  ],
+  "remaining_interfaces": [
+    "Z支承座外形及轴肩/锁紧螺纹待真实供应商图纸冻结",
+    "制动器转子与D10轴的连接、反力支架和壳体固定孔尚未细化",
+    "联轴器为目录尺寸包络；真实夹紧缝、螺钉及齿爪应以厂家CAD核对"
+  ],
+  "scope": "标称刚体几何检查；不是连续运动、公差、强度、制动可靠性或实物装配验收"
+}

@@ -2,32 +2,32 @@
   "status": "PRELIMINARY_HAND_CALCULATION_NOT_LOAD_CERTIFICATION",
   "axes": {
     "X": {
-      "moving_mass_estimate_kg": 11.661,
+      "moving_mass_estimate_kg": 11.744,
       "speed_mm_s": 150,
       "motor_rpm": 300.0,
-      "linear_force_N": 9.5,
-      "motor_torque_raw_Nm": 0.0516,
-      "motor_required_curve_torque_with_factor_Nm": 0.1033,
+      "linear_force_N": 9.52,
+      "motor_torque_raw_Nm": 0.0518,
+      "motor_required_curve_torque_with_factor_Nm": 0.1036,
       "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
       "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
     },
     "Y": {
-      "moving_mass_estimate_kg": 19.118,
+      "moving_mass_estimate_kg": 19.201,
       "speed_mm_s": 100,
       "motor_rpm": 200.0,
-      "linear_force_N": 11.82,
-      "motor_torque_raw_Nm": 0.0636,
-      "motor_required_curve_torque_with_factor_Nm": 0.1271,
+      "linear_force_N": 11.84,
+      "motor_torque_raw_Nm": 0.0637,
+      "motor_required_curve_torque_with_factor_Nm": 0.1273,
       "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
       "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
     },
     "Z": {
-      "moving_mass_estimate_kg": 8.347,
+      "moving_mass_estimate_kg": 8.43,
       "speed_mm_s": 25,
       "motor_rpm": 300.0,
-      "linear_force_N": 89.14,
-      "motor_torque_raw_Nm": 0.1201,
-      "motor_required_curve_torque_with_factor_Nm": 0.2402,
+      "linear_force_N": 89.97,
+      "motor_torque_raw_Nm": 0.1209,
+      "motor_required_curve_torque_with_factor_Nm": 0.2417,
       "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
       "assumed_motor_side_rotating_inertia_kg_m2": 6e-05
     }
@@ -35,7 +35,7 @@
   "z_screw_permissible_speed_estimate_rpm": 3231,
   "z_screw_support_assumption": "fixed-supported; root diameter 13.5 mm; unsupported span 790 mm",
   "bridge_simple_support_deflection_mm": {
-    "vertical_point_load": 0.0293,
+    "vertical_point_load": 0.0295,
     "lateral_point_load": 0.0093
   },
   "excluded_effects": [
@@ -48,7 +48,7 @@
     "实际负载和热态电机性能"
   ],
   "brake": {
-    "minimum_holding_torque_candidate_Nm": 0.13,
+    "minimum_holding_torque_candidate_Nm": 0.132,
     "status": "candidate only; verify brake location, shaft coupling and loss-of-power performance"
   },
   "payload_kg": 1.0,

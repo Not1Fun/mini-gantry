@@ -1,6 +1,6 @@
 {
   "project": "迷你龙门架",
-  "revision": "V2.1",
+  "revision": "V2.2",
   "status": "结构布局设计，未释放加工或采购",
   "units": "mm, kg, N, N.m, s",
   "entry_points": {
@@ -11,7 +11,8 @@
       "drawings/assembly.png",
       "drawings/fixed_head.png",
       "drawings/compute_mount.png",
-      "drawings/camera_mount.png"
+      "drawings/camera_mount.png",
+      "drawings/z_drive_stack.png"
     ],
     "rebuild_from_repository_root": [
       "python -m pip install .[solidworks]",
@@ -23,12 +24,14 @@
       "python mechanical/v2/interface_drawing.py",
       "python mechanical/v2/check_solidworks.py",
       "python mechanical/v2/check_motor_mounts.py",
-      "python mechanical/v2/motor_mount_drawing.py"
+      "python mechanical/v2/motor_mount_drawing.py",
+      "python mechanical/v2/check_z_drive.py",
+      "python mechanical/v2/z_drive_drawing.py"
     ],
     "custom_part_coordinates": "单件 STEP 已平移到自身包络最小点为原点；在总装中的位置参见 bom.json bbox_mm",
     "stl_purpose": "仅供 GitHub 三维预览，不是整机 3D 打印文件",
-    "solidworks_assembly": "SolidWorksV21/mini_gantry_v2_1.SLDASM",
-    "solidworks_scope": "4块接口板为原生草图拉伸；X/Y电机支架、Z下鞍座及两侧支板独立成件；其余按固定与XYZ组保存为实体模组",
+    "solidworks_assembly": "SolidWorksV22/mini_gantry_v2_2.SLDASM",
+    "solidworks_scope": "4块接口板为原生草图拉伸；电机支架与Z传动接口零件独立成件；其余按固定及XYZ运动组保存为实体模组",
     "interface_drawing": "drawings/mounting_interfaces.svg",
     "motor_detail_views": [
       "drawings/motor_mounts.png",
@@ -36,8 +39,8 @@
       "drawings/y_motor_mount.png",
       "drawings/z_motor_mount.png"
     ],
-    "solidworks_component_count": 13,
-    "solidworks_solid_body_count": 151
+    "solidworks_component_count": 21,
+    "solidworks_solid_body_count": 154
   },
   "confirmed": {
     "application": "轻载搬运与抓取",
@@ -54,7 +57,8 @@
       "用户所称 R6M5 最小系统板，暂按 RA6M5 理解"
     ],
     "rotary_motor_in_use": false,
-    "compute_board_policy": "Jetson Nano与树莓派4B都留孔，同一位置每次仅装一块"
+    "compute_board_policy": "Jetson Nano与树莓派4B都留孔，同一位置每次仅装一块",
+    "structure_accepted": true
   },
   "assumptions": {
     "gripper_and_workpiece_kg": 1.0,
@@ -172,7 +176,7 @@
     "完成样机满载、重复定位、热态、急停和断电试验",
     "核对具体Nano载板与实际树莓派4B板底元件，闲置孔不装支柱",
     "完成固定夹爪转接板的紧固孔与公差细化",
-    "X/Y减速器、Z联轴器和制动器仍是采购件占位，真实装配和工具通道需单独核对；本次不改传动布局",
+    "X/Y减速组件仍为占位；Z联轴器采用目录尺寸候选，须获取厂家CAD并确认D形轴夹紧、支承及制动器反力固定",
     "钢板焊接支架需细化焊缝和制造公差；所有M5 T螺母按实际型材槽规格选用",
     "用户打印相机适配板需保留统一四孔接口并自行核对镜头、走线和拆装后的标定"
   ],
@@ -217,13 +221,29 @@
       "id": "NANO_MOUNT",
       "url": "https://cdn.shopifycdn.net/s/files/1/0604/5905/7341/files/Holybro_X650_Assembly_Guide_V1.1.pdf?v=1718154187",
       "use": "安装板厂家图纸第2页，Nano86x58与Pi58x49孔距；已渲染核对"
+    },
+    {
+      "id": "NBK_MJC25_DIM",
+      "url": "https://www.nbk1560.com/images/en/product/jaw_type/MJC-CS-WH/MJC-CS-WH_1.pdf",
+      "use": "MJC-25CS系列外形D25/W34、毂长L12、弹性体E8/C1；同系列尺寸参考，颜色型式按最终选型"
+    },
+    {
+      "id": "NBK_MJC25_5_10",
+      "url": "https://www.nbk1560.com/en/products/coupling/couplicon/jaw_type/MJC-CS-RD/MJC-25CS-RD/MJC-25CS-RD-5-10/",
+      "use": "D5/D10孔组合候选；不构成采购放行"
+    },
+    {
+      "id": "NBK_COUPLING_INSTALL",
+      "url": "https://www.nbk1560.com/en-US/resources/coupling/article/couplicon-maintenance/",
+      "use": "推荐按毂长L插入轴；D形轴平面避开夹紧缝和螺栓沉孔"
     }
   ],
   "change_summary": [
-    "新增独立X/Y电机焊接L支架与机架固定孔",
-    "补齐Z下鞍座、侧支板、顶板固定孔和示意紧固件",
-    "60mm本体长度预留已由用户确认",
-    "摄像头保留统一可拆接口，用户后续打印不同相机的适配板"
+    "保留用户认可的机架与三轴500mm行程",
+    "Z电机平台抬高30mm，侧支板改97mm高",
+    "Z联轴器改D25x34、D5/D10双孔接口，两轴各插入12mm",
+    "补丝杆阶梯端部、锁紧件与局部装配间隙检查",
+    "独立列出X/Y减速组件及Z制动器支承待选型项"
   ],
   "stepper_interface": {
     "source": "用户2026-10-15提供的三张商品尺寸图；未上传原始购物截图",
@@ -345,7 +365,7 @@
   "motor_mounts": {
     "X": "3mm钢板加筋L座，4-D3.5/31x31，D24止口避让；底部2-M5固定到横梁上槽",
     "Y": "3mm钢板加筋L座，底部2-M5固定到后横梁上槽，D18通孔避让原D16贯通轴",
-    "Z": "下鞍座接滑枕前面型材槽；两片10mm侧支板；7mm顶板用4-M4固定；电机用4-M3",
+    "Z": "下鞍座接滑枕前槽；两片10x60x97侧支板；7mm顶板用4-M4固定；电机安装面相对TCP为1100",
     "motor_screws": "X/Y M3x6穿3mm板，Z M3x10穿7mm板，均入电机3mm，不超过所给图纸4mm最小孔深；不含垫片",
     "assembly_order": [
       "先在台面上把电机锁到安装板，预留减速器装配操作空间",
@@ -539,56 +559,69 @@
           1171.0
         ],
         "volume_mm3": 125238.541
-      },
-      {
-        "name": "z_screw_1605",
-        "bbox_mm": [
-          442.0,
-          418.0,
-          565.0,
-          458.0,
-          434.0,
-          1415.0
-        ],
-        "volume_mm3": 170902.64
-      },
-      {
-        "name": "z_coupling",
-        "bbox_mm": [
-          438.0,
-          414.0,
-          1415.0,
-          462.0,
-          438.0,
-          1440.0
-        ],
-        "volume_mm3": 10818.86
-      },
-      {
-        "name": "motor_Z_ZDT42V2",
-        "bbox_mm": [
-          429.0,
-          405.0,
-          1417.5,
-          473.5,
-          450.2,
-          1511.0
-        ],
-        "volume_mm3": 125238.541
-      },
-      {
-        "name": "z_brake_reserve",
-        "bbox_mm": [
-          423.0,
-          399.0,
-          1385.0,
-          477.0,
-          453.0,
-          1415.0
-        ],
-        "volume_mm3": 81448.142
       }
-    ]
+    ],
+    "scope": "继续保持X/Y电机、轴线、带轮和减速比；Z上端已按V2.2细化"
   },
-  "existing_transmission_issue": "原Z联轴器简化占位与电机止口存在体积重叠；本次电机安装面与轴线保持原坐标。必须另行细化联轴器/制动器/轴伸连接后才能放行传动装配。"
+  "z_drive_detail": {
+    "motor_face_z_from_tcp_mm": 1100,
+    "top_plate_bottom_z_from_tcp_mm": 1093,
+    "motor_lift_from_v21_mm": 30,
+    "coupling": {
+      "candidate": "NBK MJC-25CS-RD-5-10 (尺寸候选，未下单)",
+      "diameter_mm": 25,
+      "length_mm": 34,
+      "insertion_mm": 12,
+      "center_zone_mm": 10,
+      "bores_mm": [
+        5,
+        10
+      ],
+      "hub_clamp_screw": "M3；目录1.5 N.m，实物型号和D形轴适用性确认后执行",
+      "scope": "目录外形和插入深度；未建夹紧缝/齿爪，不作为零件加工图"
+    },
+    "shaft_sections_z_from_tcp_mm": [
+      [
+        195,
+        225,
+        10
+      ],
+      [
+        225,
+        985,
+        16
+      ],
+      [
+        985,
+        1015,
+        12
+      ],
+      [
+        1015,
+        1023,
+        12
+      ],
+      [
+        1023,
+        1067.5,
+        10
+      ]
+    ],
+    "shaft_end_notes": [
+      "985~1015为上支承轴颈；1015~1023为M12x1候选锁紧段，模型不建螺纹",
+      "两端轴肩、退刀槽、轴承配合与锁紧公差须随真实支承组件冻结"
+    ],
+    "brake_z_from_tcp_mm": [
+      1023,
+      1053
+    ],
+    "assembly_order": [
+      "先安装丝杆支承与锁紧件，核对轴向定位；电机轴不承担丝杆轴向载荷",
+      "制动器与反力支架选定后安装，再把D10下半联轴器插入12mm并锁紧",
+      "将D5上半联轴器在电机轴上插入12mm；D面避开夹紧缝和螺栓沉孔方位",
+      "安装电机顶板并连接两半联轴器，按目录C=1mm装配间隙核对；对中后再锁紧",
+      "夹紧螺钉工具从开放的+Y侧进入；可通过旋转联轴器调整至检修位置"
+    ],
+    "status": "接口尺寸细化；采购件内部结构、支承型号和制动器固定尚未放行"
+  }
 }

@@ -33,14 +33,14 @@ def frame(ax,side=False):
     ax.set_aspect("equal");ax.set_xlim(-120,1030);ax.set_ylim(-140,1850);ax.axis("off")
     dim(ax,(0,-60),(900,-60),"机架 900")
     dim(ax,(940,120),(940,620),"Z 行程 500",offset=35)
-    ax.axhline(1761,xmin=.1,xmax=.9,color="#8596a2",ls="--",lw=.7)
-    ax.text(100,1780,"Z 全收回最高 1761",fontsize=9,color="#526d7d")
+    ax.axhline(1791,xmin=.1,xmax=.9,color="#8596a2",ls="--",lw=.7)
+    ax.text(100,1780,"Z 全收回最高 1791",fontsize=9,color="#526d7d")
 
 
 def main():
     out=ROOT/"drawings";out.mkdir(exist_ok=True)
     fig=plt.figure(figsize=(16,11.3),facecolor="white")
-    fig.text(.04,.95,"迷你龙门架 V2.1｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
+    fig.text(.04,.95,"迷你龙门架 V2.2｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
     fig.text(.04,.914,"三轴有效行程 500 × 500 × 500 mm · 固定夹爪接口 · 夹爪与物料暂按 1 kg",fontsize=12,color="#536e7f")
     a=fig.add_axes([.04,.20,.32,.68]); frame(a)
     a.set_title("正视包络图  /  X–Z",fontsize=12,color=C["ink"])
@@ -49,8 +49,8 @@ def main():
     rect(a,370,860,160,240,C["plate"])
     rect(a,410,560,80,800,C["frame"])
     for xx in (420,480):a.plot([xx,xx],[600,1340],color=C["rail"],lw=2)
-    rect(a,429,1440,42,71,C["motor"])
-    rect(a,423,1385,54,30,"#ce6a58")
+    rect(a,429,1470,42,71,C["motor"])
+    rect(a,423,1393,54,30,"#ce6a58")
     rect(a,410,554,80,6,C["plate"])
     rect(a,420,438,4,116,C["plate"])
     rect(a,476,438,4,116,C["plate"])
@@ -71,9 +71,9 @@ def main():
     rect(b,480,1000,40,80,C["frame"])
     rect(b,440,860,12,240,C["plate"])
     rect(b,370,560,40,800,C["frame"])
-    b.plot([426,426],[565,1405],color=C["rail"],lw=2)
-    rect(b,405,1440,42,71,C["motor"])
-    rect(b,399,1385,54,30,"#ce6a58")
+    b.plot([426,426],[565,1437.5],color=C["rail"],lw=2)
+    rect(b,405,1470,42,71,C["motor"])
+    rect(b,399,1393,54,30,"#ce6a58")
     rect(b,370,554,60,6,C["plate"])
     rect(b,380,438,40,116,C["plate"])
     rect(b,365,430,70,8,C["work"])
@@ -89,7 +89,7 @@ def main():
     t=fig.add_axes([.72,.24,.25,.64]);t.axis("off")
     lines=[("结构基准",True),
         ("机架：900 × 900 mm；背部预留至 968 mm",False),
-        ("最高点：1761 mm；另留走线检修空间",False),
+        ("最高点：1791 mm；另留走线检修空间",False),
         ("4040 框架 + 4080 上梁与滑枕",False),
         ("Y：双 820 导轨 / 双带 / 30T / 3:1",False),
         ("X：双 700 导轨 / 单带 / 20T / 2:1",False),
@@ -103,7 +103,7 @@ def main():
         ("同一托板，两组孔，每次只装一块",False),
         ("控制与接口",True),
         ("首选 RM A 板，预留替换托板",False),
-        ("CAN1：张大头 42 V2.1 × 3",False),
+        ("CAN1：张大头 42 V2 × 3",False),
         ("前上方120×100可拆摄像头面板",False),
         ("RA6M5 候选需核对型号及收发器",False),
         ("4颗M3固定；用户打印相机适配板",False)]
@@ -114,7 +114,7 @@ def main():
     fig.text(.04,.14,"设计边界",fontsize=12,color="#a85830",weight="bold")
     fig.text(.04,.109,"这是结构布局评审模型，采购件为简化包络。没有完成全装配干涉排除、紧固件详设、供应商孔位、公差链或实物承载验收。",fontsize=10,color="#526d7d")
     fig.text(.04,.080,"下料前需确认负载和电机力矩曲线，并冻结导轨、丝杆支承、皮带轮、制动器及夹爪型号。参数与证据记录在同目录 design.json / validation。",fontsize=10,color="#526d7d")
-    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2.1｜2026-10-15",fontsize=10,color="#526d7d")
+    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2.2｜2026-10-15",fontsize=10,color="#526d7d")
     fig.savefig(out/"layout.svg",facecolor="white")
     fig.savefig(out/"layout.png",dpi=160,facecolor="white")
     plt.close(fig)

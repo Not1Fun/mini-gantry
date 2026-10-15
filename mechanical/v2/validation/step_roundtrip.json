@@ -1,15 +1,15 @@
 {
   "valid": true,
-  "solids": 151,
-  "source_solids": 151,
+  "solids": 154,
+  "source_solids": 154,
   "bbox_mm": [
     0.0,
     -72.3013,
     0.0,
     900.0,
     968.0,
-    1511.0
+    1541.0
   ],
-  "source_volume_mm3": 14417762.974192876,
-  "imported_volume_mm3": 14417762.974193998
+  "source_volume_mm3": 14460970.573138375,
+  "imported_volume_mm3": 14460970.573139539
 }
