@@ -18,10 +18,10 @@ from build import ROOT, CFG, COLORS, make_model, bounds
 from accessories import holes
 from z_drive import TOP_PLATE_BOTTOM
 
-OUT=ROOT/'SolidWorksV22'
+OUT=ROOT/'SolidWorksV23'
 IMPORT=ROOT/'cad'/'sw_import'
-PREFIX='v22_'
-ASSEMBLY_NAME='mini_gantry_v2_2.SLDASM'
+PREFIX='v23_'
+ASSEMBLY_NAME='mini_gantry_v2_3.SLDASM'
 TEMPLATES=Path(os.environ.get('PROGRAMDATA',r'C:\ProgramData'))/'SOLIDWORKS'/'SOLIDWORKS 2024'/'templates'
 SW_SESSION=None
 SW_PREFERENCES={}
@@ -112,7 +112,7 @@ def feature_spec(name,pose):
 
 
 def standalone(p,pose):
-    return feature_spec(p['name'],pose) is not None or p['role'] in ('custom_motor_bracket','z_drive_interface')
+    return feature_spec(p['name'],pose) is not None or p['role'] in ('custom_motor_bracket','z_drive_interface','xy_drive_interface')
 
 
 def main():
@@ -140,7 +140,7 @@ def main():
     anchor_title=prop(anchor,'GetTitle')
     report={'status':'BUILDING','solidworks_revision':str(prop(sw,'RevisionNumber')),'parts':[],
             'assembly_constraints':'全部组件固定在评审位姿；未建立可驱动运动配合',
-            'model_scope':'4块接口板为原生草图拉伸；电机安装支架及Z传动接口零件单独成件；其余按固定机架及XYZ组保存为导入实体'}
+            'model_scope':'4块接口板为原生草图拉伸；电机安装支架及XYZ传动接口零件单独成件；其余按固定机架及XYZ组保存为导入实体'}
     report_path=ROOT/'validation'/'solidworks.json'
     def checkpoint():report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     pose=CFG['assumptions']['illustration_pose_mm'];original=make_model(pose)
@@ -189,7 +189,7 @@ def main():
         rgb=[int(color[i:i+2],16)/255 for i in (0,2,4)]
         doc.MaterialPropertyValues=doubles(rgb+[.5,.75,.25,.15,0,0])
         pm=doc.Extension.CustomPropertyManager('')
-        pm.Add3('DesignStatus',30,'V2_2_Z_DRIVE_INTERFACES_REVIEW_ONLY',1)
+        pm.Add3('DesignStatus',30,'V2_3_XY_REDUCTION_REVIEW_ONLY',1)
         pm.Add3('FeatureMethod',30,method,1)
         pm.Add3('PartRole',30,p['spec'],1)
         bodies=doc.GetBodies2(0,False) or []
@@ -240,7 +240,7 @@ def main():
                   native_feature_parts=sum(p['method']=='native_sketch_extrusion' for p in report['parts']),
                   body_count=sum(p['bodies'] for p in report['parts']))
     checkpoint()
-    scratch=ROOT.parents[2]/'sw-v22-intermediates';scratch.mkdir(exist_ok=True)
+    scratch=ROOT.parents[2]/'sw-v23-intermediates';scratch.mkdir(exist_ok=True)
     keep={p['file'] for p in report['parts']}
     for path in OUT.glob('*.SLDPRT'):
         if path.name not in keep:

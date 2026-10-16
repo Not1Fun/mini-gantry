@@ -12,12 +12,12 @@
       "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
     },
     "Y": {
-      "moving_mass_estimate_kg": 19.201,
+      "moving_mass_estimate_kg": 19.071,
       "speed_mm_s": 100,
       "motor_rpm": 200.0,
-      "linear_force_N": 11.84,
-      "motor_torque_raw_Nm": 0.0637,
-      "motor_required_curve_torque_with_factor_Nm": 0.1273,
+      "linear_force_N": 11.81,
+      "motor_torque_raw_Nm": 0.0635,
+      "motor_required_curve_torque_with_factor_Nm": 0.127,
       "motor_suitability": "UNVERIFIED: compare actual motor torque-speed curve and thermal rating",
       "assumed_motor_side_rotating_inertia_kg_m2": 2e-05
     },

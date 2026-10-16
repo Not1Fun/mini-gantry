@@ -47,11 +47,7 @@ def main():
         'open_side_tool_corridors_clear':all(not r['hits'] for r in tool_rows),
         'valid_z_solids':all(shape(n).isValid() for n in drive),
         '500mm_each_axis_preserved':[b-a for a,b in zip(CFG['assumptions']['tcp_min_mm'],CFG['assumptions']['tcp_max_mm'])]==[500,500,500]}
-    xy=[]
-    for axis in ('x','y'):
-        xy.append({'axis':axis.upper(),'state':'PENDING_REAL_REDUCTION_ASSEMBLY',
-                   'envelope_vs_bracket_overlap_mm3':round(shape(axis+'_reducer').intersect(shape(axis+'_motor_bracket')).Volume(),3),
-                   'reason':'减速组件仍是整体空间占位，不能按此黑盒加工；需拆为带轮/皮带/轴承/轴及张紧机构后检查'})
+    xy=[{'axis':axis,'state':'SEE_XY_DRIVE_VALIDATION','report':'xy_drive.json'} for axis in ('X','Y')]
     result={'status':'PASS_Z_DRIVE_INTERFACE_LAYOUT' if all(checks.values()) else 'FAIL',
             'checks':checks,'clearance_mm':clearances,'shaft_insertion_mm':{'motor':insert_motor,'screw':insert_screw},
             'checked_local_pairs':checked,'tool_access':tool_rows,'xy_followup':xy,

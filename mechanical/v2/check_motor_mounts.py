@@ -5,6 +5,7 @@ from OCP.BRepExtrema import BRepExtrema_DistShapeShape
 from build import ROOT,CFG,make_model,bounds,cylinder
 from motor_mounts import z_holes
 from z_drive import TOP_PLATE_BOTTOM
+from xy_drive import CENTERS
 
 
 def distance(a,b):
@@ -20,7 +21,7 @@ def main():
         shape=s(old['name'])
         checks['unchanged_'+old['name']]=(max(abs(a-b) for a,b in zip(bounds(shape),old['bbox_mm']))<.0002 and abs(shape.Volume()-old['volume_mm3'])<.01)
     checks['xy_reduction_unchanged']=CFG['assumptions']['xy_motor_reduction']==contract['xy_ratio']
-    for axis,name,face,normal in [('X','x_motor_bracket',(90,yc+32,1150),(0,1,0)),('Y','y_motor_bracket',(149,880,1044),(1,0,0)),('Z','z_motor_mount',(x,yc-74,z+TOP_PLATE_BOTTOM),(0,0,1))]:
+    for axis,name,face,normal in [('X','x_motor_bracket',(90,yc+57,1100+CENTERS["X"]),(0,1,0)),('Y','y_motor_bracket',(149,880,984+CENTERS["Y"]),(1,0,0)),('Z','z_motor_mount',(x,yc-74,z+TOP_PLATE_BOTTOM),(0,0,1))]:
         t=7 if axis=='Z' else 3
         for i,(a,b) in enumerate(product((-15.5,15.5),repeat=2)):
             p=(face[0]+a,face[1],face[2]+b) if axis=='X' else ((face[0],face[1]+a,face[2]+b) if axis=='Y' else (face[0]+a,face[1]+b,face[2]))

@@ -1,7 +1,7 @@
 {
   "status": "PASS_LAYOUT_CHECKS",
   "invalid_solids": [],
-  "component_count": 154,
+  "component_count": 186,
   "unique_names": true,
   "travel_mm": [
     500,

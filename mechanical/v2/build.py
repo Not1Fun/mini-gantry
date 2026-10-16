@@ -19,6 +19,7 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection, Line3DCollection
 from accessories import BOARD_PATTERNS, holes, compute_plate, board_pose, camera_panel, camera_carrier, camera_pose
 from motor_mounts import mounting_parts, z_top_plate
 from z_drive import drive_parts, MOTOR_FACE
+from xy_drive import drive_parts as xy_parts, motor_position, main_output_pulley
 
 ROOT = Path(__file__).resolve().parent
 CFG = json.loads((ROOT / "design.json").read_text(encoding="utf-8"))
@@ -125,14 +126,12 @@ def make_model(tcp=(450, 400, 370), compute_board="pi4b"):
     yradius = 3 * 30 / (2 * math.pi)
     for i, xx in enumerate((95, 805)):
         for j, yy in enumerate((60, 880)):
-            add(f"y_pulley_{i}_{j}", ring((xx-7.5, yy, 984), yradius, 8 if j else 4, 15, (1,0,0)), "drive", mass=.04, spec="3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络")
-            add(f"y_bearing_mount_{i}_{j}", box((xx-24, yy-17, 964), (12, 34, 40)), "plate", mass=.08, spec="轴承/张紧座包络")
+            add(f"y_pulley_{i}_{j}", main_output_pulley("Y",xx,yc) if j else ring((xx-7.5, yy, 984), yradius,4,15,(1,0,0)), "drive", mass=.04, spec="3 mm 节距 / 30T / 15 mm；后轮16孔，节圆包络")
+            if j==0:add(f"y_bearing_mount_{i}_{j}", box((xx-24, yy-17, 964), (12, 34, 40)), "plate", mass=.08, spec="轴承/张紧座包络")
         for j, zz in enumerate((984-yradius, 984+yradius)):
             add(f"y_belt_{i}_{j}", box((xx-7.5, 60, zz-1), (15, 820, 2)), "belt", mass=.025, spec="3 mm 节距 / 15 mm 宽；环长约1730，采购复核")
         add(f"y_belt_clamp_{i}", box((xx-12, yc-20, 995), (24, 40, 10)), "plate", "Y", .025, "同步带夹块 / 接至桥架")
-    add("y_sync_shaft", cylinder((75, 880, 984), 8, 750, (1,0,0)), "screw", mass=1.18, spec="贯通轴 D16 / L750，端部另加工")
-    add("y_reducer", box((120, 845, 954), (32, 70, 115)), "motor", mass=.32, spec="同步带 3:1 减速组件包络")
-    add("motor_Y_ZDT42V2",stepper_shape().rotate((0,0,0),(0,1,0),90).translate((152,880,1044)),"motor",mass=.528,spec="42ZDT60A 预留：42x42x60 + 11驱动板；具体机身待确认")
+    add("motor_Y_ZDT42V2",stepper_shape().rotate((0,0,0),(0,1,0),90).translate(motor_position("Y",yc)),"motor",mass=.528,spec="42ZDT60A 预留：42x42x60 + 11驱动板；具体机身待确认")
 
     # X 双轨四滑块；轨道/滑块嵌合体积不用于干涉结论。
     for i, zz in enumerate((1015, 1055)):
@@ -144,14 +143,15 @@ def make_model(tcp=(450, 400, 370), compute_board="pi4b"):
     add("x_z_carrier", carrier, "plate", "XY", spec="6061 / 160 x 240 x 12 / 中央44x60螺母避让窗", role="custom_blank")
     radius = 3 * 20 / (2 * math.pi)
     for i, xx in enumerate((90,810)):
-        add(f"x_pulley_{i}", ring((xx,yc+20,1100),radius,4,15,(0,1,0)),"drive","Y",.03,"3 mm / 20T / 15 mm")
-        add(f"x_pulley_mount_{i}",box((xx-18,yc-20,1080),(36,40,35)),"plate","Y",.10,"皮带轮支座包络")
-        add(f"x_pulley_axle_{i}",cylinder((xx,yc-5,1100),4,40,(0,1,0)),"screw","Y",.03,"带两端轴承的输出轴")
+        add(f"x_pulley_{i}",main_output_pulley("X",xx,yc) if i==0 else ring((xx,yc+20,1100),radius,4,15,(0,1,0)),"drive","Y",.03,"3 mm / 20T / 15 mm")
+        if i==1:add(f"x_pulley_mount_{i}",box((xx-18,yc-20,1080),(36,40,35)),"plate","Y",.10,"皮带轮支座包络")
+        if i==1:add(f"x_pulley_axle_{i}",cylinder((xx,yc-5,1100),4,40,(0,1,0)),"screw","Y",.03,"带两端轴承的输出轴")
     for i, zz in enumerate((1100-radius,1100+radius)):
         add(f"x_belt_{i}",box((90,yc+20,zz-1),(720,15,2)),"belt","Y",.025,"3 mm / 15 mm；环长约 1500，采购复核")
     add("x_belt_clamp",box((x-20,yc-60,1085),(40,97,12)),"plate","XY",.126,"后上置同步带夹块与跨梁连接桥 / 接 X 滑座")
-    add("x_reducer",box((65,yc+10,1080),(50,25,95)),"motor","Y",.30,"2:1 同步带减速组件包络")
-    add("motor_X_ZDT42V2",stepper_shape().rotate((0,0,0),(1,0,0),-90).translate((90,yc+35,1150)),"motor","Y",.528,"42ZDT60A 尺寸预留；5mm D轴，接口按用户尺寸图")
+    add("motor_X_ZDT42V2",stepper_shape().rotate((0,0,0),(1,0,0),-90).translate(motor_position("X",yc)),"motor","Y",.528,"42ZDT60A 尺寸预留；5mm D轴，接口按用户尺寸图")
+
+    parts.extend(xy_parts(tcp))
 
     # Z 滑枕向上收回；固定滑块和固定螺母均装在 X 滑座上。
     add("z_ram_4080",tube((x-40,yc-130,z+190),(80,40,800),2),"frame","XYZ",2.00,"4080 / L800")
@@ -249,8 +249,8 @@ def render(parts, name, elev=19, azim=-64, zoom=None, prefixes=None, title=None,
         ax.add_collection3d(Line3DCollection(edges,colors="#e29e42",linewidths=1.5,linestyles="dashed"))
         ax.set(xlim=(-30,980),ylim=(-100,1020),zlim=(0,1800))
         ax.set_box_aspect((1010,1050,1770),zoom=1.0)
-        fig.text(.08,.94,"迷你龙门架  /  V2.2 Z轴传动接口",fontsize=22,color="#163348",weight="bold")
-        fig.text(.08,.90,"XYZ 各 500 mm · Z轴端部与联轴器细化 · 可拆摄像头接口",fontsize=11,color="#5a6c78")
+        fig.text(.08,.94,"迷你龙门架  /  V2.3 X/Y减速传动",fontsize=22,color="#163348",weight="bold")
+        fig.text(.08,.90,"XYZ 各 500 mm · X/Y轮组、闭环带与支承细化 · 可拆摄像头接口",fontsize=11,color="#5a6c78")
         fig.text(.08,.06,"结构评审版 · 尚未释放加工",fontsize=12,color="#a85830",weight="bold")
         fig.text(.08,.035,"橙色虚线为夹爪 TCP 工作范围。采购件为简化包络；负载暂按夹爪与物料合计 1 kg。",fontsize=10,color="#5a6c78")
     else:
@@ -334,7 +334,7 @@ def export_parts(parts):
     dump(ROOT/"cutlist.json",{"status":"PRELIMINARY_CUT_LENGTHS_VERIFY_JOINTS_BEFORE_CUTTING", "items":[{"profile_and_length":k,"quantity":v} for k,v in cutlist.items()]})
     custom=OUT/"custom_parts"; custom.mkdir(exist_ok=True)
     for p in parts:
-        if p["role"].startswith("custom") or p["role"]=="z_drive_interface":
+        if p["role"].startswith("custom") or p["role"] in ("z_drive_interface","xy_drive_interface"):
             b=p["shape"].BoundingBox()
             local=p["shape"].translate((-b.xmin,-b.ymin,-b.zmin))
             cq.exporters.export(local,str(custom/(p["name"]+".step")))

@@ -152,15 +152,13 @@
   "xy_followup": [
     {
       "axis": "X",
-      "state": "PENDING_REAL_REDUCTION_ASSEMBLY",
-      "envelope_vs_bracket_overlap_mm3": 13466.21,
-      "reason": "减速组件仍是整体空间占位，不能按此黑盒加工；需拆为带轮/皮带/轴承/轴及张紧机构后检查"
+      "state": "SEE_XY_DRIVE_VALIDATION",
+      "report": "xy_drive.json"
     },
     {
       "axis": "Y",
-      "state": "PENDING_REAL_REDUCTION_ASSEMBLY",
-      "envelope_vs_bracket_overlap_mm3": 21913.971,
-      "reason": "减速组件仍是整体空间占位，不能按此黑盒加工；需拆为带轮/皮带/轴承/轴及张紧机构后检查"
+      "state": "SEE_XY_DRIVE_VALIDATION",
+      "report": "xy_drive.json"
     }
   ],
   "remaining_interfaces": [

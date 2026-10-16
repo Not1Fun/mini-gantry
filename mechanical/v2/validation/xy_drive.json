@@ -1,0 +1,115 @@
+{
+  "status": "PASS_XY_REDUCTION_INTERFACE_LAYOUT",
+  "checks": {
+    "old_black_boxes_removed": true,
+    "ratios_2_and_3": true,
+    "pitch_paths_match_catalogue_lengths": true,
+    "nominal_interfaces_do_not_overlap": true,
+    "slot_travel_clear": true,
+    "radial_tool_corridors_clear": true,
+    "support_feet_contact_frame": true
+  },
+  "belt_geometry": [
+    {
+      "axis": "X",
+      "teeth": [
+        20,
+        40
+      ],
+      "ratio": 2.0,
+      "center_distance_mm": 50.0869035487807,
+      "cad_pitch_wire_length_mm": 192.00000000000006,
+      "belt_pitch_length_mm": 192,
+      "small_pulley_wrap_degrees": 158.0180278797019,
+      "engaged_teeth_geometric": 8.778779326650104
+    },
+    {
+      "axis": "Y",
+      "teeth": [
+        20,
+        60
+      ],
+      "ratio": 3.0,
+      "center_distance_mm": 59.9302497740165,
+      "cad_pitch_wire_length_mm": 245.99999999999997,
+      "belt_pitch_length_mm": 246,
+      "small_pulley_wrap_degrees": 142.8337259824638,
+      "engaged_teeth_geometric": 7.935206999025767
+    }
+  ],
+  "collisions": [],
+  "motor_adjustment": [
+    {
+      "axis": "X",
+      "z_offset_mm": -3,
+      "collisions": []
+    },
+    {
+      "axis": "X",
+      "z_offset_mm": 0,
+      "collisions": []
+    },
+    {
+      "axis": "X",
+      "z_offset_mm": 3,
+      "collisions": []
+    },
+    {
+      "axis": "Y",
+      "z_offset_mm": -3,
+      "collisions": []
+    },
+    {
+      "axis": "Y",
+      "z_offset_mm": 0,
+      "collisions": []
+    },
+    {
+      "axis": "Y",
+      "z_offset_mm": 3,
+      "collisions": []
+    }
+  ],
+  "tool_access": [
+    {
+      "axis": "X",
+      "hub": "input",
+      "tool_diameter_mm": 4,
+      "straight_approach_mm": 18,
+      "collisions": []
+    },
+    {
+      "axis": "X",
+      "hub": "driven",
+      "tool_diameter_mm": 4,
+      "straight_approach_mm": 18,
+      "collisions": []
+    },
+    {
+      "axis": "Y",
+      "hub": "input",
+      "tool_diameter_mm": 4,
+      "straight_approach_mm": 18,
+      "collisions": []
+    },
+    {
+      "axis": "Y",
+      "hub": "driven",
+      "tool_diameter_mm": 4,
+      "straight_approach_mm": 18,
+      "collisions": []
+    }
+  ],
+  "support_contact_distance_mm": {
+    "x_pulley_mount_0": 0.0,
+    "y_rear_support_0": 0.0,
+    "y_rear_support_1": 0.0
+  },
+  "remaining": [
+    "带轮真实齿形/轮毂/紧定螺钉须以供应商CAD匹配",
+    "轴承座配合、轴向尺寸链和轴环夹紧未做公差/预紧校核",
+    "6mm减速带额定能力、预紧力及电机轴径向载荷待选型计算",
+    "主长带前端惰轮、夹块、全行程走线及防护仍需细化"
+  ],
+  "scope": "标称几何与装配调节范围；不代表负载、寿命、连续运动或防护验收。长孔端点用于装带/张紧空间，不把±3mm解释为皮带可伸长。"
+}

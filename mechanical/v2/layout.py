@@ -40,7 +40,7 @@ def frame(ax,side=False):
 def main():
     out=ROOT/"drawings";out.mkdir(exist_ok=True)
     fig=plt.figure(figsize=(16,11.3),facecolor="white")
-    fig.text(.04,.95,"迷你龙门架 V2.2｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
+    fig.text(.04,.95,"迷你龙门架 V2.3｜总布置与接口",fontsize=23,color=C["ink"],weight="bold")
     fig.text(.04,.914,"三轴有效行程 500 × 500 × 500 mm · 固定夹爪接口 · 夹爪与物料暂按 1 kg",fontsize=12,color="#536e7f")
     a=fig.add_axes([.04,.20,.32,.68]); frame(a)
     a.set_title("正视包络图  /  X–Z",fontsize=12,color=C["ink"])
@@ -114,7 +114,7 @@ def main():
     fig.text(.04,.14,"设计边界",fontsize=12,color="#a85830",weight="bold")
     fig.text(.04,.109,"这是结构布局评审模型，采购件为简化包络。没有完成全装配干涉排除、紧固件详设、供应商孔位、公差链或实物承载验收。",fontsize=10,color="#526d7d")
     fig.text(.04,.080,"下料前需确认负载和电机力矩曲线，并冻结导轨、丝杆支承、皮带轮、制动器及夹爪型号。参数与证据记录在同目录 design.json / validation。",fontsize=10,color="#526d7d")
-    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2.2｜2026-10-15",fontsize=10,color="#526d7d")
+    fig.text(.04,.038,"单位 mm｜图示非加工比例｜V2.3｜2026-10-16",fontsize=10,color="#526d7d")
     fig.savefig(out/"layout.svg",facecolor="white")
     fig.savefig(out/"layout.png",dpi=160,facecolor="white")
     plt.close(fig)
