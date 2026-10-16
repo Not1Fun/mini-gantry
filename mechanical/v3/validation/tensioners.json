@@ -1,0 +1,51 @@
+{
+  "status": "PASS_TENSIONER_RANGE",
+  "checks": [
+    {
+      "module": "x_tension_0",
+      "adjustment_mm": -4,
+      "collisions": []
+    },
+    {
+      "module": "x_tension_0",
+      "adjustment_mm": 0,
+      "collisions": []
+    },
+    {
+      "module": "x_tension_0",
+      "adjustment_mm": 4,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_0",
+      "adjustment_mm": -4,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_0",
+      "adjustment_mm": 0,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_0",
+      "adjustment_mm": 4,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_1",
+      "adjustment_mm": -4,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_1",
+      "adjustment_mm": 0,
+      "collisions": []
+    },
+    {
+      "module": "y_tension_1",
+      "adjustment_mm": 4,
+      "collisions": []
+    }
+  ],
+  "scope": "仅几何全调节范围；张力由实际皮带及张力计设定，不得把几何行程当作允许伸长"
+}

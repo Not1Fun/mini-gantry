@@ -1,0 +1,68 @@
+{
+  "status": "PASS_NATIVE_MATERIAL_PROPERTY_SAVE",
+  "parts": [
+    {
+      "name": "y_pulley_1_1",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 115338
+      }
+    },
+    {
+      "name": "x_reduction_input_pulley",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 100101
+      }
+    },
+    {
+      "name": "y_reduction_driven_pulley",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 110952
+      }
+    },
+    {
+      "name": "x_pulley_0",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 100638
+      }
+    },
+    {
+      "name": "x_reduction_driven_pulley",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 108548
+      }
+    },
+    {
+      "name": "y_reduction_input_pulley",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 128566
+      }
+    },
+    {
+      "name": "y_pulley_0_1",
+      "material": "原厂铝合金",
+      "save": {
+        "errors": 0,
+        "warnings": 0,
+        "bytes": 125009
+      }
+    }
+  ]
+}

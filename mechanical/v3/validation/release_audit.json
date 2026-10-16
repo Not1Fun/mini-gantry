@@ -1,0 +1,1983 @@
+{
+  "status": "PASS_FABRICATION_PACKAGE_CONSISTENCY",
+  "revision": "V3-R1",
+  "manufactured_unique_parts": 109,
+  "manufactured_instances": 176,
+  "native_components": 180,
+  "solids": 1219,
+  "working_positions_checked": 27,
+  "overtravel_positions_checked": 8,
+  "tensioner_positions_checked": 9,
+  "belt_phase_positions_checked": 4,
+  "machining_pdf_pages": 110,
+  "dxf_files": 53,
+  "native_centroid_max_error_mm": 0.00011948368239700358,
+  "native_open_warning": {
+    "errors": 0,
+    "warnings": 32
+  },
+  "native_rebuild_after_open": true,
+  "files": [
+    {
+      "file": "accessories.py",
+      "bytes": 1930,
+      "sha256": "0cc8b5d4654e5c500bcecfc4607ef169b6054702f4cc77c2cf21621b90c55710"
+    },
+    {
+      "file": "accessory_fabrication.py",
+      "bytes": 5742,
+      "sha256": "28f0146b8dae9d6fb76bb034becf7cd1db9e0ce61b5275446526b7e99a9ba75f"
+    },
+    {
+      "file": "assembly_book.py",
+      "bytes": 13179,
+      "sha256": "a038a954616b1decb6e25ab4785e906e09c85dab20f3a203d18b4179609cf707"
+    },
+    {
+      "file": "audit_belt_phase.py",
+      "bytes": 1759,
+      "sha256": "1e79a28bcb7ee7f565306d2ab3c4e5952cf4b9c27fb0da9afa2e89e64d6c58c9"
+    },
+    {
+      "file": "audit_geometry.py",
+      "bytes": 5673,
+      "sha256": "d59d29daf71ab38f986e40fbef7567492a374f3ef8981fcbadd7107370910616"
+    },
+    {
+      "file": "audit_tensioners.py",
+      "bytes": 1890,
+      "sha256": "bce27333129b2309865ad80ea6c8a5950058bddc57cc32bf3175a0c92ef63cf5"
+    },
+    {
+      "file": "belt_fabrication.py",
+      "bytes": 11725,
+      "sha256": "1ef40981deecceb4eda5f93675b20e0dc213c14cc233ec524c1125c409097eeb"
+    },
+    {
+      "file": "bom.json",
+      "bytes": 1021750,
+      "sha256": "4ba4013a015e010db7cc00e13bcfd75b4eb232b94d232007ff021f5bd738da03"
+    },
+    {
+      "file": "build.py",
+      "bytes": 16940,
+      "sha256": "eb35c12b6b66a18d2adc021f8dbd43514cef177e38edbc5e978f23d363d16792"
+    },
+    {
+      "file": "build_solidworks.py",
+      "bytes": 15257,
+      "sha256": "90219ce814d5e2ecd66e50cb7c973ce8ab30f04cda4cb68f8ac5b969f5f42fc9"
+    },
+    {
+      "file": "cad/camera_adapter_blank.stl",
+      "bytes": 68684,
+      "sha256": "ec06929572b3858cfdd19681923c09fd469e2ab18efe8e91bb0326bb68b8a656"
+    },
+    {
+      "file": "cad/dxf/MG3-001.dxf",
+      "bytes": 20140,
+      "sha256": "97cfb703d2c4cfab5d2f3843a8d21af1292bddc0bf203b46169b81b83a613f14"
+    },
+    {
+      "file": "cad/dxf/MG3-003.dxf",
+      "bytes": 19889,
+      "sha256": "36d311cf5a1e3d22f39e82efc68fb219c435dab711a042c18f6c3c0fa12f87f1"
+    },
+    {
+      "file": "cad/dxf/MG3-004.dxf",
+      "bytes": 20140,
+      "sha256": "648bc4d0d5510ced2d854ffa986540ebe4bb8e0a928e685fcc5ae8887275ff0e"
+    },
+    {
+      "file": "cad/dxf/MG3-005.dxf",
+      "bytes": 20140,
+      "sha256": "79d023d8536088046ff159acb8648e1cc79ced832d67277eda03b31f74019e3e"
+    },
+    {
+      "file": "cad/dxf/MG3-009.dxf",
+      "bytes": 19887,
+      "sha256": "48a64fdc5d71c34506c768b04b204338755574975c96d0f9488725930aafb481"
+    },
+    {
+      "file": "cad/dxf/MG3-010.dxf",
+      "bytes": 20146,
+      "sha256": "f5cc15e182c0ce86a95485acf93b868d4f16286749e9dd1eec6ecbd7aae0d415"
+    },
+    {
+      "file": "cad/dxf/MG3-011.dxf",
+      "bytes": 20146,
+      "sha256": "e479b49f04914e1e5a81e15b703822578d7b8a1b4e63f6641b000cc3eeaec967"
+    },
+    {
+      "file": "cad/dxf/MG3-015.dxf",
+      "bytes": 19891,
+      "sha256": "7e91f6894504beb708e54ac8a189c5a0abfc7a25df7b6b165300ee6e48ad6179"
+    },
+    {
+      "file": "cad/dxf/MG3-016.dxf",
+      "bytes": 19889,
+      "sha256": "900411f92c6cbe2dcc49a021428c5f9eeaa796747155d165dc14fa1a7c9e0590"
+    },
+    {
+      "file": "cad/dxf/MG3-017.dxf",
+      "bytes": 20013,
+      "sha256": "7595c0678a0c7a1cd7afbcacac71c14103835358a1fd007b9525f204f117e217"
+    },
+    {
+      "file": "cad/dxf/MG3-018.dxf",
+      "bytes": 20392,
+      "sha256": "a9deab414823dd5e807fd4914e20f3b0d0ca246c3add68b6b48734491f18565e"
+    },
+    {
+      "file": "cad/dxf/MG3-019.dxf",
+      "bytes": 20889,
+      "sha256": "bf7bb3f6175f887ee46c7cc4d5b2b3e4c140d775006deecd6469128bd071da85"
+    },
+    {
+      "file": "cad/dxf/MG3-020.dxf",
+      "bytes": 19785,
+      "sha256": "ef5f2c51e5572811330419205ea06b52b2e3e763d4ff5949961ebdb8a51097ab"
+    },
+    {
+      "file": "cad/dxf/MG3-022.dxf",
+      "bytes": 20140,
+      "sha256": "1bfb759074133a6edaf63cbf055d6533bf8e546548517880a5251191770cf1d2"
+    },
+    {
+      "file": "cad/dxf/MG3-024.dxf",
+      "bytes": 21269,
+      "sha256": "5b0218ef68dae3865f35fb32aac3ad3a1655590078430fee06b30536d26d4e2b"
+    },
+    {
+      "file": "cad/dxf/MG3-025.dxf",
+      "bytes": 20781,
+      "sha256": "afe3a30464f69c11ebf8be6fb38c9a714edc5f6ac6001a074b9b59b81273e638"
+    },
+    {
+      "file": "cad/dxf/MG3-026.dxf",
+      "bytes": 19841,
+      "sha256": "f31cfa31c4594c3bfcae9fc32aba66480754833b4c0ffe7753d06c2875bd3d14"
+    },
+    {
+      "file": "cad/dxf/MG3-027.dxf",
+      "bytes": 20888,
+      "sha256": "fadadcb82e3326b366367bc7db230516c4549aa63ad575096fb8ca64babbeecb"
+    },
+    {
+      "file": "cad/dxf/MG3-028.dxf",
+      "bytes": 20305,
+      "sha256": "f3c6ab4896274caa5adf4f902314beded158d77d018b22218a676b53e9f52595"
+    },
+    {
+      "file": "cad/dxf/MG3-029.dxf",
+      "bytes": 21213,
+      "sha256": "6e4572ad265c63276f19cafeefd85e8244212de970f7eace2074fa331e22bcc5"
+    },
+    {
+      "file": "cad/dxf/MG3-030.dxf",
+      "bytes": 20058,
+      "sha256": "db6013554d2fb26ec78b22245c8315f9b93428fcc36a61cedddac14e80c55b1b"
+    },
+    {
+      "file": "cad/dxf/MG3-032.dxf",
+      "bytes": 20058,
+      "sha256": "f689173827975388d3364bcfd7ffad107714648e1da651bb7686ca30d992582f"
+    },
+    {
+      "file": "cad/dxf/MG3-034.dxf",
+      "bytes": 20064,
+      "sha256": "5b4527019420ea89dcd8f8254a82457c6655adb801ed82ed3bb31aee16932940"
+    },
+    {
+      "file": "cad/dxf/MG3-036.dxf",
+      "bytes": 20064,
+      "sha256": "cfbaeb213de94607e7196eec26b99b6d86a6d1a9657e8e233d5692d671b0d15b"
+    },
+    {
+      "file": "cad/dxf/MG3-040.dxf",
+      "bytes": 21317,
+      "sha256": "ed75e1bfc4acded6d09b26efd1a2458a0d572c9f667cfabd68a02a93130b87c2"
+    },
+    {
+      "file": "cad/dxf/MG3-041.dxf",
+      "bytes": 20130,
+      "sha256": "af960d05fdfd795171763e7611b4a517e489bc5b015124e0e675498afc118c8e"
+    },
+    {
+      "file": "cad/dxf/MG3-044.dxf",
+      "bytes": 21247,
+      "sha256": "2bdbaeaee853def8ca665eb5eba4708702bff3158b06485b8321764443a702fd"
+    },
+    {
+      "file": "cad/dxf/MG3-045.dxf",
+      "bytes": 21252,
+      "sha256": "ee140ea8f70cff761726474cfeddf1b3c9dd45338feaa3fe7bd7263c1b3cb8b1"
+    },
+    {
+      "file": "cad/dxf/MG3-047.dxf",
+      "bytes": 20260,
+      "sha256": "f70378d8bedbb34fe6884e739355e2b3125051b801d27f3708467ad46ee258dc"
+    },
+    {
+      "file": "cad/dxf/MG3-048.dxf",
+      "bytes": 20252,
+      "sha256": "d31e838c45b334279dc1eeb38e09db9b984c270f8a5539cb465e4dc708585e82"
+    },
+    {
+      "file": "cad/dxf/MG3-050.dxf",
+      "bytes": 20377,
+      "sha256": "becb001fdc075f2be02b31d95550282356a2b928c4da1c1de538c13265d6c18a"
+    },
+    {
+      "file": "cad/dxf/MG3-052.dxf",
+      "bytes": 20251,
+      "sha256": "891834e7fde09e54aba7b7f009e83c8cd2eda76636af0f7dd78407e409c0e3fb"
+    },
+    {
+      "file": "cad/dxf/MG3-053.dxf",
+      "bytes": 20251,
+      "sha256": "b9c7d7b60201e6eebc5e6844e944501ac5f5a8e6d87ef3c58483a8c14f2f71cc"
+    },
+    {
+      "file": "cad/dxf/MG3-061.dxf",
+      "bytes": 22654,
+      "sha256": "47442f36cac1054d68a8ab540d2d3e00602094437b6b9eeb3792bc60684044fa"
+    },
+    {
+      "file": "cad/dxf/MG3-064.dxf",
+      "bytes": 19889,
+      "sha256": "63dca09782c5df42e99d80d0469713f366b54650cc21047b571ee97c0a26f603"
+    },
+    {
+      "file": "cad/dxf/MG3-066.dxf",
+      "bytes": 21105,
+      "sha256": "36de0a3471d46f37acb6a758a130696720ffcc1aedbfefc289be867c39d08a77"
+    },
+    {
+      "file": "cad/dxf/MG3-070.dxf",
+      "bytes": 30167,
+      "sha256": "9adadbd8f2fb473d547ed34214a05147c216a80a39438358e2e0556fa06db897"
+    },
+    {
+      "file": "cad/dxf/MG3-071.dxf",
+      "bytes": 20130,
+      "sha256": "90ce10afe5309eea843bbb1011224ef95b77d68863e79e443d76ded1c426e4f9"
+    },
+    {
+      "file": "cad/dxf/MG3-072.dxf",
+      "bytes": 20353,
+      "sha256": "d0422a3c520a3b091b08c04a9283ad7da42c0b6a6858f12273fbe32038457b56"
+    },
+    {
+      "file": "cad/dxf/MG3-073.dxf",
+      "bytes": 20353,
+      "sha256": "9f89d484ca99680aff392403b7701161a05718b25a57bf9fa5c2a423392ad238"
+    },
+    {
+      "file": "cad/dxf/MG3-074.dxf",
+      "bytes": 23170,
+      "sha256": "89bfff156eb767ed9daf78d2fb2b7c89d5ebe6a76be2f16a93298c340ef70288"
+    },
+    {
+      "file": "cad/dxf/MG3-075.dxf",
+      "bytes": 23178,
+      "sha256": "4444242939282cbeb0a55c1aae91de8e1cd020f56d6d9276498ce6f412f31c32"
+    },
+    {
+      "file": "cad/dxf/MG3-079.dxf",
+      "bytes": 23148,
+      "sha256": "fd8d1235306535de92f14e505d83b47b071ea368de58347f16dc35d1ad0b7ac0"
+    },
+    {
+      "file": "cad/dxf/MG3-092.dxf",
+      "bytes": 19889,
+      "sha256": "c2370951453610c38fcde6f19032a1480fc48332370fc084b41f72d6e5ba9a89"
+    },
+    {
+      "file": "cad/dxf/MG3-094.dxf",
+      "bytes": 20886,
+      "sha256": "5a944f7896ff4536975718412aa49fb9a81aea0794da745afa2f0289556d752b"
+    },
+    {
+      "file": "cad/dxf/MG3-098.dxf",
+      "bytes": 20136,
+      "sha256": "c50515155028575ee20592f7140db4eab6acad9b40f679c96677e215134c02c6"
+    },
+    {
+      "file": "cad/dxf/MG3-099.dxf",
+      "bytes": 20198,
+      "sha256": "aaf30656d6828744f50d4473e58d2f166bede59c884dc4373577357fd8d39233"
+    },
+    {
+      "file": "cad/dxf/MG3-100.dxf",
+      "bytes": 20251,
+      "sha256": "38260e662c8276b1fa712a3008cd5a930412e125178fb49fbba80a0f5338217d"
+    },
+    {
+      "file": "cad/dxf/MG3-101.dxf",
+      "bytes": 20263,
+      "sha256": "5d013752423dcaf4adef52cca5180eadb52bd623ae3bbd5cacabebb2ec4fa2cc"
+    },
+    {
+      "file": "cad/dxf/MG3-104.dxf",
+      "bytes": 20744,
+      "sha256": "bf75692a03d8d3c2523a9cd4934c5fae06dee387dd3ecfd486e42b80e5ed024f"
+    },
+    {
+      "file": "cad/dxf/MG3-105.dxf",
+      "bytes": 20363,
+      "sha256": "68f7b809fca3fe3db86a75b9fea845f81e3fcedce325a402bcf226b11f866580"
+    },
+    {
+      "file": "cad/dxf/MG3-106.dxf",
+      "bytes": 20363,
+      "sha256": "9d9168a6e016d50a51ffcdf5855573c297b562cdde47bc84170be3948afab1ff"
+    },
+    {
+      "file": "cad/dxf/MG3-108.dxf",
+      "bytes": 27232,
+      "sha256": "bdf8c5e14588365cfaaf38d86f93312eded555e6ba06bdee6dde54aded3593de"
+    },
+    {
+      "file": "cad/mini_gantry_v3.step",
+      "bytes": 24943325,
+      "sha256": "447875782fd056594ee525fb942da19fedb59084a55ea77de5ef689e916ef5b1"
+    },
+    {
+      "file": "cad/parts/MG3-001_X_bumper_0.step",
+      "bytes": 35113,
+      "sha256": "a46076e8977a6b5d90cd74a882ffd8a3df291726abfaa086b93df0326e2eaf7f"
+    },
+    {
+      "file": "cad/parts/MG3-002_X_stop_0.step",
+      "bytes": 91640,
+      "sha256": "2fea620019f03022774e9e7844b9ceb6b9ad2650ed17d0fa56aac34ed9fe62c2"
+    },
+    {
+      "file": "cad/parts/MG3-003_X_target_0.step",
+      "bytes": 22609,
+      "sha256": "d5d4dac5d4aa1415d6435f35cd7386d3e14ee5fbcdd27d6e4367b6cff0905ff0"
+    },
+    {
+      "file": "cad/parts/MG3-004_Y_bumper_0_0.step",
+      "bytes": 35139,
+      "sha256": "55f8148f7f23719b39c22e7f9a62908790bfcfc19ad566c3c41185cf57247b26"
+    },
+    {
+      "file": "cad/parts/MG3-005_Y_bumper_0_1.step",
+      "bytes": 35113,
+      "sha256": "2f20852d641ebe99fcdbafc8b47a61156be2b541dc16a5ebd1c5099e8943e7af"
+    },
+    {
+      "file": "cad/parts/MG3-006_Y_sensor_mount_0.step",
+      "bytes": 60077,
+      "sha256": "c2b1085f49752fd31096f57b6ba448d2e0af8d39f7c099eb1f741440cdbafaf3"
+    },
+    {
+      "file": "cad/parts/MG3-007_Y_stop_0_0.step",
+      "bytes": 43937,
+      "sha256": "6e180fea840293fd7cb068d684e41c8e1e2954682ea6b2aa35d7e39d05f7d6a5"
+    },
+    {
+      "file": "cad/parts/MG3-008_Y_stop_0_1.step",
+      "bytes": 42814,
+      "sha256": "0c586a6450b5b57d67f3e2175d353095b2e6ea3dcf3e4c6533deccddca54f11b"
+    },
+    {
+      "file": "cad/parts/MG3-009_Y_target_0.step",
+      "bytes": 22593,
+      "sha256": "c1f542de7d01580b29aeb760ffcdb12b50bd5b69668cd7bf7a55af9bb4486e35"
+    },
+    {
+      "file": "cad/parts/MG3-010_Z_bumper_0.step",
+      "bytes": 35198,
+      "sha256": "ca787d3c963e94ad79343fed1ccb137ff033a83a8c87153ac7d7f43128b33b56"
+    },
+    {
+      "file": "cad/parts/MG3-011_Z_bumper_1.step",
+      "bytes": 35172,
+      "sha256": "817a14f4ad51f976eef0728b21a5609db5a3b480adeda943a1fc5b004c48658f"
+    },
+    {
+      "file": "cad/parts/MG3-012_Z_stop_0.step",
+      "bytes": 79943,
+      "sha256": "4a49f4a13124f85a74a9572d11d33c97f6273311a0e8c6479c9c2e7ca6a60b02"
+    },
+    {
+      "file": "cad/parts/MG3-013_Z_stop_1.step",
+      "bytes": 76020,
+      "sha256": "ef67c07a039a763f4e845ff3856b4f86a55344702fed11b4d56c5b4fad4fb23e"
+    },
+    {
+      "file": "cad/parts/MG3-014_Z_striker_0.step",
+      "bytes": 43893,
+      "sha256": "83ac7d4fb28601bc93ec937ac02fc1861ec41c37e7dc6ff6d2765ffe34683db1"
+    },
+    {
+      "file": "cad/parts/MG3-015_Z_target_0.step",
+      "bytes": 22611,
+      "sha256": "4246c2b50737362532672403f81c386c00f50f49f601e83ae7791c9ecee25308"
+    },
+    {
+      "file": "cad/parts/MG3-016_Z_target_1.step",
+      "bytes": 22595,
+      "sha256": "0ca162bf7bae70baa2c7afa249eb7a05ec951e84356136d6bed57dac6b1ba10f"
+    },
+    {
+      "file": "cad/parts/MG3-017_accessory_cross_joint_0.step",
+      "bytes": 26233,
+      "sha256": "da355c51ea43d65007dfe72f73f66b1646ef8eed27513de86a67d4007bfc2a46"
+    },
+    {
+      "file": "cad/parts/MG3-018_bridge_riser_0.step",
+      "bytes": 38151,
+      "sha256": "b97dabb37280faeac01c6b21d068902cf1b73bcc82dd317d820736618d495a46"
+    },
+    {
+      "file": "cad/parts/MG3-019_camera_base.step",
+      "bytes": 47061,
+      "sha256": "8f3e8760230cb35a9fa39742bf62b55863910a07d2f0323d001e48ec147a8985"
+    },
+    {
+      "file": "cad/parts/MG3-020_camera_pivot_ear_0.step",
+      "bytes": 26742,
+      "sha256": "f97fe23510fc96cea46edcbc86977536a7af1b6c4272e9db2bd0095277ddc3de"
+    },
+    {
+      "file": "cad/parts/MG3-021_camera_pivot_spacer_0.step",
+      "bytes": 9295,
+      "sha256": "18f44f60448f45364a9e48d9021e899f0bf3e60e771846cc25486721eeb73c33"
+    },
+    {
+      "file": "cad/parts/MG3-022_camera_removable_panel.step",
+      "bytes": 31344,
+      "sha256": "9f12f18b474222b16303d5f435b022c6ffe7c7749fb246baceea37af7cb5becd"
+    },
+    {
+      "file": "cad/parts/MG3-023_camera_tilt_carrier.step",
+      "bytes": 74573,
+      "sha256": "ada28a3e81d838fa7bfc39f3538321036b8b7065cff163f59ecf2f6ed06e8aa5"
+    },
+    {
+      "file": "cad/parts/MG3-024_compute_combo_plate.step",
+      "bytes": 92387,
+      "sha256": "5ac076325b25e5523c06154e3d535effa4c4b06588007a5a7838d4f6217cd185"
+    },
+    {
+      "file": "cad/parts/MG3-025_controller_tray.step",
+      "bytes": 89224,
+      "sha256": "cda73b46040ed05dafc40808cdd18b13bd186a8b85854d5ec4b19a2b9fbbdc8f"
+    },
+    {
+      "file": "cad/parts/MG3-026_fixed_head_side_0.step",
+      "bytes": 45278,
+      "sha256": "f384db48d837a4c26d33c2c9dc0a202fcf612254c5e5f179660bee3ec02496a7"
+    },
+    {
+      "file": "cad/parts/MG3-027_fixed_head_top.step",
+      "bytes": 47002,
+      "sha256": "99a4aaf339a17d9eab35daedee6ef66dfe9de50ea0133f6c131b3643cbaf98b5"
+    },
+    {
+      "file": "cad/parts/MG3-028_frame_corner_front_0_0.step",
+      "bytes": 40789,
+      "sha256": "c09187701f6476d57ff1fcc0a87a30f1fe4f0289bdc2cbefb01a8f6d97fdea76"
+    },
+    {
+      "file": "cad/parts/MG3-029_gripper_adapter.step",
+      "bytes": 54053,
+      "sha256": "a1747a26f273144cf0ff67a5e1bb4e7adcadc360147484f473cb1f5e0387de2e"
+    },
+    {
+      "file": "cad/parts/MG3-030_rear_brace_0.step",
+      "bytes": 35959,
+      "sha256": "8030d5a929ab559c3c155bbce739de528a7e0f1e4f4d47ffd615de39656b708a"
+    },
+    {
+      "file": "cad/parts/MG3-031_rear_brace_0_spacer_0.step",
+      "bytes": 9706,
+      "sha256": "ce8e99e347257ba08043509a325ecebeb5534d7dbe33b2f5b4c9c3d68c9c36a7"
+    },
+    {
+      "file": "cad/parts/MG3-032_rear_brace_1.step",
+      "bytes": 35959,
+      "sha256": "6d2b33075a72650fe9dd3935b6ea2cf51f6918e5ae5ce2059f88d0f0262eb4ea"
+    },
+    {
+      "file": "cad/parts/MG3-033_rear_brace_1_spacer_0.step",
+      "bytes": 9832,
+      "sha256": "66395e9910189d6eed4e6c19529c5d9cf3a6e5c1e4467cad87e4f013f1504809"
+    },
+    {
+      "file": "cad/parts/MG3-034_side_brace_0_0.step",
+      "bytes": 35955,
+      "sha256": "0b533763bad00ab11f85e560b42fb7931012faa3dfc973d0983756372657a750"
+    },
+    {
+      "file": "cad/parts/MG3-035_side_brace_0_0_spacer_0.step",
+      "bytes": 9667,
+      "sha256": "7665b84b31a5d1ccdb33ae84a528f0d861159476a0de6edcc17a4b1bb59a590e"
+    },
+    {
+      "file": "cad/parts/MG3-036_side_brace_0_1.step",
+      "bytes": 35955,
+      "sha256": "c2cb4e4e7741f79f29e1360307359983438994a18bb0505387e4e77fa0206b77"
+    },
+    {
+      "file": "cad/parts/MG3-037_side_brace_0_1_spacer_0.step",
+      "bytes": 9816,
+      "sha256": "7cc20ae1914b06d7a016b8efbc94995b54b82632d63dcda8ad27dcff7ed81712"
+    },
+    {
+      "file": "cad/parts/MG3-038_side_brace_1_0_spacer_0.step",
+      "bytes": 9677,
+      "sha256": "66cc5e1d94995d57866ac41013c01b1477a93049de218c2539308c9b62ad9ac2"
+    },
+    {
+      "file": "cad/parts/MG3-039_side_brace_1_1_spacer_0.step",
+      "bytes": 9795,
+      "sha256": "135d0b3283af1d3387e8adcc4f7a578b4edd713920a1b8f3789818125feb450a"
+    },
+    {
+      "file": "cad/parts/MG3-040_x_belt_bridge.step",
+      "bytes": 103124,
+      "sha256": "7e33f0eb56c218bc679c2372fb869f15e0c8c8f74b65ec0e1d0ac0484bf0057c"
+    },
+    {
+      "file": "cad/parts/MG3-041_x_clamp_0_-1_cap.step",
+      "bytes": 30346,
+      "sha256": "baca81cb2d20c621a11e658e49e33ce71e366b9307f4d352badb9d68b7d6b266"
+    },
+    {
+      "file": "cad/parts/MG3-042_x_input_end_retainer.step",
+      "bytes": 9339,
+      "sha256": "ef9ccd04c0bbe99ef524d2c729057a097c82a060176d2e1dff17f0ac0062d361"
+    },
+    {
+      "file": "cad/parts/MG3-043_x_input_end_spacer.step",
+      "bytes": 9339,
+      "sha256": "9710fe3f8dcc18eedaeed9a873647f93502e62fa3224fa17c36c197219414e7b"
+    },
+    {
+      "file": "cad/parts/MG3-044_x_input_front_cover.step",
+      "bytes": 58430,
+      "sha256": "06a0a70d017f8750993d79075fc5c58152c078a07bd12128c3bc346aa35d4d04"
+    },
+    {
+      "file": "cad/parts/MG3-045_x_input_housing.step",
+      "bytes": 108504,
+      "sha256": "90d2383c00d5ead91e16bfd9570b86de0cd7e2ff95d1f6279bd7a918192615c4"
+    },
+    {
+      "file": "cad/parts/MG3-046_x_input_inner_spacer.step",
+      "bytes": 9313,
+      "sha256": "b6e68c4818d6d333cf55112bebfe0433b21a750a718debb936b3b15d58396f86"
+    },
+    {
+      "file": "cad/parts/MG3-047_x_input_motor_plate.step",
+      "bytes": 50265,
+      "sha256": "3c6c7328385a94ab684e358091cbc9499a6c94a41ebe14cf874d58ef20bc6fda"
+    },
+    {
+      "file": "cad/parts/MG3-048_x_input_rear_cover.step",
+      "bytes": 37272,
+      "sha256": "ed9f2edc40d0877e9e42000157cc36d8b06632a5e5812f3cff9b07cba13dce72"
+    },
+    {
+      "file": "cad/parts/MG3-049_x_input_shaft.step",
+      "bytes": 68411,
+      "sha256": "8af2d9371e13a259d5c4e280bf9b2dd7f87505a95a1c04e21192159dd194d969"
+    },
+    {
+      "file": "cad/parts/MG3-050_x_input_side_0.step",
+      "bytes": 37101,
+      "sha256": "94bb3ba882513432205a334893c0b501deef873df0808eb2924522f5d2070a67"
+    },
+    {
+      "file": "cad/parts/MG3-051_x_motor_bracket.step",
+      "bytes": 152712,
+      "sha256": "fcad4345c7dde16ff92c1666c979c008e2c35b0eff70c3d2998b6d28c87c7895"
+    },
+    {
+      "file": "cad/parts/MG3-052_x_output_cover_0.step",
+      "bytes": 33426,
+      "sha256": "934e1646f6fccad434aa688a30597d5d2e27e93de8d7e1234fbe230139333e59"
+    },
+    {
+      "file": "cad/parts/MG3-053_x_output_cover_1.step",
+      "bytes": 44530,
+      "sha256": "3fc05636f25affaf111d7e2c551e1aa07de2e773b2fa5635a47d76cea5153531"
+    },
+    {
+      "file": "cad/parts/MG3-054_x_output_housing.step",
+      "bytes": 87652,
+      "sha256": "ec34cc5d93c06f9798f6d69f04cf9c2e1cdde7a77c3017c7c4ad874492ec2820"
+    },
+    {
+      "file": "cad/parts/MG3-055_x_output_shaft.step",
+      "bytes": 106660,
+      "sha256": "3c60b7cc241f28ec329944c7c43c1aad43076ffee1e893e2efdbc68c1780dccb"
+    },
+    {
+      "file": "cad/parts/MG3-056_x_output_spacer_0.step",
+      "bytes": 9314,
+      "sha256": "70a7940eea98706f487974c2660bfb52069c33eb350920d3601c5f503505795f"
+    },
+    {
+      "file": "cad/parts/MG3-057_x_output_spacer_1.step",
+      "bytes": 9308,
+      "sha256": "b8d068fa646a5777a948d0a9cf2000cc8964ac613dc6c1ebd0883239982855b2"
+    },
+    {
+      "file": "cad/parts/MG3-058_x_output_spacer_2.step",
+      "bytes": 9315,
+      "sha256": "6a025d6030f2e3a1f553bf8686441807dfa8b4ffbdca2edab8bb968701a8ee8b"
+    },
+    {
+      "file": "cad/parts/MG3-059_x_output_spacer_3.step",
+      "bytes": 9322,
+      "sha256": "89159bdb314ecd4166fef9abcafd5fe31faea4b5c3d9ffe9df46f535f8f07924"
+    },
+    {
+      "file": "cad/parts/MG3-060_x_pulley_0.step",
+      "bytes": 122876,
+      "sha256": "56f6987897887e8771c11f3f59c36ad339cd5abd3e37bd24ab0cbe79b1028e64"
+    },
+    {
+      "file": "cad/parts/MG3-061_x_rail_base_0.step",
+      "bytes": 97739,
+      "sha256": "321ed00d540033d0525f2f7980a54edaf2aa7a452287ffe597e20b68f942e006"
+    },
+    {
+      "file": "cad/parts/MG3-062_x_reduction_driven_pulley.step",
+      "bytes": 165606,
+      "sha256": "491a0747b8fbedd55bdf5fae66f52758e5a3d2c12f279c3c68ef859b5a0853fd"
+    },
+    {
+      "file": "cad/parts/MG3-063_x_reduction_input_pulley.step",
+      "bytes": 143334,
+      "sha256": "45d349ce0e1d5a079d824519c7586e264d7c9a9cb1a039413fe68c583294a212"
+    },
+    {
+      "file": "cad/parts/MG3-064_x_tension_0_adjuster.step",
+      "bytes": 26235,
+      "sha256": "7296f875a7a071a229644eb609b093699e9c0b54ab563c51a4744956d928999f"
+    },
+    {
+      "file": "cad/parts/MG3-065_x_tension_0_axle.step",
+      "bytes": 35056,
+      "sha256": "932dbab44cd74d88b3b7b1adb31b9baf6d2d0f18b6e40f4135ab2d1ab1743ef9"
+    },
+    {
+      "file": "cad/parts/MG3-066_x_tension_0_base.step",
+      "bytes": 63618,
+      "sha256": "541a76d6ebec9d9dc11322bffba9d43e51d964be190d3f0ffb96827a4e33899b"
+    },
+    {
+      "file": "cad/parts/MG3-067_x_tension_0_fork.step",
+      "bytes": 192798,
+      "sha256": "6999b71c614489a6a9631d4ca5780d869d91fdf3956675495ba28ab04ae8f2b3"
+    },
+    {
+      "file": "cad/parts/MG3-068_x_tension_0_spacer_0.step",
+      "bytes": 9347,
+      "sha256": "fd8b24b5ff958fd64b8b5371ac2bc8291cd8ea0047a0c8b0d636d1541c63c707"
+    },
+    {
+      "file": "cad/parts/MG3-069_x_tension_0_spacer_1.step",
+      "bytes": 9333,
+      "sha256": "ab0c194db981b4c96f6bd2e21a484be6c85a2abadfeb7a4b90315a1078b4ad06"
+    },
+    {
+      "file": "cad/parts/MG3-070_x_z_carrier.step",
+      "bytes": 466425,
+      "sha256": "b4c54c0bd06a71943e81ac9d124d23c9cc56d723baeca90300383911b4b8c897"
+    },
+    {
+      "file": "cad/parts/MG3-071_y_clamp_0_-1_cap.step",
+      "bytes": 30346,
+      "sha256": "7fd0b31ea9233cfa91c258c59d1128469472dbd061f59d3667a6de4ad7ed3b0d"
+    },
+    {
+      "file": "cad/parts/MG3-072_y_clamp_0_-1_carrier.step",
+      "bytes": 46667,
+      "sha256": "8d7c756223692d534ba417c55b527be4b0f88eb78804673df5fdfc4633cc8cdf"
+    },
+    {
+      "file": "cad/parts/MG3-073_y_clamp_1_-1_carrier.step",
+      "bytes": 46676,
+      "sha256": "07d774efec523daed0e8a31c4cfdcbf7c698b1838729bcde5c1a4dfc1db31757"
+    },
+    {
+      "file": "cad/parts/MG3-074_y_end_plate_0.step",
+      "bytes": 139478,
+      "sha256": "b3c628e46bcf8108a14db56a6ebe5b409b4349275e7289be015632a043eee220"
+    },
+    {
+      "file": "cad/parts/MG3-075_y_end_plate_1.step",
+      "bytes": 132609,
+      "sha256": "55957b0fb2d689c010d1000c3bbe8fb7466c58387f70ee9574f51690c4d56a3a"
+    },
+    {
+      "file": "cad/parts/MG3-076_y_motor_bracket.step",
+      "bytes": 129088,
+      "sha256": "206a6a7b44ba7b7597ee1e94078753fbd302f481537614e8f7b597d8b7b2f1a4"
+    },
+    {
+      "file": "cad/parts/MG3-077_y_pulley_0_1.step",
+      "bytes": 123162,
+      "sha256": "e3e9e2acc061f8ba4c41ef6ec247e195529856ff3674b9b3db0c7af9d9ff7fdc"
+    },
+    {
+      "file": "cad/parts/MG3-078_y_pulley_1_1.step",
+      "bytes": 120775,
+      "sha256": "a1c604565bcd029e95effef8fcab287eed88633039d10983f1110df890e54651"
+    },
+    {
+      "file": "cad/parts/MG3-079_y_rail_base_0.step",
+      "bytes": 111525,
+      "sha256": "ab1030c875ccb4a4da4dba76dcdc4c85c17cb32fc2d84cace5b2b08a69042f54"
+    },
+    {
+      "file": "cad/parts/MG3-080_y_rear_cover_0.step",
+      "bytes": 37295,
+      "sha256": "f0f4c269b82c1966c0ff97c72feeb0853e5131417e018bc112c4031dfab51b72"
+    },
+    {
+      "file": "cad/parts/MG3-081_y_rear_cover_1.step",
+      "bytes": 37356,
+      "sha256": "5ae77ea022d85b15fa044e3abf28af21c4fa2bf3740f570f1c54bbc845b438a6"
+    },
+    {
+      "file": "cad/parts/MG3-082_y_rear_spacer_0_0.step",
+      "bytes": 9321,
+      "sha256": "9f675beb5f1d1320e7c03491732a05dce6d022aa2a88b0c5b3e41448f6dc515e"
+    },
+    {
+      "file": "cad/parts/MG3-083_y_rear_spacer_0_1.step",
+      "bytes": 9326,
+      "sha256": "5210580a4a817f419eb5e47f87d18d511b1c4296d474b0cb126951c16b6044b5"
+    },
+    {
+      "file": "cad/parts/MG3-084_y_rear_spacer_1_0.step",
+      "bytes": 9253,
+      "sha256": "31d98816e713ae8aa1a26c202dbf9facf3a263b0570a69df2de9e940269ec82e"
+    },
+    {
+      "file": "cad/parts/MG3-085_y_rear_spacer_1_1.step",
+      "bytes": 9258,
+      "sha256": "4ec639e2fec03ee558547d3b0d0fdf4ded95c6d12e1754a304676ede4ae6e512"
+    },
+    {
+      "file": "cad/parts/MG3-086_y_rear_support_0.step",
+      "bytes": 72927,
+      "sha256": "50fe5b65c4ac7471253d6d8794d5e7d051c73efa03910c662d66e418d8b53f54"
+    },
+    {
+      "file": "cad/parts/MG3-087_y_rear_support_1.step",
+      "bytes": 73047,
+      "sha256": "234257941a3609b2033c1e4e862d228f4e0f37408083d7ed7bf45414cd9b4bbf"
+    },
+    {
+      "file": "cad/parts/MG3-088_y_rear_washer_0.step",
+      "bytes": 9327,
+      "sha256": "4dc2d143ac001a53d20de6cd12e68a7f7de3a329474afcda2488355695ec965c"
+    },
+    {
+      "file": "cad/parts/MG3-089_y_rear_washer_1.step",
+      "bytes": 9259,
+      "sha256": "3d890b4a3ae1116f7ecd39ee394e77816df7c0a1d8346256d2eba562b2d101f9"
+    },
+    {
+      "file": "cad/parts/MG3-090_y_reduction_driven_pulley.step",
+      "bytes": 123459,
+      "sha256": "24f70243dc5fc59053d23b9e6fc70034304d8527004bdb7e17bcce03b0c047af"
+    },
+    {
+      "file": "cad/parts/MG3-091_y_sync_shaft.step",
+      "bytes": 146787,
+      "sha256": "f19b2ea8274a921fef0bc629e68292b023e4d75ff6fde76e2c3ffd040e183075"
+    },
+    {
+      "file": "cad/parts/MG3-092_y_tension_0_adjuster.step",
+      "bytes": 26227,
+      "sha256": "dc4cd6c6e830e77a9f04ae499bb4fa51c86f253f56acf8b2f19483e98ff7de96"
+    },
+    {
+      "file": "cad/parts/MG3-093_y_tension_0_axle.step",
+      "bytes": 34994,
+      "sha256": "af0040132ed519873b6631c0f68094efc4f4095ac4d657a0b48a6b685e1e7abc"
+    },
+    {
+      "file": "cad/parts/MG3-094_y_tension_0_base.step",
+      "bytes": 49426,
+      "sha256": "b26cc10b0f24279a9aa1faaf7b88b564be4524586639b2f505756e19cef2940c"
+    },
+    {
+      "file": "cad/parts/MG3-095_y_tension_0_fork.step",
+      "bytes": 148377,
+      "sha256": "797ed6fe56dc15941e37752127496abe9ddf65c87212f73c51325fccb4525728"
+    },
+    {
+      "file": "cad/parts/MG3-096_y_tension_0_spacer_0.step",
+      "bytes": 9344,
+      "sha256": "7bbb878cfa6fb9d9e38e2af0c13498ce66e9435f23280ed56d0a8b42ca694e8e"
+    },
+    {
+      "file": "cad/parts/MG3-097_y_tension_0_spacer_1.step",
+      "bytes": 9330,
+      "sha256": "814e312f3ee4b926927a326a4caf9a5ea93bada1fa44b460a5cfdf28ee6d6e12"
+    },
+    {
+      "file": "cad/parts/MG3-098_z_block_spacer_0_0.step",
+      "bytes": 29911,
+      "sha256": "41d2fc0900d6c7e26cf6306e52dcf3f1635ef1601dc162866fe21ea83fb7ed7a"
+    },
+    {
+      "file": "cad/parts/MG3-099_z_brake_carrier.step",
+      "bytes": 46540,
+      "sha256": "430bc981092733898e6bb8854173aec9811a930f189032892886999636096ee1"
+    },
+    {
+      "file": "cad/parts/MG3-100_z_float_cover.step",
+      "bytes": 33428,
+      "sha256": "a2948230ea833590741579be3cb6d41bbbbc062ebf39f9a642b70bc76243d514"
+    },
+    {
+      "file": "cad/parts/MG3-101_z_float_housing.step",
+      "bytes": 85618,
+      "sha256": "ff02887225642a49d4498b36d54c883661e92dc240c8f431949637f31d8fb0b9"
+    },
+    {
+      "file": "cad/parts/MG3-102_z_float_outer_spacer.step",
+      "bytes": 9341,
+      "sha256": "be64af5576508be624c86dba1f6c39e17804d8c3bc07091edad0bf588de47719"
+    },
+    {
+      "file": "cad/parts/MG3-103_z_motor_lower_saddle.step",
+      "bytes": 81944,
+      "sha256": "1f2fc15a9487f54dcb4fcdd36e788b7839f058bcbbf63272a30ed68699de5189"
+    },
+    {
+      "file": "cad/parts/MG3-104_z_motor_mount.step",
+      "bytes": 48230,
+      "sha256": "a37ff899af38bd6e05ace60a161c68eee1a2c6ab54f8614d3fc07f0ac17e80c2"
+    },
+    {
+      "file": "cad/parts/MG3-105_z_motor_standoff_0.step",
+      "bytes": 63820,
+      "sha256": "a948ba10ad45c2d5574b0de7bfc1e817f9548d1f0a8bee78d8b397159e0603db"
+    },
+    {
+      "file": "cad/parts/MG3-106_z_motor_standoff_1.step",
+      "bytes": 63824,
+      "sha256": "efd79c324fb7726f7fbcca54f26c1176b707cfa4b70d51c0f039f214360f0e48"
+    },
+    {
+      "file": "cad/parts/MG3-107_z_nut_cradle.step",
+      "bytes": 93577,
+      "sha256": "859f99fdbe50936d150732f7ce7057731850edf39738bc47ab5acf1048a1d5fb"
+    },
+    {
+      "file": "cad/parts/MG3-108_z_rail_backplate.step",
+      "bytes": 239854,
+      "sha256": "96c18e819d9f9034d2d2e480eadcd568d3dcae75345c46e6c285002e4e927f9d"
+    },
+    {
+      "file": "cad/parts/MG3-109_z_screw_1605.step",
+      "bytes": 24714,
+      "sha256": "7bf9c3f9a00079048a03de730be68e1cfdb9d7bd0444852a57dbdd40ec9aea69"
+    },
+    {
+      "file": "catalog.json",
+      "bytes": 6711,
+      "sha256": "56c5ea2ac7852ce2a7ac039ee9d94ec2da817a5feeedc83aa0ca01bdc804cc26"
+    },
+    {
+      "file": "check_solidworks.py",
+      "bytes": 2726,
+      "sha256": "ef01e6e0da58098b85de64382c3f34803af7b2724cfa74ecffca2fd417887920"
+    },
+    {
+      "file": "cutlist.json",
+      "bytes": 841,
+      "sha256": "5b468861f9e45f7ad586d06417edbf552503ebb54e8b26eee43f6344660e1907"
+    },
+    {
+      "file": "design.json",
+      "bytes": 17338,
+      "sha256": "a29336d97c0f5580817acd66176618ce2476303696da9e582139a59ccc8fe12c"
+    },
+    {
+      "file": "drawings/assembly.png",
+      "bytes": 469988,
+      "sha256": "83e67e94e64eea04bdd0a21bc15e45349a0d9caaf65bcfae41ebe69013134a4c"
+    },
+    {
+      "file": "drawings/assembly_and_procurement.pdf",
+      "bytes": 31262,
+      "sha256": "a58c4c091921481646561b56f5b0bc320ce97d125d38188fb39901cea73041cf"
+    },
+    {
+      "file": "drawings/camera_mount.png",
+      "bytes": 218401,
+      "sha256": "a3a77af5f4708bb626ac6245c831576468c5e9b0b12666a3fc938db366b62643"
+    },
+    {
+      "file": "drawings/manufacturing.pdf",
+      "bytes": 3335196,
+      "sha256": "86ac57dfe6e00eb1c2e92485a8ea97f1fb6f99a2c9d92868404107709799b7e4"
+    },
+    {
+      "file": "drawings/xy_reduction.png",
+      "bytes": 314439,
+      "sha256": "1df19d6929ca48658a91a92582152a83c01dfa0add89f8a20bfad5bb3da64bc1"
+    },
+    {
+      "file": "drawings/z_drive_stack.png",
+      "bytes": 236930,
+      "sha256": "0e601367e024b475084733c9628ca2dd4af3a9189fd740898a54346e2b1656a2"
+    },
+    {
+      "file": "drive_fabrication.py",
+      "bytes": 26418,
+      "sha256": "14bf7f74ff090a96d65f91e64c14edc6ed4b1f81deaae5bc343e376aa18ca505"
+    },
+    {
+      "file": "fabrication.py",
+      "bytes": 22735,
+      "sha256": "5f44401ac0ad7fb82be155b24d5c03b5d24c09f95879eae82cf61ca21e96d0d5"
+    },
+    {
+      "file": "frame_fabrication.py",
+      "bytes": 6647,
+      "sha256": "1029038b9897109159a94ff3c74e0ace2be56d7f8363d1ddbbc27d8736e4e8d0"
+    },
+    {
+      "file": "joints.py",
+      "bytes": 4045,
+      "sha256": "8a759fecbedf7557ad21db705e63316d5b9879fa16d538cdc44f8b8e4abcdd38"
+    },
+    {
+      "file": "manufacturing.json",
+      "bytes": 312229,
+      "sha256": "6557b84642e33ce55afcd89a6cc1255273fbb3003d80197b0f7a4e8e490f33f2"
+    },
+    {
+      "file": "manufacturing_drawings.py",
+      "bytes": 12735,
+      "sha256": "2755ece1fe14c5158aff8412d21f593bd3076cbf51c81136d373891386c644dd"
+    },
+    {
+      "file": "motor_mounts.py",
+      "bytes": 6853,
+      "sha256": "e4f86d272e98a28dd070c59dc11d72b8f677844039946f11de1e87d66f133c25"
+    },
+    {
+      "file": "package_release.py",
+      "bytes": 3189,
+      "sha256": "a14383e1b6cd9e576a3c13e38408b294aaf39606cacc66adf2b8b5cba55bc603"
+    },
+    {
+      "file": "qa_pdf.py",
+      "bytes": 2098,
+      "sha256": "1514e1ec52e7aa5b6f93e96a01c95ea14eb9c7c126eb0f60d2d53d0250b1a25b"
+    },
+    {
+      "file": "release.json",
+      "bytes": 3311,
+      "sha256": "de36bb87345750a8805e383525bbae818965fa3d3fc9083db768c4d6e664a99d"
+    },
+    {
+      "file": "release_build.py",
+      "bytes": 13139,
+      "sha256": "4fd838306a8c105f0749f4efa6aa3440ccfb7d8357dbb40b04e31a680add2c5b"
+    },
+    {
+      "file": "SolidWorksV3/mini_gantry_v3.SLDASM",
+      "bytes": 5106625,
+      "sha256": "c4afbea3278b8ec861fe20d3c8b19183baf39b29590452127b92e0c327009ee9"
+    },
+    {
+      "file": "SolidWorksV3/v3_accessory_cross_joint_0.SLDPRT",
+      "bytes": 81986,
+      "sha256": "408dc8f0c54d29415d3dedd0d43851a21a1608690977ac371319c00d086c27fe"
+    },
+    {
+      "file": "SolidWorksV3/v3_accessory_cross_joint_1.SLDPRT",
+      "bytes": 82106,
+      "sha256": "d0ca8fe982e098b108bf82560e2ac73fc2e40f27b54443ece2aaa5f9a0b0a9a1"
+    },
+    {
+      "file": "SolidWorksV3/v3_bridge_riser_0.SLDPRT",
+      "bytes": 74922,
+      "sha256": "dcc3dc4ad194a6be065a5cb6bc8913f6ca0290491e1813c6a9addc4990aec1e6"
+    },
+    {
+      "file": "SolidWorksV3/v3_bridge_riser_1.SLDPRT",
+      "bytes": 75073,
+      "sha256": "3aae9af61257de3eaab193c4ec3048e49fdf7c0fc48e10b5ede98708b21729c0"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_base.SLDPRT",
+      "bytes": 77638,
+      "sha256": "bc6ecf77f84411ae7e2575d139577d341dd7984beb62f224d2ee11a97b927925"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_pivot_ear_0.SLDPRT",
+      "bytes": 74718,
+      "sha256": "107810e444d4c4235c2ea45cc424c573965b53c55eabcfd8eeeff3897820cca8"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_pivot_ear_1.SLDPRT",
+      "bytes": 74215,
+      "sha256": "b0ceb22dc293427a7e8e5d322f2e704c0e5a802839119013712779f6561fc605"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_pivot_spacer_0.SLDPRT",
+      "bytes": 80811,
+      "sha256": "2880701231fff852f9457ce5631537a27bc2fb6decda96dad1358bf8f1fa2a78"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_pivot_spacer_1.SLDPRT",
+      "bytes": 80800,
+      "sha256": "b7d6cfa76601564ecab3a6544f41f5b92e873053ba05a67dc02a0b23a11164e5"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_removable_panel.SLDPRT",
+      "bytes": 70378,
+      "sha256": "d00bd883a4ef14aae73576902968166f2bbfeb9e19582d4ffef936405b72f665"
+    },
+    {
+      "file": "SolidWorksV3/v3_camera_tilt_carrier.SLDPRT",
+      "bytes": 86782,
+      "sha256": "84e624dbc48eb8121aeb039646a1387482ca63dbc7046f82f99faaf9d6efd28c"
+    },
+    {
+      "file": "SolidWorksV3/v3_compute_combo_plate.SLDPRT",
+      "bytes": 98556,
+      "sha256": "7ce4283049c1dbcecdc5f037e17607cf05d32f61d24d190137ec9ba5faea811b"
+    },
+    {
+      "file": "SolidWorksV3/v3_controller_tray.SLDPRT",
+      "bytes": 93770,
+      "sha256": "cc86cc67ff606b9bd855962aca60ec88bca336126b05a66bb43485daa545ea21"
+    },
+    {
+      "file": "SolidWorksV3/v3_fixed_head_side_0.SLDPRT",
+      "bytes": 82247,
+      "sha256": "f5f9c52e7a6d80f7d46d1be21478bbc8761d01355e450c82282b18185c18882a"
+    },
+    {
+      "file": "SolidWorksV3/v3_fixed_head_side_1.SLDPRT",
+      "bytes": 82215,
+      "sha256": "1ea0f0cb665910a610e71274ed7eaf6f0182b11c7b411d652f5b5e998a14f88f"
+    },
+    {
+      "file": "SolidWorksV3/v3_fixed_head_top.SLDPRT",
+      "bytes": 80343,
+      "sha256": "c20f0a0bd5a5e8b9ade0c879564d32d87ce1447dc68f14004af77e3cd9f30037"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_front_0_0.SLDPRT",
+      "bytes": 79784,
+      "sha256": "84dce981cef3cb53a71ec9705b8d7b9ae6185644e685ee81b7e1ef93a293813a"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_front_0_1.SLDPRT",
+      "bytes": 75397,
+      "sha256": "3e25fe4f120a5a347336aba6714ae1ac645ade0b44dd07c6723507e733e71b72"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_front_1_0.SLDPRT",
+      "bytes": 81150,
+      "sha256": "c7f3934df9853a462e2f2c3dca39fc6dd50e4768f724ed1d7a90a5de13049b9d"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_front_1_1.SLDPRT",
+      "bytes": 76884,
+      "sha256": "5fbddee31c5dd3e6b87234e4cb4716bdce78c12003ef005bf61dc57057f8ca1f"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_left_0_0.SLDPRT",
+      "bytes": 72232,
+      "sha256": "744214810ffd3c82daf56d7948d0e8d389c559b6ec64f891ae6c686426398842"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_left_0_1.SLDPRT",
+      "bytes": 71987,
+      "sha256": "bfff80d63b792b6bfeaa98ae8e213df25c79e5289a0a6ac06554b80eb3a3af3d"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_left_1_0.SLDPRT",
+      "bytes": 71872,
+      "sha256": "ad3f77f9b25fa7dcc83d5f93187a2015b5fe7871e8d693e8d23aa64a1ec5993c"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_left_1_1.SLDPRT",
+      "bytes": 69590,
+      "sha256": "33b34f3b45fe5ef963ff342b2543cd6beec35b158177f4b7bac3e6dede1f736d"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_rear_0_0.SLDPRT",
+      "bytes": 79638,
+      "sha256": "c7ad5db762059c60eeb88eb72ebca7ed1b4265d94f140f8560d6390e254158be"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_rear_0_1.SLDPRT",
+      "bytes": 76423,
+      "sha256": "7095356e95fcd73c3d6a9b2918f2bf31130e171e0d5b06dce75d9a5c21c2a2e3"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_rear_1_0.SLDPRT",
+      "bytes": 81527,
+      "sha256": "e7855253e9b3cff138f5a4d31f614ca1ad7e8bffec19906543395c66ada157a9"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_rear_1_1.SLDPRT",
+      "bytes": 77822,
+      "sha256": "5f2133dc5e5da12a50f116069fbebf4f50aecd46a5f1594704a4339f61cb1b56"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_right_0_0.SLDPRT",
+      "bytes": 72253,
+      "sha256": "590213e88acc25f5a120db72fa07fd4b9cdc8dffaf4a3a682b09a458bce64ab5"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_right_0_1.SLDPRT",
+      "bytes": 71937,
+      "sha256": "19d2f28aa91694199d88b829256efe60f05c7d74f763120b6fcd84514811667d"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_right_1_0.SLDPRT",
+      "bytes": 72574,
+      "sha256": "fcb00c100c6f2c36f165e46e9521352acb54adc196f396adf65b608a1c992735"
+    },
+    {
+      "file": "SolidWorksV3/v3_frame_corner_right_1_1.SLDPRT",
+      "bytes": 68952,
+      "sha256": "dc4825a4d78ce6f77d59daa55cdfcb09e048bfc8feebfc211bf226717e840778"
+    },
+    {
+      "file": "SolidWorksV3/v3_gripper_adapter.SLDPRT",
+      "bytes": 90855,
+      "sha256": "1fe620c20afa000c9b2cf426bc2ae8421bd3b8e0e0cc24e42d6cc19d9fd6f520"
+    },
+    {
+      "file": "SolidWorksV3/v3_module_fixed.SLDPRT",
+      "bytes": 2764137,
+      "sha256": "07fda0f7f128f8d716cf88bf36d0841f0a4b0d1390cac791a6e120c4da5dca6a"
+    },
+    {
+      "file": "SolidWorksV3/v3_module_XY.SLDPRT",
+      "bytes": 1005553,
+      "sha256": "56e2c09193155063e7b7aeb31ab18798e9f0ac61b3fee179b378b4c55a20ee4c"
+    },
+    {
+      "file": "SolidWorksV3/v3_module_XYZ.SLDPRT",
+      "bytes": 835734,
+      "sha256": "443fad3b7f5a498dbd2478c50ec556db0fd6a8384763007791c538d16dbe49c3"
+    },
+    {
+      "file": "SolidWorksV3/v3_module_Y.SLDPRT",
+      "bytes": 1628106,
+      "sha256": "8d7428f9b6e14d3aab19222f7effdf284e3c715db66b1e836abb526d07ab95b5"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_0.SLDPRT",
+      "bytes": 57457,
+      "sha256": "6e627fc6b0ec0dc0c1b12b346bd45f1a09830a8840e2909ae5706de35b496998"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_0_spacer_0.SLDPRT",
+      "bytes": 61144,
+      "sha256": "f9674161b22437d79df69c3fe70827f5812ec36b724c221cef007190fc5bfe91"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_0_spacer_1.SLDPRT",
+      "bytes": 61105,
+      "sha256": "54a73d5a1ab1dc1562d658f2ec5fdd29adc4fb56fce570772b1fe7d964d329b2"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_1.SLDPRT",
+      "bytes": 56105,
+      "sha256": "2a2760c3beb6dc790f099752449730fc52b0d7de027db73506100bae6bcf4fd0"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_1_spacer_0.SLDPRT",
+      "bytes": 59843,
+      "sha256": "d676017af2085e48a48da22faaf3ae00a5b9251b325bfe0757a16908517a5e83"
+    },
+    {
+      "file": "SolidWorksV3/v3_rear_brace_1_spacer_1.SLDPRT",
+      "bytes": 60437,
+      "sha256": "fa4b93efea4b1723d1d6004ca6c87375ce9eb1b9e37c2162bd9c79716391f936"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_0.SLDPRT",
+      "bytes": 59627,
+      "sha256": "3062f219d6dffd6146eef8138554ecee1d0350dae7bac9fd34b54b847e9925a0"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_0_spacer_0.SLDPRT",
+      "bytes": 70159,
+      "sha256": "a1188eba1215310c6dfcfa846bd7f9925200c13cfbcda34ec34b9aca09538e0d"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_0_spacer_1.SLDPRT",
+      "bytes": 69980,
+      "sha256": "36230adeb404b399fcca3ada79615e76ec11bfb24852319d424d8546e8690d87"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_1.SLDPRT",
+      "bytes": 59719,
+      "sha256": "ee35f4ff130c229267d51151b190a04c040afdde40eb936d72b188c3b57161ca"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_1_spacer_0.SLDPRT",
+      "bytes": 85259,
+      "sha256": "8373bd538458dc14c3e3a9f4401fb196d91927525a8ff1e61c34ec165c4d2c75"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_0_1_spacer_1.SLDPRT",
+      "bytes": 84930,
+      "sha256": "c3ef47f0b04c5946f9f2951618949f0a1fa486d4a29927a6e3a6a7883c92a31a"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_0.SLDPRT",
+      "bytes": 59308,
+      "sha256": "82fd5faae3fdda98b94813fae58c62d78c9bbde68f2390a0017ef4db7e3b0f3d"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_0_spacer_0.SLDPRT",
+      "bytes": 69622,
+      "sha256": "a946f62594a6ec0a63dce7e6697dcad965650f3bff58bf6993439680b80ba687"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_0_spacer_1.SLDPRT",
+      "bytes": 69601,
+      "sha256": "7fae8007481312115b3990a0e776415def90f3b8166e135cd93c4f6a2f01d997"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_1.SLDPRT",
+      "bytes": 59638,
+      "sha256": "d86ff25f91f13384d6b4034e20202f64256be0b2d9ed09aa44fecaad05631582"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_1_spacer_0.SLDPRT",
+      "bytes": 85740,
+      "sha256": "b7e5f53015391fc50c9884cd45cf28eb4aaaea959938b9dc12afca85db6764e0"
+    },
+    {
+      "file": "SolidWorksV3/v3_side_brace_1_1_spacer_1.SLDPRT",
+      "bytes": 85568,
+      "sha256": "5ec37914258c1f97922ab4d6014c4765210aa6e30f78cbf220c6180302635d89"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_belt_bridge.SLDPRT",
+      "bytes": 88289,
+      "sha256": "bf2f111332d182f11d93d322c4235f0452d5a160cfb96f438b8088c65093e159"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_bumper_0.SLDPRT",
+      "bytes": 93648,
+      "sha256": "3525df76f81ea0b3e96d03ee40670e1692ce2402fd4214f35ceedadc03aadbf0"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_bumper_1.SLDPRT",
+      "bytes": 79845,
+      "sha256": "3eb195b02badb490894266d046fa6d255ae4fe10a9287e689425e6308cc05f5e"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_clamp_0_-1_cap.SLDPRT",
+      "bytes": 71705,
+      "sha256": "695ae8821a4ef242a1f89b1fbdead89e75c0b6934918921a0d861b872151c19e"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_clamp_0_1_cap.SLDPRT",
+      "bytes": 71416,
+      "sha256": "a0f418ef56c30160e1506dba097a8eb98169d35fab8c83fb2c37551c5f5ac961"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_end_retainer.SLDPRT",
+      "bytes": 81368,
+      "sha256": "79c4410d280f562f9bbde4555912d40036cfa50f8bd2047c72471dc5d1075cf8"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_end_spacer.SLDPRT",
+      "bytes": 80982,
+      "sha256": "956f75f8acc1d29786954a29b000ccbc52de6d736efbc03c5ec45ff90074d88d"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_front_cover.SLDPRT",
+      "bytes": 96940,
+      "sha256": "736f727470e16ccdf9c24d4dc9c65a8c65dc627468c3abf7a0f5e1a507f8de96"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_housing.SLDPRT",
+      "bytes": 118165,
+      "sha256": "5067891fac542425f09301503db370d5aaae1682ae27cc113706c2567938a858"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_inner_spacer.SLDPRT",
+      "bytes": 69548,
+      "sha256": "0ccaa5c8afb05c2693eef7c1246ed23e8dcad7e1e48b79768030259cc3bdf5a7"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_motor_plate.SLDPRT",
+      "bytes": 99587,
+      "sha256": "a0c9bb0824cfcc1969f7b1cfd44e8547d5cc01493cef037a85e96c8afc980b82"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_rear_cover.SLDPRT",
+      "bytes": 89933,
+      "sha256": "ebe1e525ce7dbf334b378451b9ca2f063343c223916bad398a797bd820bbdb20"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_shaft.SLDPRT",
+      "bytes": 70589,
+      "sha256": "f2966c736de9a35fe36febf42d1fcf0390200feb5f8afe4a6bf7c2e4330ad474"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_side_0.SLDPRT",
+      "bytes": 68497,
+      "sha256": "3a5721b3e948be632f228afe06ab70df28382cfb0c0b5b8aafbe9a183c72afdf"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_input_side_1.SLDPRT",
+      "bytes": 69687,
+      "sha256": "f13a4db925ba71ab44f473d299cbaff2a5abfb0d36bbf09a4e351b1bdbc77284"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_motor_bracket.SLDPRT",
+      "bytes": 103171,
+      "sha256": "2c2459f5afabcd33232b0d8f40e1e9520f9c17817c85701ab27366507cf25d20"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_cover_0.SLDPRT",
+      "bytes": 90058,
+      "sha256": "e95319a3864d5724ef4a0ba2ee43f6673384cba92efa9df7f3dad5c35d2295f2"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_cover_1.SLDPRT",
+      "bytes": 93497,
+      "sha256": "d2346eeb0273700afb06025313fc81d220a8ffec469257764ab36141830f89da"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_housing.SLDPRT",
+      "bytes": 97664,
+      "sha256": "3f4eef1527785014dcf82dbfe64fdd43a5c88afe5af3259cbff59f6f667970b5"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_shaft.SLDPRT",
+      "bytes": 66278,
+      "sha256": "140e60cbe77ce650c31035404ded9ca6dbc125a51143664992d730dc59e152af"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_spacer_0.SLDPRT",
+      "bytes": 66069,
+      "sha256": "e13c9bb896478cbb7b531944a8b13eb85d296e77490f45650b6f5c944d2a5d2d"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_spacer_1.SLDPRT",
+      "bytes": 85630,
+      "sha256": "f3b063dd5ce4829a5c669405c479ff2c8304f51cfba3d19f302de344bf5eabaf"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_spacer_2.SLDPRT",
+      "bytes": 84008,
+      "sha256": "70d40ff8fb15b445fd5f5a89d1fbf1222cb1a323a9e4e74de32a5e67108b86a0"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_output_spacer_3.SLDPRT",
+      "bytes": 81938,
+      "sha256": "99ee8ae19b5e944eff1cc2bb65d984257871a98aef9286dd757c6d90fba35554"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_pulley_0.SLDPRT",
+      "bytes": 100638,
+      "sha256": "e5c7ddc72c3b5dce5173dd0060861c7ed95687e5a6d562e81aa580bb6f6cea7c"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_rail_base_0.SLDPRT",
+      "bytes": 89991,
+      "sha256": "e921c8590b54690daba433188c7c9a4328e0b0a1d1b7dcb94244cd7419a7e995"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_rail_base_1.SLDPRT",
+      "bytes": 89103,
+      "sha256": "7b8ac5cf2297952820165ebd2ca97fd34e038f734a0b68ff487f49565d5c5307"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_reduction_driven_pulley.SLDPRT",
+      "bytes": 108548,
+      "sha256": "41ed11fde3289d6488bf3d33b6e706a63422e1ce3b6d31372b5838c4dd0c5430"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_reduction_input_pulley.SLDPRT",
+      "bytes": 100101,
+      "sha256": "9e0e2cdef63005a3a00b4ee1462832a148e381222fdae3906e206188bea0a46d"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_stop_0.SLDPRT",
+      "bytes": 76349,
+      "sha256": "549e7b6f0c994a5695cd9944d2d02bae3d331d49fc85b6cecf62bf20c0ffffe9"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_stop_1.SLDPRT",
+      "bytes": 75412,
+      "sha256": "61f256bfb6e81cd8c1768c294f92d44f2441d3031a65c890b4d2e0e87d9b0c67"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_target_0.SLDPRT",
+      "bytes": 83224,
+      "sha256": "4c95e16ce13e3615f66d651fceee3c9a1f628b46ab9e6cb4ca55b38383b44b1d"
+    },
+    {
+      "file": "SolidWorksV3/v3_X_target_1.SLDPRT",
+      "bytes": 82763,
+      "sha256": "729c08ae154885624e9353b344ba473002c4aea67f28f92adb866672afbd364f"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_adjuster.SLDPRT",
+      "bytes": 65557,
+      "sha256": "7e708661a9db14e0c5deeacaa706e1450478e2c1225c48c0e86a8bed84830960"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_axle.SLDPRT",
+      "bytes": 60632,
+      "sha256": "468659f0b5812f925fc6f7d775f8660012af426bd92028b7035e5fefcc7f136a"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_base.SLDPRT",
+      "bytes": 90521,
+      "sha256": "83c9c99be214bd8477b03af11b85059dd88a3a71299e47d96ef3a74d52867ae9"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_fork.SLDPRT",
+      "bytes": 115466,
+      "sha256": "a6f9ae8d4954593b7d6a012e1bacc115e07de61edb9ca671712b65c69fc5a79e"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_spacer_0.SLDPRT",
+      "bytes": 86113,
+      "sha256": "8b44326ce5e28ce455cc3d484e3868b2ac2e419eb65542cafeae919f46e810c0"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_tension_0_spacer_1.SLDPRT",
+      "bytes": 85973,
+      "sha256": "c4879ccf9b239939cea9ba3c1eaba46c99e28e70108e1dbf81ff1d4ea0e1ce0d"
+    },
+    {
+      "file": "SolidWorksV3/v3_x_z_carrier.SLDPRT",
+      "bytes": 201347,
+      "sha256": "3e5154a6e51f4559009deac1eb006986bd064ea2d015d270e32b762f94de5c0f"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_bumper_0_0.SLDPRT",
+      "bytes": 96972,
+      "sha256": "db2ec369264119897b4cf97460cecf340ee3ac831a6ab6f4380ad717ea09ca60"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_bumper_0_1.SLDPRT",
+      "bytes": 91649,
+      "sha256": "46a808857bbfa3b4678d76ab627303825813656e5e85e82cb0af86372d006a8e"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_bumper_1_0.SLDPRT",
+      "bytes": 96397,
+      "sha256": "25d1fa2eadcef65fbf0ab761d4a33f3989b4f4925fd5c4fb1f005578373686b6"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_bumper_1_1.SLDPRT",
+      "bytes": 91383,
+      "sha256": "609ce5fc599e32449314411d02b4667e742fc27a32bbfa6311b80f1ea6d695e7"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_0_-1_cap.SLDPRT",
+      "bytes": 79047,
+      "sha256": "4014ee8e4c075100ceec7beec2626e15b5152a0987defbb7a8a6d6ee800fcc8d"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_0_-1_carrier.SLDPRT",
+      "bytes": 85078,
+      "sha256": "d84716613d8fb151cd874b4680fc58140ba9373e410875bea0dee0ee91a5c2a0"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_0_1_cap.SLDPRT",
+      "bytes": 79363,
+      "sha256": "cbda02bdad59edae2ca5c253532ee4788b4787593a1152e911771dddc8cd4a27"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_0_1_carrier.SLDPRT",
+      "bytes": 84974,
+      "sha256": "2f038f0918535f4705efd5c17fda8773e8954752d08e4e0d0d2f4f743d17aeec"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_1_-1_cap.SLDPRT",
+      "bytes": 78908,
+      "sha256": "d7ebbc42f5912e579488915e415e3c6c660131529bd05c9b2744d50bdcdc3faf"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_1_-1_carrier.SLDPRT",
+      "bytes": 83922,
+      "sha256": "a843bf92d5a03e6d1882835623b3fa5f662109f7ea9bab36b12a0f6c09168e60"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_1_1_cap.SLDPRT",
+      "bytes": 78580,
+      "sha256": "9620be173cae5c07057508ba1baf1345010a3266f5f8b0aa65856b8c88a6ed0e"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_clamp_1_1_carrier.SLDPRT",
+      "bytes": 83372,
+      "sha256": "6a9cb846c69e3d87245c8df801d9b79b936864badb9eede98b4f2d7b4d6f9e01"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_end_plate_0.SLDPRT",
+      "bytes": 98386,
+      "sha256": "5bdce71d1a6c8bbdcd632db311f518f63ec68ce254832643f415ec8ada1ee04c"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_end_plate_1.SLDPRT",
+      "bytes": 96155,
+      "sha256": "806a936a50edf50b359e099072066a6354e80fb680d9c1ca5095cb82e848d989"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_end_retainer.SLDPRT",
+      "bytes": 75486,
+      "sha256": "42d3a410a987a9d0dbf7a11841bbfbaf02127ef6b7d03fb50442a06eab3098cb"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_end_spacer.SLDPRT",
+      "bytes": 76213,
+      "sha256": "2142f262d32257fc288e8ff883ebcbb43ac514f3adc1c3b5d5d5e280437e7199"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_front_cover.SLDPRT",
+      "bytes": 86039,
+      "sha256": "5aa3d19d6516636a46df8e9252451423ed98afc90800b314e9ed89383b596fb2"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_housing.SLDPRT",
+      "bytes": 106626,
+      "sha256": "78d07e2ef1900a9654d45a8e7483d75cb83dd21a3fc4db4239f4f93f0cc1959f"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_inner_spacer.SLDPRT",
+      "bytes": 117098,
+      "sha256": "e7a22493d0f2823382bc44a704537862ff1e3c97831d7cbd991ad64f5bcc47a5"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_motor_plate.SLDPRT",
+      "bytes": 83707,
+      "sha256": "5477129c6b4c0ae865eae26157072a75e4af211f67ea36b4c3710134dbdcdf2d"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_rear_cover.SLDPRT",
+      "bytes": 75589,
+      "sha256": "56cf3e1b593dda74a9acbd7a3bbc81663885462cfe75fa0f765400aad9fde297"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_shaft.SLDPRT",
+      "bytes": 144114,
+      "sha256": "69e48353e83befb2e39dc8981c2bd4bccba75f3d4996a663398566947e2c77aa"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_side_0.SLDPRT",
+      "bytes": 87049,
+      "sha256": "b65a35bbf02e4e721cd48672b14b7a2583619029d6800d434bcaa8207755e054"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_input_side_1.SLDPRT",
+      "bytes": 86653,
+      "sha256": "91aa06020dbd5ba65b72bd09c166c609f3ff4a3d5e6ae6c515d22d5ed1211e41"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_motor_bracket.SLDPRT",
+      "bytes": 100692,
+      "sha256": "74876f7ec83d2f7049c4035429939c09d0c5ff465eb87e9e19616f12623b11c6"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_pulley_0_1.SLDPRT",
+      "bytes": 125009,
+      "sha256": "3f307d3775c1c976b88dfcbb7fbdd18f45ed3e57d280a9ec22a78b63b5b7692c"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_pulley_1_1.SLDPRT",
+      "bytes": 115338,
+      "sha256": "545d92be8d703030775bacb68fb49c060ae9b3f890286192397b77f275933ca7"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rail_base_0.SLDPRT",
+      "bytes": 78505,
+      "sha256": "41aa24796a27c43f082de75bc805e2a2f35c5ffd9de60db7faa2458f6c06edff"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rail_base_1.SLDPRT",
+      "bytes": 79453,
+      "sha256": "388bce40de6bb590b205137c90ced3a3272df1714c44e9674688cfc9fe7b2496"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_cover_0.SLDPRT",
+      "bytes": 91039,
+      "sha256": "b3710ee92f75d36a17f42b9631b4d3598712f747045b3408a46a544937b3bd9a"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_cover_1.SLDPRT",
+      "bytes": 80431,
+      "sha256": "53d65b26fe34c6c19338e69b5b07396d3eb2cd845122b6c6bdee798bd8d31301"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_spacer_0_0.SLDPRT",
+      "bytes": 105039,
+      "sha256": "048303d8edde052263b4e78a4275154e3384c1fa164e4ae1a74c24e608f73923"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_spacer_0_1.SLDPRT",
+      "bytes": 97138,
+      "sha256": "8bd8b71afca68f97de85062d8eb91d194888015bb03ce77865d0cda336950965"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_spacer_1_0.SLDPRT",
+      "bytes": 105370,
+      "sha256": "8cf126d5d6ed6c914c3bee7293d1db3fd77e174888883f86d827a41ca09cab63"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_spacer_1_1.SLDPRT",
+      "bytes": 96642,
+      "sha256": "3a2cb65505e39c561922659876e307cc4c801118123e5db694468ed5b6fce6d4"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_support_0.SLDPRT",
+      "bytes": 101725,
+      "sha256": "db5f23b4f56ec807b32eb2780c9acfdd12d59024263379206f34497f65723fe2"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_support_1.SLDPRT",
+      "bytes": 101687,
+      "sha256": "5a3d54f5f564ffb4e6bb93a89e777dac4c3ca88106af6a0fe0c6a66a7ec84cc0"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_washer_0.SLDPRT",
+      "bytes": 75318,
+      "sha256": "d18e04c22bb91234dd05f99c5d43abd18a6d6c8092b0bf790c45535ceea25223"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_rear_washer_1.SLDPRT",
+      "bytes": 76636,
+      "sha256": "6fea0d61c03d645e1d1fab7bdde1a6450b1fb201b0a6f19d190f235b3ab43df8"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_reduction_driven_pulley.SLDPRT",
+      "bytes": 110952,
+      "sha256": "bffd73182582580ca64f271feabc1375c313532e20cb76a09b70f6029f29dd07"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_reduction_input_pulley.SLDPRT",
+      "bytes": 128566,
+      "sha256": "d307736e0b8f29ac2bee914a7a7adaba28d343733b6ea954fe8bdee805470e7a"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_sensor_mount_0.SLDPRT",
+      "bytes": 86964,
+      "sha256": "cd36ba2e6bd36ddd9d1403d1dd398290cd420fdbdd7222c6075cd7c19648b180"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_sensor_mount_1.SLDPRT",
+      "bytes": 87495,
+      "sha256": "4a0b673d20a3a872ade0639efb5e3568d20343af6051f5c8168e671883735c23"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_stop_0_0.SLDPRT",
+      "bytes": 81650,
+      "sha256": "29708d2c6605b25c2e5c5cddf9d17e30ca291f88aee303fe2d63fcd63e747a97"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_stop_0_1.SLDPRT",
+      "bytes": 81748,
+      "sha256": "7032e6997e7ac10530411bb47226e050345910abe484ce456ed2557a36513542"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_stop_1_0.SLDPRT",
+      "bytes": 80370,
+      "sha256": "d17931ad629487ff44afe56033892f8c36e2e131d100f03caf3af403710517b0"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_stop_1_1.SLDPRT",
+      "bytes": 80489,
+      "sha256": "6f020b385f6e866f155f471a1242ec2b082f286217a07f827ac4ba010af2eadb"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_sync_shaft.SLDPRT",
+      "bytes": 108717,
+      "sha256": "35f92f8b62940b207df29e761df11dacf45ef05d90a94502affdc15e7f018347"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_target_0.SLDPRT",
+      "bytes": 66597,
+      "sha256": "1ac14e320fbb279c298a140aeefdd3dd96808ab8c876e001666641b1facdf4c8"
+    },
+    {
+      "file": "SolidWorksV3/v3_Y_target_1.SLDPRT",
+      "bytes": 66652,
+      "sha256": "39ccdb5aafb8024490d8844abd923f0453f785194c4e30ea4e6354762a4dbae4"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_adjuster.SLDPRT",
+      "bytes": 92143,
+      "sha256": "8dbc97f109544062967b82e7634c19017ec3f87538d7674a07663824d833f1dd"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_axle.SLDPRT",
+      "bytes": 136992,
+      "sha256": "f5712fe63c0a382cdf3a2dfd81bb7baea8050975082a74ab61ebaa037e997197"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_base.SLDPRT",
+      "bytes": 80029,
+      "sha256": "cc56288649e64a1d9107526419cae3f317b0b5d9320eb2ef2a1c8cbbb352b67b"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_fork.SLDPRT",
+      "bytes": 105816,
+      "sha256": "2292c027a447594ea4ca63ea7eb8a2cb25e95bfbb5e6194fbb467cc51f6d6828"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_spacer_0.SLDPRT",
+      "bytes": 83144,
+      "sha256": "e14180ecfb12e93dadecf228dc3d11bd800987ac87349b41461f2054ead80ced"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_0_spacer_1.SLDPRT",
+      "bytes": 84455,
+      "sha256": "3f3c2329dd4a6558dbd5f1e4fd691f2ee0092c736ba551bf0fb5298f0bc7db15"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_adjuster.SLDPRT",
+      "bytes": 91615,
+      "sha256": "dcf30272080238b7a1da49fd4d24a10a0d79dedad2381b9482e0b3da3d5663ee"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_axle.SLDPRT",
+      "bytes": 137232,
+      "sha256": "936567899179fa38876bea1b33fc0e093ef4c4f80a1e160b4a84eebda5479ba1"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_base.SLDPRT",
+      "bytes": 79750,
+      "sha256": "6418b9e71114f57ccd984229bb167d4937296af182aeec747f5c50748fe53cb9"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_fork.SLDPRT",
+      "bytes": 106262,
+      "sha256": "f1ee81b51ec91311fcb5db9f4de3d02f28a43db2cac1241187334798764dc3d6"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_spacer_0.SLDPRT",
+      "bytes": 84114,
+      "sha256": "fde7f3a4d8c8be04a46e1807d150dea7e31f088e10aa635227ec344a4fdea018"
+    },
+    {
+      "file": "SolidWorksV3/v3_y_tension_1_spacer_1.SLDPRT",
+      "bytes": 83821,
+      "sha256": "7cd53fd12d32dca6771e96ea3a3e0defdee16e09706d2746194c3eea51173ff0"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_block_spacer_0_0.SLDPRT",
+      "bytes": 84480,
+      "sha256": "33591ced8062c95372aa299ce2566adfd27d73f01661a7ff52cd16ed3400c499"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_block_spacer_0_1.SLDPRT",
+      "bytes": 84919,
+      "sha256": "cd9b74b49f77f36615ed38f69746da304985b95be0353e31913e85ea3c09ab64"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_block_spacer_1_0.SLDPRT",
+      "bytes": 85589,
+      "sha256": "cf0c31f779a66bea3e7b3015cf33e42edf1e5256da2cb927c2775353d30995d9"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_block_spacer_1_1.SLDPRT",
+      "bytes": 85197,
+      "sha256": "917fb1d216179531c21a118c8a1c933d8697fd37b192466f7764cb7645824568"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_brake_carrier.SLDPRT",
+      "bytes": 83298,
+      "sha256": "c2390f5014109cfe9ca71de7192ee0d5be9cccf3697ae19e1f78df75db4e284b"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_bumper_0.SLDPRT",
+      "bytes": 68417,
+      "sha256": "1eecb12f5734298ca2ec64d40bf06e97330595d2da1b45224308fe8cbaf3a381"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_bumper_1.SLDPRT",
+      "bytes": 73093,
+      "sha256": "02f2a7ddb76df1d19f40050ef3207c8b421d2ac3e05a2b78182103db68195daa"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_float_cover.SLDPRT",
+      "bytes": 79185,
+      "sha256": "a9bfd56863055a99074f835198390d5c281f627cdfebef1ffcfb5183792aa1f3"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_float_housing.SLDPRT",
+      "bytes": 95583,
+      "sha256": "cd8ceee763ece4a0e16121053527b7513657810502d546a4509edeb68378a0c5"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_float_outer_spacer.SLDPRT",
+      "bytes": 86348,
+      "sha256": "f09a95b61f2573d0b6eb655dc2d3581ca6fb2bbf9161694a41d7601c734409e9"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_motor_lower_saddle.SLDPRT",
+      "bytes": 81961,
+      "sha256": "d9bd672a89efb49153da6590563aa047ba029f05d3104b252266946bf3158ce9"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_motor_mount.SLDPRT",
+      "bytes": 85516,
+      "sha256": "302bb6e6c89c930a1d52293c44f8b868d295ad764cbd58e399d163bd42a54a26"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_motor_standoff_0.SLDPRT",
+      "bytes": 89986,
+      "sha256": "5b814940ba987dae4028f557eff9f2af5df322e01527232fde766086031557f5"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_motor_standoff_1.SLDPRT",
+      "bytes": 92090,
+      "sha256": "dd919d122a0500cc5a46294b52c0ec919e5cd05c6bfb7c20c286063f8bbf950d"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_nut_cradle.SLDPRT",
+      "bytes": 105386,
+      "sha256": "8e28246c4ef1764c5c7c3846e2872b4349b8691d187cba520f33d1103dde669e"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_rail_backplate.SLDPRT",
+      "bytes": 129613,
+      "sha256": "7b8463b99a9e77f541fd40a37f7d28225b50d1a7c620f3a20ffb147ee13f3c9b"
+    },
+    {
+      "file": "SolidWorksV3/v3_z_screw_1605.SLDPRT",
+      "bytes": 89848,
+      "sha256": "20d5f729523c181f326c0da8d6bb9ca45813f977a286141e92251fd1a1619336"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_stop_0.SLDPRT",
+      "bytes": 80894,
+      "sha256": "5ebc7cadb9d58ee795c146c334f9782e6f9a17a575df12d826f6b4f14199c681"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_stop_1.SLDPRT",
+      "bytes": 79079,
+      "sha256": "655221dc03de4bed43d565b7fdfcd68cbd35bfc76bd30d4a73f28a47b6342bff"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_striker_0.SLDPRT",
+      "bytes": 71199,
+      "sha256": "31458510194a4d93e342b7748def006adb3dceec1fef46dcf7bf1271e4deed7a"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_striker_1.SLDPRT",
+      "bytes": 72186,
+      "sha256": "e1c3278ed1082643a857f3f6a193368fcf5118ad66bd30bc62d2b39c054cb0ed"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_target_0.SLDPRT",
+      "bytes": 61520,
+      "sha256": "a0184c8d5b691bff6b8744638ec07d34148d0069beed37b418b6aae9f5efea29"
+    },
+    {
+      "file": "SolidWorksV3/v3_Z_target_1.SLDPRT",
+      "bytes": 62380,
+      "sha256": "e034d731989c67dbf41f4c23029acf5f37ca135f456aba54ff6a860dd029935b"
+    },
+    {
+      "file": "travel_limits.py",
+      "bytes": 10750,
+      "sha256": "231adb95843dff34ede6e2c49374f73169e18bdc7e3446f2814e0eb7428523c2"
+    },
+    {
+      "file": "validation/belt_phase.json",
+      "bytes": 529,
+      "sha256": "2ca426b7463bcf62475761ec56174d795df42afc4054fac203048e0f9775dc4b"
+    },
+    {
+      "file": "validation/drawing_export.json",
+      "bytes": 172,
+      "sha256": "228820b171f42b8d70825ad54be5a51b39971c5b2e4731ccccb69760e30413a0"
+    },
+    {
+      "file": "validation/engineering_v3.json",
+      "bytes": 4139,
+      "sha256": "433c9ea81c718241c4371b31e135d560383a1673f5db24244d531ed55e686cad"
+    },
+    {
+      "file": "validation/geometry_v3.json",
+      "bytes": 8187,
+      "sha256": "f3c911313fc3e02c6377966d479e9296207647c6f8da7a22220e248547a6dae5"
+    },
+    {
+      "file": "validation/native_materials.json",
+      "bytes": 1322,
+      "sha256": "d84b87c32af3bab7a85c97332c7bf0bf08f4190529b21348622d1f948acd2972"
+    },
+    {
+      "file": "validation/native_rebuild.json",
+      "bytes": 545,
+      "sha256": "c8b5193c2e55aef862e76abe90553650727dc683ea209c11c71142fc9abe39f5"
+    },
+    {
+      "file": "validation/neutral_build.json",
+      "bytes": 125,
+      "sha256": "ae1f8063911f644a4ec914be62d4943f7a364f38803f5fe8a0278add938086d7"
+    },
+    {
+      "file": "validation/pdf_qa.json",
+      "bytes": 840,
+      "sha256": "72b1c98581082e8fa0dcb600a77599f4cbf914d164cd1574ceb2d5af9eaae430"
+    },
+    {
+      "file": "validation/solidworks.json",
+      "bytes": 150727,
+      "sha256": "b5a3b797b12a8a4a58944326ae02edac7bfe5f12bf4f07c9b4e1ff6af4848d3f"
+    },
+    {
+      "file": "validation/solidworks_audit.json",
+      "bytes": 37587,
+      "sha256": "093e825cc9017ffe48ac26e6637d150d119a2259fb40e057d659f28c5b4e172b"
+    },
+    {
+      "file": "validation/step_roundtrip.json",
+      "bytes": 119,
+      "sha256": "0043bb495ff0287bfe458642c11ccc9e4fe55e810eea566de869a432593c3594"
+    },
+    {
+      "file": "validation/tensioners.json",
+      "bytes": 1020,
+      "sha256": "dd93976e6c3e82c9aa24bebfd0f487c357d73314c1b2cc434172d5342237581c"
+    },
+    {
+      "file": "verify_release.py",
+      "bytes": 4136,
+      "sha256": "ccb0844a4e80bfd3d1eae6c9eacc62700d4989609cb9298642745f8667b2f0d2"
+    },
+    {
+      "file": "xy_drive.py",
+      "bytes": 8736,
+      "sha256": "89c840af5cbc1c74a9a7579cc108cc4fc1cc73d5b150a4479d4b35230f5e592e"
+    },
+    {
+      "file": "z_drive.py",
+      "bytes": 2739,
+      "sha256": "5026f43bed81ef749d53a0519c7a1b89a0f20a70ad3ca0c0cab61b476669c74d"
+    }
+  ],
+  "scope": "数字样机加工资料与装配几何验证；未进行实机带载、制动时序、急停回路或定位性能验收"
+}

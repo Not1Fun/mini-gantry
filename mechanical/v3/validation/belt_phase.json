@@ -1,0 +1,26 @@
+{
+  "status": "PASS_Y_PHASE_ADJUSTMENT",
+  "checks": [
+    {
+      "tcp_x": 180,
+      "offset_mm": -3,
+      "collisions": []
+    },
+    {
+      "tcp_x": 180,
+      "offset_mm": 3,
+      "collisions": []
+    },
+    {
+      "tcp_x": 720,
+      "offset_mm": -3,
+      "collisions": []
+    },
+    {
+      "tcp_x": 720,
+      "offset_mm": 3,
+      "collisions": []
+    }
+  ],
+  "instruction": "同侧前后夹座同向等量调整，保持桥架方正和两条带相同张力，然后锁紧M5；相位调节不改变额定行程"
+}

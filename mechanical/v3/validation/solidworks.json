@@ -1,0 +1,6647 @@
+{
+  "status": "PASS_NATIVE_SAVE_REOPEN",
+  "solidworks_revision": "32.0.1",
+  "parts": [
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 76254,
+      "name": "y_rail_base_0",
+      "file": "v3_y_rail_base_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 205807.59657340834,
+      "expected_volume_mm3": 205807.59657338832,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        4.0,
+        40.0,
+        939.9977
+      ],
+      "geometry_sha256": "62145686dc3e55521c7ddee046b1494a73a188b4ba504ab60ddaa79bbb52a3fc",
+      "members": [
+        "y_rail_base_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 76721,
+      "name": "y_rail_base_1",
+      "file": "v3_y_rail_base_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 205807.59657340834,
+      "expected_volume_mm3": 205807.59657338832,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        864.0,
+        40.0,
+        939.9977
+      ],
+      "geometry_sha256": "27073cdccde86bb0b5a47c36dbc948961b18f5b39d99aa9f331ce25134e74f16",
+      "members": [
+        "y_rail_base_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 87232,
+      "name": "x_rail_base_0",
+      "file": "v3_x_rail_base_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 132236.3741439042,
+      "expected_volume_mm3": 132236.37414389843,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        100.0,
+        473.9675,
+        1006.5
+      ],
+      "geometry_sha256": "2ce144c58088c60e55cf7b9103132c9da9448bc1a20914e77a3d42a88a9cdaa3",
+      "members": [
+        "x_rail_base_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 87021,
+      "name": "x_rail_base_1",
+      "file": "v3_x_rail_base_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 132236.3741439042,
+      "expected_volume_mm3": 132236.37414389843,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        100.0,
+        473.9675,
+        1046.5
+      ],
+      "geometry_sha256": "66417b77419b8f45a7014dca58fcf20b8d780cd9431c18d7c3732bd6931e1cbb",
+      "members": [
+        "x_rail_base_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 128519,
+      "name": "z_rail_backplate",
+      "file": "v3_z_rail_backplate.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 655195.0870502271,
+      "expected_volume_mm3": 655195.0870502539,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        400.0,
+        384.9977,
+        560.0
+      ],
+      "geometry_sha256": "d0e39288b90010e13dd1aadb26ae3140172119869142e87014336bc176a2fa28",
+      "members": [
+        "z_rail_backplate"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 96880,
+      "name": "y_end_plate_0",
+      "file": "v3_y_end_plate_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 177144.04009232007,
+      "expected_volume_mm3": 177144.04009232082,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.001,
+        405.0,
+        975.9956
+      ],
+      "geometry_sha256": "cb7b12083c3c0f1404c7da56a832f2328032a4c0ae56b0a540d91ae9ca6ac090",
+      "members": [
+        "y_end_plate_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 74132,
+      "name": "bridge_riser_0",
+      "file": "v3_bridge_riser_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 16583.053319559778,
+      "expected_volume_mm3": 16583.05331955969,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        40.0,
+        480.0,
+        987.9951
+      ],
+      "geometry_sha256": "cfaff35b9f61cb9b7582a704286f894c9206674790a4349a253a583225643627",
+      "members": [
+        "bridge_riser_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 93676,
+      "name": "y_end_plate_1",
+      "file": "v3_y_end_plate_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 177118.9073510914,
+      "expected_volume_mm3": 177118.90735109185,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        820.0,
+        405.0,
+        975.9956
+      ],
+      "geometry_sha256": "1ac140f2fb1805378c12ac16fbb578f51dcb98a6208b7e8fcad2c6857ceffc3a",
+      "members": [
+        "y_end_plate_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73498,
+      "name": "bridge_riser_1",
+      "file": "v3_bridge_riser_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 16583.053319559778,
+      "expected_volume_mm3": 16583.05331955969,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        820.0,
+        480.0,
+        987.9951
+      ],
+      "geometry_sha256": "d191a4c3c1637d0b0a669b3c83a22ad466ad1e3c54a7ae61c5a2c012adf4f231",
+      "members": [
+        "bridge_riser_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 198831,
+      "name": "x_z_carrier",
+      "file": "v3_x_z_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 518207.2534415214,
+      "expected_volume_mm3": 518207.2534415227,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        370.0,
+        429.9967,
+        860.0
+      ],
+      "geometry_sha256": "57b26a06f2160600c097500f0551e6e15ea5f3d8f71392b59d8465551b29d388",
+      "members": [
+        "x_z_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82778,
+      "name": "z_block_spacer_0_0",
+      "file": "v3_z_block_spacer_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 18215.84473888321,
+      "expected_volume_mm3": 18215.844738883254,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        398.0,
+        420.9984,
+        884.3
+      ],
+      "geometry_sha256": "1a4f376c4645b4f7e2f95a16b80e17651d99d7b3ac4ad966704a346663d2b4c3",
+      "members": [
+        "z_block_spacer_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82690,
+      "name": "z_block_spacer_0_1",
+      "file": "v3_z_block_spacer_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 18215.84473888321,
+      "expected_volume_mm3": 18215.844738883265,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        398.0,
+        420.9984,
+        1014.3
+      ],
+      "geometry_sha256": "de187bc75a66f91916ef356d6a4b1f16fb8b5521b6b96eeb1866bba20f4ad9f9",
+      "members": [
+        "z_block_spacer_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83254,
+      "name": "z_block_spacer_1_0",
+      "file": "v3_z_block_spacer_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 18215.84473888321,
+      "expected_volume_mm3": 18215.844738883254,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        468.0,
+        420.9984,
+        884.3
+      ],
+      "geometry_sha256": "16f5f0c110e762f956deb0c4fa5341776bacd55470d9b4caef01ab4ccadfe039",
+      "members": [
+        "z_block_spacer_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82887,
+      "name": "z_block_spacer_1_1",
+      "file": "v3_z_block_spacer_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 18215.84473888321,
+      "expected_volume_mm3": 18215.844738883265,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        468.0,
+        420.9984,
+        1014.3
+      ],
+      "geometry_sha256": "9b8dc6219025b232d8d4aae7c764cda990127b2e21ee934d8ff38fbdb1129000",
+      "members": [
+        "z_block_spacer_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 104679,
+      "name": "z_nut_cradle",
+      "file": "v3_z_nut_cradle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 72486.55271804953,
+      "expected_volume_mm3": 72486.55271804956,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        382.0,
+        393.0,
+        945.0
+      ],
+      "geometry_sha256": "bf5334dc061b26043409ce891618d56ba16f09c2b043ad182de6c1d6ce3b62c0",
+      "members": [
+        "z_nut_cradle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78120,
+      "name": "fixed_head_top",
+      "file": "v3_fixed_head_top.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 55882.334216643816,
+      "expected_volume_mm3": 55882.334216649804,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        410.0,
+        340.0,
+        551.9969
+      ],
+      "geometry_sha256": "6ba6c7f0f602c4b5688690721c3e3667cfd6add46c752496721a4c1929037d13",
+      "members": [
+        "fixed_head_top"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81425,
+      "name": "fixed_head_side_0",
+      "file": "v3_fixed_head_side_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 17536.283245595892,
+      "expected_volume_mm3": 17536.28324559588,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        420.0,
+        380.0,
+        437.9986
+      ],
+      "geometry_sha256": "632c2afe1fb28bbe6e558adeea146b64c6e835caca976e6775990a4558a5227c",
+      "members": [
+        "fixed_head_side_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79918,
+      "name": "fixed_head_side_1",
+      "file": "v3_fixed_head_side_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 17536.283245595896,
+      "expected_volume_mm3": 17536.28324559588,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        474.0,
+        380.0,
+        437.9986
+      ],
+      "geometry_sha256": "bd28f4147527fcb0cce934eedb67ae32a3f93f764d77f2c75b232f50f7be8a2f",
+      "members": [
+        "fixed_head_side_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 89805,
+      "name": "gripper_adapter",
+      "file": "v3_gripper_adapter.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 28312.032994151254,
+      "expected_volume_mm3": 28312.03299415121,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        414.9755,
+        364.9755,
+        429.9755
+      ],
+      "geometry_sha256": "bbe88fac50151bd84f1053eb6863ae5cd5a8495653301ca983c9dd8cff9d63d4",
+      "members": [
+        "gripper_adapter"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83435,
+      "name": "z_motor_mount",
+      "file": "v3_z_motor_mount.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 40218.56227649103,
+      "expected_volume_mm3": 40218.562276489814,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        405.0,
+        383.0,
+        1492.9916
+      ],
+      "geometry_sha256": "47b9f2edd80699933e78d586672d0a284f964def5caeef2ec36975c172f3e672",
+      "members": [
+        "z_motor_mount"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 89329,
+      "name": "z_motor_standoff_0",
+      "file": "v3_z_motor_standoff_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 54822.17988945729,
+      "expected_volume_mm3": 54822.17988945726,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        404.9895,
+        383.0,
+        1385.9986
+      ],
+      "geometry_sha256": "b70cb32836097cda7226d3b233c8d114cddac89a762eb71617ee356d95ce6900",
+      "members": [
+        "z_motor_standoff_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 89716,
+      "name": "z_motor_standoff_1",
+      "file": "v3_z_motor_standoff_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 54822.17988945731,
+      "expected_volume_mm3": 54822.17988945727,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        484.9895,
+        383.0,
+        1385.9986
+      ],
+      "geometry_sha256": "814362c246731eb6ea96c5c80d0ad39d5bbb5e8fec887a437d585ff9d47f9b4f",
+      "members": [
+        "z_motor_standoff_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 80659,
+      "name": "z_brake_carrier",
+      "file": "v3_z_brake_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 41116.17323581541,
+      "expected_volume_mm3": 41116.1732358164,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        414.9986,
+        383.0,
+        1409.9895
+      ],
+      "geometry_sha256": "d6f4467c0cbe3dd3e8ad089343d740f8b5dc694d4b7e79532f5cdddb5e9639b4",
+      "members": [
+        "z_brake_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79936,
+      "name": "z_motor_lower_saddle",
+      "file": "v3_z_motor_lower_saddle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 72147.24567227268,
+      "expected_volume_mm3": 72147.24567225666,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        405.0,
+        338.9981,
+        1320.0
+      ],
+      "geometry_sha256": "7471a9582e1c2c8aeba03ee67f0fed6e34671c3f00127878561c089151e95459",
+      "members": [
+        "z_motor_lower_saddle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 87128,
+      "name": "z_screw_1605",
+      "file": "v3_z_screw_1605.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 167059.67457541043,
+      "expected_volume_mm3": 167059.67457541038,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        441.9944,
+        409.9944,
+        573.9965
+      ],
+      "geometry_sha256": "c165cdb58c81cd6a1f65de0fe8b3f3b40abe53b1a97b90ff05419860a99dbac5",
+      "members": [
+        "z_screw_1605"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 115792,
+      "name": "x_input_housing",
+      "file": "v3_x_input_housing.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 78251.88675383302,
+      "expected_volume_mm3": 78251.88675383317,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        59.9986,
+        577.9923,
+        1120.0869
+      ],
+      "geometry_sha256": "435f17eec014f8e8a810b68d8df95e0fa769588ee9d1a711053b93ebb2274e1d",
+      "members": [
+        "x_input_housing"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 94472,
+      "name": "x_input_front_cover",
+      "file": "v3_x_input_front_cover.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 9980.698292283621,
+      "expected_volume_mm3": 9980.698292283778,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        60.0,
+        574.9807,
+        1120.0869
+      ],
+      "geometry_sha256": "06d3abec9f5d6de1a3fba2df4826463abdf6795a85f922f84127d47a6d1216a9",
+      "members": [
+        "x_input_front_cover"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 87148,
+      "name": "x_input_rear_cover",
+      "file": "v3_x_input_rear_cover.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 9733.988497598937,
+      "expected_volume_mm3": 9733.9884975986,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        60.0,
+        601.9922,
+        1120.0869
+      ],
+      "geometry_sha256": "68c3b61aa38d5a0d4800b829bd5a657dcf2734f669182459fb0d437d8cc094b7",
+      "members": [
+        "x_input_rear_cover"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66480,
+      "name": "x_input_inner_spacer",
+      "file": "v3_x_input_inner_spacer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.2964383290035,
+      "expected_volume_mm3": 257.2964383290019,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        84.9965,
+        584.9965,
+        1145.0834
+      ],
+      "geometry_sha256": "be656424d1695c0347c35290573e8b77e2d72491da8c7dd52ce3b59adcd69231",
+      "members": [
+        "x_input_inner_spacer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 68839,
+      "name": "x_input_shaft",
+      "file": "v3_x_input_shaft.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 4296.235126762198,
+      "expected_volume_mm3": 4296.232987703939,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        83.9958,
+        547.4972,
+        1144.0827
+      ],
+      "geometry_sha256": "be6cd1be0647d75b50139ed9d6d6f5556ac8d13bb3c4605256c0371b321bd972",
+      "members": [
+        "x_input_shaft"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79664,
+      "name": "x_input_end_spacer",
+      "file": "v3_x_input_end_spacer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 60.28716302239229,
+      "expected_volume_mm3": 60.287163022388064,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        83.9958,
+        547.4958,
+        1144.0827
+      ],
+      "geometry_sha256": "4daff2b2a03a4ccd27fac45f940883cf46553000b8965459deade985f6ea7cf4",
+      "members": [
+        "x_input_end_spacer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79974,
+      "name": "x_input_end_retainer",
+      "file": "v3_x_input_end_retainer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 289.7176745140532,
+      "expected_volume_mm3": 289.7176745140513,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        82.9951,
+        545.4951,
+        1143.082
+      ],
+      "geometry_sha256": "1785826091129dd6a4348f8a3f784e690b7f863ffa423ba01e1a67337297d9a2",
+      "members": [
+        "x_input_end_retainer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 97119,
+      "name": "x_input_motor_plate",
+      "file": "v3_x_input_motor_plate.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 21261.22821056143,
+      "expected_volume_mm3": 21261.228210561792,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        59.9986,
+        652.4916,
+        1120.0869
+      ],
+      "geometry_sha256": "2288dbb6dc0a72baeadbda07e5e94d19ff15e5f1ff38f5f1124e98588a2e9d05",
+      "members": [
+        "x_input_motor_plate"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 67237,
+      "name": "x_input_side_0",
+      "file": "v3_x_input_side_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23877.44473888332,
+      "expected_volume_mm3": 23877.444738883256,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        119.9984,
+        578.0,
+        1125.0869
+      ],
+      "geometry_sha256": "2de907dda36940ef6a38297d002bf52b4c2917b9a5b405f393384e9003016d63",
+      "members": [
+        "x_input_side_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 67329,
+      "name": "x_input_side_1",
+      "file": "v3_x_input_side_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23877.44473888331,
+      "expected_volume_mm3": 23877.444738883256,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        53.9984,
+        578.0,
+        1125.0869
+      ],
+      "geometry_sha256": "e05ddfdb03b2201a4a4333c13fc42f618a9cc708c29ca085d43717e036a1a370",
+      "members": [
+        "x_input_side_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 104816,
+      "name": "y_input_housing",
+      "file": "v3_y_input_housing.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 78251.88675383369,
+      "expected_volume_mm3": 78251.88675383318,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        154.9923,
+        889.9986,
+        1013.9302
+      ],
+      "geometry_sha256": "559e7a76152ccf9bce89dac5a58ebc1a3d358e6bea2269606cf61969f42366e1",
+      "members": [
+        "y_input_housing"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83150,
+      "name": "y_input_front_cover",
+      "file": "v3_y_input_front_cover.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 9980.698292281188,
+      "expected_volume_mm3": 9980.698292283785,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        151.9807,
+        890.0,
+        1013.9302
+      ],
+      "geometry_sha256": "86db2b217f67e2ec968192e678fef84c0ea74b8efcf612aa73b3459c2bb7ef96",
+      "members": [
+        "y_input_front_cover"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73176,
+      "name": "y_input_rear_cover",
+      "file": "v3_y_input_rear_cover.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 9733.988497598726,
+      "expected_volume_mm3": 9733.988497598597,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        178.9922,
+        890.0,
+        1013.9302
+      ],
+      "geometry_sha256": "4aff6e698e1075ced0e03a0bec3e8fddd84b0c5e32e0367ba815b7b3568d700c",
+      "members": [
+        "y_input_rear_cover"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 116135,
+      "name": "y_input_inner_spacer",
+      "file": "v3_y_input_inner_spacer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.296438329004,
+      "expected_volume_mm3": 257.2964383290022,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        161.9965,
+        914.9965,
+        1038.9268
+      ],
+      "geometry_sha256": "5ace31791a1a130a46d33550a7eac14b34012d504c55491b8e092029fbc4c8ae",
+      "members": [
+        "y_input_inner_spacer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 141368,
+      "name": "y_input_shaft",
+      "file": "v3_y_input_shaft.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 4296.235126762197,
+      "expected_volume_mm3": 4296.2329877039465,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        124.4972,
+        913.9958,
+        1037.9261
+      ],
+      "geometry_sha256": "45cf46a0afb09b6bbc2ba68000ef81d2242dccb5dfe1443d87051bf18fba388c",
+      "members": [
+        "y_input_shaft"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 74507,
+      "name": "y_input_end_spacer",
+      "file": "v3_y_input_end_spacer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 60.28716302238889,
+      "expected_volume_mm3": 60.28716302238795,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        124.4958,
+        913.9958,
+        1037.9261
+      ],
+      "geometry_sha256": "0d856a81b781a9b813977500fde9e2da3b77769a99550ca94bdd7f1a88ec5645",
+      "members": [
+        "y_input_end_spacer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 74282,
+      "name": "y_input_end_retainer",
+      "file": "v3_y_input_end_retainer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 289.71767451404907,
+      "expected_volume_mm3": 289.7176745140512,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        122.4951,
+        912.9951,
+        1036.9254
+      ],
+      "geometry_sha256": "f1ea5732c14f299f5f755dcd1ea428edcfc4ffaa1cfc642c1f29c4f8322ef8fb",
+      "members": [
+        "y_input_end_retainer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81820,
+      "name": "y_input_motor_plate",
+      "file": "v3_y_input_motor_plate.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 21261.228210561956,
+      "expected_volume_mm3": 21261.22821056178,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        229.4916,
+        889.9986,
+        1013.9302
+      ],
+      "geometry_sha256": "3c68e92932dc6d822a4824fa1109d7222eb2a4633fd9890acf007a1382e22b00",
+      "members": [
+        "y_input_motor_plate"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84653,
+      "name": "y_input_side_0",
+      "file": "v3_y_input_side_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23877.44473888325,
+      "expected_volume_mm3": 23877.44473888325,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        155.0,
+        883.9984,
+        1018.9302
+      ],
+      "geometry_sha256": "35035d30674289635d1ed599b38afda75e3455d33d56b433ebd4d90053b0d16e",
+      "members": [
+        "y_input_side_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 85553,
+      "name": "y_input_side_1",
+      "file": "v3_y_input_side_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23877.44473888325,
+      "expected_volume_mm3": 23877.44473888325,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        155.0,
+        949.9984,
+        1018.9302
+      ],
+      "geometry_sha256": "f2f4646c4da52fcd3163c4855ed8b521c913fb5564a46e299d3627ed63c0c02b",
+      "members": [
+        "y_input_side_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 93374,
+      "name": "z_float_housing",
+      "file": "v3_z_float_housing.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 31073.81690247503,
+      "expected_volume_mm3": 31073.824346986454,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        420.0,
+        392.9977,
+        570.9909
+      ],
+      "geometry_sha256": "96bf6f10646153d304ee4b917b21c8192d36d75cec3bc0c91ecd463ce6f4fe78",
+      "members": [
+        "z_float_housing"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77787,
+      "name": "z_float_cover",
+      "file": "v3_z_float_cover.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 6327.642551951165,
+      "expected_volume_mm3": 6327.642551951188,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        420.0,
+        393.0,
+        567.9937
+      ],
+      "geometry_sha256": "42af399b698e958f2f056fe3bb0a9648d2aae4251ba486284e1a3d54d62e7ed6",
+      "members": [
+        "z_float_cover"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84821,
+      "name": "z_float_outer_spacer",
+      "file": "v3_z_float_outer_spacer.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1617.291898068029,
+      "expected_volume_mm3": 1617.291898068027,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        436.9909,
+        404.9909,
+        570.9909
+      ],
+      "geometry_sha256": "a860178344dc1153d9733654be555e52ac6af747e6a7fc02e74ea146c67e24b3",
+      "members": [
+        "z_float_outer_spacer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 97691,
+      "name": "x_reduction_input_pulley",
+      "file": "v3_x_reduction_input_pulley.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 6429.016513959655,
+      "expected_volume_mm3": 6428.986033736351,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        78.4873,
+        548.492,
+        1138.5742
+      ],
+      "geometry_sha256": "99cb1551eb41bf446580468f1e1218d1fce943a8237ccec7ba2f457ca4bd3d92",
+      "members": [
+        "x_reduction_input_pulley"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 105368,
+      "name": "x_reduction_driven_pulley",
+      "file": "v3_x_reduction_driven_pulley.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 20006.699796676647,
+      "expected_volume_mm3": 20006.71883688493,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        67.9846,
+        548.4846,
+        1077.9846
+      ],
+      "geometry_sha256": "64e31f0c877cfe21ae9b073c82f6c00fe77a575d298422d172de46b67aa9e130",
+      "members": [
+        "x_reduction_driven_pulley"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 126908,
+      "name": "y_reduction_input_pulley",
+      "file": "v3_y_reduction_input_pulley.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 6429.016513959665,
+      "expected_volume_mm3": 6428.986033736351,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        125.492,
+        908.4873,
+        1032.4175
+      ],
+      "geometry_sha256": "eb4e2a9b1ba0abe6da0a17e582a3f2eb15139ecf48f3ef68040b66a57de0b390",
+      "members": [
+        "y_reduction_input_pulley"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 107557,
+      "name": "y_reduction_driven_pulley",
+      "file": "v3_y_reduction_driven_pulley.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 42850.84201776794,
+      "expected_volume_mm3": 42850.90327652418,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        125.4787,
+        889.4787,
+        953.4787
+      ],
+      "geometry_sha256": "30d0781a79401458204599f382fe6ac7b20857e531020a086771c6cd46d8f6d3",
+      "members": [
+        "y_reduction_driven_pulley"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 97427,
+      "name": "x_pulley_0",
+      "file": "v3_x_pulley_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 10078.797982663695,
+      "expected_volume_mm3": 10078.787391617836,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        74.4892,
+        516.9892,
+        1084.4892
+      ],
+      "geometry_sha256": "2c3114cb02c394d3115dd3ff8dd4d83dd2e40012f797d16d47eeaccceb69c0cb",
+      "members": [
+        "x_pulley_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 121157,
+      "name": "y_pulley_0_1",
+      "file": "v3_y_pulley_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 17327.1284842736,
+      "expected_volume_mm3": 17327.14923945841,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        84.486,
+        899.986,
+        963.986
+      ],
+      "geometry_sha256": "25933163b81e3da20165735992937917c1ac1001bbe868553fe34d223306e537",
+      "members": [
+        "y_pulley_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 113062,
+      "name": "y_pulley_1_1",
+      "file": "v3_y_pulley_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 17327.128484273555,
+      "expected_volume_mm3": 17327.149239458402,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        786.486,
+        899.986,
+        963.986
+      ],
+      "geometry_sha256": "579b20c33a1ff0de9a7eec05e40d6612506bf1c6636458d0dea59420638d86ff",
+      "members": [
+        "y_pulley_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95414,
+      "name": "x_output_housing",
+      "file": "v3_x_output_housing.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 58108.451314594946,
+      "expected_volume_mm3": 58108.45131459529,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        50.0,
+        475.9902,
+        1079.9977
+      ],
+      "geometry_sha256": "b79586fd79ee2c877fbd2a2a9d88f6c2b3e60a69eb0ada9ffe456f17858d56af",
+      "members": [
+        "x_output_housing"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 88415,
+      "name": "x_output_cover_0",
+      "file": "v3_x_output_cover_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 3537.6425519511754,
+      "expected_volume_mm3": 3537.642551951186,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        69.0,
+        472.9937,
+        1086.0
+      ],
+      "geometry_sha256": "4b33584bd00799d57db258f984a846974e1bb814b7a3cded426fd38470a0ab81",
+      "members": [
+        "x_output_cover_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 92663,
+      "name": "x_output_cover_1",
+      "file": "v3_x_output_cover_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 3463.665079126151,
+      "expected_volume_mm3": 3463.6650791261095,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        69.0,
+        512.9904,
+        1085.9904
+      ],
+      "geometry_sha256": "fef03d9cbdaecded97799926edeb412f87dc8876c6e971173128efe1c22a6c33",
+      "members": [
+        "x_output_cover_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 64170,
+      "name": "x_output_shaft",
+      "file": "v3_x_output_shaft.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 13648.216991834852,
+      "expected_volume_mm3": 13648.218458482726,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        81.9944,
+        470.9944,
+        1091.9944
+      ],
+      "geometry_sha256": "daecd3ca51e6ba43e7e1f115007c81a6674db2b926a67e78d68e68d210a0aa10",
+      "members": [
+        "x_output_shaft"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 64729,
+      "name": "x_output_spacer_0",
+      "file": "v3_x_output_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1767.4286109830825,
+      "expected_volume_mm3": 1767.4286109830855,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        81.9944,
+        483.9944,
+        1091.9944
+      ],
+      "geometry_sha256": "317f300b775e7ca7e380999889b02f0bab0de1dffaa56d5f08aa8e97ea08dba4",
+      "members": [
+        "x_output_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84607,
+      "name": "x_output_spacer_1",
+      "file": "v3_x_output_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 336.6530687586859,
+      "expected_volume_mm3": 336.6530687586829,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        81.9944,
+        512.9944,
+        1091.9944
+      ],
+      "geometry_sha256": "b3e7588b2ae8d60c16a6268a584ea6616b104bd3bf4d8971fd566481f63603ea",
+      "members": [
+        "x_output_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83252,
+      "name": "x_output_spacer_2",
+      "file": "v3_x_output_spacer_2.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 210.4081679741799,
+      "expected_volume_mm3": 210.40816797417676,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        81.9944,
+        545.9944,
+        1091.9944
+      ],
+      "geometry_sha256": "78229a1436518bb1b5fc1308c20a6ad750363273050b2b530a2df384666b0165",
+      "members": [
+        "x_output_spacer_2"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 80322,
+      "name": "x_output_spacer_3",
+      "file": "v3_x_output_spacer_3.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 275.1406846013929,
+      "expected_volume_mm3": 275.1406846013933,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        80.9937,
+        571.4937,
+        1090.9937
+      ],
+      "geometry_sha256": "0f858c5131d268059da0817f383cb076889fb9f22764a8bda9e48ca2b12887a1",
+      "members": [
+        "x_output_spacer_3"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 101199,
+      "name": "x_motor_bracket",
+      "file": "v3_x_motor_bracket.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 93463.38988999337,
+      "expected_volume_mm3": 93463.38988999467,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        45.0,
+        480.0,
+        1085.9895
+      ],
+      "geometry_sha256": "105ef42173cf08e58574b8e8b1470b388d74fd9ad45935e58135d67104cd7e14",
+      "members": [
+        "x_motor_bracket"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 98431,
+      "name": "y_motor_bracket",
+      "file": "v3_y_motor_bracket.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 139153.01726735616,
+      "expected_volume_mm3": 139153.01726735666,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        40.0,
+        880.0,
+        905.9977
+      ],
+      "geometry_sha256": "4b3206ee055cc0d83fb225b80595e3c6dc109e75ed59bccac34cdef5ae0abcee",
+      "members": [
+        "y_motor_bracket"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 107044,
+      "name": "y_sync_shaft",
+      "file": "v3_y_sync_shaft.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 160808.27834597687,
+      "expected_volume_mm3": 160808.3526798737,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        43.9948,
+        911.9944,
+        975.9944
+      ],
+      "geometry_sha256": "e1acd6990639c8e356beca22c7babcddc0cc025a6b43edf3c009c80b5109312e",
+      "members": [
+        "y_sync_shaft"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 99969,
+      "name": "y_rear_support_0",
+      "file": "v3_y_rear_support_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 111018.74397416183,
+      "expected_volume_mm3": 111018.7439741618,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        40.0,
+        896.0,
+        899.9977
+      ],
+      "geometry_sha256": "13b5e641c579d1cacea27b6619c8f58bae63aaa4949c5d11ae7c28cfcb636a0c",
+      "members": [
+        "y_rear_support_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 88352,
+      "name": "y_rear_cover_0",
+      "file": "v3_y_rear_cover_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 8842.72859711668,
+      "expected_volume_mm3": 8842.728597116678,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        58.9927,
+        896.0,
+        960.0
+      ],
+      "geometry_sha256": "27fccf56af5000deaeb2199381fc1f9524dd54f7cd1792bd1aa6d881996b1e35",
+      "members": [
+        "y_rear_cover_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 103027,
+      "name": "y_rear_spacer_0_0",
+      "file": "v3_y_rear_spacer_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1327.0087368763295,
+      "expected_volume_mm3": 1327.0087368763257,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        56.993,
+        909.993,
+        973.993
+      ],
+      "geometry_sha256": "7a615f5f0fc6af6a7b8e5c6db5ca8a1c310879f60a97486d7919e9027a470408",
+      "members": [
+        "y_rear_spacer_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95187,
+      "name": "y_rear_spacer_0_1",
+      "file": "v3_y_rear_spacer_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 862.555678969613,
+      "expected_volume_mm3": 862.5556789696121,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        77.993,
+        909.993,
+        973.993
+      ],
+      "geometry_sha256": "df10ab3f1eabd49b4b2aec9775b6c058463a4c26011d22162be9841335d04b8f",
+      "members": [
+        "y_rear_spacer_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73498,
+      "name": "y_rear_washer_0",
+      "file": "v3_y_rear_washer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 537.0709720944424,
+      "expected_volume_mm3": 537.0709720944444,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        54.9916,
+        907.9916,
+        971.9916
+      ],
+      "geometry_sha256": "bde37c3cfa2685ee72cc759f7780a20e97905f196523a7275a7443294d8aaa95",
+      "members": [
+        "y_rear_washer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 100304,
+      "name": "y_rear_support_1",
+      "file": "v3_y_rear_support_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 110834.01832613071,
+      "expected_volume_mm3": 110834.01832613077,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        748.0,
+        896.0,
+        899.9977
+      ],
+      "geometry_sha256": "5bc89e15a3b34af4784de2799c7f7a22d68b73ebf972d9fc8090abfff260cde4",
+      "members": [
+        "y_rear_support_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78596,
+      "name": "y_rear_cover_1",
+      "file": "v3_y_rear_cover_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 8658.002949085596,
+      "expected_volume_mm3": 8658.002949085609,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        833.2878,
+        896.0,
+        960.0
+      ],
+      "geometry_sha256": "dfe990968627c8e2a41c1d1bf9b02ae2ff46dd0583bbd1503d307245d97b67b9",
+      "members": [
+        "y_rear_cover_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 103689,
+      "name": "y_rear_spacer_1_0",
+      "file": "v3_y_rear_spacer_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1327.0087368763361,
+      "expected_volume_mm3": 1327.0087368763257,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        832.993,
+        909.993,
+        973.993
+      ],
+      "geometry_sha256": "ed64dd8d0aac09a98c1e1d23991f39aa537fe103b92da1ed5c84d6a7fc9e071f",
+      "members": [
+        "y_rear_spacer_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95287,
+      "name": "y_rear_spacer_1_1",
+      "file": "v3_y_rear_spacer_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 862.5556789696208,
+      "expected_volume_mm3": 862.5556789696121,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        815.493,
+        909.993,
+        973.993
+      ],
+      "geometry_sha256": "20416241cd7dcd9063a78edf20f306a5db2358618f74b9c4eff85985c442a94e",
+      "members": [
+        "y_rear_spacer_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73885,
+      "name": "y_rear_washer_1",
+      "file": "v3_y_rear_washer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 537.0709720944292,
+      "expected_volume_mm3": 537.0709720944444,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        842.9916,
+        907.9916,
+        971.9916
+      ],
+      "geometry_sha256": "fc5c834528244fcc6b6dbebad2a68431bcf080d47db6bda4cac14375eae27e28",
+      "members": [
+        "y_rear_washer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 85864,
+      "name": "x_belt_bridge",
+      "file": "v3_x_belt_bridge.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 108036.30711261075,
+      "expected_volume_mm3": 108036.30711261186,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        400.0,
+        430.0,
+        1099.9981
+      ],
+      "geometry_sha256": "6d427bf9d06615d3356298f672d373cf3119f098845f6777c503424a4d078be4",
+      "members": [
+        "x_belt_bridge"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 69195,
+      "name": "x_clamp_0_-1_cap",
+      "file": "v3_x_clamp_0_-1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736434,
+      "expected_volume_mm3": 1781.0495667735058,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        402.0,
+        512.5,
+        1113.8468
+      ],
+      "geometry_sha256": "79099069444ff0a6059bcff31c5a93946c56dcdac673b1e04c8c477ab7d61218",
+      "members": [
+        "x_clamp_0_-1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70165,
+      "name": "x_clamp_0_1_cap",
+      "file": "v3_x_clamp_0_1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736434,
+      "expected_volume_mm3": 1781.0495667735058,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        477.0,
+        512.5,
+        1113.8468
+      ],
+      "geometry_sha256": "4ed00c0c2ee6872dc76ad99b0c43c5d95286100382af9d9afb724d7a2a4a5a69",
+      "members": [
+        "x_clamp_0_1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82575,
+      "name": "y_clamp_0_-1_carrier",
+      "file": "v3_y_clamp_0_-1_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 13202.505665430195,
+      "expected_volume_mm3": 13202.505665429675,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        55.0,
+        444.5,
+        987.9981
+      ],
+      "geometry_sha256": "8cd861a870a30ce3bac1550bf76425b081ba280817d8f4a39692c162b3fd5bcd",
+      "members": [
+        "y_clamp_0_-1_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 76688,
+      "name": "y_clamp_0_-1_cap",
+      "file": "v3_y_clamp_0_-1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736727,
+      "expected_volume_mm3": 1781.0495667735063,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        80.0,
+        449.0,
+        1001.6665
+      ],
+      "geometry_sha256": "4613a0a2b1b64471b5e20534fcd797974a33a1d62fa9ebb7f924a6fd35534da4",
+      "members": [
+        "y_clamp_0_-1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 82435,
+      "name": "y_clamp_0_1_carrier",
+      "file": "v3_y_clamp_0_1_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 13202.505665430195,
+      "expected_volume_mm3": 13202.505665429675,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        55.0,
+        525.5,
+        987.9981
+      ],
+      "geometry_sha256": "101cbde2bca0b0012ee1ae9d007501cb3abed85a92c9b519c80904d31b06092c",
+      "members": [
+        "y_clamp_0_1_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77672,
+      "name": "y_clamp_0_1_cap",
+      "file": "v3_y_clamp_0_1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736727,
+      "expected_volume_mm3": 1781.049566773506,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        80.0,
+        530.0,
+        1001.6665
+      ],
+      "geometry_sha256": "ea55e14a6ffb6f518599c3296bc44382936b518f333eb35dde3bcce491d0f610",
+      "members": [
+        "y_clamp_0_1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81323,
+      "name": "y_clamp_1_-1_carrier",
+      "file": "v3_y_clamp_1_-1_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 13202.505665430195,
+      "expected_volume_mm3": 13202.505665429673,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        790.0,
+        444.5,
+        987.9981
+      ],
+      "geometry_sha256": "13e97d9a63dd2f0e42f19b3b0ad820c333eb98f2c8f7925014f240126ef5cb9e",
+      "members": [
+        "y_clamp_1_-1_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 76870,
+      "name": "y_clamp_1_-1_cap",
+      "file": "v3_y_clamp_1_-1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736727,
+      "expected_volume_mm3": 1781.0495667735056,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        790.0,
+        449.0,
+        1001.6665
+      ],
+      "geometry_sha256": "c8d88e9628c5a17d04367c3ea5642e242bc5493bde7898b8c44a9cb9936982ae",
+      "members": [
+        "y_clamp_1_-1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81314,
+      "name": "y_clamp_1_1_carrier",
+      "file": "v3_y_clamp_1_1_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 13202.505665430195,
+      "expected_volume_mm3": 13202.505665429673,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        790.0,
+        525.5,
+        987.9981
+      ],
+      "geometry_sha256": "029fb39f256fe1ce421adebad2aba9442ca990624b75b90041c710679029d76b",
+      "members": [
+        "y_clamp_1_1_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 76905,
+      "name": "y_clamp_1_1_cap",
+      "file": "v3_y_clamp_1_1_cap.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1781.0495667736727,
+      "expected_volume_mm3": 1781.0495667735056,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        790.0,
+        530.0,
+        1001.6665
+      ],
+      "geometry_sha256": "d04a0dba0bc866994eb2fc6a84d1d5b2266b9276a99cb1285771421336b05dea",
+      "members": [
+        "y_clamp_1_1_cap"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 88331,
+      "name": "x_tension_0_base",
+      "file": "v3_x_tension_0_base.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 68636.00290848615,
+      "expected_volume_mm3": 68636.0029084862,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        760.0,
+        480.0,
+        1079.9977
+      ],
+      "geometry_sha256": "7e518ca24eb8c998b75f423b87bec7355e17014b1ebea763d09420fef14e2cda",
+      "members": [
+        "x_tension_0_base"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 113449,
+      "name": "x_tension_0_fork",
+      "file": "v3_x_tension_0_fork.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 21883.826666411318,
+      "expected_volume_mm3": 21883.826666411605,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        774.0,
+        499.5,
+        1089.9977
+      ],
+      "geometry_sha256": "b12c04637d3e3082a29c2bc6c0b670e0ca5395b1822b7c95686c1d32ac3eddca",
+      "members": [
+        "x_tension_0_fork"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58915,
+      "name": "x_tension_0_axle",
+      "file": "v3_x_tension_0_axle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1560.014715418429,
+      "expected_volume_mm3": 1560.014715418428,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        804.9965,
+        504.8965,
+        1094.9965
+      ],
+      "geometry_sha256": "ccf4a77c5a6c9e6a1717bb390e004205a95d67c8c811a7be5161c8e07b5c6e68",
+      "members": [
+        "x_tension_0_axle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84159,
+      "name": "x_tension_0_spacer_0",
+      "file": "v3_x_tension_0_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 66.85309166839146,
+      "expected_volume_mm3": 66.85309166839033,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        805.4969,
+        514.9969,
+        1095.4969
+      ],
+      "geometry_sha256": "c198922bdcc8347289f1da4e445fec82a96a66bc01d05d8cf793815ededcd579",
+      "members": [
+        "x_tension_0_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84140,
+      "name": "x_tension_0_spacer_1",
+      "file": "v3_x_tension_0_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 66.85309166839146,
+      "expected_volume_mm3": 66.85309166839033,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        805.4969,
+        537.9969,
+        1095.4969
+      ],
+      "geometry_sha256": "9adf8517deb013de2136ebb5666a5dc5690e5302cf24a60a8f977b80ea7c0be5",
+      "members": [
+        "x_tension_0_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 63727,
+      "name": "x_tension_0_adjuster",
+      "file": "v3_x_tension_0_adjuster.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 7090.131935667259,
+      "expected_volume_mm3": 7090.131935667326,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        849.9977,
+        502.5,
+        1089.9984
+      ],
+      "geometry_sha256": "560a0568f7a68947fb41711eb1513e303372f75be344967aa89cf57135ccad67",
+      "members": [
+        "x_tension_0_adjuster"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77257,
+      "name": "y_tension_0_base",
+      "file": "v3_y_tension_0_base.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 57708.00290847939,
+      "expected_volume_mm3": 57708.00290848624,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        65.0,
+        9.0,
+        899.9977
+      ],
+      "geometry_sha256": "e4848bb929094cc251d30f36590b4db74e993f81e1b91bbd77018ef5a02ded66",
+      "members": [
+        "y_tension_0_base"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 103771,
+      "name": "y_tension_0_fork",
+      "file": "v3_y_tension_0_fork.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 40678.035547980726,
+      "expected_volume_mm3": 40678.035547980835,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        67.0,
+        23.0,
+        909.9977
+      ],
+      "geometry_sha256": "0ce97affccf411758586c3266f851697d206880687513f78646320e6e817d7d0",
+      "members": [
+        "y_tension_0_fork"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 134411,
+      "name": "y_tension_0_axle",
+      "file": "v3_y_tension_0_axle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 4099.0498980497,
+      "expected_volume_mm3": 4099.0498980497005,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        72.3951,
+        51.9951,
+        976.9951
+      ],
+      "geometry_sha256": "3ce48169a8529e1eed34e949091fb49953876a33d8e271caf36e51859139bf6d",
+      "members": [
+        "y_tension_0_axle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81985,
+      "name": "y_tension_0_spacer_0",
+      "file": "v3_y_tension_0_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 102.03892938859676,
+      "expected_volume_mm3": 102.03892938859603,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        82.4955,
+        52.4955,
+        977.4955
+      ],
+      "geometry_sha256": "f43572d2f2da5708eee69051ed7893b2d582825812f54b3ab30d41a249be3b25",
+      "members": [
+        "y_tension_0_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81814,
+      "name": "y_tension_0_spacer_1",
+      "file": "v3_y_tension_0_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 102.03892938859676,
+      "expected_volume_mm3": 102.03892938859603,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        105.4955,
+        52.4955,
+        977.4955
+      ],
+      "geometry_sha256": "e948b47ce1029daf9b81b6abb201273acba5e367fab11ae7b397090ca2cbf059",
+      "members": [
+        "y_tension_0_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 90271,
+      "name": "y_tension_0_adjuster",
+      "file": "v3_y_tension_0_adjuster.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 7137.63281658959,
+      "expected_volume_mm3": 7137.632816589601,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        70.0,
+        98.9979,
+        909.9984
+      ],
+      "geometry_sha256": "33af2c47d33e9fb8b0618bc070b83ab3bc6b4dee17482a55541752b1a84f880f",
+      "members": [
+        "y_tension_0_adjuster"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77893,
+      "name": "y_tension_1_base",
+      "file": "v3_y_tension_1_base.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 57708.0029084794,
+      "expected_volume_mm3": 57708.00290848624,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        775.0,
+        9.0,
+        899.9977
+      ],
+      "geometry_sha256": "d7eefe8d7c68848bde29ea43d91cfc86b88a9a058ec6f140f62dd9782da5c717",
+      "members": [
+        "y_tension_1_base"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 104681,
+      "name": "y_tension_1_fork",
+      "file": "v3_y_tension_1_fork.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 40678.03554798073,
+      "expected_volume_mm3": 40678.03554798084,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        777.0,
+        23.0,
+        909.9977
+      ],
+      "geometry_sha256": "495455ca4434583b37340287ad74d12bcac202c83636280b512fd38bbcbb11cc",
+      "members": [
+        "y_tension_1_fork"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 134896,
+      "name": "y_tension_1_axle",
+      "file": "v3_y_tension_1_axle.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 4099.049898049697,
+      "expected_volume_mm3": 4099.049898049702,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        782.3951,
+        51.9951,
+        976.9951
+      ],
+      "geometry_sha256": "a089bbb668afcd3f310597cc4569d7699a555a60dc9803a80cd0d901c3bbcadf",
+      "members": [
+        "y_tension_1_axle"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81597,
+      "name": "y_tension_1_spacer_0",
+      "file": "v3_y_tension_1_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 102.03892938859624,
+      "expected_volume_mm3": 102.03892938859603,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        792.4955,
+        52.4955,
+        977.4955
+      ],
+      "geometry_sha256": "b30fdb699fec7ff22c0c00d28d07d12551051ce525e7ac7b06e5cd52e236ef73",
+      "members": [
+        "y_tension_1_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81369,
+      "name": "y_tension_1_spacer_1",
+      "file": "v3_y_tension_1_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 102.03892938859624,
+      "expected_volume_mm3": 102.03892938859603,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        815.4955,
+        52.4955,
+        977.4955
+      ],
+      "geometry_sha256": "74c4e974219867c07d6dc75700c6a7250cf06993836e7c0d1a34d298a0347be0",
+      "members": [
+        "y_tension_1_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 89747,
+      "name": "y_tension_1_adjuster",
+      "file": "v3_y_tension_1_adjuster.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 7137.63281658959,
+      "expected_volume_mm3": 7137.632816589601,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        780.0,
+        98.9979,
+        909.9984
+      ],
+      "geometry_sha256": "8a407fb7e2d1b17078c04a54fe59394fff1383045f3bb57c119feb7f14f59c36",
+      "members": [
+        "y_tension_1_adjuster"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78074,
+      "name": "frame_corner_front_0_0",
+      "file": "v3_frame_corner_front_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.0,
+        -6.0031,
+        -0.0
+      ],
+      "geometry_sha256": "e095b4f77cc701cb0ffbeae24681e221bd2129532f28378bb016c8a3a74e6ad0",
+      "members": [
+        "frame_corner_front_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73946,
+      "name": "frame_corner_front_0_1",
+      "file": "v3_frame_corner_front_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.4824629442,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.0,
+        -6.0031,
+        780.0
+      ],
+      "geometry_sha256": "38fcdbf3be800989de31a6abceb32853805a1d68bb5e77dd584fe7de7c585897",
+      "members": [
+        "frame_corner_front_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79976,
+      "name": "frame_corner_front_1_0",
+      "file": "v3_frame_corner_front_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.482462944216,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        780.0,
+        -6.0031,
+        -0.0
+      ],
+      "geometry_sha256": "7ac5e10fab7509b382435dfe619a74fa8379d37069d3d9bb9a712c18f867b536",
+      "members": [
+        "frame_corner_front_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 75342,
+      "name": "frame_corner_front_1_1",
+      "file": "v3_frame_corner_front_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        780.0,
+        -6.0031,
+        780.0
+      ],
+      "geometry_sha256": "7e03ae9b04490adee19717d5ca3dd9d8eef4ad670f7f7751593fcfd41d04abfd",
+      "members": [
+        "frame_corner_front_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78627,
+      "name": "frame_corner_rear_0_0",
+      "file": "v3_frame_corner_rear_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294457,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.0,
+        939.9969,
+        -0.0
+      ],
+      "geometry_sha256": "b6737b4fa1294e4298f59419a2088e69b5de44fc6acf7b0c84d2f0446132931b",
+      "members": [
+        "frame_corner_rear_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 74576,
+      "name": "frame_corner_rear_0_1",
+      "file": "v3_frame_corner_rear_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294449,
+      "expected_volume_mm3": 46091.4824629442,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.0,
+        939.9969,
+        780.0
+      ],
+      "geometry_sha256": "610202962542f17f82b2d3aa9b468ea8504f7fb3ec2c0802a4827d528b6c9c31",
+      "members": [
+        "frame_corner_rear_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79283,
+      "name": "frame_corner_rear_1_0",
+      "file": "v3_frame_corner_rear_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.4824629445,
+      "expected_volume_mm3": 46091.482462944216,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        780.0,
+        939.9969,
+        -0.0
+      ],
+      "geometry_sha256": "81e5683f726c2461e7fa5113717a9d4f67aa7888af2f8558788464f4ed20fd74",
+      "members": [
+        "frame_corner_rear_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 75284,
+      "name": "frame_corner_rear_1_1",
+      "file": "v3_frame_corner_rear_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294456,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        780.0,
+        939.9969,
+        780.0
+      ],
+      "geometry_sha256": "bfa346f9dbc7c266101d954feb3c2f34d5819fb2255fc78692fff97a7e3468c8",
+      "members": [
+        "frame_corner_rear_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70551,
+      "name": "frame_corner_left_0_0",
+      "file": "v3_frame_corner_left_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -6.0031,
+        -0.0,
+        -0.0
+      ],
+      "geometry_sha256": "b345ed2e411d4493a42ad430cf18abd99e3ee5616e63e190e23a365ed5f5d93c",
+      "members": [
+        "frame_corner_left_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70011,
+      "name": "frame_corner_left_0_1",
+      "file": "v3_frame_corner_left_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.4824629442,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -6.0031,
+        -0.0,
+        780.0
+      ],
+      "geometry_sha256": "679e1789bf9d16b835a15ed92425b9cb9ff29e24629da7a7c202d0a6e28e629b",
+      "members": [
+        "frame_corner_left_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70199,
+      "name": "frame_corner_left_1_0",
+      "file": "v3_frame_corner_left_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.482462944216,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -6.0031,
+        820.0,
+        -0.0
+      ],
+      "geometry_sha256": "403998e86b2b262c67acdc963597b0a746ac5f59ae7df0e092ea1710d36d39bb",
+      "members": [
+        "frame_corner_left_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66761,
+      "name": "frame_corner_left_1_1",
+      "file": "v3_frame_corner_left_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.482462944194,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -6.0031,
+        820.0,
+        780.0
+      ],
+      "geometry_sha256": "0764203ab0ef02071557bf6bc17a563b39bebef0dd7fe0785cd354257dc9fa7e",
+      "members": [
+        "frame_corner_left_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 71270,
+      "name": "frame_corner_right_0_0",
+      "file": "v3_frame_corner_right_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294449,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        899.9969,
+        -0.0,
+        -0.0
+      ],
+      "geometry_sha256": "5caf7a3ca837a54d9317c74c8f447348eadcd7565c2900089af8672b5d5d34ee",
+      "members": [
+        "frame_corner_right_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70577,
+      "name": "frame_corner_right_0_1",
+      "file": "v3_frame_corner_right_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294456,
+      "expected_volume_mm3": 46091.4824629442,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        899.9969,
+        -0.0,
+        780.0
+      ],
+      "geometry_sha256": "cd06f51a8c45cfa0991237b832cb59b095bea75127bf88761672929d8bc37325",
+      "members": [
+        "frame_corner_right_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 69647,
+      "name": "frame_corner_right_1_0",
+      "file": "v3_frame_corner_right_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294456,
+      "expected_volume_mm3": 46091.482462944216,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        899.9969,
+        820.0,
+        -0.0
+      ],
+      "geometry_sha256": "8458ec59c7dc843d7205d1356b2c3d8b1a481b6fb5f3fa4b5e3288ece5e1c51c",
+      "members": [
+        "frame_corner_right_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66806,
+      "name": "frame_corner_right_1_1",
+      "file": "v3_frame_corner_right_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 46091.48246294449,
+      "expected_volume_mm3": 46091.48246294421,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        899.9969,
+        820.0,
+        780.0
+      ],
+      "geometry_sha256": "486282dace98c20ae7c4a8ce8f932cf4c46c684d519d1f0fc771baad591a93fc",
+      "members": [
+        "frame_corner_right_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 80767,
+      "name": "accessory_cross_joint_0",
+      "file": "v3_accessory_cross_joint_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 37254.88947776677,
+      "expected_volume_mm3": 37254.88947776652,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -0.0,
+        939.9969,
+        140.0
+      ],
+      "geometry_sha256": "616a692870800c5bd594fc2be242778528105b3e4460680baf6f1843d4e5eaef",
+      "members": [
+        "accessory_cross_joint_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 80547,
+      "name": "accessory_cross_joint_1",
+      "file": "v3_accessory_cross_joint_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 37254.88947776685,
+      "expected_volume_mm3": 37254.88947776652,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        820.0,
+        939.9969,
+        140.0
+      ],
+      "geometry_sha256": "45231503f364e9a4f755c92ac5776f12a7d16d11597578ee3584e8c51b5c3bcb",
+      "members": [
+        "accessory_cross_joint_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58005,
+      "name": "side_brace_0_0",
+      "file": "v3_side_brace_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 103082.93478832579,
+      "expected_volume_mm3": 103082.93478845457,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        40.9969,
+        1.3831,
+        100.798
+      ],
+      "geometry_sha256": "4f6a2956ec719e10717b3924c903330cfe318d2f34dfe115d1f9363edd7f92a2",
+      "members": [
+        "side_brace_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 68256,
+      "name": "side_brace_0_0_spacer_0",
+      "file": "v3_side_brace_0_0_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.41424805351426,
+      "expected_volume_mm3": 257.41424805351363,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.993,
+        9.993,
+        109.993
+      ],
+      "geometry_sha256": "1f49323e65d565390b98bc1398f01c33428c4d9f34a6ef553186cbe1ce3ec650",
+      "members": [
+        "side_brace_0_0_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 67971,
+      "name": "side_brace_0_0_spacer_1",
+      "file": "v3_side_brace_0_0_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.41424805351426,
+      "expected_volume_mm3": 257.4142480535137,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.993,
+        909.993,
+        789.993
+      ],
+      "geometry_sha256": "7ddbafae4f27314c839acc58e05d247dc9c75d0419010588019ad3fe2e3fc473",
+      "members": [
+        "side_brace_0_0_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58021,
+      "name": "side_brace_0_1",
+      "file": "v3_side_brace_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 103082.9347885906,
+      "expected_volume_mm3": 103082.93478845459,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        44.9969,
+        1.3831,
+        100.798
+      ],
+      "geometry_sha256": "2fc4ce438c99149d566b900112e70321d6f9a1a63e634f0d6d490c885ee84b60",
+      "members": [
+        "side_brace_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83573,
+      "name": "side_brace_0_1_spacer_0",
+      "file": "v3_side_brace_0_1_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1287.071240267569,
+      "expected_volume_mm3": 1287.071240267569,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.993,
+        9.993,
+        789.993
+      ],
+      "geometry_sha256": "9cb3669317b75d11a05fa7e1c2ad6702bd99a52e06eefe717da74d9da7c904b3",
+      "members": [
+        "side_brace_0_1_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84242,
+      "name": "side_brace_0_1_spacer_1",
+      "file": "v3_side_brace_0_1_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1287.071240267569,
+      "expected_volume_mm3": 1287.0712402675674,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.993,
+        909.993,
+        109.993
+      ],
+      "geometry_sha256": "077c11ed8c11536eef5d539d882c6535bb32aaf8d75253ebfeb636eef2ec2a5c",
+      "members": [
+        "side_brace_0_1_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 57512,
+      "name": "side_brace_1_0",
+      "file": "v3_side_brace_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 103082.93478858564,
+      "expected_volume_mm3": 103082.93478845459,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        855.9969,
+        1.3831,
+        100.798
+      ],
+      "geometry_sha256": "cc278b110e41a7ef2f741ebb659b74fc727ede2971123d1f6e3d38543c69a93a",
+      "members": [
+        "side_brace_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 68971,
+      "name": "side_brace_1_0_spacer_0",
+      "file": "v3_side_brace_1_0_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.41424805352705,
+      "expected_volume_mm3": 257.41424805351363,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        858.993,
+        9.993,
+        109.993
+      ],
+      "geometry_sha256": "268ebd5d25650ee8cc7d9440cf14a56478dfebacd94e19a2b174151e71e35bc2",
+      "members": [
+        "side_brace_1_0_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 68770,
+      "name": "side_brace_1_0_spacer_1",
+      "file": "v3_side_brace_1_0_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 257.41424805352705,
+      "expected_volume_mm3": 257.4142480535137,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        858.993,
+        909.993,
+        789.993
+      ],
+      "geometry_sha256": "895f4a00928b2175f4d677e4754c5d4caa7afb3c3c249531d6bad5cdd0b6570a",
+      "members": [
+        "side_brace_1_0_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58305,
+      "name": "side_brace_1_1",
+      "file": "v3_side_brace_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 103082.93478833223,
+      "expected_volume_mm3": 103082.93478845453,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        851.9969,
+        1.3831,
+        100.798
+      ],
+      "geometry_sha256": "3f19aa244d1ac73c96924898bb6aed87b7c3398d5b27f02dc428e54f064285f4",
+      "members": [
+        "side_brace_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83092,
+      "name": "side_brace_1_1_spacer_0",
+      "file": "v3_side_brace_1_1_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1287.0712402675822,
+      "expected_volume_mm3": 1287.071240267569,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        854.993,
+        9.993,
+        789.993
+      ],
+      "geometry_sha256": "28b15e19911686784bce8cab24c165a66c9a644f3fefa3feaf0f20ec6085a58e",
+      "members": [
+        "side_brace_1_1_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83452,
+      "name": "side_brace_1_1_spacer_1",
+      "file": "v3_side_brace_1_1_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 1287.0712402675822,
+      "expected_volume_mm3": 1287.071240267567,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        854.993,
+        909.993,
+        109.993
+      ],
+      "geometry_sha256": "3b3fe9ac883a9ea0715040c50881a6b32570972160c35e46d5001632d18113c6",
+      "members": [
+        "side_brace_1_1_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 56263,
+      "name": "rear_brace_0",
+      "file": "v3_rear_brace_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 104854.69698738995,
+      "expected_volume_mm3": 104854.69698749456,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        1.0751,
+        846.9969,
+        60.8137
+      ],
+      "geometry_sha256": "1c19c58a6f34dd961c485eadc619fb5f1117556de79e27965cff3b2ce00a72e4",
+      "members": [
+        "rear_brace_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 59423,
+      "name": "rear_brace_0_spacer_0",
+      "file": "v3_rear_brace_0_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 21706.44174089699,
+      "expected_volume_mm3": 21706.44174089698,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        7.4913,
+        849.9913,
+        67.4913
+      ],
+      "geometry_sha256": "2fe8233588d7c5a329b792f7622a78f4264ab8b7483cabad9c24240768ea97e0",
+      "members": [
+        "rear_brace_0_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58994,
+      "name": "rear_brace_0_spacer_1",
+      "file": "v3_rear_brace_0_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 21706.44174089699,
+      "expected_volume_mm3": 21706.441740897,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        867.4913,
+        849.9913,
+        827.4913
+      ],
+      "geometry_sha256": "e78e95b2b5d3791e98fc23dd718b77598801890c6a1393f3142fe8a84e587b9c",
+      "members": [
+        "rear_brace_0_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 54624,
+      "name": "rear_brace_1",
+      "file": "v3_rear_brace_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 104854.69698760011,
+      "expected_volume_mm3": 104854.69698749456,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        1.0751,
+        842.9969,
+        60.8137
+      ],
+      "geometry_sha256": "b7574b6df9d39d0910cb930bf0b77ab3fb7342e87553e129ab0b4d3d61a6d89d",
+      "members": [
+        "rear_brace_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58616,
+      "name": "rear_brace_1_spacer_0",
+      "file": "v3_rear_brace_1_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23442.957080168748,
+      "expected_volume_mm3": 23442.957080168762,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        7.4913,
+        845.9913,
+        827.4913
+      ],
+      "geometry_sha256": "dd0178a651ddc1565a90c5a368f01c41c31c777d5411a9468fb1e038cad43663",
+      "members": [
+        "rear_brace_1_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 58496,
+      "name": "rear_brace_1_spacer_1",
+      "file": "v3_rear_brace_1_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 23442.957080168748,
+      "expected_volume_mm3": 23442.957080168744,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        867.4913,
+        845.9913,
+        67.4913
+      ],
+      "geometry_sha256": "f08585f2eba10a1e4c5da682dee588b4d5733838fea0dafe46ee28d7e9bc3393",
+      "members": [
+        "rear_brace_1_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 75534,
+      "name": "camera_base",
+      "file": "v3_camera_base.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 47364.612885811606,
+      "expected_volume_mm3": 47364.61288581145,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        375.0,
+        -40.0,
+        899.9766
+      ],
+      "geometry_sha256": "ab6615dedd3e827bae09978cfdeeb99337dfb9ee54f6ad6f0b6c2e77c7815330",
+      "members": [
+        "camera_base"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 71357,
+      "name": "camera_pivot_ear_0",
+      "file": "v3_camera_pivot_ear_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 16115.857338598797,
+      "expected_volume_mm3": 16115.857338598746,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        379.9981,
+        -40.0,
+        903.9986
+      ],
+      "geometry_sha256": "25d820dc523815f0edd48ee218d4513aced9888d720a1e42782a9dd3679e5e3b",
+      "members": [
+        "camera_pivot_ear_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78728,
+      "name": "camera_pivot_spacer_0",
+      "file": "v3_camera_pivot_spacer_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 180.39025016912353,
+      "expected_volume_mm3": 180.39025016912515,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        385.9958,
+        -29.0042,
+        970.5317
+      ],
+      "geometry_sha256": "2d4fd806569bc1235f5f666635287f2ae3b20709e0c75d6821fa7e5a0a35a0bf",
+      "members": [
+        "camera_pivot_spacer_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 71983,
+      "name": "camera_pivot_ear_1",
+      "file": "v3_camera_pivot_ear_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 16115.857338598797,
+      "expected_volume_mm3": 16115.857338598746,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        513.9981,
+        -40.0,
+        903.9986
+      ],
+      "geometry_sha256": "2258fdadc07926d5454d000a710bde9033add0d7847e51d76856e6e6e6f40651",
+      "members": [
+        "camera_pivot_ear_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78373,
+      "name": "camera_pivot_spacer_1",
+      "file": "v3_camera_pivot_spacer_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 180.39025016912353,
+      "expected_volume_mm3": 180.39025016912515,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        511.9958,
+        -29.0042,
+        970.5317
+      ],
+      "geometry_sha256": "9b24de60cabd94303a52cca4e5701e1884947bb7340b208190a467e20be86371",
+      "members": [
+        "camera_pivot_spacer_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 83759,
+      "name": "camera_tilt_carrier",
+      "file": "v3_camera_tilt_carrier.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 30535.023079354094,
+      "expected_volume_mm3": 30535.023079321985,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        387.9937,
+        -70.8013,
+        955.0
+      ],
+      "geometry_sha256": "efccf3f6a4bde43532693d861af326426c3ae9426ff66a4c55149dfed038995e",
+      "members": [
+        "camera_tilt_carrier"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 68221,
+      "name": "camera_removable_panel",
+      "file": "v3_camera_removable_panel.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 35891.0495667463,
+      "expected_volume_mm3": 35891.04956677288,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        390.0,
+        -72.3013,
+        959.3301
+      ],
+      "geometry_sha256": "9411be3e79dc2028a93f8443a95172d6a19d455cb306157aa727d743c25117b7",
+      "members": [
+        "camera_removable_panel"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95522,
+      "name": "compute_combo_plate",
+      "file": "v3_compute_combo_plate.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 75726.42546804377,
+      "expected_volume_mm3": 75726.42546804328,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        140.0,
+        939.9981,
+        160.0
+      ],
+      "geometry_sha256": "c02da51e395b521313d68a4ab83b32d8cfed7bd3c72527761ff90c63492848d3",
+      "members": [
+        "compute_combo_plate"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 91184,
+      "name": "controller_tray",
+      "file": "v3_controller_tray.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 336460.34347386786,
+      "expected_volume_mm3": 336460.34347386984,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        560.0,
+        939.9977,
+        160.0
+      ],
+      "geometry_sha256": "9ba8bfc04400deaef112e418901cfc04e2f12f644dd9c7021657ba97e305895c",
+      "members": [
+        "controller_tray"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 74760,
+      "name": "X_stop_0",
+      "file": "v3_X_stop_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 93238.46151767831,
+      "expected_volume_mm3": 93238.46151767828,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        82.0,
+        390.0,
+        969.9977
+      ],
+      "geometry_sha256": "15692e262e5da920a4fc05ea254bb9900eb42297d3f4908883d4d58b97ff9760",
+      "members": [
+        "X_stop_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 91448,
+      "name": "X_bumper_0",
+      "file": "v3_X_bumper_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 583.9497934205338,
+      "expected_volume_mm3": 583.9497934193643,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        99.9988,
+        430.0,
+        970.0
+      ],
+      "geometry_sha256": "c4ae05c91aa76acf994182f9c6d623aea44fd9c3183b7958b8ef0b702897d6c6",
+      "members": [
+        "X_bumper_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 81423,
+      "name": "X_target_0",
+      "file": "v3_X_target_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 381.84159446226863,
+      "expected_volume_mm3": 381.841594462251,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        370.0,
+        428.9988,
+        975.0
+      ],
+      "geometry_sha256": "d8048aeb8dc541a5685d8b0b3ab84fd3f63c9eb6d61c4fc51657e1e684df3c45",
+      "members": [
+        "X_target_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 73423,
+      "name": "X_stop_1",
+      "file": "v3_X_stop_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 93238.46151767828,
+      "expected_volume_mm3": 93238.4615176783,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        770.0,
+        390.0,
+        969.9977
+      ],
+      "geometry_sha256": "8b4945f1e0d693986d8f318dc02f88391bf45c9f264719a6cd50c8651dc4d5c4",
+      "members": [
+        "X_stop_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78090,
+      "name": "X_bumper_1",
+      "file": "v3_X_bumper_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 583.9497934203117,
+      "expected_volume_mm3": 583.9497934193636,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        794.9977,
+        430.0,
+        970.0
+      ],
+      "geometry_sha256": "980fdf401924cd5301f16837cb84ec82e0900c149b28e6eeaa38f8f68acefdb2",
+      "members": [
+        "X_bumper_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 80619,
+      "name": "X_target_1",
+      "file": "v3_X_target_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 381.8415944622686,
+      "expected_volume_mm3": 381.8415944622509,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        510.0,
+        428.9988,
+        975.0
+      ],
+      "geometry_sha256": "536e410130fdf10ac4010c4c82792abc9220248db26fb3e6a49adab11c412a7e",
+      "members": [
+        "X_target_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79524,
+      "name": "Y_stop_0_0",
+      "file": "v3_Y_stop_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39151.237226626996,
+      "expected_volume_mm3": 39151.237226626974,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.9977,
+        105.0,
+        870.0
+      ],
+      "geometry_sha256": "9632e4acf8b800daab5d5fb6fa3d9a1e1192caea29bb971d6d88c0051c00443c",
+      "members": [
+        "Y_stop_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95721,
+      "name": "Y_bumper_0_0",
+      "file": "v3_Y_bumper_0_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 983.94979341999,
+      "expected_volume_mm3": 983.9497934193646,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        54.0,
+        134.9988,
+        976.0
+      ],
+      "geometry_sha256": "d17edf16115ae4cfecac7fdbc6ead874ddc054a4fa9053d36d56fb8c6739a4fb",
+      "members": [
+        "Y_bumper_0_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 79710,
+      "name": "Y_stop_0_1",
+      "file": "v3_Y_stop_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39151.23722662703,
+      "expected_volume_mm3": 39151.23722662697,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        39.9977,
+        864.999,
+        870.0
+      ],
+      "geometry_sha256": "4e416517886c6bbb6a4200ed7bcaa871a9693ce7f416a979b0e24ae5b8936fe9",
+      "members": [
+        "Y_stop_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 88726,
+      "name": "Y_bumper_0_1",
+      "file": "v3_Y_bumper_0_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 983.9497934202824,
+      "expected_volume_mm3": 983.9497934193646,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        54.0,
+        859.9977,
+        976.0
+      ],
+      "geometry_sha256": "1b9e80118a7696a3a500cd5c71a6b01731a02f9de64e9310abf073b555182d1a",
+      "members": [
+        "Y_bumper_0_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77712,
+      "name": "Y_stop_1_0",
+      "file": "v3_Y_stop_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39151.237226626996,
+      "expected_volume_mm3": 39151.237226626974,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        820.0,
+        105.0,
+        870.0
+      ],
+      "geometry_sha256": "75edbbf2e88c0f01fec7f022a2b01cf2eacbef111be68a136f44cf8de411c3c5",
+      "members": [
+        "Y_stop_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 95137,
+      "name": "Y_bumper_1_0",
+      "file": "v3_Y_bumper_1_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 983.9497934183927,
+      "expected_volume_mm3": 983.9497934193637,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        826.0,
+        134.9988,
+        976.0
+      ],
+      "geometry_sha256": "c2946a31a02f6f49989a4e043bc267f80a855522b0286fbdcbfb0c7e755e8347",
+      "members": [
+        "Y_bumper_1_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77516,
+      "name": "Y_stop_1_1",
+      "file": "v3_Y_stop_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 39151.23722662702,
+      "expected_volume_mm3": 39151.23722662697,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        820.0,
+        864.999,
+        870.0
+      ],
+      "geometry_sha256": "3d51f386a18f8bb9f46f34e3b46c5258011cc2abd02e41cde136cc77338e4c50",
+      "members": [
+        "Y_stop_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 89408,
+      "name": "Y_bumper_1_1",
+      "file": "v3_Y_bumper_1_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 983.9497934175268,
+      "expected_volume_mm3": 983.9497934193638,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        826.0,
+        859.9977,
+        976.0
+      ],
+      "geometry_sha256": "8296fff49d7177a1dd7db87ca46a5723ad51f2567ba76b0b2d5bc4293da2ff2d",
+      "members": [
+        "Y_bumper_1_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84380,
+      "name": "Y_sensor_mount_0",
+      "file": "v3_Y_sensor_mount_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 34325.15872298386,
+      "expected_volume_mm3": 34325.15872298386,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -25.003,
+        130.0,
+        908.0
+      ],
+      "geometry_sha256": "5be0489bf599448ca057bd12e167dac10c9b879e04f44cb83f9695234ff79ea3",
+      "members": [
+        "Y_sensor_mount_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 64295,
+      "name": "Y_target_0",
+      "file": "v3_Y_target_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 381.84159446225107,
+      "expected_volume_mm3": 381.841594462251,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -1.0012,
+        405.0,
+        976.0
+      ],
+      "geometry_sha256": "3ae1713b9caa56e7d12fba20f3b889af014b30a9ac55d501c3b9e534e0812d4b",
+      "members": [
+        "Y_target_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 84585,
+      "name": "Y_sensor_mount_1",
+      "file": "v3_Y_sensor_mount_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 34325.15872298387,
+      "expected_volume_mm3": 34325.15872298386,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -25.003,
+        830.0,
+        908.0
+      ],
+      "geometry_sha256": "a3bdb17f38dbbead4ceac105d7c5df6fbfad9d276525d900c9e96a5c0c6fc638",
+      "members": [
+        "Y_sensor_mount_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 64824,
+      "name": "Y_target_1",
+      "file": "v3_Y_target_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 381.84159446225107,
+      "expected_volume_mm3": 381.8415944622509,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -1.0012,
+        575.0,
+        976.0
+      ],
+      "geometry_sha256": "65440068ecaa28719158f6a71e19646599962ae86948b33b8f0eb28fab363781",
+      "members": [
+        "Y_target_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 78911,
+      "name": "Z_stop_0",
+      "file": "v3_Z_stop_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 53480.91273536508,
+      "expected_volume_mm3": 53480.91273536506,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        505.0,
+        345.0,
+        872.0
+      ],
+      "geometry_sha256": "c50bfb33f172afb3333c2481bd9313b67f82ecbbe35ef47bfe7de789e05390f9",
+      "members": [
+        "Z_stop_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 66751,
+      "name": "Z_bumper_0",
+      "file": "v3_Z_bumper_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 5783.949793416566,
+      "expected_volume_mm3": 5783.949793419364,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        505.0,
+        345.0,
+        884.9977
+      ],
+      "geometry_sha256": "8f4f6e2b711966e86cb5b5a737ac7cb1e7291bf2ce35efa5f6c41d689465bf60",
+      "members": [
+        "Z_bumper_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 69556,
+      "name": "Z_striker_0",
+      "file": "v3_Z_striker_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 30139.511560509305,
+      "expected_volume_mm3": 30139.51156050928,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        489.9977,
+        345.0,
+        570.0
+      ],
+      "geometry_sha256": "2e05a3e0dcfebcc6671f86e83f1e539497f4eb3765ceed6b1d337997ab44a01c",
+      "members": [
+        "Z_striker_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 60085,
+      "name": "Z_target_0",
+      "file": "v3_Z_target_0.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 581.8415944621858,
+      "expected_volume_mm3": 581.841594462251,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        534.9988,
+        350.0,
+        600.0
+      ],
+      "geometry_sha256": "aa1550bad96eab13b02f64fdd51ffed15ebdb1c078a5130aa8968039b97dab38",
+      "members": [
+        "Z_target_0"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 77621,
+      "name": "Z_stop_1",
+      "file": "v3_Z_stop_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 54080.912735365084,
+      "expected_volume_mm3": 54080.91273536507,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        505.0,
+        345.0,
+        1070.0
+      ],
+      "geometry_sha256": "df81b6cb4f3a9d3ea21ac60a56aae701fbf695369b1bd21412838b575b9566a2",
+      "members": [
+        "Z_stop_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 70646,
+      "name": "Z_bumper_1",
+      "file": "v3_Z_bumper_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 5783.949793416915,
+      "expected_volume_mm3": 5783.949793419364,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        505.0,
+        345.0,
+        1089.9988
+      ],
+      "geometry_sha256": "4a283f72f6f242896fa7d23e1c38c15393d2224b42871bb2a503cb6c35f49fc9",
+      "members": [
+        "Z_bumper_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 69184,
+      "name": "Z_striker_1",
+      "file": "v3_Z_striker_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 30139.511560509305,
+      "expected_volume_mm3": 30139.51156050928,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        489.9977,
+        345.0,
+        1310.0
+      ],
+      "geometry_sha256": "fc0bc348a8390df8dff228aba5743925142e0656de413474f01ccbaff8ff9ddb",
+      "members": [
+        "Z_striker_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 60353,
+      "name": "Z_target_1",
+      "file": "v3_Z_target_1.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 1,
+      "volume_mm3": 581.8415944621858,
+      "expected_volume_mm3": 581.8415944622508,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        534.9988,
+        350.0,
+        1350.0
+      ],
+      "geometry_sha256": "6a4c612fb32093bb74d5203bba820ddc53a7a6db724c9bd3e889b42f9e35fa46",
+      "members": [
+        "Z_target_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 2792457,
+      "name": "module_fixed",
+      "file": "v3_module_fixed.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 487,
+      "volume_mm3": 8701315.083204124,
+      "expected_volume_mm3": 8701315.083204007,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -44.0028,
+        -67.7745,
+        -0.0
+      ],
+      "geometry_sha256": "3b309fc692c90c86dacc7a9ba87bd2a6badc26ea03c2704ec98977ba86c77e1b",
+      "members": [
+        "base_cross_0",
+        "top_cross_0",
+        "base_cross_1",
+        "top_cross_1",
+        "base_side_0",
+        "top_side_0",
+        "column_0_0",
+        "column_0_1",
+        "base_side_1",
+        "top_side_1",
+        "column_1_0",
+        "column_1_1",
+        "RM_A_or_RA6M5_RESERVE",
+        "rear_accessory_crossbar",
+        "compute_standoff_0",
+        "compute_standoff_1",
+        "compute_standoff_2",
+        "compute_standoff_3",
+        "compute_board_pi4b",
+        "compute_component_clearance",
+        "camera_body_ENVELOPE",
+        "camera_lens_ENVELOPE",
+        "y_rail_0",
+        "y_rail_1",
+        "y_input_cover_front_M3_0",
+        "y_input_cover_front_M3_1",
+        "y_input_cover_front_M3_2",
+        "y_input_cover_front_M3_3",
+        "y_input_cover_rear_M3_0",
+        "y_input_cover_rear_M3_1",
+        "y_input_cover_rear_M3_2",
+        "y_input_cover_rear_M3_3",
+        "y_input_608_0",
+        "y_input_608_1",
+        "y_input_key",
+        "y_input_retainer_M3",
+        "y_input_lock_washer",
+        "y_input_locknut_0",
+        "y_input_locknut_1",
+        "y_input_coupling_shaft",
+        "y_input_coupling_spider",
+        "y_input_coupling_motor",
+        "y_input_side_0_M4_0",
+        "y_input_side_0_M4_0_washer",
+        "y_input_side_0_M4_1",
+        "y_input_side_0_M4_1_washer",
+        "y_input_side_0_M4_2",
+        "y_input_side_0_M4_2_washer",
+        "y_input_side_0_M4_3",
+        "y_input_side_0_M4_3_washer",
+        "y_input_side_0_M4_4",
+        "y_input_side_0_M4_4_washer",
+        "y_input_side_0_M4_5",
+        "y_input_side_0_M4_5_washer",
+        "y_input_side_1_M4_0",
+        "y_input_side_1_M4_0_washer",
+        "y_input_side_1_M4_1",
+        "y_input_side_1_M4_1_washer",
+        "y_input_side_1_M4_2",
+        "y_input_side_1_M4_2_washer",
+        "y_input_side_1_M4_3",
+        "y_input_side_1_M4_3_washer",
+        "y_input_side_1_M4_4",
+        "y_input_side_1_M4_4_washer",
+        "y_input_side_1_M4_5",
+        "y_input_side_1_M4_5_washer",
+        "motor_Y_ZDT42V2",
+        "y_motor_M3_0",
+        "y_motor_M3_1",
+        "y_motor_M3_2",
+        "y_motor_M3_3",
+        "y_reduction_belt",
+        "y_reduction_input_pulley_set_0",
+        "y_reduction_input_pulley_set_1",
+        "y_reduction_driven_pulley_set_0",
+        "y_reduction_driven_pulley_set_1",
+        "y_pulley_0_1_set_0",
+        "y_pulley_0_1_set_1",
+        "y_pulley_1_1_set_0",
+        "y_pulley_1_1_set_1",
+        "y_bracket_M6_0",
+        "y_bracket_M6_0_washer",
+        "y_bracket_M6_1",
+        "y_bracket_M6_1_washer",
+        "y_cartridge_M4_0",
+        "y_cartridge_M4_0_washer",
+        "y_cartridge_M4_1",
+        "y_cartridge_M4_1_washer",
+        "y_cartridge_M4_2",
+        "y_cartridge_M4_2_washer",
+        "y_cartridge_M4_3",
+        "y_cartridge_M4_3_washer",
+        "y_output_key_0",
+        "y_output_key_1",
+        "y_output_key_2",
+        "y_rear_bearing_0",
+        "y_rear_KM2_0_0",
+        "y_rear_KM2_0_1",
+        "y_cover_0_M3_0",
+        "y_cover_0_M3_1",
+        "y_cover_0_M3_2",
+        "y_cover_0_M3_3",
+        "y_support_0_M6_0",
+        "y_support_0_M6_0_washer",
+        "y_rear_bearing_1",
+        "y_rear_KM2_1_0",
+        "y_rear_KM2_1_1",
+        "y_cover_1_M3_0",
+        "y_cover_1_M3_1",
+        "y_cover_1_M3_2",
+        "y_cover_1_M3_3",
+        "y_support_1_M6_0",
+        "y_support_1_M6_0_washer",
+        "y_support_1_M6_1",
+        "y_support_1_M6_1_washer",
+        "y_support_1_M6_2",
+        "y_support_1_M6_2_washer",
+        "y_main_belt_0_0",
+        "y_main_belt_0_1",
+        "y_main_belt_0_2",
+        "y_main_belt_0_3",
+        "y_main_belt_0_4",
+        "y_main_belt_1_0",
+        "y_main_belt_1_1",
+        "y_main_belt_1_2",
+        "y_main_belt_1_3",
+        "y_main_belt_1_4",
+        "y_tension_0_frame_M6_0",
+        "y_tension_0_frame_M6_1",
+        "y_tension_0_clamp_M6_0",
+        "y_tension_0_clamp_M6_0_washer",
+        "y_tension_0_clamp_M6_1",
+        "y_tension_0_clamp_M6_1_washer",
+        "y_tension_0_clamp_M6_2",
+        "y_tension_0_clamp_M6_2_washer",
+        "y_tension_0_clamp_M6_3",
+        "y_tension_0_clamp_M6_3_washer",
+        "y_tension_0_idler",
+        "y_tension_0_axle_washer",
+        "y_tension_0_axle_nut",
+        "y_tension_0_adjuster_M4_0",
+        "y_tension_0_adjuster_M4_0_washer",
+        "y_tension_0_adjuster_M4_1",
+        "y_tension_0_adjuster_M4_1_washer",
+        "y_tension_0_push_M6",
+        "y_tension_0_push_locknut",
+        "y_tension_1_frame_M6_0",
+        "y_tension_1_frame_M6_1",
+        "y_tension_1_clamp_M6_0",
+        "y_tension_1_clamp_M6_0_washer",
+        "y_tension_1_clamp_M6_1",
+        "y_tension_1_clamp_M6_1_washer",
+        "y_tension_1_clamp_M6_2",
+        "y_tension_1_clamp_M6_2_washer",
+        "y_tension_1_clamp_M6_3",
+        "y_tension_1_clamp_M6_3_washer",
+        "y_tension_1_idler",
+        "y_tension_1_axle_washer",
+        "y_tension_1_axle_nut",
+        "y_tension_1_adjuster_M4_0",
+        "y_tension_1_adjuster_M4_0_washer",
+        "y_tension_1_adjuster_M4_1",
+        "y_tension_1_adjuster_M4_1_washer",
+        "y_tension_1_push_M6",
+        "y_tension_1_push_locknut",
+        "frame_corner_front_0_0_M8_0",
+        "frame_corner_front_0_0_M8_0_washer",
+        "frame_corner_front_0_0_M8_1",
+        "frame_corner_front_0_0_M8_1_washer",
+        "frame_corner_front_0_0_M8_2",
+        "frame_corner_front_0_0_M8_2_washer",
+        "frame_corner_front_0_0_M8_3",
+        "frame_corner_front_0_0_M8_3_washer",
+        "frame_corner_front_0_0_M8_4",
+        "frame_corner_front_0_0_M8_4_washer",
+        "frame_corner_front_0_1_M8_0",
+        "frame_corner_front_0_1_M8_0_washer",
+        "frame_corner_front_0_1_M8_1",
+        "frame_corner_front_0_1_M8_1_washer",
+        "frame_corner_front_0_1_M8_2",
+        "frame_corner_front_0_1_M8_2_washer",
+        "frame_corner_front_0_1_M8_3",
+        "frame_corner_front_0_1_M8_3_washer",
+        "frame_corner_front_0_1_M8_4",
+        "frame_corner_front_0_1_M8_4_washer",
+        "frame_corner_front_1_0_M8_0",
+        "frame_corner_front_1_0_M8_0_washer",
+        "frame_corner_front_1_0_M8_1",
+        "frame_corner_front_1_0_M8_1_washer",
+        "frame_corner_front_1_0_M8_2",
+        "frame_corner_front_1_0_M8_2_washer",
+        "frame_corner_front_1_0_M8_3",
+        "frame_corner_front_1_0_M8_3_washer",
+        "frame_corner_front_1_0_M8_4",
+        "frame_corner_front_1_0_M8_4_washer",
+        "frame_corner_front_1_1_M8_0",
+        "frame_corner_front_1_1_M8_0_washer",
+        "frame_corner_front_1_1_M8_1",
+        "frame_corner_front_1_1_M8_1_washer",
+        "frame_corner_front_1_1_M8_2",
+        "frame_corner_front_1_1_M8_2_washer",
+        "frame_corner_front_1_1_M8_3",
+        "frame_corner_front_1_1_M8_3_washer",
+        "frame_corner_front_1_1_M8_4",
+        "frame_corner_front_1_1_M8_4_washer",
+        "frame_corner_rear_0_0_M8_0",
+        "frame_corner_rear_0_0_M8_0_washer",
+        "frame_corner_rear_0_0_M8_1",
+        "frame_corner_rear_0_0_M8_1_washer",
+        "frame_corner_rear_0_0_M8_2",
+        "frame_corner_rear_0_0_M8_2_washer",
+        "frame_corner_rear_0_0_M8_3",
+        "frame_corner_rear_0_0_M8_3_washer",
+        "frame_corner_rear_0_0_M8_4",
+        "frame_corner_rear_0_0_M8_4_washer",
+        "frame_corner_rear_0_1_M8_0",
+        "frame_corner_rear_0_1_M8_0_washer",
+        "frame_corner_rear_0_1_M8_1",
+        "frame_corner_rear_0_1_M8_1_washer",
+        "frame_corner_rear_0_1_M8_2",
+        "frame_corner_rear_0_1_M8_2_washer",
+        "frame_corner_rear_0_1_M8_3",
+        "frame_corner_rear_0_1_M8_3_washer",
+        "frame_corner_rear_0_1_M8_4",
+        "frame_corner_rear_0_1_M8_4_washer",
+        "frame_corner_rear_1_0_M8_0",
+        "frame_corner_rear_1_0_M8_0_washer",
+        "frame_corner_rear_1_0_M8_1",
+        "frame_corner_rear_1_0_M8_1_washer",
+        "frame_corner_rear_1_0_M8_2",
+        "frame_corner_rear_1_0_M8_2_washer",
+        "frame_corner_rear_1_0_M8_3",
+        "frame_corner_rear_1_0_M8_3_washer",
+        "frame_corner_rear_1_0_M8_4",
+        "frame_corner_rear_1_0_M8_4_washer",
+        "frame_corner_rear_1_1_M8_0",
+        "frame_corner_rear_1_1_M8_0_washer",
+        "frame_corner_rear_1_1_M8_1",
+        "frame_corner_rear_1_1_M8_1_washer",
+        "frame_corner_rear_1_1_M8_2",
+        "frame_corner_rear_1_1_M8_2_washer",
+        "frame_corner_rear_1_1_M8_3",
+        "frame_corner_rear_1_1_M8_3_washer",
+        "frame_corner_rear_1_1_M8_4",
+        "frame_corner_rear_1_1_M8_4_washer",
+        "frame_corner_left_0_0_M8_0",
+        "frame_corner_left_0_0_M8_0_washer",
+        "frame_corner_left_0_0_M8_1",
+        "frame_corner_left_0_0_M8_1_washer",
+        "frame_corner_left_0_0_M8_2",
+        "frame_corner_left_0_0_M8_2_washer",
+        "frame_corner_left_0_0_M8_3",
+        "frame_corner_left_0_0_M8_3_washer",
+        "frame_corner_left_0_0_M8_4",
+        "frame_corner_left_0_0_M8_4_washer",
+        "frame_corner_left_0_1_M8_0",
+        "frame_corner_left_0_1_M8_0_washer",
+        "frame_corner_left_0_1_M8_1",
+        "frame_corner_left_0_1_M8_1_washer",
+        "frame_corner_left_0_1_M8_2",
+        "frame_corner_left_0_1_M8_2_washer",
+        "frame_corner_left_0_1_M8_3",
+        "frame_corner_left_0_1_M8_3_washer",
+        "frame_corner_left_0_1_M8_4",
+        "frame_corner_left_0_1_M8_4_washer",
+        "frame_corner_left_1_0_M8_0",
+        "frame_corner_left_1_0_M8_0_washer",
+        "frame_corner_left_1_0_M8_1",
+        "frame_corner_left_1_0_M8_1_washer",
+        "frame_corner_left_1_0_M8_2",
+        "frame_corner_left_1_0_M8_2_washer",
+        "frame_corner_left_1_0_M8_3",
+        "frame_corner_left_1_0_M8_3_washer",
+        "frame_corner_left_1_0_M8_4",
+        "frame_corner_left_1_0_M8_4_washer",
+        "frame_corner_left_1_1_M8_0",
+        "frame_corner_left_1_1_M8_0_washer",
+        "frame_corner_left_1_1_M8_1",
+        "frame_corner_left_1_1_M8_1_washer",
+        "frame_corner_left_1_1_M8_2",
+        "frame_corner_left_1_1_M8_2_washer",
+        "frame_corner_left_1_1_M8_3",
+        "frame_corner_left_1_1_M8_3_washer",
+        "frame_corner_left_1_1_M8_4",
+        "frame_corner_left_1_1_M8_4_washer",
+        "frame_corner_right_0_0_M8_0",
+        "frame_corner_right_0_0_M8_0_washer",
+        "frame_corner_right_0_0_M8_1",
+        "frame_corner_right_0_0_M8_1_washer",
+        "frame_corner_right_0_0_M8_2",
+        "frame_corner_right_0_0_M8_2_washer",
+        "frame_corner_right_0_0_M8_3",
+        "frame_corner_right_0_0_M8_3_washer",
+        "frame_corner_right_0_0_M8_4",
+        "frame_corner_right_0_0_M8_4_washer",
+        "frame_corner_right_0_1_M8_0",
+        "frame_corner_right_0_1_M8_0_washer",
+        "frame_corner_right_0_1_M8_1",
+        "frame_corner_right_0_1_M8_1_washer",
+        "frame_corner_right_0_1_M8_2",
+        "frame_corner_right_0_1_M8_2_washer",
+        "frame_corner_right_0_1_M8_3",
+        "frame_corner_right_0_1_M8_3_washer",
+        "frame_corner_right_0_1_M8_4",
+        "frame_corner_right_0_1_M8_4_washer",
+        "frame_corner_right_1_0_M8_0",
+        "frame_corner_right_1_0_M8_0_washer",
+        "frame_corner_right_1_0_M8_1",
+        "frame_corner_right_1_0_M8_1_washer",
+        "frame_corner_right_1_0_M8_2",
+        "frame_corner_right_1_0_M8_2_washer",
+        "frame_corner_right_1_0_M8_3",
+        "frame_corner_right_1_0_M8_3_washer",
+        "frame_corner_right_1_0_M8_4",
+        "frame_corner_right_1_0_M8_4_washer",
+        "frame_corner_right_1_1_M8_0",
+        "frame_corner_right_1_1_M8_0_washer",
+        "frame_corner_right_1_1_M8_1",
+        "frame_corner_right_1_1_M8_1_washer",
+        "frame_corner_right_1_1_M8_2",
+        "frame_corner_right_1_1_M8_2_washer",
+        "frame_corner_right_1_1_M8_3",
+        "frame_corner_right_1_1_M8_3_washer",
+        "frame_corner_right_1_1_M8_4",
+        "frame_corner_right_1_1_M8_4_washer",
+        "accessory_cross_joint_0_M8_0",
+        "accessory_cross_joint_0_M8_0_washer",
+        "accessory_cross_joint_0_M8_1",
+        "accessory_cross_joint_0_M8_1_washer",
+        "accessory_cross_joint_0_M8_2",
+        "accessory_cross_joint_0_M8_2_washer",
+        "accessory_cross_joint_1_M8_0",
+        "accessory_cross_joint_1_M8_0_washer",
+        "accessory_cross_joint_1_M8_1",
+        "accessory_cross_joint_1_M8_1_washer",
+        "accessory_cross_joint_1_M8_2",
+        "accessory_cross_joint_1_M8_2_washer",
+        "side_brace_0_0_M8_0",
+        "side_brace_0_0_M8_0_washer",
+        "side_brace_0_0_M8_1",
+        "side_brace_0_0_M8_1_washer",
+        "side_brace_0_1_M8_0",
+        "side_brace_0_1_M8_0_washer",
+        "side_brace_0_1_M8_1",
+        "side_brace_0_1_M8_1_washer",
+        "side_brace_1_0_M8_0",
+        "side_brace_1_0_M8_0_washer",
+        "side_brace_1_0_M8_1",
+        "side_brace_1_0_M8_1_washer",
+        "side_brace_1_1_M8_0",
+        "side_brace_1_1_M8_0_washer",
+        "side_brace_1_1_M8_1",
+        "side_brace_1_1_M8_1_washer",
+        "rear_brace_0_M8_0",
+        "rear_brace_0_M8_0_washer",
+        "rear_brace_0_M8_1",
+        "rear_brace_0_M8_1_washer",
+        "rear_brace_1_M8_0",
+        "rear_brace_1_M8_0_washer",
+        "rear_brace_1_M8_1",
+        "rear_brace_1_M8_1_washer",
+        "y_rail_0_M4_0",
+        "y_rail_0_M4_1",
+        "y_rail_0_M4_2",
+        "y_rail_0_M4_3",
+        "y_rail_0_M4_4",
+        "y_rail_0_M4_5",
+        "y_rail_0_M4_6",
+        "y_rail_0_M4_7",
+        "y_rail_0_M4_8",
+        "y_rail_0_M4_9",
+        "y_rail_0_M4_10",
+        "y_rail_0_M4_11",
+        "y_rail_0_M4_12",
+        "y_rail_0_M4_13",
+        "y_base_0_M6_0",
+        "y_base_0_M6_1",
+        "y_base_0_M6_2",
+        "y_base_0_M6_3",
+        "y_base_0_M6_4",
+        "y_base_0_M6_5",
+        "y_base_0_M6_6",
+        "y_rail_1_M4_0",
+        "y_rail_1_M4_1",
+        "y_rail_1_M4_2",
+        "y_rail_1_M4_3",
+        "y_rail_1_M4_4",
+        "y_rail_1_M4_5",
+        "y_rail_1_M4_6",
+        "y_rail_1_M4_7",
+        "y_rail_1_M4_8",
+        "y_rail_1_M4_9",
+        "y_rail_1_M4_10",
+        "y_rail_1_M4_11",
+        "y_rail_1_M4_12",
+        "y_rail_1_M4_13",
+        "y_base_1_M6_0",
+        "y_base_1_M6_1",
+        "y_base_1_M6_2",
+        "y_base_1_M6_3",
+        "y_base_1_M6_4",
+        "y_base_1_M6_5",
+        "y_base_1_M6_6",
+        "camera_ear_0_M4_0",
+        "camera_ear_0_M4_1",
+        "camera_pivot_M5_0",
+        "camera_pivot_M5_0_washer",
+        "camera_pivot_nut_0",
+        "camera_ear_1_M4_0",
+        "camera_ear_1_M4_1",
+        "camera_pivot_M5_1",
+        "camera_pivot_M5_1_washer",
+        "camera_pivot_nut_1",
+        "camera_frame_M5_0",
+        "camera_frame_M5_0_washer",
+        "camera_frame_M5_1",
+        "camera_frame_M5_1_washer",
+        "camera_panel_M3_0",
+        "camera_panel_M3_0_washer",
+        "camera_panel_nut_0",
+        "camera_panel_M3_1",
+        "camera_panel_M3_1_washer",
+        "camera_panel_nut_1",
+        "camera_panel_M3_2",
+        "camera_panel_M3_2_washer",
+        "camera_panel_nut_2",
+        "camera_panel_M3_3",
+        "camera_panel_M3_3_washer",
+        "camera_panel_nut_3",
+        "compute_tray_M5_0",
+        "compute_tray_M5_0_washer",
+        "compute_tray_M5_1",
+        "compute_tray_M5_1_washer",
+        "compute_standoff_M25_0",
+        "compute_board_M25_0",
+        "compute_board_M25_0_washer",
+        "compute_standoff_M25_1",
+        "compute_board_M25_1",
+        "compute_board_M25_1_washer",
+        "compute_standoff_M25_2",
+        "compute_board_M25_2",
+        "compute_board_M25_2_washer",
+        "compute_standoff_M25_3",
+        "compute_board_M25_3",
+        "compute_board_M25_3_washer",
+        "controller_tray_M6_0",
+        "controller_tray_M6_0_washer",
+        "controller_tray_M6_1",
+        "controller_tray_M6_1_washer",
+        "Y_stop_0_0_M6_0",
+        "Y_stop_0_0_M6_0_washer",
+        "Y_stop_0_0_M6_1",
+        "Y_stop_0_0_M6_1_washer",
+        "Y_bumper_0_0_M3_0",
+        "Y_bumper_0_0_M3_1",
+        "Y_stop_0_1_M6_0",
+        "Y_stop_0_1_M6_0_washer",
+        "Y_stop_0_1_M6_1",
+        "Y_stop_0_1_M6_1_washer",
+        "Y_bumper_0_1_M3_0",
+        "Y_bumper_0_1_M3_1",
+        "Y_stop_1_0_M6_0",
+        "Y_stop_1_0_M6_0_washer",
+        "Y_stop_1_0_M6_1",
+        "Y_stop_1_0_M6_1_washer",
+        "Y_bumper_1_0_M3_0",
+        "Y_bumper_1_0_M3_1",
+        "Y_stop_1_1_M6_0",
+        "Y_stop_1_1_M6_0_washer",
+        "Y_stop_1_1_M6_1",
+        "Y_stop_1_1_M6_1_washer",
+        "Y_bumper_1_1_M3_0",
+        "Y_bumper_1_1_M3_1",
+        "Y_sensor_mount_0_M6_0",
+        "Y_sensor_mount_0_M6_0_washer",
+        "Y_sensor_mount_0_M6_1",
+        "Y_sensor_mount_0_M6_1_washer",
+        "Y_limit_0",
+        "Y_limit_0_nut_0",
+        "Y_limit_0_nut_1",
+        "Y_sensor_mount_1_M6_0",
+        "Y_sensor_mount_1_M6_0_washer",
+        "Y_sensor_mount_1_M6_1",
+        "Y_sensor_mount_1_M6_1_washer",
+        "Y_limit_1",
+        "Y_limit_1_nut_0",
+        "Y_limit_1_nut_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 1646363,
+      "name": "module_Y",
+      "file": "v3_module_Y.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 276,
+      "volume_mm3": 1294654.0212904052,
+      "expected_volume_mm3": 1294654.0212904043,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        -4.5019,
+        385.9972,
+        952.3
+      ],
+      "geometry_sha256": "b8eebaa9d6924f564b92c022214cbee564d1bc089fd2e75b11b32755b47597d9",
+      "members": [
+        "bridge_4080",
+        "y_block_0_0",
+        "y_block_0_1",
+        "y_block_1_0",
+        "y_block_1_1",
+        "x_rail_0",
+        "x_rail_1",
+        "x_input_cover_front_M3_0",
+        "x_input_cover_front_M3_1",
+        "x_input_cover_front_M3_2",
+        "x_input_cover_front_M3_3",
+        "x_input_cover_rear_M3_0",
+        "x_input_cover_rear_M3_1",
+        "x_input_cover_rear_M3_2",
+        "x_input_cover_rear_M3_3",
+        "x_input_608_0",
+        "x_input_608_1",
+        "x_input_key",
+        "x_input_retainer_M3",
+        "x_input_lock_washer",
+        "x_input_locknut_0",
+        "x_input_locknut_1",
+        "x_input_coupling_shaft",
+        "x_input_coupling_spider",
+        "x_input_coupling_motor",
+        "x_input_side_0_M4_0",
+        "x_input_side_0_M4_0_washer",
+        "x_input_side_0_M4_1",
+        "x_input_side_0_M4_1_washer",
+        "x_input_side_0_M4_2",
+        "x_input_side_0_M4_2_washer",
+        "x_input_side_0_M4_3",
+        "x_input_side_0_M4_3_washer",
+        "x_input_side_0_M4_4",
+        "x_input_side_0_M4_4_washer",
+        "x_input_side_0_M4_5",
+        "x_input_side_0_M4_5_washer",
+        "x_input_side_1_M4_0",
+        "x_input_side_1_M4_0_washer",
+        "x_input_side_1_M4_1",
+        "x_input_side_1_M4_1_washer",
+        "x_input_side_1_M4_2",
+        "x_input_side_1_M4_2_washer",
+        "x_input_side_1_M4_3",
+        "x_input_side_1_M4_3_washer",
+        "x_input_side_1_M4_4",
+        "x_input_side_1_M4_4_washer",
+        "x_input_side_1_M4_5",
+        "x_input_side_1_M4_5_washer",
+        "motor_X_ZDT42V2",
+        "x_motor_M3_0",
+        "x_motor_M3_1",
+        "x_motor_M3_2",
+        "x_motor_M3_3",
+        "x_reduction_belt",
+        "x_reduction_input_pulley_set_0",
+        "x_reduction_input_pulley_set_1",
+        "x_reduction_driven_pulley_set_0",
+        "x_reduction_driven_pulley_set_1",
+        "x_pulley_0_set_0",
+        "x_pulley_0_set_1",
+        "x_output_6001_0",
+        "x_output_6001_1",
+        "x_output_cover_0_M3_0",
+        "x_output_cover_0_M3_1",
+        "x_output_cover_0_M3_2",
+        "x_output_cover_0_M3_3",
+        "x_output_cover_1_M3_0",
+        "x_output_cover_1_M3_1",
+        "x_output_cover_1_M3_2",
+        "x_output_cover_1_M3_3",
+        "x_output_key_0",
+        "x_output_key_1",
+        "x_output_washer",
+        "x_output_nut_0",
+        "x_output_nut_1",
+        "x_bracket_M6_0",
+        "x_bracket_M6_0_washer",
+        "x_bracket_M6_1",
+        "x_bracket_M6_1_washer",
+        "x_cartridge_M4_0",
+        "x_cartridge_M4_0_washer",
+        "x_cartridge_M4_1",
+        "x_cartridge_M4_1_washer",
+        "x_cartridge_M4_2",
+        "x_cartridge_M4_2_washer",
+        "x_cartridge_M4_3",
+        "x_cartridge_M4_3_washer",
+        "x_main_belt_0_0",
+        "x_main_belt_0_1",
+        "x_main_belt_0_2",
+        "x_main_belt_0_3",
+        "x_main_belt_0_4",
+        "y_clamp_0_-1_M5_0",
+        "y_clamp_0_-1_M5_0_washer",
+        "y_clamp_0_-1_M5_1",
+        "y_clamp_0_-1_M5_1_washer",
+        "y_clamp_0_-1_toothed",
+        "y_clamp_0_-1_M3_0",
+        "y_clamp_0_-1_M3_0_washer",
+        "y_clamp_0_-1_M3_1",
+        "y_clamp_0_-1_M3_1_washer",
+        "y_clamp_0_-1_M3_2",
+        "y_clamp_0_-1_M3_2_washer",
+        "y_clamp_0_-1_M3_3",
+        "y_clamp_0_-1_M3_3_washer",
+        "y_clamp_0_1_M5_0",
+        "y_clamp_0_1_M5_0_washer",
+        "y_clamp_0_1_M5_1",
+        "y_clamp_0_1_M5_1_washer",
+        "y_clamp_0_1_toothed",
+        "y_clamp_0_1_M3_0",
+        "y_clamp_0_1_M3_0_washer",
+        "y_clamp_0_1_M3_1",
+        "y_clamp_0_1_M3_1_washer",
+        "y_clamp_0_1_M3_2",
+        "y_clamp_0_1_M3_2_washer",
+        "y_clamp_0_1_M3_3",
+        "y_clamp_0_1_M3_3_washer",
+        "y_clamp_1_-1_M5_0",
+        "y_clamp_1_-1_M5_0_washer",
+        "y_clamp_1_-1_M5_1",
+        "y_clamp_1_-1_M5_1_washer",
+        "y_clamp_1_-1_toothed",
+        "y_clamp_1_-1_M3_0",
+        "y_clamp_1_-1_M3_0_washer",
+        "y_clamp_1_-1_M3_1",
+        "y_clamp_1_-1_M3_1_washer",
+        "y_clamp_1_-1_M3_2",
+        "y_clamp_1_-1_M3_2_washer",
+        "y_clamp_1_-1_M3_3",
+        "y_clamp_1_-1_M3_3_washer",
+        "y_clamp_1_1_M5_0",
+        "y_clamp_1_1_M5_0_washer",
+        "y_clamp_1_1_M5_1",
+        "y_clamp_1_1_M5_1_washer",
+        "y_clamp_1_1_toothed",
+        "y_clamp_1_1_M3_0",
+        "y_clamp_1_1_M3_0_washer",
+        "y_clamp_1_1_M3_1",
+        "y_clamp_1_1_M3_1_washer",
+        "y_clamp_1_1_M3_2",
+        "y_clamp_1_1_M3_2_washer",
+        "y_clamp_1_1_M3_3",
+        "y_clamp_1_1_M3_3_washer",
+        "x_tension_0_frame_M6_0",
+        "x_tension_0_frame_M6_1",
+        "x_tension_0_clamp_M6_0",
+        "x_tension_0_clamp_M6_0_washer",
+        "x_tension_0_clamp_M6_1",
+        "x_tension_0_clamp_M6_1_washer",
+        "x_tension_0_clamp_M6_2",
+        "x_tension_0_clamp_M6_2_washer",
+        "x_tension_0_clamp_M6_3",
+        "x_tension_0_clamp_M6_3_washer",
+        "x_tension_0_idler",
+        "x_tension_0_axle_washer",
+        "x_tension_0_axle_nut",
+        "x_tension_0_adjuster_M4_0",
+        "x_tension_0_adjuster_M4_0_washer",
+        "x_tension_0_adjuster_M4_1",
+        "x_tension_0_adjuster_M4_1_washer",
+        "x_tension_0_pull_M6",
+        "x_tension_0_pull_M6_washer",
+        "y_block_0_M4_0",
+        "y_block_0_M4_0_washer",
+        "y_block_0_M4_1",
+        "y_block_0_M4_1_washer",
+        "y_block_0_M4_2",
+        "y_block_0_M4_2_washer",
+        "y_block_0_M4_3",
+        "y_block_0_M4_3_washer",
+        "y_block_0_M4_4",
+        "y_block_0_M4_4_washer",
+        "y_block_0_M4_5",
+        "y_block_0_M4_5_washer",
+        "y_block_0_M4_6",
+        "y_block_0_M4_6_washer",
+        "y_block_0_M4_7",
+        "y_block_0_M4_7_washer",
+        "bridge_riser_0_M6_0",
+        "bridge_riser_0_M6_0_washer",
+        "bridge_riser_0_M6_1",
+        "bridge_riser_0_M6_1_washer",
+        "bridge_riser_0_M6_2",
+        "bridge_riser_0_M6_2_washer",
+        "bridge_riser_0_M6_3",
+        "bridge_riser_0_M6_3_washer",
+        "bridge_riser_0_M8",
+        "y_block_1_M4_0",
+        "y_block_1_M4_0_washer",
+        "y_block_1_M4_1",
+        "y_block_1_M4_1_washer",
+        "y_block_1_M4_2",
+        "y_block_1_M4_2_washer",
+        "y_block_1_M4_3",
+        "y_block_1_M4_3_washer",
+        "y_block_1_M4_4",
+        "y_block_1_M4_4_washer",
+        "y_block_1_M4_5",
+        "y_block_1_M4_5_washer",
+        "y_block_1_M4_6",
+        "y_block_1_M4_6_washer",
+        "y_block_1_M4_7",
+        "y_block_1_M4_7_washer",
+        "bridge_riser_1_M6_0",
+        "bridge_riser_1_M6_0_washer",
+        "bridge_riser_1_M6_1",
+        "bridge_riser_1_M6_1_washer",
+        "bridge_riser_1_M6_2",
+        "bridge_riser_1_M6_2_washer",
+        "bridge_riser_1_M6_3",
+        "bridge_riser_1_M6_3_washer",
+        "bridge_riser_1_M8",
+        "x_rail_0_M4_0",
+        "x_rail_0_M4_1",
+        "x_rail_0_M4_2",
+        "x_rail_0_M4_3",
+        "x_rail_0_M4_4",
+        "x_rail_0_M4_5",
+        "x_rail_0_M4_6",
+        "x_rail_0_M4_7",
+        "x_rail_0_M4_8",
+        "x_rail_0_M4_9",
+        "x_rail_0_M4_10",
+        "x_rail_0_M4_11",
+        "x_base_0_M5_0",
+        "x_base_0_M5_1",
+        "x_base_0_M5_2",
+        "x_base_0_M5_3",
+        "x_base_0_M5_4",
+        "x_base_0_M5_5",
+        "x_rail_1_M4_0",
+        "x_rail_1_M4_1",
+        "x_rail_1_M4_2",
+        "x_rail_1_M4_3",
+        "x_rail_1_M4_4",
+        "x_rail_1_M4_5",
+        "x_rail_1_M4_6",
+        "x_rail_1_M4_7",
+        "x_rail_1_M4_8",
+        "x_rail_1_M4_9",
+        "x_rail_1_M4_10",
+        "x_rail_1_M4_11",
+        "x_base_1_M5_0",
+        "x_base_1_M5_1",
+        "x_base_1_M5_2",
+        "x_base_1_M5_3",
+        "x_base_1_M5_4",
+        "x_base_1_M5_5",
+        "X_stop_0_M6_0",
+        "X_stop_0_M6_0_washer",
+        "X_stop_0_M6_1",
+        "X_stop_0_M6_1_washer",
+        "X_bumper_0_M3_0",
+        "X_bumper_0_M3_1",
+        "X_limit_0",
+        "X_limit_0_nut_0",
+        "X_limit_0_nut_1",
+        "X_stop_1_M6_0",
+        "X_stop_1_M6_0_washer",
+        "X_stop_1_M6_1",
+        "X_stop_1_M6_1_washer",
+        "X_bumper_1_M3_0",
+        "X_bumper_1_M3_1",
+        "X_limit_1",
+        "X_limit_1_nut_0",
+        "X_limit_1_nut_1",
+        "Y_target_0_M3_0",
+        "Y_target_0_M3_0_washer",
+        "Y_target_0_M3_1",
+        "Y_target_0_M3_1_washer",
+        "Y_target_1_M3_0",
+        "Y_target_1_M3_0_washer",
+        "Y_target_1_M3_1",
+        "Y_target_1_M3_1_washer"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 1014962,
+      "name": "module_XY",
+      "file": "v3_module_XY.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 153,
+      "volume_mm3": 382454.3037477509,
+      "expected_volume_mm3": 382454.3037477506,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        371.4976,
+        351.9844,
+        875.4955
+      ],
+      "geometry_sha256": "18ed726fffff95e33c9d4033c64085cbe772e3eacae7ea19c70755975826285f",
+      "members": [
+        "x_block_0_0",
+        "x_block_0_1",
+        "x_block_1_0",
+        "x_block_1_1",
+        "z_block_0_0",
+        "z_block_0_1",
+        "z_block_1_0",
+        "z_block_1_1",
+        "z_fixed_ballnut",
+        "x_bridge_M5_0",
+        "x_bridge_M5_0_washer",
+        "x_bridge_M5_1",
+        "x_bridge_M5_1_washer",
+        "x_bridge_M5_2",
+        "x_bridge_M5_2_washer",
+        "x_bridge_M5_3",
+        "x_bridge_M5_3_washer",
+        "x_clamp_0_-1_toothed",
+        "x_clamp_0_-1_M3_0",
+        "x_clamp_0_-1_M3_0_washer",
+        "x_clamp_0_-1_M3_1",
+        "x_clamp_0_-1_M3_1_washer",
+        "x_clamp_0_-1_M3_2",
+        "x_clamp_0_-1_M3_2_washer",
+        "x_clamp_0_-1_M3_3",
+        "x_clamp_0_-1_M3_3_washer",
+        "x_clamp_0_1_toothed",
+        "x_clamp_0_1_M3_0",
+        "x_clamp_0_1_M3_0_washer",
+        "x_clamp_0_1_M3_1",
+        "x_clamp_0_1_M3_1_washer",
+        "x_clamp_0_1_M3_2",
+        "x_clamp_0_1_M3_2_washer",
+        "x_clamp_0_1_M3_3",
+        "x_clamp_0_1_M3_3_washer",
+        "x_block_0_M4_0",
+        "x_block_0_M4_0_washer",
+        "x_block_0_M4_1",
+        "x_block_0_M4_1_washer",
+        "x_block_0_M4_2",
+        "x_block_0_M4_2_washer",
+        "x_block_0_M4_3",
+        "x_block_0_M4_3_washer",
+        "x_block_0_M4_4",
+        "x_block_0_M4_4_washer",
+        "x_block_0_M4_5",
+        "x_block_0_M4_5_washer",
+        "x_block_0_M4_6",
+        "x_block_0_M4_6_washer",
+        "x_block_0_M4_7",
+        "x_block_0_M4_7_washer",
+        "x_block_1_M4_0",
+        "x_block_1_M4_0_washer",
+        "x_block_1_M4_1",
+        "x_block_1_M4_1_washer",
+        "x_block_1_M4_2",
+        "x_block_1_M4_2_washer",
+        "x_block_1_M4_3",
+        "x_block_1_M4_3_washer",
+        "x_block_1_M4_4",
+        "x_block_1_M4_4_washer",
+        "x_block_1_M4_5",
+        "x_block_1_M4_5_washer",
+        "x_block_1_M4_6",
+        "x_block_1_M4_6_washer",
+        "x_block_1_M4_7",
+        "x_block_1_M4_7_washer",
+        "z_block_0_M4_0",
+        "z_block_0_M4_0_washer",
+        "z_block_0_M4_1",
+        "z_block_0_M4_1_washer",
+        "z_block_0_M4_2",
+        "z_block_0_M4_2_washer",
+        "z_block_0_M4_3",
+        "z_block_0_M4_3_washer",
+        "z_block_0_M4_4",
+        "z_block_0_M4_4_washer",
+        "z_block_0_M4_5",
+        "z_block_0_M4_5_washer",
+        "z_block_0_M4_6",
+        "z_block_0_M4_6_washer",
+        "z_block_0_M4_7",
+        "z_block_0_M4_7_washer",
+        "z_block_1_M4_0",
+        "z_block_1_M4_0_washer",
+        "z_block_1_M4_1",
+        "z_block_1_M4_1_washer",
+        "z_block_1_M4_2",
+        "z_block_1_M4_2_washer",
+        "z_block_1_M4_3",
+        "z_block_1_M4_3_washer",
+        "z_block_1_M4_4",
+        "z_block_1_M4_4_washer",
+        "z_block_1_M4_5",
+        "z_block_1_M4_5_washer",
+        "z_block_1_M4_6",
+        "z_block_1_M4_6_washer",
+        "z_block_1_M4_7",
+        "z_block_1_M4_7_washer",
+        "nut_cradle_M5_0",
+        "nut_cradle_M5_0_washer",
+        "nut_cradle_M5_1",
+        "nut_cradle_M5_1_washer",
+        "nut_cradle_M5_2",
+        "nut_cradle_M5_2_washer",
+        "nut_cradle_M5_3",
+        "nut_cradle_M5_3_washer",
+        "ballnut_M5_0",
+        "ballnut_M5_0_washer",
+        "ballnut_M5_1",
+        "ballnut_M5_1_washer",
+        "ballnut_M5_2",
+        "ballnut_M5_2_washer",
+        "ballnut_M5_3",
+        "ballnut_M5_3_washer",
+        "ballnut_M5_4",
+        "ballnut_M5_4_washer",
+        "ballnut_M5_5",
+        "ballnut_M5_5_washer",
+        "X_target_0_M3_0",
+        "X_target_0_M3_0_washer",
+        "X_target_0_M3_1",
+        "X_target_0_M3_1_washer",
+        "X_target_1_M3_0",
+        "X_target_1_M3_0_washer",
+        "X_target_1_M3_1",
+        "X_target_1_M3_1_washer",
+        "Z_stop_0_M5_0",
+        "Z_stop_0_M5_0_washer",
+        "Z_stop_0_M5_1",
+        "Z_stop_0_M5_1_washer",
+        "Z_stop_0_M5_2",
+        "Z_stop_0_M5_2_washer",
+        "Z_stop_0_M5_3",
+        "Z_stop_0_M5_3_washer",
+        "Z_limit_0",
+        "Z_limit_0_nut_0",
+        "Z_limit_0_nut_1",
+        "Z_bumper_0_M3_0",
+        "Z_bumper_0_M3_1",
+        "Z_stop_1_M5_0",
+        "Z_stop_1_M5_0_washer",
+        "Z_stop_1_M5_1",
+        "Z_stop_1_M5_1_washer",
+        "Z_stop_1_M5_2",
+        "Z_stop_1_M5_2_washer",
+        "Z_stop_1_M5_3",
+        "Z_stop_1_M5_3_washer",
+        "Z_limit_1",
+        "Z_limit_1_nut_0",
+        "Z_limit_1_nut_1",
+        "Z_bumper_1_M3_0",
+        "Z_bumper_1_M3_1"
+      ]
+    },
+    {
+      "errors": 0,
+      "warnings": 0,
+      "bytes": 843875,
+      "name": "module_XYZ",
+      "file": "v3_module_XYZ.SLDPRT",
+      "method": "imported_envelope",
+      "bodies": 127,
+      "volume_mm3": 1332468.2435257183,
+      "expected_volume_mm3": 1332468.2435257959,
+      "rotation": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "xyz_mm": [
+        400.9976,
+        332.997,
+        370.0
+      ],
+      "geometry_sha256": "905acdcf459b3251165c4a9d28da8ad0bd6e85fc6ce29e05ba0470ec96d6a80a",
+      "members": [
+        "z_ram_4080",
+        "motor_Z_ZDT42V2",
+        "z_motor_m3_0",
+        "z_motor_m3_1",
+        "z_motor_m3_2",
+        "z_motor_m3_3",
+        "gripper_payload_ENVELOPE",
+        "z_rail_0",
+        "z_rail_1",
+        "z_screw_support_1",
+        "z_screw_locknut",
+        "z_brake_stator",
+        "z_brake_hub",
+        "z_coupling_screw_hub",
+        "z_coupling_center_ENVELOPE",
+        "z_coupling_motor_hub",
+        "z_float_6000",
+        "z_float_circlip",
+        "z_float_cover_M3_0",
+        "z_float_cover_M3_1",
+        "z_float_cover_M3_2",
+        "z_float_cover_M3_3",
+        "z_float_mount_M6_0",
+        "z_float_mount_M6_1",
+        "z_rail_0_M4_0",
+        "z_rail_0_M4_1",
+        "z_rail_0_M4_2",
+        "z_rail_0_M4_3",
+        "z_rail_0_M4_4",
+        "z_rail_0_M4_5",
+        "z_rail_0_M4_6",
+        "z_rail_0_M4_7",
+        "z_rail_0_M4_8",
+        "z_rail_0_M4_9",
+        "z_rail_0_M4_10",
+        "z_rail_0_M4_11",
+        "z_rail_0_M4_12",
+        "z_rail_1_M4_0",
+        "z_rail_1_M4_1",
+        "z_rail_1_M4_2",
+        "z_rail_1_M4_3",
+        "z_rail_1_M4_4",
+        "z_rail_1_M4_5",
+        "z_rail_1_M4_6",
+        "z_rail_1_M4_7",
+        "z_rail_1_M4_8",
+        "z_rail_1_M4_9",
+        "z_rail_1_M4_10",
+        "z_rail_1_M4_11",
+        "z_rail_1_M4_12",
+        "z_backplate_M6_0",
+        "z_backplate_M6_1",
+        "z_backplate_M6_2",
+        "z_backplate_M6_3",
+        "z_backplate_M6_4",
+        "z_backplate_M6_5",
+        "z_backplate_M6_6",
+        "z_backplate_M6_7",
+        "z_backplate_M6_8",
+        "z_backplate_M6_9",
+        "z_backplate_M6_10",
+        "z_backplate_M6_11",
+        "z_backplate_M6_12",
+        "z_backplate_M6_13",
+        "z_BK12_M6_0",
+        "z_BK12_M6_1",
+        "z_BK12_M6_2",
+        "z_BK12_M6_3",
+        "z_motor_top_M4_0",
+        "z_motor_bottom_M4_0",
+        "z_motor_top_M4_1",
+        "z_motor_bottom_M4_1",
+        "z_motor_top_M4_2",
+        "z_motor_bottom_M4_2",
+        "z_motor_top_M4_3",
+        "z_motor_bottom_M4_3",
+        "z_saddle_M5_0",
+        "z_saddle_M5_0_washer",
+        "z_saddle_M5_1",
+        "z_saddle_M5_1_washer",
+        "z_saddle_M5_2",
+        "z_saddle_M5_2_washer",
+        "z_saddle_M5_3",
+        "z_saddle_M5_3_washer",
+        "z_brake_carrier_M4_0",
+        "z_brake_carrier_M4_0_washer",
+        "z_brake_carrier_M4_1",
+        "z_brake_carrier_M4_1_washer",
+        "z_brake_carrier_M4_2",
+        "z_brake_carrier_M4_2_washer",
+        "z_brake_carrier_M4_3",
+        "z_brake_carrier_M4_3_washer",
+        "z_brake_M3_0",
+        "z_brake_M3_1",
+        "z_brake_M3_2",
+        "head_to_ram_M8_0",
+        "head_to_ram_M8_0_washer",
+        "head_to_ram_M8_1",
+        "head_to_ram_M8_1_washer",
+        "head_top_M4_0",
+        "head_bottom_M4_0",
+        "head_bottom_M4_0_washer",
+        "head_top_M4_1",
+        "head_bottom_M4_1",
+        "head_bottom_M4_1_washer",
+        "head_top_M4_2",
+        "head_bottom_M4_2",
+        "head_bottom_M4_2_washer",
+        "head_top_M4_3",
+        "head_bottom_M4_3",
+        "head_bottom_M4_3_washer",
+        "Z_striker_0_M6_0",
+        "Z_striker_0_M6_0_washer",
+        "Z_striker_0_M6_1",
+        "Z_striker_0_M6_1_washer",
+        "Z_target_0_M3_0",
+        "Z_target_0_M3_0_washer",
+        "Z_target_0_M3_1",
+        "Z_target_0_M3_1_washer",
+        "Z_striker_1_M6_0",
+        "Z_striker_1_M6_0_washer",
+        "Z_striker_1_M6_1",
+        "Z_striker_1_M6_1_washer",
+        "Z_target_1_M3_0",
+        "Z_target_1_M3_0_washer",
+        "Z_target_1_M3_1",
+        "Z_target_1_M3_1_washer"
+      ]
+    }
+  ],
+  "assembly_constraints": "全部组件固定在评审位姿；未建立可驱动运动配合",
+  "model_scope": "每个加工件独立保存SLDPRT；来自同一尺寸化加工源的导入实体，未声称完整原生参数特征；采购与型材按运动组保存",
+  "source_component_count": 1219,
+  "forced_rebuild_ok": true,
+  "save": {
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 5105877
+  },
+  "post_open_rebuild_ok": true,
+  "post_open_save": {
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 5106625
+  },
+  "component_count": 180,
+  "reopen": {
+    "errors": 0,
+    "warnings": 32
+  },
+  "native_feature_parts": 0,
+  "body_count": 1219
+}

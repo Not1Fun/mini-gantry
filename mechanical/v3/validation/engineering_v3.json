@@ -1,0 +1,113 @@
+{
+  "status": "CALCULATED_PROTOTYPE_DESIGN_BASIS_NOT_LOAD_CERTIFICATION",
+  "payload_gripper_plus_item_kg": 1,
+  "axes": {
+    "X": {
+      "moving_mass_estimate_kg": 16.451,
+      "linear_force_N": 12.935,
+      "speed_mm_s": 100,
+      "acceleration_mm_s2": 300,
+      "motor_mm_per_rev": 42.0,
+      "motor_rpm": 142.85714285714286,
+      "required_motor_torque_Nm_with_factor_2": 0.1939,
+      "status": "TORQUE_CURVE_OR_BENCH_TEST_REQUIRED_BEFORE_POWERED_1KG_OPERATION"
+    },
+    "Y": {
+      "moving_mass_estimate_kg": 27.005,
+      "linear_force_N": 20.101,
+      "speed_mm_s": 100,
+      "acceleration_mm_s2": 300,
+      "motor_mm_per_rev": 36.0,
+      "motor_rpm": 166.66666666666666,
+      "required_motor_torque_Nm_with_factor_2": 0.2591,
+      "status": "TORQUE_CURVE_OR_BENCH_TEST_REQUIRED_BEFORE_POWERED_1KG_OPERATION"
+    },
+    "Z": {
+      "moving_mass_estimate_kg": 11.963,
+      "linear_force_N": 133.555,
+      "speed_mm_s": 20,
+      "acceleration_mm_s2": 100,
+      "motor_mm_per_rev": 5.0,
+      "motor_rpm": 240.0,
+      "required_motor_torque_Nm_with_factor_2": 0.3513,
+      "status": "TORQUE_CURVE_OR_BENCH_TEST_REQUIRED_BEFORE_POWERED_1KG_OPERATION"
+    }
+  },
+  "frame": {
+    "span_mm": 820,
+    "E_N_mm2": 69000,
+    "Istrong_mm4": 719000,
+    "Iweak_mm4": 198000,
+    "bridge_gravity_deflection_mm": 0.03736637848464051,
+    "bridge_lateral_deflection_mm": 0.010875581113062997,
+    "note": "简支梁上界估算；不包含接头、导轨安装误差和皮带柔度，不能据此承诺重复定位精度"
+  },
+  "shafts": {
+    "input_D8": {
+      "radial_design_N": 100,
+      "overhang_mm": 25.5,
+      "bending_with_notch_factor_2_2_MPa": 111.60740384319162,
+      "minimum_material_yield_MPa": 650,
+      "static_factor": 5.823986380986425,
+      "fatigue_basis": "Rm>=850，估算耐久极限0.5Rm，表面/尺寸/可靠性折减0.75*0.85*0.9；与缺口放大应力比较",
+      "estimated_endurance_margin": 2.1848348909056288
+    },
+    "X_D12": {
+      "two_plane_bending_Nmm": 5806.085169888572,
+      "bending_with_notch_factor_2_2_MPa": 75.29436076150701,
+      "required_yield_MPa": 355,
+      "static_factor": 4.714828526461013
+    },
+    "Y_D16": {
+      "radial_conservative_N": 350,
+      "overhang_mm": 70,
+      "bending_notch_MPa": 134.0383036352056,
+      "note": "减速轮到左轴承过悬与主带合成保守校核；右支承外圈0.6mm轴向浮动，容纳热伸长"
+    }
+  },
+  "Z_brake": {
+    "rated_static_torque_Nm": 1,
+    "gravity_backdrive_torque_Nm": 0.09339131846541102,
+    "static_margin": 10.70763339068145,
+    "allowed_single_brake_energy_J": 2,
+    "assumed_total_power_loss_to_engagement_s": 0.04,
+    "computed_drop_mm": 8.648000000000001,
+    "computed_energy_J": 1.0173132028160004,
+    "requirement": "40ms包含驱动、线圈消磁和机械闭合；必须实测。超时或能量超过2J时禁止以当前电路进行垂直运行；不是已验证的防坠结果"
+  },
+  "screw": {
+    "root_diameter_mm": 13,
+    "unsupported_length_mm": 793,
+    "elastic_modulus_N_mm2": 206000,
+    "euler_N": 4532.772256903209,
+    "note": "按两端铰支压杆保守估计；低速240rpm，丝杆厂家仍须保证C7端加工同轴"
+  },
+  "main_belt": {
+    "preload_target_per_span_N": 60,
+    "preload_tolerance_N": 5,
+    "installation_method": "配套张力计，左右Y带保持同张力；不靠顶丝扭矩估张力",
+    "X_cut_pitch_length_mm": 1470,
+    "Y_each_cut_pitch_length_mm": 1770,
+    "clamp_teeth_each_end": 7,
+    "idler_adjustment_mm": [
+      -4,
+      4
+    ]
+  },
+  "reduction_belt": {
+    "preload_per_span_N": 40,
+    "tolerance_N": 4,
+    "manufacturer_10mm_range_N": [
+      35.1,
+      47.4
+    ],
+    "X": "100S3M192",
+    "Y": "100S3M246",
+    "source": "https://global.mitsuboshi.com/assetFiles/timing_belt_design_manual_en.pdf"
+  },
+  "limitations": [
+    "数值是设计校核，未进行实体载荷/疲劳/重复定位试验",
+    "端部限位和缓冲件是越程保护；正常轨迹必须在工作边界前完成减速",
+    "走线拖链、急停回路和动力接口不在机械加工图中完成电气验证"
+  ]
+}

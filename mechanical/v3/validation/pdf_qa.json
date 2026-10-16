@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PDF_TEXT_BOUNDS",
+  "documents": [
+    {
+      "file": "drawings\\manufacturing.pdf",
+      "pages": 110,
+      "text_bounds_errors": [],
+      "contact_sheets": [
+        "manufacturing-sheet-01.png",
+        "manufacturing-sheet-02.png",
+        "manufacturing-sheet-03.png",
+        "manufacturing-sheet-04.png",
+        "manufacturing-sheet-05.png",
+        "manufacturing-sheet-06.png",
+        "manufacturing-sheet-07.png"
+      ]
+    },
+    {
+      "file": "drawings\\assembly_and_procurement.pdf",
+      "pages": 11,
+      "text_bounds_errors": [],
+      "contact_sheets": [
+        "assembly_and_procurement-sheet-01.png"
+      ]
+    }
+  ],
+  "visual_review": "PASS: all contact sheets reviewed; shafts, X carrier, Y phase clamp and Z service-window full pages inspected; final change is release footer only"
+}

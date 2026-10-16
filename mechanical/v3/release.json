@@ -1,0 +1,85 @@
+{
+  "revision": "V3-R1",
+  "status": "PROTOTYPE_FABRICATION_PACKAGE_READY",
+  "target": "可供样机试制的机械加工资料包",
+  "design_basis": {
+    "payload_gripper_plus_item_kg": 1,
+    "travel_xyz_mm": [
+      500,
+      500,
+      500
+    ],
+    "motor_body_reserve_mm": 60,
+    "process": "型材定长切割；铝板/轴承座CNC；钢支架激光切割后焊接；轴类车铣加工；摄像头面板自行打印",
+    "payload_confirmed_by_user": true,
+    "process_confirmed_by_user": true
+  },
+  "fabrication_gates": [
+    "采购件精确型号与公开尺寸图一致",
+    "所有自制件有唯一编号、材料、数量、基准、完整尺寸、公差和表面要求",
+    "所有装配连接有紧固/定位路径和可达性",
+    "轨道、螺母、支承、制动器、轴端及轮毂无未解释的刚体干涉",
+    "皮带长度、张紧范围、夹持齿数及负载假设闭合",
+    "加工图/STEP/SLDPRT/BOM/装配引用一致并可重开"
+  ],
+  "commissioning_after_fabrication": [
+    "静态试载与偏心载荷检查",
+    "原点限位、急停、Z失电保持与受控停机试验",
+    "低速全行程、热态、重复定位和连续抓取试验"
+  ],
+  "open_items": [],
+  "release_date": "2026-10-16",
+  "chosen_process": [
+    "型材定长切割及指定端面M8攻丝",
+    "6061连接件/轴承座/电机架整体CNC",
+    "轴件车铣与配合面精加工",
+    "Q235感应片激光切割、清孔、镀锌",
+    "PA66隔套与PU缓冲垫加工",
+    "用户按统一接口打印摄像头适配面板"
+  ],
+  "gate_results": [
+    {
+      "gate": "加工件定义与编号",
+      "status": "PASS",
+      "evidence": "manufacturing.json / drawings/manufacturing.pdf / cad/parts",
+      "unique_parts": 109,
+      "instances": 176
+    },
+    {
+      "gate": "采购接口",
+      "status": "PASS_DIMENSIONED_SELECTION",
+      "evidence": "catalog.json / bom.json",
+      "condition": "按指定型号及尺寸采购；电机按用户图D5/31x31/60本体预留"
+    },
+    {
+      "gate": "装配连接、螺钉及可达性",
+      "status": "PASS_DESIGN_CHECK",
+      "evidence": "joints.py / validation/geometry_v3.json / drawings/assembly_and_procurement.pdf"
+    },
+    {
+      "gate": "工作与越程几何",
+      "status": "PASS_SAMPLED",
+      "evidence": "validation/geometry_v3.json",
+      "working_poses": 27,
+      "overtravel_poses": 8
+    },
+    {
+      "gate": "张紧及双边带相位调节",
+      "status": "PASS",
+      "evidence": "validation/tensioners.json / validation/belt_phase.json"
+    },
+    {
+      "gate": "STEP与原生SW保存重开、位置、体积及引用",
+      "status": "PASS",
+      "evidence": "validation/step_roundtrip.json / validation/solidworks.json / validation/solidworks_audit.json"
+    },
+    {
+      "gate": "PDF排版",
+      "status": "PASS_VISUAL_REVIEW",
+      "evidence": "validation/pdf_qa.json",
+      "note": "全部缩略页与关键完整页已审看"
+    }
+  ],
+  "release_scope": "本次完成机械零件加工与样机结构装配资料；不代表实机带载、急停回路、失电制动时序和定位性能已验收。",
+  "native_scope": "SW零件为独立导入实体，总装固定在检查位置；重开提示NeedsRegen时已执行强制重建并保存，无缺失引用。"
+}

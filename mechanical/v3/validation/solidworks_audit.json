@@ -1,0 +1,1273 @@
+{
+  "status": "PASS_NATIVE_PLACEMENT_AND_SELF_CONTAINED_PARTS",
+  "reopen": {
+    "errors": 0,
+    "warnings": 128
+  },
+  "parts": [
+    {
+      "part": "v3_y_rail_base_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 2.0023435354232788e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_clamp_0_-1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 1.3733369996771216e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_spacer_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 8.640199666842818e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_cover_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 3.637978807091713e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_spacer_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 9.094947017729282e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_cover_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_spacer_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 3.865352482534945e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_belt_bridge.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 1.0913936421275139e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_spacer_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 1.0459189070388675e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_support_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 7.958078640513122e-13,
+      "volume_error_mm3": 8.731149137020111e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_washer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 2.0463630789890885e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_washer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 1.5120349416974932e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_adjuster.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 1.000444171950221e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.1226575225009583e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 7.105427357601002e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_axle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.3642420526593924e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_base.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.781952611665474e-12,
+      "volume_error_mm3": 6.846676114946604e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 7.105427357601002e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_base.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.781952611665474e-12,
+      "volume_error_mm3": 6.83940015733242e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_fork.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.1641532182693481e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_adjuster.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 6.548361852765083e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_0_axle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 9.094947017729282e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.1226575225009583e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_rear_cover.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.2732925824820995e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_inner_spacer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 1.7621459846850485e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_shaft.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 8.545029317019726e-06,
+      "volume_error_mm3": 0.002139058249667869,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_end_retainer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 2.1600499167107046e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_motor_plate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.7462298274040222e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_side_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 0.0,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_end_spacer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 9.308109838457312e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_side_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 0.0,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_side_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 5.093170329928398e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_housing.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 4.94765117764473e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_input_front_cover.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 9.322320693172514e-12,
+      "volume_error_mm3": 2.599335857667029e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_shaft.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.556360738661169e-05,
+      "volume_error_mm3": 0.00146664787462214,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_sync_shaft.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.00011948368239700358,
+      "volume_error_mm3": 0.07433389688958414,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_cover_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 4.092726157978177e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 2.9558577807620168e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_spacer_2.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 3.126388037344441e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_motor_bracket.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 1.280568540096283e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rear_support_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 4.3655745685100555e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 3.0127011996228248e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_cover_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 1.0459189070388675e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_spacer_3.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 3.979039320256561e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_motor_bracket.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 4.94765117764473e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_rail_base_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.4783730623312294e-11,
+      "volume_error_mm3": 5.73345459997654e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_bridge_riser_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 8.731149137020111e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_end_plate_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 4.656612873077393e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_rail_backplate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-12,
+      "volume_error_mm3": 2.6775524020195007e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_block_spacer_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 4.3655745685100555e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_rail_base_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 2.0023435354232788e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_end_plate_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 7.275957614183426e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_bridge_riser_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.1316282072803006e-14,
+      "volume_error_mm3": 8.731149137020111e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_rail_base_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.4783730623312294e-11,
+      "volume_error_mm3": 5.762558430433273e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_block_spacer_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 5.4569682106375694e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_z_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.3387762010097504e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_side_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 6.548361852765083e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_shaft.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 8.545029459128273e-06,
+      "volume_error_mm3": 0.002139058258762816,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_motor_plate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 3.5652192309498787e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_rear_cover.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 3.383320290595293e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_front_cover.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.5643308870494366e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_inner_spacer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.5916157281026244e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_housing.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.4551915228366852e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_end_spacer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 4.227729277772596e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_input_end_retainer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.9326762412674725e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_screw_1605.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 5.820766091346741e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_motor_lower_saddle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 9.094947017729282e-12,
+      "volume_error_mm3": 1.6021658666431904e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_bumper_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 9.833911462919787e-12,
+      "volume_error_mm3": 1.1693828128045425e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_target_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 1.7621459846850485e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_bumper_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.0444978215673473e-11,
+      "volume_error_mm3": 9.180212146020494e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_stop_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 2.1827872842550278e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_stop_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_bumper_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1937117960769683e-11,
+      "volume_error_mm3": 9.481482265982777e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_stop_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 6.548361852765083e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_bumper_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.0231815394945443e-11,
+      "volume_error_mm3": 1.8369519239058718e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_stop_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080801e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_bumper_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.5589307622576598e-11,
+      "volume_error_mm3": 6.25618667982053e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_bumper_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.6484591469634324e-12,
+      "volume_error_mm3": 9.709992809803225e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_target_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_target_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 1.750777300912887e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_bumper_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 2.7985151973553e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_striker_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 2.546585164964199e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_stop_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 5.093170329928398e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_sensor_mount_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 7.275957614183426e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_target_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 6.52562448522076e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_stop_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_bumper_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 2.4492692318744957e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_striker_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 2.546585164964199e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_sensor_mount_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 0.0,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Y_target_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 5.684341886080802e-14,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_stop_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_1_-1_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 5.220499588176608e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_0_-1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.6643753042444587e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_1_-1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.6711965145077556e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_1_1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.6711965145077556e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_base.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4779288903810084e-12,
+      "volume_error_mm3": 5.820766091346741e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_1_1_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 5.220499588176608e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_tension_0_fork.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 2.874003257602453e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_clamp_0_1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 1.3733369996771216e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_0_1_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 5.20230969414115e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_0_-1_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 5.20230969414115e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_clamp_0_1_cap.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.666649040998891e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_front_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 2.1827872842550278e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_axle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 7.105427357601002e-15,
+      "volume_error_mm3": 5.4569682106375694e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_front_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 7.275957614183426e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_adjuster.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 1.0913936421275139e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 2.1316282072803006e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_front_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.1316282072803006e-14,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_left_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_rear_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 2.9103830456733704e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_right_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 3.4924596548080444e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 2.2737367544323206e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_tension_1_fork.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.2369127944111824e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_left_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 7.275957614183426e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_rear_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 2.764863893389702e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_front_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 8.881784197001252e-16,
+      "volume_error_mm3": 2.9103830456733704e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_rear_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 7.105427357601002e-15,
+      "volume_error_mm3": 3.5652192309498787e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_left_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.1316282072803006e-14,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_rear_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 3.5652192309498787e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_left_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 2.1827872842550278e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_right_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 3.055902197957039e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_right_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 3.5652192309498787e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_frame_corner_right_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 2.837623469531536e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_accessory_cross_joint_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.842170943040401e-14,
+      "volume_error_mm3": 2.473825588822365e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_accessory_cross_joint_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 3.2741809263825417e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.8562575355172157e-10,
+      "volume_error_mm3": 1.2872624211013317e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_pulley_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.8636386585058062e-06,
+      "volume_error_mm3": 0.01059104585692694,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_reduction_driven_pulley.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4437718164117541e-05,
+      "volume_error_mm3": 0.01904020828078501,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_pulley_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.1912790487021994e-05,
+      "volume_error_mm3": 0.020755184810695937,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_reduction_input_pulley.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.37517121554265e-06,
+      "volume_error_mm3": 0.0304802233040391,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_float_housing.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.5643546993924247e-06,
+      "volume_error_mm3": 0.0074445114223635755,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_reduction_input_pulley.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.375171187120941e-06,
+      "volume_error_mm3": 0.030480223314953037,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_pulley_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.19127902028049e-05,
+      "volume_error_mm3": 0.020755184843437746,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_x_output_housing.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 6.821210263296962e-13,
+      "volume_error_mm3": 3.41970007866621e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_float_outer_spacer.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 2.0463630789890885e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_y_reduction_driven_pulley.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.353850711893756e-05,
+      "volume_error_mm3": 0.06125875622819876,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_float_cover.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 2.2737367544323206e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_motor_standoff_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 5.093170329928398e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_motor_standoff_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 3.637978807091713e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_brake_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 9.89530235528946e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_fixed_head_side_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 1.0913936421275139e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_gripper_adapter.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 4.3655745685100555e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_block_spacer_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 4.3655745685100555e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_fixed_head_top.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.831690603168681e-12,
+      "volume_error_mm3": 5.995389074087143e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_block_spacer_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 5.4569682106375694e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_fixed_head_side_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_nut_cradle.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080801e-13,
+      "volume_error_mm3": 4.3655745685100555e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_z_motor_mount.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080802e-14,
+      "volume_error_mm3": 1.2078089639544487e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.9324277167906985e-10,
+      "volume_error_mm3": 1.224834704771638e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_0_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.3358203432289883e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.114450919383671e-10,
+      "volume_error_mm3": 1.0454095900058746e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.4714275898295455e-10,
+      "volume_error_mm3": 1.3106910046190023e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.133209247607738e-10,
+      "volume_error_mm3": 1.0555959306657314e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_0_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 0.0,
+      "volume_error_mm3": 5.115907697472721e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_1_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 0.0,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_pivot_ear_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.552713678800501e-15,
+      "volume_error_mm3": 5.093170329928398e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.4509639590396546e-10,
+      "volume_error_mm3": 1.360895112156868e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_1_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.5916157281026244e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_0_0_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 6.252776074688882e-13,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_0_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.3415046851150692e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_1_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 4.547473508864641e-13,
+      "volume_error_mm3": 1.318767317570746e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_side_brace_1_1_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 1.5234036254696548e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_0_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_0_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 1.0913936421275139e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_1_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.2737367544323206e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_rear_brace_1_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 3.637978807091713e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_base.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080801e-13,
+      "volume_error_mm3": 1.5279510989785194e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_pivot_spacer_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 1.5916157281026244e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_removable_panel.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.6935786106841988e-11,
+      "volume_error_mm3": 2.6593625079840422e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_compute_combo_plate.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 4.94765117764473e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_controller_tray.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 1.979060471057892e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_tilt_carrier.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 2.3135271476348862e-11,
+      "volume_error_mm3": 3.2101524993777275e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_X_stop_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 5.684341886080801e-13,
+      "volume_error_mm3": 1.4551915228366852e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_pivot_ear_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.552713678800501e-15,
+      "volume_error_mm3": 5.093170329928398e-11,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_camera_pivot_spacer_0.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 3.410605131648481e-13,
+      "volume_error_mm3": 1.5916157281026244e-12,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_module_fixed.SLDPRT",
+      "bodies": 487,
+      "centroid_error_mm": 2.2737367544323206e-12,
+      "volume_error_mm3": 1.1920928955078125e-07,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_module_XY.SLDPRT",
+      "bodies": 153,
+      "centroid_error_mm": 3.637978807091713e-12,
+      "volume_error_mm3": 3.4924596548080444e-10,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_module_Y.SLDPRT",
+      "bodies": 276,
+      "centroid_error_mm": 1.4779288903810084e-11,
+      "volume_error_mm3": 1.1641532182693481e-09,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_module_XYZ.SLDPRT",
+      "bodies": 127,
+      "centroid_error_mm": 1.1141310096718371e-11,
+      "volume_error_mm3": 7.776543498039246e-08,
+      "external_dependencies": 0
+    },
+    {
+      "part": "v3_Z_target_1.SLDPRT",
+      "bodies": 1,
+      "centroid_error_mm": 1.1368683772161603e-13,
+      "volume_error_mm3": 6.491518433904275e-11,
+      "external_dependencies": 0
+    }
+  ],
+  "assembly_component_count": 180,
+  "solid_body_count": 1219,
+  "max_centroid_error_mm": 0.00011948368239700358,
+  "scope": "原生文件位置与依赖核验；不代替机械公差、运动配合和实体样机验证"
+}

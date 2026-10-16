@@ -1,0 +1,613 @@
+{
+  "project": "迷你龙门架",
+  "revision": "V3-R1",
+  "status": "样机机械加工资料就绪；实机运行验收另行完成",
+  "units": "mm, kg, N, N.m, s",
+  "entry_points": {
+    "assembly": "cad/mini_gantry_v3.step",
+    "solidworks_assembly": "SolidWorksV3/mini_gantry_v3.SLDASM",
+    "manufacturing_pdf": "drawings/manufacturing.pdf",
+    "assembly_book": "drawings/assembly_and_procurement.pdf",
+    "part_index": "manufacturing.json",
+    "BOM": "bom.json",
+    "cut_list": "cutlist.json",
+    "release_status": "release.json",
+    "rebuild": [
+      "python -m pip install .[solidworks,manufacturing]",
+      "python mechanical/v3/release_build.py",
+      "python mechanical/v3/audit_geometry.py --grid --hardware --overtravel",
+      "python mechanical/v3/audit_tensioners.py",
+      "python mechanical/v3/audit_belt_phase.py",
+      "python mechanical/v3/manufacturing_drawings.py",
+      "python mechanical/v3/assembly_book.py",
+      "python mechanical/v3/qa_pdf.py",
+      "python mechanical/v3/build_solidworks.py",
+      "python mechanical/v3/check_solidworks.py",
+      "python mechanical/v3/verify_release.py"
+    ]
+  },
+  "confirmed": {
+    "application": "轻载搬运与抓取",
+    "travel_xyz_mm": [
+      500,
+      500,
+      500
+    ],
+    "larger_machine_envelope_accepted": true,
+    "linear_drive": "张大头42 V2；按60mm电机本体长度预留，实物型号和力矩曲线待核对",
+    "available_rotary_motor": "DM-G6220暂不使用",
+    "controller_candidates": [
+      "RoboMaster A 型",
+      "用户所称 R6M5 最小系统板，暂按 RA6M5 理解"
+    ],
+    "rotary_motor_in_use": false,
+    "compute_board_policy": "Jetson Nano与树莓派4B都留孔，同一位置每次仅装一块",
+    "structure_accepted": true
+  },
+  "assumptions": {
+    "gripper_and_workpiece_kg": 1.0,
+    "payload_status": "用户确认：夹爪与物料合计1kg设计上限；样机承载与运行性能待验收",
+    "tcp_min_mm": [
+      200,
+      150,
+      120
+    ],
+    "tcp_max_mm": [
+      700,
+      650,
+      620
+    ],
+    "home_pose_mm": [
+      200,
+      150,
+      620
+    ],
+    "illustration_pose_mm": [
+      450,
+      400,
+      370
+    ],
+    "xy_belt_pitch_mm": 3,
+    "xy_output_pulley_teeth": [
+      28,
+      36
+    ],
+    "xy_motor_reduction": [
+      2,
+      3
+    ],
+    "belt_width_mm": 15,
+    "z_screw_diameter_mm": 16,
+    "z_screw_lead_mm": 5,
+    "z_screw_root_diameter_mm": 13.5,
+    "speed_xyz_mm_s": [
+      100,
+      100,
+      20
+    ],
+    "accel_xyz_mm_s2": [
+      300,
+      300,
+      100
+    ],
+    "friction_xyz_N": [
+      6,
+      8,
+      6
+    ],
+    "efficiency_xy_z": [
+      0.9,
+      0.9
+    ],
+    "z_preload_torque_Nm": 0.03,
+    "torque_factor": 2.0,
+    "beam_elastic_modulus_N_mm2": 69000,
+    "beam_I_weak_mm4": 170000,
+    "beam_I_strong_mm4": 650000,
+    "beam_inertia_status": "型材惯性矩估值，选定品牌后替换；手算不含连接柔度"
+  },
+  "structure": {
+    "frame_plan_mm": [
+      900,
+      940
+    ],
+    "y_rail_base_z_mm": 948,
+    "bridge_beam_bottom_z_mm": 1000,
+    "y_rails": "2 x HIWIN HGR15R-820，各2个HGH15CA",
+    "x_rails": "2 x HIWIN HGR15R-700，各2个HGH15CA，中心高1022.5/1062.5",
+    "z_rails": "2 x HIWIN HGR15R-760；中心距70；固定滑块中心高915/1045",
+    "z_ram": "HFS8-4080，L800；8厚导轨背板总长848",
+    "z_drive": "1605-C7/SFNU01605-4；BK12固定端、6000ZZ浮动端；上驱动抬高20，电机面TCP+1130",
+    "x_drive": "独立双608输入模块；20:40减速；D12双6001输出轴/28T主轮",
+    "y_drive": "独立双608输入模块；20:60减速；D16同步轴/两端6202；36T主轮；夹座相位可调+/-3",
+    "bracing": "30x3铝交叉拉带；左右侧与背面；背撑错开避免干涉",
+    "fixed_head": "80x90x8顶板，两片6厚侧板，D70x8接口盘；PCD50/4-D4.5，中央D8"
+  },
+  "controls": {
+    "preferred": "RoboMaster A型",
+    "alternative": "RA6M5最小系统板（按用户R6M5表述理解）",
+    "board_mount": "240x180通用开槽托板；不假定不同控制板共用孔距",
+    "scope": "本次交付机械加工资料；未写入或运行控制固件，通信、电源和引脚需按实际板卡/驱动版本设计",
+    "limits": "6 x OMRON E2B-S08KS02-WP-C2 2M，NPN常闭",
+    "Z_brake_requirement": "制动器24V/9W；总失电至机械闭合时间设计条件<=40ms，实机验证后才允许运行"
+  },
+  "release_gates": [
+    "机械加工状态与证据见release.json",
+    "同号PDF/STEP/制造特征表控制加工；采购内部及螺纹牙型不从包络推断",
+    "实机带载、急停、制动时序及定位验收另列，不混同数字加工包放行"
+  ],
+  "model_scope": [
+    "加工件实体带孔和配合尺寸；同号图纸与STEP共用加工特征数据",
+    "采购齿槽、滚珠和螺纹牙型省略；必须按指定厂家型号及图纸加工",
+    "型材内部为等效外形，不作为实际槽型加工图",
+    "原生SW为独立导入实体零件及固定总装，无可驱动运动配合",
+    "机加工放行与上电/带载验收分开，实际电机性能和急停电路须装机后验证"
+  ],
+  "stepper_interface": {
+    "source": "用户2026-10-15提供的三张商品尺寸图；未上传原始购物截图",
+    "flange_mm": [
+      42,
+      42
+    ],
+    "mount_pitch_mm": [
+      31,
+      31
+    ],
+    "threads": "4-M3x0.5-6H，孔深4.0mm以上",
+    "boss_diameter_mm": 22,
+    "boss_height_mm": 2,
+    "shaft_diameter_mm": 5,
+    "shaft_options_mm": [
+      5,
+      8
+    ],
+    "shaft_projection_from_front_face_mm": 22.5,
+    "shaft_flat_length_mm": 18,
+    "D_flat_across_mm": 4.5,
+    "driver_pcb_mm": [
+      39,
+      39
+    ],
+    "driver_rear_length_mm": 11,
+    "driver_top_extent_mm": 43.7,
+    "body_length_options_mm": [
+      23,
+      28,
+      34,
+      40,
+      48,
+      60
+    ],
+    "body_length_for_clearance_mm": 60,
+    "body_model_for_mass": "42ZDT60A",
+    "body_mass_kg": 0.478,
+    "driver_mass_assumption_kg": 0.05,
+    "holding_torque_Nm": 0.7,
+    "rated_phase_current_A": 2,
+    "actual_variant_status": "用户确认按60mm长度预留；轴径仍按所给图纸默认5mm建模，8mm变体须换配合件",
+    "connector_keepout_mm": 20,
+    "mass_note": "60mm电机本体478g来自用户表格，驱动板50g为保守估值；实际型号待确认",
+    "reserved_length_confirmed": true
+  },
+  "compute_mount": {
+    "plate_mm": [
+      160,
+      170,
+      3
+    ],
+    "Pi4B_holes_mm": [
+      58,
+      49
+    ],
+    "Nano_official_carrier_holes_mm": [
+      86,
+      58
+    ],
+    "policy": "每次只安装一种板卡、4个M2.5x10支柱",
+    "definition": "manufacturing.json"
+  },
+  "camera_mount": {
+    "panel_mm": [
+      120,
+      100,
+      3
+    ],
+    "panel_holes_mm": [
+      100,
+      80
+    ],
+    "hole_diameter_mm": 3.4,
+    "policy": "用户自行适配摄像头中央结构，可拆面板接口保持不变",
+    "definition": "manufacturing.json"
+  },
+  "motor_mounts": {
+    "XY": "8厚6061整体L座+独立输入轴模块，电机经联轴器传扭",
+    "Z": "6061下鞍座/10厚双侧板/7厚顶板，MIKI制动器横板",
+    "definition": "manufacturing.json"
+  },
+  "z_drive_detail": {
+    "motor_face_z_from_tcp_mm": 1110,
+    "top_plate_bottom_z_from_tcp_mm": 1103,
+    "motor_lift_from_v21_mm": 30,
+    "coupling": {
+      "candidate": "NBK MJC-25CS-RD-5-8",
+      "diameter_mm": 25,
+      "length_mm": 34,
+      "insertion_mm": 12,
+      "center_zone_mm": 10,
+      "bores_mm": [
+        5,
+        8
+      ],
+      "hub_clamp_screw": "M3；目录1.5 N.m，实物型号和D形轴适用性确认后执行",
+      "scope": "目录外形和插入深度；未建夹紧缝/齿爪，不作为零件加工图"
+    },
+    "shaft_sections_z_from_tcp_mm": [
+      [
+        195,
+        225,
+        10
+      ],
+      [
+        225,
+        985,
+        16
+      ],
+      [
+        985,
+        1015,
+        12
+      ],
+      [
+        1015,
+        1023,
+        12
+      ],
+      [
+        1023,
+        1067.5,
+        10
+      ]
+    ],
+    "shaft_end_notes": [
+      "985~1015为上支承轴颈；1015~1023为M12x1候选锁紧段，模型不建螺纹",
+      "两端轴肩、退刀槽、轴承配合与锁紧公差须随真实支承组件冻结"
+    ],
+    "brake_z_from_tcp_mm": [
+      1023,
+      1053
+    ],
+    "assembly_order": [
+      "先安装丝杆支承与锁紧件，核对轴向定位；电机轴不承担丝杆轴向载荷",
+      "制动器与反力支架选定后安装，再把D10下半联轴器插入12mm并锁紧",
+      "将D5上半联轴器在电机轴上插入12mm；D面避开夹紧缝和螺栓沉孔方位",
+      "安装电机顶板并连接两半联轴器，按目录C=1mm装配间隙核对；对中后再锁紧",
+      "夹紧螺钉工具从开放的+Y侧进入；可通过旋转联轴器调整至检修位置"
+    ],
+    "status": "按BK12/BF12、BXW-03-10H-24V-8与5/8联轴器重建加工接口",
+    "scope": "LEGACY_LAYOUT_SEED_ONLY：仅供被替换的布局助手及减速中心距计算；最终加工结构以manufacturing.json和manufacturing_datums为准"
+  },
+  "xy_reduction_detail": {
+    "pitch_mm": 3,
+    "profile": "S3M",
+    "reduction_belt_width_mm": 10,
+    "slot_travel_each_side_mm": 3,
+    "X": {
+      "teeth": [
+        20,
+        40
+      ],
+      "pitch_length_mm": 192,
+      "belt_teeth": 64,
+      "motor_face_y_from_yc_mm": 75,
+      "output_axis_z_mm": 1100,
+      "belt_axial_d_mm": [
+        14,
+        24
+      ],
+      "output_bore_mm": 8,
+      "output_hub_diameter_mm": 30
+    },
+    "Y": {
+      "teeth": [
+        20,
+        60
+      ],
+      "pitch_length_mm": 246,
+      "belt_teeth": 82,
+      "motor_face_x_mm": 152,
+      "output_axis_z_mm": 984,
+      "belt_axial_d_mm": [
+        14,
+        24
+      ],
+      "output_bore_mm": 16,
+      "output_hub_diameter_mm": 39
+    },
+    "pulley_scope": "S3M节圆/齿顶及挡边外形；齿槽未逐齿建模。轮毂尺寸是接口约束，最终厂商型号需匹配，不能混用HTD3M/GT3齿形",
+    "input_fixing": "选定三ツ星20T C型，D23/10长轮毂；精加工D5H7，2-M3紧定，轴D面对准其一",
+    "output_fixing": "X输出采用2x2x8平键；Y输出采用5x5x12平键；紧定螺钉用于轴向防松",
+    "bearing_X": "2 x 608，8x22x7；独立座、端盖、隔套与轴环",
+    "bearing_Y": "2 x 6202，15x35x11；D16贯通轴两端D15轴颈；独立支承座固定后横梁",
+    "tension": "松开4-M3，将电机沿竖直长孔移动后锁紧；±3mm是安装/张紧调节范围，不是皮带允许伸长",
+    "scope": "LEGACY_LAYOUT_SEED_ONLY：仅供被替换的布局助手及减速中心距计算；最终加工结构以manufacturing.json和manufacturing_datums为准",
+    "belt_envelope_thickness_mm": 2.1,
+    "motor_centers_z_mm": {
+      "X": 1150.0869035487808,
+      "Y": 1043.9302497740166
+    },
+    "bearing_seat_tolerances": "图中为名义尺寸；必须确定轴承配合、外圈定位与内圈轴向尺寸链，不得按零间隙名义尺寸直接下单"
+  },
+  "manufacturing_datums": {
+    "y_rail_base_z": 948,
+    "y_end_plate_bottom_z": 976,
+    "y_riser_height": 12,
+    "x_rail_base_y_from_yc": -26,
+    "x_carrier_y_from_yc": [
+      -70,
+      -54
+    ],
+    "z_spacer_thickness": 9,
+    "z_rail_base_y_from_yc": -107,
+    "z_rail_centers_x": [
+      -35,
+      35
+    ],
+    "z_rail_start_z_from_tcp": 220,
+    "z_rail_length": 760,
+    "z_ram_y_from_yc": [
+      -155,
+      -115
+    ],
+    "z_rail_backplate_y_from_yc": [
+      -115,
+      -107
+    ],
+    "z_screw_y_from_yc": -82,
+    "z_block_centers_z": [
+      915,
+      1045
+    ],
+    "nut_flange_bottom_z": 960,
+    "nut_top_z": 1005,
+    "nut_cradle_z": [
+      950,
+      960
+    ],
+    "z_motor_face_from_tcp": 1130,
+    "z_brake_mount_face_from_tcp": 1050,
+    "z_brake_carrier_bottom_from_tcp": 1040,
+    "z_motor_inner_width": 70,
+    "z_motor_outer_width": 90,
+    "x_carrier_thickness": 16,
+    "z_rail_backplate_length": 848,
+    "z_upper_shoulder_from_tcp": 1008,
+    "z_fixed_end_thread_end_from_tcp": 1044,
+    "y_rear_shaft_axis_y": 920,
+    "frame_y_length": 940,
+    "rear_frame_y": 900
+  },
+  "main_belt_detail": {
+    "profile": "S3M",
+    "type": "开口聚氨酯同步带，匹配C-TBCR-S3M150",
+    "width": 15,
+    "center_gap": 54,
+    "clamp_centers_from_carriage": [
+      -37.5,
+      37.5
+    ],
+    "X": {
+      "drive_center": 90,
+      "idler_center": 810,
+      "center_distance": 720,
+      "closed_pitch_path": 1524,
+      "cut_pitch_length": 1470,
+      "teeth": 490,
+      "output_teeth": 28
+    },
+    "Y": {
+      "drive_center": 920,
+      "idler_center": 59,
+      "center_distance": 861,
+      "closed_pitch_path": 1830,
+      "cut_pitch_length": 1770,
+      "teeth": 590,
+      "output_teeth": 36,
+      "center_gap": 60,
+      "clamp_centers_from_carriage": [
+        -40.5,
+        40.5
+      ],
+      "phase_adjustment_mm": [
+        -3,
+        3
+      ]
+    },
+    "tension_travel_each_side": 4,
+    "note": "X中央间断54，Y中央间断60；Y每侧前后夹座沿Y同向等量微调+/-3，消除双轮齿相与装配误差"
+  },
+  "manufacturing_connections": {
+    "x_carrier_to_x_blocks": "前面4.8深沉孔+0.8垫圈+M4x16；16板有效12，入块4",
+    "z_blocks_to_carrier": "后面4.8深沉孔+0.8垫圈+M4x25；16板有效12+9隔块，入块4",
+    "nut_cradle_to_carrier": "4-M5x25+1垫圈；16板+8螺纹法兰",
+    "ballnut_to_cradle": "6-M5x20+1垫圈；10法兰+9有效螺纹入10底板",
+    "z_bottom_support": "自制浮动6000ZZ座，BK/BF目录仅用于下端D10/S10轴端加工",
+    "z_brake": "BXW-03-10H-24V-8；70x70x10底座，3-M3@PCD48，轮毂J19.9/L12，2-M3顶丝；上轴伸D8h7",
+    "bracing": "侧撑端点Y20/920、Z120/800，隔套1/5；后撑X20/880、Z80/840，钢隔套50/54，避免侧撑干涉"
+  },
+  "stock_pulleys": [
+    {
+      "role": "xy_motor",
+      "code": "P20S3M0100CAL",
+      "qty": 2,
+      "teeth": 20,
+      "belt_width": 10,
+      "LA": 15,
+      "LB": 23,
+      "W": 11,
+      "H": 2,
+      "K": 10,
+      "boss_D": 23,
+      "flange_D": 23,
+      "finish_bore": 8
+    },
+    {
+      "role": "x_reduction",
+      "code": "P40S3M0100BAL",
+      "qty": 1,
+      "teeth": 40,
+      "belt_width": 10,
+      "LA": 15,
+      "LB": 23,
+      "W": 11,
+      "H": 2,
+      "K": 8,
+      "boss_D": 30,
+      "flange_D": 44,
+      "finish_bore": 12
+    },
+    {
+      "role": "y_reduction",
+      "code": "P60S3M0100BAL",
+      "qty": 1,
+      "teeth": 60,
+      "belt_width": 10,
+      "LA": 15,
+      "LB": 23,
+      "W": 11,
+      "H": 2,
+      "K": 8,
+      "boss_D": 39,
+      "flange_D": 61,
+      "finish_bore": 16
+    },
+    {
+      "role": "x_main",
+      "code": "P28S3M0150BAL",
+      "qty": 1,
+      "teeth": 28,
+      "belt_width": 15,
+      "LA": 21,
+      "LB": 29,
+      "W": 17,
+      "H": 2,
+      "K": 8,
+      "boss_D": 18,
+      "flange_D": 31,
+      "finish_bore": 12
+    },
+    {
+      "role": "y_main",
+      "code": "P36S3M0150BAL",
+      "qty": 2,
+      "teeth": 36,
+      "belt_width": 15,
+      "LA": 21,
+      "LB": 29,
+      "W": 17,
+      "H": 2,
+      "K": 8,
+      "boss_D": 26,
+      "flange_D": 40,
+      "finish_bore": 16
+    }
+  ],
+  "stock_pulley_source": "https://product.mitsuboshi.com/industry/timing-belt/in_ti_11/p_size_ds3m/",
+  "input_cartridge": {
+    "qty": 2,
+    "datum": "虚拟电机面：X=Yc+75，Y=X152；模块向电机后方为t+",
+    "housing_size": [
+      60,
+      60,
+      24
+    ],
+    "housing_t": [
+      3,
+      27
+    ],
+    "front_cover_t": [
+      0,
+      3
+    ],
+    "rear_cover_t": [
+      27,
+      30
+    ],
+    "bearings": "2 x NSK 608ZZ / 8x22x7",
+    "bearing_t": [
+      [
+        3,
+        10
+      ],
+      [
+        20,
+        27
+      ]
+    ],
+    "inner_spacer": [
+      10,
+      20
+    ],
+    "shaft_steps": [
+      [
+        -27.5,
+        -3.5,
+        8
+      ],
+      [
+        -3.5,
+        3,
+        12
+      ],
+      [
+        3,
+        27,
+        8
+      ],
+      [
+        27,
+        38,
+        8
+      ],
+      [
+        38,
+        52,
+        8
+      ]
+    ],
+    "thread": "M8x1.25，28~37有效，配2只ISO4035薄螺母与1.6垫圈",
+    "coupling_t": [
+      40,
+      74
+    ],
+    "coupling": "NBK MJC-25CS-RD-5-8",
+    "motor_plate_t": [
+      77.5,
+      84.5
+    ],
+    "actual_motor_face_offset": 84.5,
+    "purpose": "皮带径向预紧力由独立608输入轴承承担，电机仅经弹性联轴器传递扭矩"
+  },
+  "geometry": {
+    "frame_mm": [
+      900,
+      940
+    ],
+    "max_height_mm": 1821,
+    "guides": "HIWIN HGR15R + HGH15CAZAC；Y820/X700/Z760；端距20/孔距60",
+    "main_belts": "S3M150开口带；X1470，Y每根1770；每端21/7齿；X间断54/Y间断60，Y夹座相位可调",
+    "reduction_belts": [
+      "100S3M192",
+      "100S3M246"
+    ],
+    "drive_ratio_mm_per_motor_rev": [
+      42,
+      36,
+      5
+    ],
+    "Z": "移动丝杆1605+固定螺母SFNU01605-4；BK12固定端+6000ZZ自制浮动端；MIKI BXW-03-10H-24V-8",
+    "gripper_interface": "D70x8；PCD50四D4.5；夹爪及物料合计1kg"
+  },
+  "standard_parts_basis": "已有电机与板卡沿用；其余按图中精确型号选型。未假定用户已买下采购件。",
+  "sources_file": "catalog.json"
+}

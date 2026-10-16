@@ -3,6 +3,7 @@
 *.stl binary
 *.dxf binary
 *.png binary
+*.pdf binary
 *.SLDPRT binary
 *.SLDASM binary
 *.SLDDRW binary

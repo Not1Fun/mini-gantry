@@ -1,0 +1,25 @@
+{
+  "status": "PASS_NATIVE_REBUILD_AND_SAVE",
+  "initial_open": {
+    "errors": 0,
+    "warnings": 128
+  },
+  "rebuild_return": true,
+  "save": {
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 5117552
+  },
+  "reopen": {
+    "errors": 0,
+    "warnings": 32
+  },
+  "rebuild_after_open_return": true,
+  "save_after_rebuild": {
+    "errors": 0,
+    "warnings": 0,
+    "bytes": 5105014
+  },
+  "warning_32_definition": "swFileLoadWarning_NeedsRegen per installed SolidWorks 2024 swconst enum; explicit rebuild performed",
+  "component_count": 180
+}

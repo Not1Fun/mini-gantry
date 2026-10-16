@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 ~$*
 **/cad/sw_import/
+**/cad/drawing_cache/

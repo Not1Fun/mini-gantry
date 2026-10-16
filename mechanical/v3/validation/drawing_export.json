@@ -1,0 +1,7 @@
+{
+  "status": "PASS_PDF_EXPORT_AND_LAYOUT_REVIEW",
+  "parts": 109,
+  "pages": 110,
+  "pdf": "drawings/manufacturing.pdf",
+  "qa": "local rendered previews, not packaged"
+}

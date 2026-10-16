@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "profile": "HFS8-4040",
+      "length_mm": 820.0,
+      "quantity": 9,
+      "tolerance_mm": 0.2
+    },
+    {
+      "profile": "HFS8-4040",
+      "length_mm": 940.0,
+      "quantity": 2,
+      "tolerance_mm": 0.2
+    },
+    {
+      "profile": "HFS8-4080",
+      "length_mm": 800.0,
+      "quantity": 1,
+      "tolerance_mm": 0.2
+    },
+    {
+      "profile": "HFS8-4080",
+      "length_mm": 820.0,
+      "quantity": 1,
+      "tolerance_mm": 0.2
+    },
+    {
+      "profile": "HFS8-4080",
+      "length_mm": 940.0,
+      "quantity": 2,
+      "tolerance_mm": 0.2
+    }
+  ],
+  "end_work": "940长的两根4040底侧梁与两根4080顶侧梁，两端截面(20,20)芯孔各M8有效18/底孔22；4080从截面下边计只攻下排孔。Z滑枕800长件下端两个芯孔M8有效20/底孔24。其余端面不攻丝。"
+}
